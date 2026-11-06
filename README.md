@@ -39,6 +39,17 @@ src/
   data/emoji-groups.json      unicode-emoji-json (MIT) — 9 groups, ~1900 emoji
 ```
 
+## Comment thread
+
+`src/components/comment-thread/` — message list + composer at the reference scale (956px card, 20/20.5px type):
+
+- gradient avatars (no initials), name + body rhythm
+- composer that auto-grows and seeds the emoji panel (`?picker=1` to preview it open)
+- send button morphs grey → ink when the draft is non-empty, arrow lifts on hover, presses to 0.94
+- entrance: card 620ms spring-in, rows staggered 55ms, popover 220ms with overshoot, focus ring 200ms
+- `Enter` sends, `Shift+Enter` breaks the line, `Esc` closes the panel
+- `prefers-reduced-motion` kills every transform
+
 ## Adding a component
 
 1. Drop the implementation in `src/components/<slug>/`.

@@ -3,6 +3,10 @@ import { EmojiPickerDemo } from '@/components/emoji-picker/demo'
 import pickerSource from '@/components/emoji-picker/EmojiPicker.tsx?raw'
 import dataSource from '@/components/emoji-picker/emoji-data.ts?raw'
 import demoSource from '@/components/emoji-picker/demo.tsx?raw'
+import { CommentThreadDemo } from '@/components/comment-thread/demo'
+import threadSource from '@/components/comment-thread/CommentThread.tsx?raw'
+import threadCss from '@/components/comment-thread/comment-thread.css?raw'
+import threadDemoSource from '@/components/comment-thread/demo.tsx?raw'
 
 export type Tier = 'free' | 'pro'
 export type Section = 'components' | 'blocks' | 'special'
@@ -35,6 +39,21 @@ export const registry: RegistryItem[] = [
       { name: 'demo.tsx', code: demoSource },
     ],
     deps: ['Data: unicode-emoji-json (MIT)'],
+  },
+  {
+    slug: 'comment-thread',
+    title: 'Comment Thread',
+    section: 'components',
+    tier: 'pro',
+    summary:
+      'Message list with gradient avatars and a composer that grows with the draft, seeds an emoji panel and springs into a send state.',
+    Demo: CommentThreadDemo,
+    files: [
+      { name: 'CommentThread.tsx', code: threadSource },
+      { name: 'comment-thread.css', code: threadCss },
+      { name: 'demo.tsx', code: threadDemoSource },
+    ],
+    deps: ['React + CSS', 'Reuses EmojiPicker'],
   },
 ]
 
