@@ -1,6 +1,6 @@
 # Agents
 
-## `agent-approvals` — Agent approvals (Pro, block)
+## `agent-approvals` · Agent approvals (Pro, block)
 
 One approval card for agents: the waiting tool call reads like a permission prompt with the tool's mark, the agent's reason and its arguments, and you approve, deny or allow it from now on.
 
@@ -16,7 +16,7 @@ Keywords: agent approvals, human in the loop, tool call approval, permission pro
 
 Files: agent-approvals.module.css, agent-approvals.tsx, demo.tsx
 
-## `agent-builder` — Agent builder (Pro, block)
+## `agent-builder` · Agent builder (Pro, block)
 
 A card for setting up an AI agent: an inline editable name, a model picker, instructions, tool toggles with real app marks, and knowledge files with upload progress. A Configure / Test switch opens a compact chat that answers with the tools you turned on, and Publish ships the setup with a saved or unsaved state.
 
@@ -32,7 +32,7 @@ Keywords: agent builder, configure ai agent, gpt builder, assistant settings, ai
 
 Files: agent-builder.module.css, agent-builder.tsx, demo.tsx
 
-## `agent-gallery` — Agent gallery (Pro, block)
+## `agent-gallery` · Agent gallery (Pro, block)
 
 A marketplace card of AI agent templates where you filter by team, search by agent or app, preview a sample run and install an agent inline: choose a workspace, grant access app by app, and the card confirms with a check.
 
@@ -48,7 +48,7 @@ Keywords: agent marketplace, agent templates, ai agents, agent gallery, integrat
 
 Files: agent-gallery.module.css, agent-gallery.tsx, demo.tsx
 
-## `agent-orchestrator` — Agent orchestrator (Pro, block)
+## `agent-orchestrator` · Agent orchestrator (Pro, block)
 
 A lead agent splits a goal into a plan, fans the subtasks out to parallel worker lanes and merges what comes back, with each lane's model, progress and result in view.
 
@@ -64,7 +64,7 @@ Keywords: multi agent, orchestrator, subagents, parallel agents, fan out, fan in
 
 Files: agent-orchestrator.module.css, agent-orchestrator.tsx, demo.tsx
 
-## `agent-routines` — Agent routines (Pro, block)
+## `agent-routines` · Agent routines (Pro, block)
 
 Scheduled agents in one card: each routine reads as a sentence with its schedule, next run countdown, connectors and destination, and opens smoothly to edit or run it now.
 
@@ -80,7 +80,7 @@ Keywords: scheduled agents, agent routines, cron, automations, recurring tasks, 
 
 Files: agent-routines.module.css, agent-routines.tsx, demo.tsx
 
-## `agent-run` — Agent run (Pro, block)
+## `agent-run` · Agent run (Pro, block)
 
 A single card that follows one AI coding agent through a task: steps stream in with the live one shimmering, tool calls open in place, and the agent stops on a two-file diff for you to approve or send back before it writes. When the run ends, the steps fold into one line and a result shows the files changed, the checks that passed and a pull request button.
 
@@ -96,7 +96,7 @@ Keywords: ai agent, coding agent, agent run, tool calls, approval, human in the 
 
 Files: agent-run.module.css, agent-run.tsx, demo.tsx
 
-## `agent-tasks` — Agent tasks (Pro, block)
+## `agent-tasks` · Agent tasks (Pro, block)
 
 A home for background coding agents: start a task on a repository and branch, watch each card move from queued to running to ready for review, and open a pull request from the result.
 
@@ -112,7 +112,7 @@ Keywords: background agents, coding agent, agent tasks, task queue, cloud agent,
 
 Files: agent-tasks.module.css, agent-tasks.tsx, demo.tsx
 
-## `eval-suite` — Eval suite (Pro, block)
+## `eval-suite` · Eval suite (Pro, block)
 
 Run an evaluation suite on a new version of an LLM feature against its baseline: results stream in case by case, and regressions and fixes are called out with the cases behind them.
 
@@ -128,7 +128,7 @@ Keywords: eval, evals, evaluation suite, llm evaluation, regression testing, llm
 
 Files: demo.tsx, eval-suite-data.ts, eval-suite.module.css, eval-suite.tsx
 
-## `knowledge-base` — Knowledge base (Pro, block)
+## `knowledge-base` · Knowledge base (Pro, block)
 
 A retrieval knowledge base in one card: add sources and watch them parse, chunk, embed and index, then test a question and see which chunks come back and why.
 
@@ -144,7 +144,7 @@ Keywords: knowledge base, rag, retrieval, vector store, embeddings, chunking, in
 
 Files: demo.tsx, knowledge-base-data.ts, knowledge-base.module.css, knowledge-base.tsx
 
-## `mcp-servers` — MCP servers (Pro, block)
+## `mcp-servers` · MCP servers (Pro, block)
 
 Manage the MCP servers that give an agent its tools: see what the enabled tools cost in context, connect or pause a server, and switch single tools on or off.
 

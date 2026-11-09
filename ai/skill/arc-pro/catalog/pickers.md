@@ -1,6 +1,6 @@
 # Pickers
 
-## `calendar` — Calendar (Free, component)
+## `calendar` · Calendar (Free, component)
 
 Browse dates in a clear, compact month view.
 
@@ -16,7 +16,7 @@ Keywords: date, field, react calendar, date calendar, month calendar, inline dat
 
 Files: registry/components/calendar/calendar.tsx, lib/use-today.ts, registry/components/calendar/calendar.module.css
 
-## `color-picker` — Color picker (Free, component)
+## `color-picker` · Color picker (Free, component)
 
 A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.
 
@@ -32,7 +32,7 @@ Keywords: inputs, new, react color picker, hex color input, oklch color picker, 
 
 Files: registry/components/color-picker/color-picker.tsx, registry/components/color-picker/color-picker.module.css
 
-## `date-picker` — Date picker (Free, component)
+## `date-picker` · Date picker (Free, component)
 
 Choose a date without losing context.
 
@@ -48,7 +48,7 @@ Keywords: date, field, react date picker, datepicker, date input with calendar, 
 
 Files: registry/components/date-picker/date-picker.tsx, registry/components/date-picker/date-picker.module.css
 
-## `date-range-picker` — Date range picker (Free, component)
+## `date-range-picker` · Date range picker (Free, component)
 
 A range picker that grows from its trigger into two months with presets and a stretching range highlight.
 
@@ -64,7 +64,7 @@ Keywords: inputs, new, react date range picker, date range, calendar range selec
 
 Files: registry/components/date-range-picker/date-range-picker.tsx, lib/use-today.ts, registry/components/date-range-picker/date-range-picker.module.css
 
-## `emoji-picker` — Emoji picker (Pro, component)
+## `emoji-picker` · Emoji picker (Pro, component)
 
 A full emoji picker with instant search, scroll-synced categories, skin tones, recently used emoji, and a virtualized, keyboard-navigable grid.
 
@@ -80,7 +80,7 @@ Keywords: input, picker, emoji, new, emoji picker, emoji keyboard, smiley, emoti
 
 Files: demo.module.css, demo.tsx, emoji-data.ts, emoji-picker.module.css, emoji-picker.tsx
 
-## `time-picker` — Time picker (Free, component)
+## `time-picker` · Time picker (Free, component)
 
 Choose a time with sensible keyboard behavior.
 

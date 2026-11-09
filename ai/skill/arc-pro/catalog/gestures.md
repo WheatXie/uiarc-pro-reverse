@@ -1,6 +1,6 @@
 # Gestures
 
-## `hold-to-confirm` — Hold to confirm (Free, component)
+## `hold-to-confirm` · Hold to confirm (Free, component)
 
 Confirm a destructive action by holding, not tapping.
 
@@ -16,7 +16,7 @@ Keywords: hold, long press, confirm, react hold to confirm, press and hold butto
 
 Files: registry/components/hold-to-confirm/hold-to-confirm.tsx, registry/components/hold-to-confirm/hold-to-confirm.module.css
 
-## `reactions` — Reactions (Free, component)
+## `reactions` · Reactions (Free, component)
 
 Acknowledge a post in one tap, with counts that roll.
 
@@ -32,7 +32,7 @@ Keywords: reactions, social, comments, react reactions, emoji reactions, reactio
 
 Files: registry/components/reactions/reactions.tsx, registry/components/reactions/reactions.module.css
 
-## `swipe-actions` — Swipe actions (Free, component)
+## `swipe-actions` · Swipe actions (Free, component)
 
 Reveal row actions with a swipe, or from the same actions in a menu.
 

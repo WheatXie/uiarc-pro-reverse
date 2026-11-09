@@ -1,6 +1,6 @@
 # Editors
 
-## `avatar-upload` — Avatar upload (Pro, component)
+## `avatar-upload` · Avatar upload (Pro, component)
 
 Click or drop a photo onto the avatar to crop it in place with drag, pinch and zoom. It uploads through a progress ring and settles, with clear errors and retry.
 
@@ -16,7 +16,7 @@ Keywords: input, upload, image, new, avatar upload, profile photo, profile pictu
 
 Files: avatar-upload.module.css, avatar-upload.tsx, demo.module.css, demo.tsx
 
-## `file-dropzone` — File dropzone (Free, component)
+## `file-dropzone` · File dropzone (Free, component)
 
 A generous target for dropping one or more files.
 
@@ -32,7 +32,7 @@ Keywords: field, files, react file upload, file dropzone, drag and drop upload, 
 
 Files: registry/components/file-dropzone/file-dropzone.tsx, registry/components/file-dropzone/file-dropzone.module.css
 
-## `rich-text-editor` — Rich text editor (Free, component)
+## `rich-text-editor` · Rich text editor (Free, component)
 
 A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.
 
@@ -48,7 +48,7 @@ Keywords: inputs, new, react rich text editor, markdown editor, wysiwyg editor, 
 
 Files: registry/components/rich-text-editor/rich-text-editor.tsx, registry/components/rich-text-editor/rich-text-editor.module.css
 
-## `signature-pad` — Signature pad (Free, component)
+## `signature-pad` · Signature pad (Free, component)
 
 Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.
 

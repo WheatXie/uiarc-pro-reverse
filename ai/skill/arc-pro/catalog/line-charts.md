@@ -1,6 +1,6 @@
 # Line charts
 
-## `line-replay` — Line replay (Pro, block)
+## `line-replay` · Line replay (Pro, block)
 
 A time replay line chart that draws a day of traffic with a moving playhead, a value label on the tip, a scrubber, speed control and key moments annotated as the playhead passes them.
 
@@ -16,7 +16,7 @@ Keywords: replay, time replay, playback chart, animated line chart, playhead, sc
 
 Files: demo.tsx, line-replay.module.css, line-replay.tsx
 
-## `small-multiples` — Small multiples (Pro, block)
+## `small-multiples` · Small multiples (Pro, block)
 
 A trellis of small line charts that reads as one chart, with a synced crosshair, a shared or independent y scale that springs the axes, sorting with a FLIP reorder, a ghost of the overall total behind every panel and dimming for flat trends.
 

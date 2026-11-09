@@ -1,6 +1,6 @@
 # Messages
 
-## `alert` — Alert (Free, component)
+## `alert` · Alert (Free, component)
 
 A persistent message that helps people recover or continue.
 
@@ -16,7 +16,7 @@ Keywords: status, message, react alert, alert banner, inline notification, warni
 
 Files: registry/components/alert/alert.tsx, registry/components/alert/alert.module.css
 
-## `announcement-bar` — Announcement bar (Free, component)
+## `announcement-bar` · Announcement bar (Free, component)
 
 A top banner that rotates messages, counts down, and collapses smoothly when dismissed.
 
@@ -32,7 +32,7 @@ Keywords: feedback, new, react announcement bar, top banner, promo banner, site 
 
 Files: registry/components/announcement-bar/announcement-bar.tsx, registry/components/announcement-bar/announcement-bar.module.css
 
-## `cookie-consent` — Cookie consent (Free, component)
+## `cookie-consent` · Cookie consent (Free, component)
 
 A consent bar that morphs into preferences and folds into a reopen button.
 
@@ -48,7 +48,7 @@ Keywords: feedback, new, react cookie consent, cookie banner, gdpr consent, cook
 
 Files: registry/components/cookie-consent/cookie-consent.tsx, registry/components/cookie-consent/cookie-consent.module.css
 
-## `toast` — Toast (Free, component)
+## `toast` · Toast (Free, component)
 
 Brief confirmation for a completed background action.
 
@@ -64,7 +64,7 @@ Keywords: status, message, react toast, toast notification, success toast, swipe
 
 Files: registry/components/toast/toast.tsx, registry/components/toast/toast.module.css
 
-## `toast-stack` — Toast stack (Free, component)
+## `toast-stack` · Toast stack (Free, component)
 
 Stack short results at the edge until you reach for them.
 
@@ -80,7 +80,7 @@ Keywords: toast, notification, sonner, react toast stack, toast notifications, s
 
 Files: registry/components/toast-stack/toast-stack.tsx, registry/components/toast-stack/toast-stack.module.css
 
-## `undo-toast` — Undo toast (Pro, component)
+## `undo-toast` · Undo toast (Pro, component)
 
 Archive or delete rows with a second chance: the gap closes, a countdown toast merges repeat actions, and Undo or ⌘Z puts every row back exactly where it was.
 

@@ -1,6 +1,6 @@
 # Buttons
 
-## `action-button` — Action button (Free, component)
+## `action-button` · Action button (Free, component)
 
 A compact button for frequent toolbar actions.
 
@@ -16,7 +16,7 @@ Keywords: action, toolbar, react action button, async button, submit button with
 
 Files: registry/components/action-button/action-button.tsx, registry/components/action-button/action-button.module.css
 
-## `action-swap` — Action swap (Free, component)
+## `action-swap` · Action swap (Free, component)
 
 Swap an action label while preserving its place and intent.
 
@@ -32,7 +32,7 @@ Keywords: action, motion, react toggle button, follow button, state cycling butt
 
 Files: registry/components/action-swap/action-swap.tsx, registry/components/action-swap/action-swap.module.css
 
-## `button` — Button (Free, component)
+## `button` · Button (Free, component)
 
 A clear, responsive action with quiet secondary states.
 
@@ -48,7 +48,7 @@ Keywords: action, control, react button, animated button, loading button, button
 
 Files: registry/components/button/button.tsx, registry/components/button/button.module.css
 
-## `button-group` — Button group (Free, component)
+## `button-group` · Button group (Free, component)
 
 Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.
 
@@ -64,7 +64,7 @@ Keywords: action, group, toolbar, new, button group, joined buttons, action grou
 
 Files: registry/components/button-group/button-group.tsx, registry/components/button-group/button-group.module.css
 
-## `confirm-morph` — Confirm morph (Free, component)
+## `confirm-morph` · Confirm morph (Free, component)
 
 A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.
 
@@ -80,7 +80,7 @@ Keywords: actions, new, react confirm button, inline confirmation, delete confir
 
 Files: registry/components/confirm-morph/confirm-morph.tsx, registry/components/confirm-morph/confirm-morph.module.css
 
-## `copy-button` — Copy button (Free, component)
+## `copy-button` · Copy button (Free, component)
 
 Copy a value with immediate confirmation.
 
@@ -96,7 +96,7 @@ Keywords: action, utility, react copy button, copy to clipboard, copy button ani
 
 Files: registry/components/copy-button/copy-button.tsx, registry/components/copy-button/copy-button.module.css, lib/use-copy-feedback.ts
 
-## `expanding-button-group` — Expanding button group (Free, component)
+## `expanding-button-group` · Expanding button group (Free, component)
 
 Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.
 
@@ -112,7 +112,7 @@ Keywords: action, group, toolbar, new, button group, icon buttons, expanding, re
 
 Files: registry/components/expanding-button-group/expanding-button-group.tsx, registry/components/expanding-button-group/expanding-button-group.module.css
 
-## `floating-button-group` — Floating button group (Free, component)
+## `floating-button-group` · Floating button group (Free, component)
 
 Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.
 
@@ -128,7 +128,7 @@ Keywords: action, group, toolbar, new, button group, floating toolbar, action ba
 
 Files: registry/components/floating-button-group/floating-button-group.tsx, registry/components/floating-button-group/floating-button-group.module.css
 
-## `icon-morph` — Icon morph (Free, component)
+## `icon-morph` · Icon morph (Free, component)
 
 Icons that morph between states: menu to close, play to pause, copy to check, and more.
 
@@ -144,7 +144,7 @@ Keywords: actions, new, react icon morph, animated icon, hamburger to close, pla
 
 Files: registry/components/icon-morph/icon-morph.tsx, registry/components/icon-morph/icon-morph.module.css
 
-## `split-button` — Split button (Free, component)
+## `split-button` · Split button (Free, component)
 
 A primary action with a menu of nearby alternatives.
 
@@ -160,7 +160,7 @@ Keywords: action, menu, react split button, button with dropdown, split button m
 
 Files: registry/components/split-button/split-button.tsx, registry/components/split-button/split-button.module.css
 
-## `theme-switch` — Theme switcher (Free, component)
+## `theme-switch` · Theme switcher (Free, component)
 
 Four smooth ways to move between light and dark appearance.
 

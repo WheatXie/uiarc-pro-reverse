@@ -1,7 +1,7 @@
 # Arc Pro playbooks
 
 Six long-form workflows for whole surfaces, not single components. Each one assumes the library is
-available — either this repository (`src/components/arc/`, 380 items) or the local MCP server
+available: either this repository (`src/components/arc/`, 380 items) or the local MCP server
 (`search_components`, `get_component`, `get_install_command`).
 
 Pick one, read it end to end, then run it. They are written as procedures with checkpoints, because
@@ -9,7 +9,7 @@ the failure mode for large UI work is not a wrong component, it is skipping a st
 
 | Playbook | Use when | Stops with |
 | --- | --- | --- |
-| [full-page-generation.md](full-page-generation.md) | "build me a page / dashboard / settings screen / pricing page" from a brief | a region-by-region plan, then a built page, then a verification pass — or just the plan if the brief is thin |
+| [full-page-generation.md](full-page-generation.md) | "build me a page / dashboard / settings screen / pricing page" from a brief | a region-by-region plan, then a built page, then a verification pass: or just the plan if the brief is thin |
 | [design-system-generation.md](design-system-generation.md) | "make it look like our brand", a new theme, dark mode, an accent change | a token layer on `foundation.css` with contrast checked in both themes |
 | [refactor-to-arc.md](refactor-to-arc.md) | "migrate this page from shadcn/ui, MUI, Chakra, or hand-rolled CSS" | item-by-item mapping with parity checks, no visual regressions |
 | [motion-audit.md](motion-audit.md) | "the animations feel off", "make it feel finished", a performance complaint | an inventory table, token assignments, deleted motion, reduced-motion coverage |
@@ -23,7 +23,7 @@ the failure mode for large UI work is not a wrong component, it is skipping a st
 2. **Confirm the shell.** `foundation.css` imported once, Geist and Inter loaded, `--font-body` and
    `--font-display` set. A missing `foundation.css` makes every item look wrong and sends you chasing
    the wrong bug.
-3. **Read the item, not the screenshot.** `get_component {id}` — the "When not to use" line and the
+3. **Read the item, not the screenshot.** `get_component {id}`: the "When not to use" line and the
    API reference. Most defects in generated UI come from inventing props.
 4. **Write down the widths and states you will verify** before you start. Every playbook ends by
    checking the same four widths (390, 768, 1024, 1440) and the same state set (empty, loading,

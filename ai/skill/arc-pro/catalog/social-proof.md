@@ -1,6 +1,6 @@
 # Social proof
 
-## `blog-grid` — Blog grid (Free, block)
+## `blog-grid` · Blog grid (Free, block)
 
 A blog index with a featured post, category filter, post cards, pagination and an in-place reader.
 
@@ -16,7 +16,7 @@ Keywords: blog grid, blog index, article list, news page, blog cards, featured p
 
 Files: registry/blocks/blog-grid/blog-grid.tsx, registry/blocks/blog-grid/blog-grid-data.ts, registry/blocks/blog-grid/blog-grid.module.css
 
-## `contact-section` — Contact section (Free, block)
+## `contact-section` · Contact section (Free, block)
 
 A validated contact form that morphs into a confirmation, support channels, and office cards with local times.
 
@@ -32,7 +32,7 @@ Keywords: react contact form, contact section, contact page, office hours time z
 
 Files: registry/blocks/contact-section/contact-section.tsx, registry/blocks/contact-section/contact-section.module.css, lib/media.ts
 
-## `team-showcase` — Team showcase (Pro, block)
+## `team-showcase` · Team showcase (Pro, block)
 
 An image led team introduction with profiles that open in place.
 

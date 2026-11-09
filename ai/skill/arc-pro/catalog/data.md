@@ -1,6 +1,6 @@
 # Data
 
-## `activity-rings` — Activity rings (Pro, special)
+## `activity-rings` · Activity rings (Pro, special)
 
 Daily goals as tick rings that sweep, count up, and trace a second lap past 100%.
 
@@ -16,7 +16,7 @@ Keywords: special, activity, rings, react activity rings, apple watch rings, fit
 
 Files: activity-rings.module.css, activity-rings.tsx, demo.tsx
 
-## `booking-pill` — Booking pill (Pro, special)
+## `booking-pill` · Booking pill (Pro, special)
 
 One pill that reshapes through party size, date, time, and a ticket.
 
@@ -32,7 +32,7 @@ Keywords: special, motion, react booking widget, table reservation, restaurant b
 
 Files: booking-pill.module.css, booking-pill.tsx, demo.tsx
 
-## `date-reel` — Date reel (Pro, special)
+## `date-reel` · Date reel (Pro, special)
 
 A 3D wheel date and time picker (like iOS reels) with momentum scrolling, snapping, curved perspective, and full keyboard support.
 
@@ -48,7 +48,7 @@ Keywords: special, input, date, gesture, new, date picker, time picker, wheel pi
 
 Files: date-reel.module.css, date-reel.tsx, demo.tsx
 
-## `time-dial` — Time dial (Pro, special)
+## `time-dial` · Time dial (Pro, special)
 
 Spin a dial to pick an hour and see which team cities are at work.
 

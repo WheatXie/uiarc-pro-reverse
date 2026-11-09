@@ -1,6 +1,6 @@
 # Finance
 
-## `budget-variance` — Budget variance (Pro, block)
+## `budget-variance` · Budget variance (Pro, block)
 
 Budget against actual operating spend by department as aligned bullet charts, with favorable and unfavorable variance, a month, quarter and year to date switch that springs every bar, in-place drill-down into budget lines, and a total row.
 
@@ -16,7 +16,7 @@ Keywords: budget, budget vs actual, variance, bullet chart, finance, fp&a, opera
 
 Files: budget-variance.module.css, budget-variance.tsx, demo.tsx
 
-## `market-terminal` — Market terminal (Pro, block)
+## `market-terminal` · Market terminal (Pro, block)
 
 A trading terminal with a canvas candlestick chart, volume, moving averages, crosshair OHLC readout, wheel, drag and pinch zoom, a live watchlist with sparklines and flashing prices, and a market and limit order ticket.
 

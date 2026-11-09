@@ -1,6 +1,6 @@
 # Cards
 
-## `card` — Card (Free, component)
+## `card` · Card (Free, component)
 
 A contained group of related content and actions.
 
@@ -16,7 +16,7 @@ Keywords: surface, layout, react card, card component, card with image, expand c
 
 Files: registry/components/card/card.tsx, registry/components/card/card.module.css
 
-## `empty-state` — Empty state (Free, component)
+## `empty-state` · Empty state (Free, component)
 
 A useful next step when there is nothing to show yet.
 
@@ -32,7 +32,7 @@ Keywords: data, guidance, react empty state, no results, empty list placeholder,
 
 Files: registry/components/empty-state/empty-state.tsx, registry/components/empty-state/empty-state.module.css
 
-## `metric-card` — Metric card (Free, component)
+## `metric-card` · Metric card (Free, component)
 
 A compact summary for a number that needs context.
 
@@ -48,7 +48,7 @@ Keywords: data, summary, react metric card, kpi card, odometer number, rolling n
 
 Files: registry/components/metric-card/metric-card.tsx, registry/components/metric-card/metric-card.module.css
 
-## `metric-ticker` — Metric ticker (Pro, component)
+## `metric-ticker` · Metric ticker (Pro, component)
 
 A strip of live KPIs that roll to new values digit by digit and flash their change; rest on one to pause the strip and open its recent trend as a sparkline.
 

@@ -1,6 +1,6 @@
 # Content
 
-## `activity-terrain` — Activity terrain (Pro, block)
+## `activity-terrain` · Activity terrain (Pro, block)
 
 A 3D terrain of hourly activity you can orbit, zoom, fly into and flatten into a heatmap.
 
@@ -16,7 +16,7 @@ Keywords: react 3d heatmap, activity terrain, 3d bar chart canvas, hourly activi
 
 Files: activity-terrain.module.css, activity-terrain.tsx, demo.tsx
 
-## `cta-section` — CTA section (Free, block)
+## `cta-section` · CTA section (Free, block)
 
 A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.
 
@@ -32,7 +32,7 @@ Keywords: cta, call to action, cta section, banner, closing section, signup prom
 
 Files: registry/blocks/cta-section/cta-section.tsx, registry/blocks/cta-section/cta-section-data.ts, lib/media.ts, registry/blocks/cta-section/cta-section.module.css
 
-## `newsletter-signup` — Newsletter signup (Free, block)
+## `newsletter-signup` · Newsletter signup (Free, block)
 
 An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.
 
@@ -48,7 +48,7 @@ Keywords: newsletter, email signup, subscribe, waitlist, email capture, mailing 
 
 Files: registry/blocks/newsletter-signup/newsletter-signup.tsx, registry/blocks/newsletter-signup/newsletter-signup-data.ts, lib/media.ts, registry/blocks/newsletter-signup/newsletter-signup.module.css
 
-## `site-footer` — Site footer (Free, block)
+## `site-footer` · Site footer (Free, block)
 
 A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.
 
@@ -64,7 +64,7 @@ Keywords: react footer, site footer, footer with newsletter, footer link columns
 
 Files: registry/blocks/site-footer/site-footer.tsx, registry/blocks/site-footer/site-footer.module.css
 
-## `site-header` — Site header (Free, block)
+## `site-header` · Site header (Free, block)
 
 A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.
 

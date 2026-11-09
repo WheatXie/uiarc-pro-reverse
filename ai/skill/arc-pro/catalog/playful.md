@@ -1,6 +1,6 @@
 # Playful
 
-## `orbit-logos` — Orbit logos (Pro, special)
+## `orbit-logos` · Orbit logos (Pro, special)
 
 An integrations showcase with brand logos orbiting your product mark on tilted rings. Hover or focus one to rest the orbit, draw a connection, and see what it does.
 
@@ -16,7 +16,7 @@ Keywords: special, motion, integrations, logos, new, orbit logos, integration he
 
 Files: demo.tsx, orbit-logos.module.css, orbit-logos.tsx
 
-## `page-curl` — Page curl (Pro, special)
+## `page-curl` · Page curl (Pro, special)
 
 A small magazine you read by dragging page corners, with a real fold, lit curl, and flick to turn.
 
@@ -32,7 +32,7 @@ Keywords: special, gesture, book, new, page curl, page flip, flipbook, turn page
 
 Files: demo.tsx, page-curl.module.css, page-curl.tsx
 
-## `prize-wheel` — Prize wheel (Pro, special)
+## `prize-wheel` · Prize wheel (Pro, special)
 
 A referral or promo prize wheel you flick to spin, with real angular momentum, a flexible pointer that ticks against each peg, weighted segments set by the host, a slow suspenseful settle, and the won segment lifting into a reward card with a copyable code.
 
@@ -48,7 +48,7 @@ Keywords: special, gesture, physics, new, prize wheel, spin the wheel, wheel of 
 
 Files: demo.tsx, prize-wheel.module.css, prize-wheel.tsx
 
-## `sticker-peel` — Sticker peel (Pro, special)
+## `sticker-peel` · Sticker peel (Pro, special)
 
 Peel stickers off a surface with a real curl, move them around, and stick them back down.
 

@@ -54,19 +54,19 @@ icon button in a dense desktop toolbar may stay small at 1440).
 
 ## 3. Fix order
 
-1. **Page overflow** — find the widest element (the script's `clipped` list plus
+1. **Page overflow**: find the widest element (the script's `clipped` list plus
    `document.body.getBoundingClientRect().width`). Usually a fixed width, a `min-width`, a long
    unbreakable string, or a grid with `grid-template-columns: 320px 1fr` that never collapses.
-2. **Split layouts** — a list + detail becomes list → detail (route or sheet), not two squeezed panes.
+2. **Split layouts**: a list + detail becomes list → detail (route or sheet), not two squeezed panes.
    Arc items that already do this: `search-results` (facet sheet), `settings-page` (nav collapses),
    `ai-side-panel` (dock becomes a sheet at < 640px with a scrim).
-3. **Tables** — never shrink columns below readable; the card scrolls horizontally with a sticky first
+3. **Tables**: never shrink columns below readable; the card scrolls horizontally with a sticky first
    column, or the block switches to cards (`data-grid`, `sortable-data-table` both ship this).
-4. **Text** — raise the wrap instead of shrinking type: `overflow-wrap: anywhere` for identifiers,
+4. **Text**: raise the wrap instead of shrinking type: `overflow-wrap: anywhere` for identifiers,
    `text-wrap: balance` for headings, truncation with a title on single-line labels only.
-5. **Touch** — 44×44 minimum for primary actions; increase hit area with padding, not with a bigger
+5. **Touch**: 44×44 minimum for primary actions; increase hit area with padding, not with a bigger
    icon; keep 8px between adjacent targets.
-6. **Chrome** — below 900px hide the desktop sidebar, keep the top bar, move the primary action into a
+6. **Chrome**: below 900px hide the desktop sidebar, keep the top bar, move the primary action into a
    sticky bottom bar if it was in a side rail.
 
 ## 4. Re-measure

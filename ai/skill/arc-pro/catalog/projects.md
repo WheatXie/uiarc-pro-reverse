@@ -1,6 +1,6 @@
 # Projects
 
-## `feature-bento` — Feature bento (Pro, block)
+## `feature-bento` · Feature bento (Pro, block)
 
 A six cell feature bento where small, real product UI acts each feature out on hover.
 
@@ -16,7 +16,7 @@ Keywords: bento, bento grid, feature grid, features section, landing page, produ
 
 Files: demo.tsx, feature-bento.module.css, feature-bento.tsx
 
-## `feedback-board` — Feedback board (Pro, block)
+## `feedback-board` · Feedback board (Pro, block)
 
 A feature request board with a submit form that finds similar requests, upvotes, top and new sorting, status filters, and comments.
 
@@ -31,7 +31,7 @@ Keywords: feedback board, feature requests, upvote, voting, ideas, product feedb
 
 Files: demo.tsx, feedback-board.module.css, feedback-board.tsx
 
-## `goal-tracker` — Goal tracker (Pro, block)
+## `goal-tracker` · Goal tracker (Pro, block)
 
 A team goals card where objectives open into key results with owners, confidence and progress bars. A weekly check-in updates a value, confidence and note in place, fills the bar and recalculates the objective, and a quarter selector steps from last quarter's final scores to next quarter's planning.
 
@@ -47,7 +47,7 @@ Keywords: okr, goals, objectives, key results, goal tracker, check-in, progress 
 
 Files: demo.tsx, goal-tracker.module.css, goal-tracker.tsx
 
-## `hero-section` — Hero section (Free, block)
+## `hero-section` · Hero section (Free, block)
 
 Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.
 
@@ -63,7 +63,7 @@ Keywords: react hero section, saas hero, landing page hero, hero with dashboard 
 
 Files: registry/blocks/hero-section/hero-section.tsx, registry/blocks/hero-section/hero-section.module.css, registry/blocks/hero-section/hero-content.tsx, registry/blocks/hero-section/hero-content.module.css, registry/blocks/hero-section/hero-motion.ts, registry/blocks/hero-section/hero-mesh.tsx, registry/blocks/hero-section/hero-mesh.module.css, registry/blocks/hero-section/hero-cadence.tsx, registry/blocks/hero-section/hero-cadence.module.css, registry/blocks/hero-section/hero-relay.tsx, registry/blocks/hero-section/hero-relay.module.css, registry/blocks/hero-section/hero-lumen.tsx, registry/blocks/hero-section/hero-lumen.module.css, registry/blocks/hero-section/hero-lumen-data.ts, lib/media.ts
 
-## `hero-signup` — Hero signup (Pro, block)
+## `hero-signup` · Hero signup (Pro, block)
 
 A full screen waitlist hero on a soft, drifting mesh gradient: the email field validates as you type and its button grows into the confirmation with your place in line.
 
@@ -79,7 +79,7 @@ Keywords: hero, waitlist, email signup, mesh gradient, early access, landing pag
 
 Files: demo.tsx, gradient-mesh.module.css, gradient-mesh.tsx, hero-signup.module.css, hero-signup.tsx
 
-## `kanban-board` — Kanban board (Pro, block)
+## `kanban-board` · Kanban board (Pro, block)
 
 A kanban board where cards lift, tilt and spring into the slot that opens for them, with swimlanes and live WIP limits.
 
@@ -95,7 +95,7 @@ Keywords: kanban, board, drag and drop, swimlanes, wip limit, task board, pipeli
 
 Files: demo.tsx, kanban-board.module.css, kanban-board.tsx
 
-## `scroll-story` — Scroll story (Pro, block)
+## `scroll-story` · Scroll story (Pro, block)
 
 A feature section where scrolling the copy drives a pinned product view through each step.
 
@@ -111,7 +111,7 @@ Keywords: react scroll story, scrollytelling, sticky scroll section, scroll driv
 
 Files: demo.tsx, scroll-story.module.css, scroll-story.tsx
 
-## `smart-scheduler` — Smart scheduler (Pro, block)
+## `smart-scheduler` · Smart scheduler (Pro, block)
 
 A scheduling card where one sentence like "Find 30 min with Maya and Leo next week, mornings" is read into chips. The three best slots are then ranked across everyone's Google Calendar and Outlook calendars, with an availability strip per person and conflicts called out. Picking a slot opens a draft invite with a Google Meet link, ready to send.
 
@@ -127,7 +127,7 @@ Keywords: ai scheduling, natural language scheduling, find a time, meeting sched
 
 Files: demo.tsx, smart-scheduler-data.ts, smart-scheduler.module.css, smart-scheduler.tsx
 
-## `spotlight-grid` — Spotlight grid (Pro, block)
+## `spotlight-grid` · Spotlight grid (Pro, block)
 
 A feature grid where light follows the pointer, cards play live demos, and a click morphs a card into its detail.
 
@@ -143,7 +143,7 @@ Keywords: react spotlight grid, feature grid, bento grid, interactive feature se
 
 Files: demo.tsx, spotlight-grid.module.css, spotlight-grid.tsx
 
-## `task-breakdown` — Task breakdown (Pro, block)
+## `task-breakdown` · Task breakdown (Pro, block)
 
 A goal input where AI breaks one sentence into a plan: tasks stream in with estimates, owners and dependencies, and a live timeline shows whether the deadline holds. Reorder, edit or regenerate any task, then send the plan to Linear or Jira with progress for each issue and links.
 

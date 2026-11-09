@@ -1,6 +1,6 @@
 # Galleries
 
-## `cover-flow` — Cover flow (Pro, special)
+## `cover-flow` · Cover flow (Pro, special)
 
 A depth rail of images you can throw, with soft grounded shadows and a quiet reflection.
 
@@ -16,7 +16,7 @@ Keywords: special, cover flow, carousel, react cover flow, coverflow carousel, 3
 
 Files: cover-flow.module.css, cover-flow.tsx, demo.tsx
 
-## `lightbox-gallery` — Lightbox gallery (Pro, special)
+## `lightbox-gallery` · Lightbox gallery (Pro, special)
 
 A masonry grid where photos zoom from their slot into a viewer you can swipe, pinch, and drag away.
 
@@ -32,7 +32,7 @@ Keywords: special, gallery, lightbox, images, react lightbox, image gallery, mas
 
 Files: demo.module.css, demo.tsx, lightbox-gallery.module.css, lightbox-gallery.tsx
 
-## `photo-grid` — Photo grid (Pro, special)
+## `photo-grid` · Photo grid (Pro, special)
 
 Pinch through zoom levels and open any photo straight from its cell.
 
@@ -48,7 +48,7 @@ Keywords: special, photos, gallery, react photo grid, photo library, pinch to zo
 
 Files: demo.tsx, photo-grid-data.ts, photo-grid.module.css, photo-grid.tsx
 
-## `product-gallery` — Product gallery (Pro, special)
+## `product-gallery` · Product gallery (Pro, special)
 
 A product gallery with a hover magnifier, gliding thumbnails, and color and size variants that crossfade photos.
 

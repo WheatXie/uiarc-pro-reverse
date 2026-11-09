@@ -1,6 +1,6 @@
 # Features
 
-## `changelog-feed` — Changelog feed (Free, block)
+## `changelog-feed` · Changelog feed (Free, block)
 
 Release notes you can filter, open in place, and scroll through month by month.
 
@@ -16,7 +16,7 @@ Keywords: react changelog, release notes page, changelog component, product upda
 
 Files: registry/blocks/changelog-feed/changelog-feed.tsx, registry/blocks/changelog-feed/changelog-feed.module.css, lib/media.ts
 
-## `faq-section` — FAQ section (Free, block)
+## `faq-section` · FAQ section (Free, block)
 
 FAQs as an accordion, a topic rail, or a searchable list that highlights matches.
 
@@ -32,7 +32,7 @@ Keywords: react faq section, faq accordion, searchable faq, faq with categories,
 
 Files: registry/blocks/faq-section/faq-section.tsx, registry/blocks/faq-section/faq-section.module.css
 
-## `stats-band` — Stats band (Free, block)
+## `stats-band` · Stats band (Free, block)
 
 Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.
 
@@ -48,7 +48,7 @@ Keywords: stats, statistics, numbers, count up, counter, metrics band, social pr
 
 Files: registry/blocks/stats-band/stats-band.tsx, registry/blocks/stats-band/stats-band-data.ts, registry/blocks/stats-band/stats-band.module.css, registry/blocks/stats-band/stats-band-world.ts
 
-## `testimonial-stage` — Studio perspectives (Pro, block)
+## `testimonial-stage` · Studio perspectives (Pro, block)
 
 Portrait led editorial stories with a focused reading state.
 

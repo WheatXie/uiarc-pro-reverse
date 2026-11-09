@@ -1,6 +1,6 @@
 # Tables
 
-## `code-block` — Code block (Free, component)
+## `code-block` · Code block (Free, component)
 
 Present code with legible hierarchy and copy access.
 
@@ -16,7 +16,7 @@ Keywords: content, developer, react code block, syntax highlighting, code snippe
 
 Files: registry/components/code-block/code-block.tsx, registry/components/code-block/code-block.module.css
 
-## `filter-toolbar` — Filter toolbar (Free, component)
+## `filter-toolbar` · Filter toolbar (Free, component)
 
 Keep collection filters close and easy to reset.
 
@@ -32,7 +32,7 @@ Keywords: data, filter, react filter toolbar, filter chips, add filter menu, fac
 
 Files: registry/components/filter-toolbar/filter-toolbar.tsx, registry/components/filter-toolbar/filter-toolbar.module.css
 
-## `json-viewer` — JSON viewer (Free, component)
+## `json-viewer` · JSON viewer (Free, component)
 
 A collapsible JSON tree with search, paging for long arrays, and copy value or path.
 
@@ -48,7 +48,7 @@ Keywords: data, new, react json viewer, json tree, json inspector, collapsible j
 
 Files: registry/components/json-viewer/json-viewer.tsx, registry/components/json-viewer/json-viewer.module.css
 
-## `reorderable-list` — Reorderable list (Free, component)
+## `reorderable-list` · Reorderable list (Free, component)
 
 Organize items with direct drag and drop.
 
@@ -64,7 +64,7 @@ Keywords: data, interaction, react reorderable list, drag and drop list, sortabl
 
 Files: registry/components/reorderable-list/reorderable-list.tsx, registry/components/reorderable-list/reorderable-list.module.css
 
-## `sortable-data-table` — Sortable data table (Free, component)
+## `sortable-data-table` · Sortable data table (Free, component)
 
 Compare structured records with sortable columns.
 
@@ -80,7 +80,7 @@ Keywords: data, table, react data table, sortable table, table with row selectio
 
 Files: registry/components/sortable-data-table/sortable-data-table.tsx, registry/components/sortable-data-table/sortable-data-table.module.css
 
-## `tree-table` — Tree table (Free, component)
+## `tree-table` · Tree table (Free, component)
 
 A table with nested rows, tri-state selection, hierarchy-preserving sort, and lazy-loaded children.
 
@@ -96,7 +96,7 @@ Keywords: data, new, react tree table, treegrid, nested table rows, expandable t
 
 Files: registry/components/tree-table/tree-table.tsx, registry/components/tree-table/tree-table.module.css
 
-## `tree-view` — Tree view (Free, component)
+## `tree-view` · Tree view (Free, component)
 
 Navigate nested folders and structured content.
 

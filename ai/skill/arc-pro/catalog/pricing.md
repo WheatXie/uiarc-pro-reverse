@@ -1,6 +1,6 @@
 # Pricing
 
-## `checkout-live` — Live checkout (Pro, block)
+## `checkout-live` · Live checkout (Pro, block)
 
 A subscription checkout whose summary recomputes as you edit, then glides to the centre and unfolds into a receipt.
 
@@ -16,7 +16,7 @@ Keywords: checkout, subscription, billing, payment form, order summary, coupon, 
 
 Files: checkout-live.module.css, checkout-live.tsx, demo.tsx
 
-## `credit-topup` — Credit top-up (Pro, block)
+## `credit-topup` · Credit top-up (Pro, block)
 
 A card for buying AI credits. It shows the balance with a 14 day usage chart and how many days are left, three preset packs with bonus badges, a custom amount slider with a live price, auto top-up with a threshold and the saved Visa or Mastercard. When you buy, the new balance rolls in like an odometer.
 
@@ -32,7 +32,7 @@ Keywords: credits, top up, buy credits, ai credits, prepaid, token balance, auto
 
 Files: credit-topup.module.css, credit-topup.tsx, demo.tsx
 
-## `delivery-tracker` — Delivery tracker (Pro, block)
+## `delivery-tracker` · Delivery tracker (Pro, block)
 
 A live order tracker whose marker glides between stops while the arrival time rolls.
 
@@ -48,7 +48,7 @@ Keywords: react delivery tracker, order tracking page, shipment status, courier 
 
 Files: delivery-tracker.module.css, delivery-tracker.tsx, demo.tsx
 
-## `invoice-studio` — Invoice studio (Pro, block)
+## `invoice-studio` · Invoice studio (Pro, block)
 
 An editable invoice with live totals and a clear save flow.
 
@@ -64,7 +64,7 @@ Keywords: react invoice editor, invoice generator ui, line items form, quote bui
 
 Files: demo.tsx, invoice-studio.module.css, invoice-studio.tsx
 
-## `product-detail` — Product detail (Pro, block)
+## `product-detail` · Product detail (Pro, block)
 
 A product page with a swipeable gallery, finish and size variants, add to bag that confirms in place, shipping, a reviews summary, and details.
 
@@ -80,7 +80,7 @@ Keywords: product detail, product page, pdp, ecommerce, gallery, variants, add t
 
 Files: demo.tsx, product-detail.module.css, product-detail.tsx
 
-## `product-listing` — Product listing (Pro, block)
+## `product-listing` · Product listing (Pro, block)
 
 A storefront grid with price, color and size filters, a sort menu, hover photo swaps, and quick add with a size row.
 
@@ -96,7 +96,7 @@ Keywords: product listing, product grid, collection page, category page, ecommer
 
 Files: demo.tsx, product-listing.module.css, product-listing.tsx
 
-## `seat-manager` — Seat manager (Pro, block)
+## `seat-manager` · Seat manager (Pro, block)
 
 A team seats and billing card where avatars and a seat meter show members, invites and open seats against what you pay for, a stepper rolls the prorated charge for today and the new monthly total live, and changes go through a confirm step before anyone is charged. Pending invites can be resent or revoked with undo, and when every seat is taken the card says so and offers to add one.
 
@@ -112,7 +112,7 @@ Keywords: seat management, team seats, per seat billing, seat stepper, proration
 
 Files: demo.tsx, seat-manager.module.css, seat-manager.tsx
 
-## `wallet-card` — Wallet card (Pro, block)
+## `wallet-card` · Wallet card (Pro, block)
 
 A compact account view with balance, recent activity, and focused money actions.
 

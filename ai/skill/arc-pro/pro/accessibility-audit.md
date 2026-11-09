@@ -1,6 +1,6 @@
 # Accessibility audit
 
-A ranked list of real defects with patches — not a checklist recital. Audits fail when they report
+A ranked list of real defects with patches: not a checklist recital. Audits fail when they report
 "add alt text" while a dialog traps focus.
 
 ## 1. Structure
@@ -8,7 +8,7 @@ A ranked list of real defects with patches — not a checklist recital. Audits f
 Walk the DOM and answer these; each "no" is a finding.
 
 - Exactly one `h1`; heading levels never skip (`h2` → `h4`).
-- Landmarks: `header`, `nav`, `main`, `aside`, `footer` — one `main` per page.
+- Landmarks: `header`, `nav`, `main`, `aside`, `footer`: one `main` per page.
 - Lists are `ul`/`ol` when they are lists; a stack of `div`s with borders is a list.
 - Buttons are `button`, links are `a[href]`. A clickable `div` is a finding even with `role="button"`.
 - Tables use `th[scope]`, `caption` or `aria-label`; a layout table is not a table.
@@ -27,12 +27,12 @@ Tab through the page with the mouse untouched. Every step is observable.
   arrows and expose `aria-selected`; grids use arrows, Home/End, PageUp/PageDown and keep
   `aria-activedescendant` current; radio groups move as one stop, not one stop per option.
 - **Skip link** exists before the navigation and becomes visible on focus.
-- **Focus return** — closing a dialog, sheet or popover puts focus back on the trigger.
+- **Focus return**: closing a dialog, sheet or popover puts focus back on the trigger.
 
 ## 3. Semantics and announcements
 
 - Icon-only controls have an accessible name (`aria-label` describing the action, not the glyph).
-- Toggles expose state: `aria-pressed`, `aria-checked`, `aria-expanded` — whichever the item already
+- Toggles expose state: `aria-pressed`, `aria-checked`, `aria-expanded`: whichever the item already
   ships; do not invent a fourth.
 - Live regions: results counts, save status, validation summaries, streaming text. Polite by default,
   assertive only for an error that blocks progress.
@@ -77,7 +77,7 @@ is not a finding.
 
 - Re-run the keyboard walk after patches; the focus order should be identical to the documented one.
 - Re-measure the contrast pairs you changed.
-- Run axe (devtools or `@axe-core/cli`) as a net, then dismiss its false positives explicitly —
+- Run axe (devtools or `@axe-core/cli`) as a net, then dismiss its false positives explicitly,
   axe passes are not proof of usability.
 - One screen-reader pass over the main flow (VoiceOver: `Cmd+F5`), reading order and announcements only.
 

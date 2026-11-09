@@ -1,6 +1,6 @@
 # Login and sign up
 
-## `billing-overview` — Billing overview (Pro, block)
+## `billing-overview` · Billing overview (Pro, block)
 
 A billing page where the plan card morphs into a picker and usage, invoices, and card follow.
 
@@ -16,7 +16,7 @@ Keywords: react billing page, subscription management, billing settings, invoice
 
 Files: billing-overview.module.css, billing-overview.tsx, demo.tsx
 
-## `security-settings` — Security settings (Pro, block)
+## `security-settings` · Security settings (Pro, block)
 
 An account security page with guided two-factor setup, password change and active sessions.
 
@@ -32,7 +32,7 @@ Keywords: react security settings, two factor setup, 2fa setup flow, totp qr cod
 
 Files: demo.tsx, security-settings.module.css, security-settings.tsx
 
-## `settings-command` — Settings command (Pro, block)
+## `settings-command` · Settings command (Pro, block)
 
 Workspace settings where a search field grows into a palette that flies you to any setting.
 
@@ -48,7 +48,7 @@ Keywords: settings, preferences, search settings, command palette, jump to setti
 
 Files: demo.tsx, settings-command-data.ts, settings-command.module.css, settings-command.tsx
 
-## `settings-page` — Settings page (Pro, block)
+## `settings-page` · Settings page (Pro, block)
 
 Account settings with a gliding section nav and a save bar that morphs in as you edit.
 
@@ -64,7 +64,7 @@ Keywords: react settings page, account settings, settings form, unsaved changes 
 
 Files: demo.tsx, settings-page.module.css, settings-page.tsx
 
-## `usage-billing` — Usage billing (Pro, block)
+## `usage-billing` · Usage billing (Pro, block)
 
 A usage based billing dashboard with a projected spend line, meters against limits, alerts, and an upgrade that morphs into a confirm sheet.
 

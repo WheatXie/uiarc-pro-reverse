@@ -1,6 +1,6 @@
 # Docks and tabs
 
-## `action-morph` — Action morph (Pro, special)
+## `action-morph` · Action morph (Pro, special)
 
 A floating button that morphs into a quick-action menu, then an inline form, then back with a check.
 
@@ -16,7 +16,7 @@ Keywords: special, new, react floating action button, fab menu, quick actions, m
 
 Files: action-morph.module.css, action-morph.tsx, demo.tsx
 
-## `dock` — Dock (Pro, special)
+## `dock` · Dock (Pro, special)
 
 A floating tool dock with a gliding label, a springy selection, and trays that grow out of it.
 
@@ -32,7 +32,7 @@ Keywords: special, dock, toolbar, react dock, floating toolbar, tool switcher, c
 
 Files: demo.tsx, dock.module.css, dock.tsx
 
-## `liquid-tab-bar` — Liquid tab bar (Pro, special)
+## `liquid-tab-bar` · Liquid tab bar (Pro, special)
 
 Tabs with a lens selection that slides between them, swaps labels cleanly, and fills in icons as it passes.
 
@@ -48,7 +48,7 @@ Keywords: special, tabs, navigation, react tab bar, liquid glass tabs, animated 
 
 Files: demo.tsx, liquid-tab-bar.module.css, liquid-tab-bar.tsx
 
-## `morph-nav` — Morph nav (Pro, special)
+## `morph-nav` · Morph nav (Pro, special)
 
 A navigation bar that morphs into rich menus, search, and a compact state as one surface.
 
@@ -64,7 +64,7 @@ Keywords: special, navigation, morph, tabs, react navigation bar, react morph na
 
 Files: demo.tsx, morph-nav.module.css, morph-nav.tsx
 
-## `orbit-menu` — Orbit menu (Pro, special)
+## `orbit-menu` · Orbit menu (Pro, special)
 
 Hold a button and its actions orbit out, ready to pick with a drag.
 
@@ -80,7 +80,7 @@ Keywords: special, motion, react radial menu, orbit menu, fan menu, arc menu, fl
 
 Files: demo.tsx, orbit-menu.module.css, orbit-menu.tsx
 
-## `share-sheet` — Share sheet (Pro, special)
+## `share-sheet` · Share sheet (Pro, special)
 
 A Share button that opens into a panel with copy link, access level, channels, and people to send to.
 

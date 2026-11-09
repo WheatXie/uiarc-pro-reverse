@@ -1,6 +1,6 @@
 # Overlays
 
-## `bottom-sheet` — Bottom sheet (Free, component)
+## `bottom-sheet` · Bottom sheet (Free, component)
 
 A sheet that rests at a peek or full height and follows your finger.
 
@@ -16,7 +16,7 @@ Keywords: overlay, gesture, motion, react bottom sheet, mobile bottom sheet, dra
 
 Files: registry/components/bottom-sheet/bottom-sheet.tsx, registry/components/bottom-sheet/bottom-sheet.module.css
 
-## `confirm-popover` — Confirm popover (Pro, component)
+## `confirm-popover` · Confirm popover (Pro, component)
 
 A destructive button that grows into a small confirmation card, with the consequence, optional type-to-confirm, progress on the Confirm button, and a check or error before folding back.
 
@@ -32,7 +32,7 @@ Keywords: overlay, confirm, motion, new, confirmation, popover, delete, destruct
 
 Files: confirm-popover.module.css, confirm-popover.tsx, demo.module.css, demo.tsx
 
-## `dialog` — Dialog (Free, component)
+## `dialog` · Dialog (Free, component)
 
 A focused surface for decisions that need attention.
 
@@ -48,7 +48,7 @@ Keywords: modal, overlay, react dialog, animated modal, radix dialog, confirm di
 
 Files: registry/components/dialog/dialog.tsx, registry/components/dialog/dialog.module.css
 
-## `drawer` — Drawer (Free, component)
+## `drawer` · Drawer (Free, component)
 
 A temporary side surface for focused work.
 
@@ -64,7 +64,7 @@ Keywords: overlay, surface, react drawer, side panel, slide over panel, sheet co
 
 Files: registry/components/drawer/drawer.tsx, registry/components/drawer/drawer.module.css
 
-## `hover-card` — Hover card (Free, component)
+## `hover-card` · Hover card (Free, component)
 
 Preview a person or link on hover or focus without leaving the page.
 
@@ -80,7 +80,7 @@ Keywords: preview, people, popover, react hover card, profile preview, user hove
 
 Files: registry/components/hover-card/hover-card.tsx, registry/components/hover-card/hover-card.module.css
 
-## `popover` — Popover (Free, component)
+## `popover` · Popover (Free, component)
 
 A small anchored surface for contextual information.
 
@@ -96,7 +96,7 @@ Keywords: overlay, menu, react popover, radix popover, floating panel, click pop
 
 Files: registry/components/popover/popover.tsx, registry/components/popover/popover.module.css
 
-## `share-access` — Share access (Pro, component)
+## `share-access` · Share access (Pro, component)
 
 A share panel: invite people as validated email chips with suggestions, change roles from a compact menu, remove with undo, switch link access and copy the link, with every change landing in place.
 
@@ -112,7 +112,7 @@ Keywords: overlay, sharing, permissions, new, share, access, invite, email chips
 
 Files: demo.module.css, demo.tsx, share-access.module.css, share-access.tsx
 
-## `tooltip` — Tooltip (Free, component)
+## `tooltip` · Tooltip (Free, component)
 
 Short supporting text for unfamiliar controls.
 

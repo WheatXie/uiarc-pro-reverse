@@ -1,6 +1,6 @@
 # Menus
 
-## `context-menu` — Context menu (Free, component)
+## `context-menu` · Context menu (Free, component)
 
 Secondary actions kept close to the selected object.
 
@@ -16,7 +16,7 @@ Keywords: menu, action, react context menu, right click menu, custom context men
 
 Files: registry/components/context-menu/context-menu.tsx, registry/components/context-menu/context-menu.module.css
 
-## `dropdown-menu` — Dropdown menu (Free, component)
+## `dropdown-menu` · Dropdown menu (Free, component)
 
 A focused list of actions anchored to a trigger.
 
@@ -32,7 +32,7 @@ Keywords: menu, action, react dropdown menu, actions menu, menu button, radix dr
 
 Files: registry/components/dropdown-menu/dropdown-menu.tsx, registry/components/dropdown-menu/dropdown-menu.module.css
 
-## `user-menu` — User menu (Free, component)
+## `user-menu` · User menu (Free, component)
 
 Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.
 

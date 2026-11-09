@@ -1,12 +1,12 @@
 ---
 name: arc-pro
-description: Builds and reviews React interfaces with the full Arc library — all 233 Pro components and blocks plus the 147 free items, reconstructed in this repository with source, docs and live previews. Use when the user mentions Arc or uiarc, when the project contains src/components/arc or components/arc/foundation.css, or when asked to build or polish UI such as a settings page, pricing section, dashboard, landing page, sign-in, form, table, chart, dialog, command palette, AI chat, agent run or data grid.
+description: Builds and reviews React interfaces with the full Arc library: all 233 Pro components and blocks plus the 147 free items, reconstructed in this repository with source, docs and live previews. Use when the user mentions Arc or uiarc, when the project contains src/components/arc or components/arc/foundation.css, or when asked to build or polish UI such as a settings page, pricing section, dashboard, landing page, sign-in, form, table, chart, dialog, command palette, AI chat, agent run or data grid.
 ---
 
 # Arc Pro (complete library)
 
 Arc is a React component and block library: CSS Modules, semantic CSS variables, Motion, Geist and
-Inter. This repository holds **380 items** — the 233 Pro components, blocks and special components
+Inter. This repository holds **380 items**: the 233 Pro components, blocks and special components
 reconstructed from the artifacts the site ships to its preview frames, plus the 147 free registry
 items. Docs, live previews and source are all local, so nothing here needs an account or a token.
 
@@ -28,7 +28,7 @@ Arc task:
 
 **Find.** With the local MCP server (`node ai/mcp/server.mjs`): `search_components` with the user's
 intent, then `get_component` on the top two or three and compare `whenToUse` with `whenNotToUse`. The
-"not" entry names the better alternative — follow it. Without MCP, read
+"not" entry names the better alternative: follow it. Without MCP, read
 [components.md](components.md), which lists all 380 ids by group, or `public/docs/<id>.md`.
 
 **Read.** `get_component {id}` returns the docs the site serves for that item: when to use, when not

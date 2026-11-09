@@ -1,6 +1,6 @@
 # Developer
 
-## `cart-drawer` — Cart drawer (Pro, block)
+## `cart-drawer` · Cart drawer (Pro, block)
 
 Products fly into the cart, counts roll, and a drawer handles quantities, shipping progress, and checkout.
 
@@ -16,7 +16,7 @@ Keywords: react cart drawer, shopping cart drawer, add to cart animation, slide 
 
 Files: cart-drawer.module.css, cart-drawer.tsx, demo.module.css, demo.tsx
 
-## `checkout-summary` — Checkout summary (Pro, block)
+## `checkout-summary` · Checkout summary (Pro, block)
 
 An order summary with a promo code that becomes a chip, discount and tax lines, and pay button states.
 
@@ -32,7 +32,7 @@ Keywords: react checkout summary, order summary, promo code field, coupon input,
 
 Files: checkout-summary.module.css, checkout-summary.tsx, demo.tsx
 
-## `plan-comparison` — Plan comparison (Free, block)
+## `plan-comparison` · Plan comparison (Free, block)
 
 Compare meaningful differences between plans and billing periods.
 
@@ -48,7 +48,7 @@ Keywords: react pricing comparison, plan comparison table, pricing table, monthl
 
 Files: registry/blocks/plan-comparison/plan-comparison.tsx, registry/blocks/plan-comparison/plan-comparison.module.css
 
-## `pricing-calculator` — Pricing calculator (Pro, block)
+## `pricing-calculator` · Pricing calculator (Pro, block)
 
 A seat slider and billing toggle drive plan cards with rolling prices and a moving recommended badge.
 
@@ -64,7 +64,7 @@ Keywords: react pricing calculator, seat pricing slider, per seat pricing, prici
 
 Files: demo.tsx, pricing-calculator.module.css, pricing-calculator.tsx
 
-## `usage-pricing` — Usage pricing (Pro, block)
+## `usage-pricing` · Usage pricing (Pro, block)
 
 A pricing calculator that finds your plan as you drag seats and traffic.
 
@@ -80,7 +80,7 @@ Keywords: react pricing calculator, usage based pricing, seat pricing slider, pr
 
 Files: demo.tsx, usage-pricing.module.css, usage-pricing.tsx
 
-## `webhook-tester` — Webhook tester (Pro, block)
+## `webhook-tester` · Webhook tester (Pro, block)
 
 A developer webhook tester where you pick an event, edit its JSON payload and send a signed test event. You watch it go from signed to sent to 200 OK in 184 ms, then read the response body, headers and exact request, and retry failed deliveries from a recent list.
 

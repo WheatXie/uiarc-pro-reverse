@@ -54,7 +54,7 @@ Rules:
 
 Cut in this order, hardest first:
 
-1. **Load animations** on text, cards, images — nobody learns anything.
+1. **Load animations** on text, cards, images: nobody learns anything.
 2. **Hover movement** (lift, scale, tilt) where a background or border change already signals hover.
 3. **Looping decoration** (pulsing badges, drifting gradients, floating shapes).
 4. **Repeated entrance** on every re-render or scroll pass.
@@ -85,14 +85,14 @@ flow: nothing should move, nothing should be left invisible.
 
 ## 5. Verify
 
-- **60fps check** — Performance panel while opening the heaviest overlay; no long tasks over 50ms, no
+- **60fps check**: Performance panel while opening the heaviest overlay; no long tasks over 50ms, no
   layout thrash in the waterfall.
-- **Interrupt test** — open, close, reopen quickly; no orphaned element stays on screen, no queue of
+- **Interrupt test**: open, close, reopen quickly; no orphaned element stays on screen, no queue of
   pending animations fires late.
-- **Keyboard parity** — a keyboard-triggered open animates the same as a pointer one; focus lands
+- **Keyboard parity**: a keyboard-triggered open animates the same as a pointer one; focus lands
   after the motion, not during.
-- **Reduced motion** — as above, every state change still works.
-- **Contrast during motion** — a fading element must not pass through low-contrast text at 40% opacity
+- **Reduced motion**: as above, every state change still works.
+- **Contrast during motion**: a fading element must not pass through low-contrast text at 40% opacity
   and stop there; fade from 0 to 1, not 0.4 to 1.
 
 ## 6. Report

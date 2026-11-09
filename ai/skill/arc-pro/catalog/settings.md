@@ -1,6 +1,6 @@
 # Settings
 
-## `cancel-flow` — Cancel flow (Pro, block)
+## `cancel-flow` · Cancel flow (Pro, block)
 
 A cancellation flow that answers each reason with a tailored offer and a calm hold-to-cancel.
 
@@ -16,7 +16,7 @@ Keywords: react cancel subscription flow, churn prevention flow, cancellation su
 
 Files: cancel-flow.module.css, cancel-flow.tsx, demo.tsx
 
-## `invite-people` — Invite people (Pro, block)
+## `invite-people` · Invite people (Pro, block)
 
 Invite teammates with roles, bulk paste validation, a seat meter, and avatars that fly into a pending list.
 
@@ -32,7 +32,7 @@ Keywords: react invite people, invite teammates form, email chip input, workspac
 
 Files: demo.tsx, invite-people.module.css, invite-people.tsx
 
-## `onboarding-survey` — Onboarding survey (Pro, block)
+## `onboarding-survey` · Onboarding survey (Pro, block)
 
 A post-signup onboarding survey where each question gets its own step of large option cards, picked with keys 1 to 4 and Enter. A short personalization checklist then ticks off and lands on an editable "You're all set" summary.
 
@@ -48,7 +48,7 @@ Keywords: onboarding survey, welcome survey, post signup, personalization, onboa
 
 Files: demo.tsx, onboarding-survey.module.css, onboarding-survey.tsx
 
-## `profile-page` — Profile page (Pro, block)
+## `profile-page` · Profile page (Pro, block)
 
 A user profile with cover, bio, stats, activity and project tabs, and an edit sheet that writes back into the page.
 
@@ -64,7 +64,7 @@ Keywords: profile, user profile, account page, edit profile, cover photo, avatar
 
 Files: demo.tsx, profile-page.module.css, profile-page.tsx
 
-## `roles-permissions` — Roles and permissions (Pro, block)
+## `roles-permissions` · Roles and permissions (Pro, block)
 
 A permissions matrix with group toggles that ripple, role duplication and a review bar.
 
@@ -80,7 +80,7 @@ Keywords: react permissions matrix, roles and permissions ui, rbac settings, acc
 
 Files: demo.tsx, roles-permissions.module.css, roles-permissions.tsx
 
-## `spend-alert` — Spend alert (Pro, block)
+## `spend-alert` · Spend alert (Pro, block)
 
 A budget and spend alert card where the threshold is set right on the live spend bar, with forecast, Email, Slack and PagerDuty toggles, a hard stop and a live preview of the Slack message the alert will post.
 
@@ -96,7 +96,7 @@ Keywords: spend alert, budget alert, billing threshold, usage alert, cost alert,
 
 Files: demo.module.css, demo.tsx, spend-alert.module.css, spend-alert.tsx
 
-## `team-directory` — Team directory (Pro, block)
+## `team-directory` · Team directory (Pro, block)
 
 Searchable people, team filters, and a focused profile panel.
 
@@ -112,7 +112,7 @@ Keywords: react team directory, employee directory, people search, staff directo
 
 Files: demo.tsx, team-directory.module.css, team-directory.tsx
 
-## `team-members` — Team members (Pro, block)
+## `team-members` · Team members (Pro, block)
 
 A members list where typed emails turn into chips and fly into pending invites as seats roll.
 

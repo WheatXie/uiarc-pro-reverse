@@ -1,6 +1,6 @@
 # AI
 
-## `agent-cursor` — Agent cursor (Pro, special)
+## `agent-cursor` · Agent cursor (Pro, special)
 
 A live document where Claude edits like a collaborator. Its labeled cursor comes out of its avatar, selects a paragraph and streams in a rewrite, adds a heading and fixes a typo, while a teammate's cursor reads along. Changes stay tinted until someone accepts or undoes them from a floating review bar.
 
@@ -16,7 +16,7 @@ Keywords: special, ai, new, ai cursor, agent cursor, multiplayer cursor, collabo
 
 Files: agent-cursor.module.css, agent-cursor.tsx, demo.module.css, demo.tsx
 
-## `agent-handoff` — Agent handoff (Pro, special)
+## `agent-handoff` · Agent handoff (Pro, special)
 
 A support conversation where an AI assistant hands off to a person. When it transfers, a card shows the summary it passes to the team and the typical wait. The person then joins and takes over, and a thin timeline on the left marks each step.
 
@@ -32,7 +32,7 @@ Keywords: special, ai, new, agent handoff, human handoff, ai escalation, transfe
 
 Files: agent-handoff.module.css, agent-handoff.tsx, demo.tsx
 
-## `agent-memory` — Agent memory (Pro, block)
+## `agent-memory` · Agent memory (Pro, block)
 
 One card for what an assistant remembers about you: filter and search memories, edit or forget one in place, and turn saved memories and chat history on or off.
 
@@ -48,7 +48,7 @@ Keywords: memory, assistant memory, agent memory, saved memories, chat history, 
 
 Files: agent-memory.module.css, agent-memory.tsx, demo.tsx
 
-## `agent-plan` — Agent plan (Pro, special)
+## `agent-plan` · Agent plan (Pro, special)
 
 The plan an agent writes before it acts: edit, reorder or add steps while it is a draft, then watch it work through them as a live checklist.
 
@@ -64,7 +64,7 @@ Keywords: special, motion, ai, new, agent plan, plan mode, todo list, task plan,
 
 Files: agent-plan.module.css, agent-plan.tsx, demo.tsx
 
-## `agent-status` — Agent status (Pro, special)
+## `agent-status` · Agent status (Pro, special)
 
 A compact live status pill for a running AI agent: the agent's mark in a live ring, the current activity and an elapsed timer, opening into the steps so far.
 
@@ -80,7 +80,7 @@ Keywords: special, motion, ai, new, agent status, ai agent, status pill, run sta
 
 Files: agent-status.module.css, agent-status.tsx, demo.module.css, demo.tsx
 
-## `agent-timeline` — Agent timeline (Pro, special)
+## `agent-timeline` · Agent timeline (Pro, special)
 
 A compact timeline of one orchestrated agent run: the orchestrator and its subagents share a time axis, handoffs draw in between rows, and a playhead replays thinking, tool calls and waiting while the header counts time, tokens and cost. Hover a span for what it did, or click it to trace its handoff path.
 
@@ -96,7 +96,7 @@ Keywords: special, motion, ai, new, agent timeline, multi-agent, orchestrator, s
 
 Files: agent-timeline.module.css, agent-timeline.tsx, demo.tsx
 
-## `ai-answer` — AI answer (Pro, block)
+## `ai-answer` · AI answer (Pro, block)
 
 One AI answer set like a clean article: it thinks, shows its sources as small cards with colored marks, and streams a formatted answer where every citation lights the sentence it supports. Copy, regenerate with options, rate, share, page through versions and ask a related question in place.
 
@@ -112,7 +112,7 @@ Keywords: ai answer, answer engine, cited answer, citations, sources, streaming,
 
 Files: ai-answer.module.css, ai-answer.tsx, demo.tsx
 
-## `ai-chat` — AI chat (Pro, block)
+## `ai-chat` · AI chat (Pro, block)
 
 A full-screen AI chat where answers stream in as markdown with folding reasoning, tool chips and cited sources. People can switch chats and models, edit or retry a message into versions, rate replies and stop a reply mid-stream.
 
@@ -128,7 +128,7 @@ Keywords: ai chat, chatbot, llm chat, assistant, streaming, markdown, reasoning,
 
 Files: ai-chat.module.css, ai-chat.tsx, demo.tsx
 
-## `ai-command` — AI command (Pro, special)
+## `ai-command` · AI command (Pro, special)
 
 A Cmd+K command palette with an AI mode. Search pages and actions, or press Tab to ask a question: the answer streams inside the palette with numbered sources, and the next steps it suggests, like filing a Linear issue or opening a Notion doc, run straight from the list.
 
@@ -144,7 +144,7 @@ Keywords: special, ai, new, command palette, cmd k, command menu, ask ai, ai sea
 
 Files: ai-command.module.css, ai-command.tsx, demo.module.css, demo.tsx
 
-## `ai-composer` — AI composer (Pro, block)
+## `ai-composer` · AI composer (Pro, block)
 
 The prompt box at the bottom of an AI app: files upload in place, / opens commands, @ inserts mentions, a model and effort menu sits in the toolbar, and the send button turns into a stop control ringed by the reply's progress.
 
@@ -160,7 +160,7 @@ Keywords: ai composer, chat input, prompt box, chat composer, message input, sen
 
 Files: ai-composer.module.css, ai-composer.tsx, demo.tsx
 
-## `ai-feature-launch` — AI feature launch (Pro, block)
+## `ai-feature-launch` · AI feature launch (Pro, block)
 
 An in-product launch card for an AI feature. A looping mini demo plays above a three-step tour (inline rewrite, thread summary, ask your workspace), with benefit rows, an admin-gated "Enable for my workspace" switch, and Try it now and Learn more actions.
 
@@ -176,7 +176,7 @@ Keywords: ai feature launch, introducing ai, feature announcement, launch modal,
 
 Files: ai-feature-launch.module.css, ai-feature-launch.tsx, demo.tsx
 
-## `ai-inline-edit` — AI inline edit (Pro, block)
+## `ai-inline-edit` · AI inline edit (Pro, block)
 
 A document you edit with AI in place: ⌘K on a selection, watch the rewrite stream in as a diff, accept each change, and Tab through ghost text.
 
@@ -192,7 +192,7 @@ Keywords: ai editor, inline edit, rewrite, diff, suggestions, autocomplete, ghos
 
 Files: ai-inline-edit.module.css, ai-inline-edit.tsx, demo.tsx
 
-## `ai-insight-card` — AI insight card (Pro, block)
+## `ai-insight-card` · AI insight card (Pro, block)
 
 A KPI card that explains itself. Explain streams a short reason for the change and ranks three drivers with contribution bars. A numbered annotation lights up on the sparkline as each driver is read, and follow-up chips ask the next question in place.
 
@@ -208,7 +208,7 @@ Keywords: ai insight, kpi card, explain metric, revenue explanation, drivers, sp
 
 Files: ai-insight-card.module.css, ai-insight-card.tsx, demo.tsx
 
-## `ai-mascot` — AI mascot (Pro, special)
+## `ai-mascot` · AI mascot (Pro, special)
 
 A small assistant character, a soft pebble with pill eyes and a companion dot, that shows what the AI is doing. It breathes and glances when idle, leans in to listen, looks up while the dot orbits its head, reads along the line it writes, squints with a sparkle when done and shakes once with worried brows on an error.
 
@@ -224,7 +224,7 @@ Keywords: special, ai, motion, new, ai mascot, assistant character, ai avatar, t
 
 Files: ai-mascot.module.css, ai-mascot.tsx, demo.module.css, demo.tsx
 
-## `ai-search-bar` — AI search bar (Pro, block)
+## `ai-search-bar` · AI search bar (Pro, block)
 
 A search card for an app or docs, where typing lists grouped results right away (Docs, Customers, Issues) and pressing Tab streams a short AI answer on top. The answer's numbered citations point to the results below it.
 
@@ -240,7 +240,7 @@ Keywords: ai search, search bar, ask ai, command palette, docs search, instant s
 
 Files: ai-search-bar.module.css, ai-search-bar.tsx, demo.module.css, demo.tsx, kbd.module.css
 
-## `ai-setup-wizard` — AI setup wizard (Pro, block)
+## `ai-setup-wizard` · AI setup wizard (Pro, block)
 
 A three-step setup card for turning on an AI feature. You connect Notion, Google Drive, Confluence or Zendesk and watch each one sync. Then you pick the model, tone and guardrails, and ask a test question whose answer streams with numbered citations before you go live.
 
@@ -256,7 +256,7 @@ Keywords: ai setup wizard, onboarding wizard, stepper, connect data sources, kno
 
 Files: ai-setup-wizard.module.css, ai-setup-wizard.tsx, demo.tsx
 
-## `ai-side-panel` — AI side panel (Pro, block)
+## `ai-side-panel` · AI side panel (Pro, block)
 
 An assistant docked beside a page that reads it and edits it: ask about the page or a selected passage, review each edit as a word diff, and apply it with a tint sweep on the page and one-click undo.
 
@@ -272,7 +272,7 @@ Keywords: ai assistant, copilot, side panel, document assistant, suggested edits
 
 Files: ai-side-panel.module.css, ai-side-panel.tsx, demo.tsx
 
-## `ai-spark` — AI spark (Pro, special)
+## `ai-spark` · AI spark (Pro, special)
 
 A brand-quality animated spark mark. Four tapered rays and four lighter diagonals breathe at rest, ripple while thinking, pulse like a heartbeat while writing, then gather and settle when done. Every status change blends from the pose the mark is already in.
 
@@ -288,7 +288,7 @@ Keywords: special, ai, motion, new, ai spark, ai sparkle, asterisk, thinking ind
 
 Files: ai-spark.module.css, ai-spark.tsx, demo.tsx
 
-## `ai-translate` — AI translate (Pro, special)
+## `ai-translate` · AI translate (Pro, special)
 
 A message card where picking a language streams the AI translation in place, sentence by sentence over the dimmed original, with a detected-language chip, a Show original toggle and a status line credited to the model's mark.
 
@@ -304,7 +304,7 @@ Keywords: special, ai, new, ai translate, translation, inline translation, show 
 
 Files: ai-translate.module.css, ai-translate.tsx, demo.module.css, demo.tsx
 
-## `ai-workflow` — AI workflow (Pro, special)
+## `ai-workflow` · AI workflow (Pro, special)
 
 A Linear-style AI workflow card where a Gmail trigger, a Claude step, a branch and Slack and Linear actions sit on one hairline rail, and a test run glides down it, opening each step's output inline. Steps are added from a compact command menu with real app marks.
 
@@ -320,7 +320,7 @@ Keywords: special, ai, new, workflow builder, automation, zapier, n8n, make, ai 
 
 Files: ai-workflow.module.css, ai-workflow.tsx, demo.tsx
 
-## `ask-your-data` — Ask your data (Pro, special)
+## `ask-your-data` · Ask your data (Pro, special)
 
 A natural language to chart card: you ask a question, PostgreSQL streams into a collapsible, syntax highlighted panel, the query runs with a rolling row count, and the answer builds as stacked bars, lines or a table, with a one line insight streamed in underneath.
 
@@ -336,7 +336,7 @@ Keywords: special, ai, new, ask your data, text to sql, natural language query, 
 
 Files: ask-your-data.module.css, ask-your-data.tsx, demo.module.css, demo.tsx
 
-## `call-insights` — Call insights (Pro, block)
+## `call-insights` · Call insights (Pro, block)
 
 A sales call insights card where talk time, flagged pricing, competitor and objection moments, an AI summary and owned next steps sit in one view. Selecting a moment plays its quote, and checking off next steps lowers the deal risk.
 
@@ -352,7 +352,7 @@ Keywords: call insights, sales call, conversation intelligence, gong, talk time,
 
 Files: call-insights.module.css, call-insights.tsx, demo.tsx
 
-## `catch-up` — Catch up (Pro, block)
+## `catch-up` · Catch up (Pro, block)
 
 A catch me up digest for when you return, where one button reads Slack, Linear, GitHub and Gmail for the range you pick and streams back a short ranked summary: Needs you, Decisions made, Shipped and FYI. Each item is one sentence with its source mark, people and a jump link, and marking items as read clears them with a smooth collapse.
 
@@ -368,7 +368,7 @@ Keywords: catch up, catch me up, digest, ai summary, chief of staff, while you w
 
 Files: catch-up.module.css, catch-up.tsx, demo.tsx
 
-## `code-suggestion` — Code suggestion (Pro, special)
+## `code-suggestion` · Code suggestion (Pro, special)
 
 An AI code edit suggestion where the model's proposed changes stream into a small editor panel as inline diff hunks, and you accept or reject each one, or all at once with Cmd+Enter. Accepted hunks fold into the file with a smooth height change.
 
@@ -384,7 +384,7 @@ Keywords: special, ai, new, code suggestion, ai code edit, inline diff, accept r
 
 Files: code-suggestion.module.css, code-suggestion.tsx, demo.module.css, demo.tsx
 
-## `connector-setup` — Connector setup (Pro, special)
+## `connector-setup` · Connector setup (Pro, special)
 
 A "Connect your tools" card for an AI assistant. Each app connects inline: it redirects, authorizes and runs a first sync with a progress hairline, then lists the scopes it was granted and offers Disconnect with an inline confirm.
 
@@ -400,7 +400,7 @@ Keywords: special, ai, new, connectors, integrations, connect apps, oauth, conne
 
 Files: connector-setup.module.css, connector-setup.tsx, demo.tsx
 
-## `context-window` — Context window (Pro, special)
+## `context-window` · Context window (Pro, special)
 
 An AI context window as a grid of 200 cells: the system prompt, tools, files, summary and messages fill it in order, a threshold row marks where compaction starts, and sending a message, attaching a file or compacting shows exactly how much still fits.
 
@@ -416,7 +416,7 @@ Keywords: special, ai, tokens, chart, motion, new, context window, token usage, 
 
 Files: context-window.module.css, context-window.tsx, demo.tsx
 
-## `cube-mascot` — Cube mascot (Pro, special)
+## `cube-mascot` · Cube mascot (Pro, special)
 
 An isometric cube mascot where three shaded faces and a painted-on face show what the assistant is doing. It turns a quarter turn in eased steps while thinking, prints lines onto the floor while writing, settles with a sparkle when done, and shakes once on error.
 
@@ -432,7 +432,7 @@ Keywords: special, ai, motion, new, cube mascot, isometric cube, ai mascot, assi
 
 Files: cube-mascot.module.css, cube-mascot.tsx, demo.module.css, demo.tsx
 
-## `dictation-button` — Dictation button (Pro, special)
+## `dictation-button` · Dictation button (Pro, special)
 
 A chat composer with voice input, where the mic springs into a recording pill with a smooth live waveform, a timer, and cancel and insert buttons. Words stream into the field as you speak, muted until the recognizer settles them.
 
@@ -448,7 +448,7 @@ Keywords: special, ai, new, dictation, voice input, speech to text, mic button, 
 
 Files: demo.tsx, dictation-button.module.css, dictation-button.tsx
 
-## `document-extract` — Document extraction (Pro, block)
+## `document-extract` · Document extraction (Pro, block)
 
 Turns a document into typed data with a model and shows where every value came from: fields fill in as the page is read, and hovering a value lights its source on the PDF.
 
@@ -464,7 +464,7 @@ Keywords: document extraction, structured output, invoice parsing, pdf viewer, d
 
 Files: demo.module.css, demo.tsx, document-extract.module.css, document-extract.tsx
 
-## `enrich-column` — Enrich column (Pro, special)
+## `enrich-column` · Enrich column (Pro, special)
 
 An AI enrichment column for a data table, where one prompt runs down every row and each cell shimmers while it works, then settles into a value with its source or a failure you can retry.
 
@@ -480,7 +480,7 @@ Keywords: special, ai, new, enrich column, ai column, clay, data enrichment, lea
 
 Files: demo.module.css, demo.tsx, enrich-column.module.css, enrich-column.tsx
 
-## `generation-stats` — Generation stats (Pro, special)
+## `generation-stats` · Generation stats (Pro, special)
 
 A live stats strip for a streaming LLM response where time to first token, speed with a sparkline, output tokens and cost count up in tabular numerals beside the model's real mark, then settle and open into a latency and token cost breakdown.
 
@@ -496,7 +496,7 @@ Keywords: special, ai, new, generation stats, llm stats, tokens per second, time
 
 Files: demo.tsx, generation-stats.module.css, generation-stats.tsx
 
-## `ghost-mascot` — Ghost mascot (Pro, special)
+## `ghost-mascot` · Ghost mascot (Pro, special)
 
 A floating ghost mascot whose soft sheet ripples at the hem while it hovers. It blinks when idle, turns toward you to listen, fades a little translucent while thinking, draws a tiny pen line while writing, smiles with a sparkle when done and wobbles once on an error.
 
@@ -512,7 +512,7 @@ Keywords: special, ai, motion, new, ghost mascot, ai mascot, assistant character
 
 Files: demo.module.css, demo.tsx, ghost-mascot.module.css, ghost-mascot.tsx
 
-## `ghost-text` — Ghost text (Pro, special)
+## `ghost-text` · Ghost text (Pro, special)
 
 An inline AI autocomplete where muted ghost text continues your sentence exactly at the caret and Tab turns it solid in place. Cmd+Right takes it one word at a time, Escape fades it away, and a calm chip shows the model behind it.
 
@@ -528,7 +528,7 @@ Keywords: special, ai, new, ghost text, ai autocomplete, inline suggestion, copi
 
 Files: demo.tsx, ghost-text.module.css, ghost-text.tsx, kbd.module.css
 
-## `image-generation` — Image generation (Pro, special)
+## `image-generation` · Image generation (Pro, special)
 
 An image studio where each image forms on a dot matrix: a soft halftone wave breathes across the grid, the dots take the colours of the coming photo and grow into a coloured halftone, then blur away into the sharp photo. One large canvas with a mono size label, a filmstrip of four variations, a prompt bar with model and ratio, and upscale with a sweeping dot band, vary or download, with real provider marks and a built-in simulation.
 
@@ -544,7 +544,7 @@ Keywords: special, ai, new, image generation, text to image, ai image, diffusion
 
 Files: demo.module.css, demo.tsx, image-generation.module.css, image-generation.tsx
 
-## `image-reveal` — Image reveal (Pro, special)
+## `image-reveal` · Image reveal (Pro, special)
 
 An image generation canvas where a soft, blurred preview made from the image's own colors sharpens top to bottom behind a soft-edged band. It works the way ChatGPT, Midjourney and Gemini show images forming, with fine film grain, a translucent progress pill and calm queued and error states.
 
@@ -560,7 +560,7 @@ Keywords: special, ai, motion, new, image generation, ai image, generating, prog
 
 Files: demo.tsx, image-reveal.module.css, image-reveal.tsx
 
-## `install-snippet` — Install snippet (Pro, special)
+## `install-snippet` · Install snippet (Pro, special)
 
 A "get started in 30 seconds" card where framework tabs, three numbered steps and highlighted snippets take a developer from install to first event. Generate key wipes a fresh API key into the placeholder in place.
 
@@ -576,7 +576,7 @@ Keywords: special, saas, new, install snippet, quickstart, getting started, sdk 
 
 Files: demo.tsx, install-snippet.module.css, install-snippet.tsx
 
-## `lead-scoring` — Lead scoring (Pro, block)
+## `lead-scoring` · Lead scoring (Pro, block)
 
 A lead scoring card where inbound B2B leads are ranked by an AI fit score, each with a score ring and a one-line reason. Open a lead to see its signals and score breakdown, then push it to HubSpot or Salesforce.
 
@@ -592,7 +592,7 @@ Keywords: lead scoring, ai lead scoring, inbound leads, sales qualification, fit
 
 Files: demo.tsx, lead-scoring.module.css, lead-scoring.tsx
 
-## `live-visitors` — Live visitors (Pro, special)
+## `live-visitors` · Live visitors (Pro, special)
 
 A realtime visitors card where the live count rolls digit by digit, new arrivals ping in on a dotted world map, the top pages reorder with bars, and signups and upgrades tick in with country flags.
 
@@ -608,7 +608,7 @@ Keywords: special, saas, new, live visitors, realtime analytics, active users, v
 
 Files: demo.tsx, live-visitors.module.css, live-visitors.tsx
 
-## `llm-cost-calculator` — LLM cost calculator (Pro, special)
+## `llm-cost-calculator` · LLM cost calculator (Pro, special)
 
 A pricing calculator for LLM workloads. Set tokens per request, requests per day and prompt caching, and eight current models re-rank by monthly cost. Bars glide and prices roll as you drag.
 
@@ -624,7 +624,7 @@ Keywords: special, ai, new, llm cost calculator, token pricing, ai pricing, mode
 
 Files: demo.module.css, demo.tsx, llm-cost-calculator.module.css, llm-cost-calculator.tsx
 
-## `meeting-summary` — Meeting summary (Pro, special)
+## `meeting-summary` · Meeting summary (Pro, special)
 
 An AI meeting notes card: the header shows the Google Meet or Zoom mark, the attendees and the duration. Summary, Decisions and Action items stream in after a short summarizing pass. Hover any line to see the transcript quote it came from, then check off action items or send them to Linear or Notion.
 
@@ -640,7 +640,7 @@ Keywords: special, ai, new, meeting summary, meeting notes, ai notes, action ite
 
 Files: demo.tsx, meeting-summary.module.css, meeting-summary.tsx
 
-## `model-arena` — Model arena (Pro, block)
+## `model-arena` · Model arena (Pro, block)
 
 A blind side by side model comparison in one card: send one prompt to two models, watch both answers stream at the same pace, vote for the better one, then reveal which model wrote each.
 
@@ -656,7 +656,7 @@ Keywords: model arena, llm comparison, blind test, side by side, model battle, a
 
 Files: demo.tsx, model-arena.module.css, model-arena.tsx
 
-## `model-card` — Model card (Pro, special)
+## `model-card` · Model card (Pro, special)
 
 A model details card where switching models rolls every price, limit and score in place, a token slider estimates monthly cost live, and benchmark bars show each model's rank on hover. Compare crossfades to a side-by-side table against any rival with the better values marked, and the card never changes size.
 
@@ -672,7 +672,7 @@ Keywords: special, ai, new, model card, model details, model picker, llm, ai mod
 
 Files: demo.tsx, model-card.module.css, model-card.tsx
 
-## `model-picker` — Model picker (Pro, block)
+## `model-picker` · Model picker (Pro, block)
 
 A model picker in one quiet pill: open it to choose from featured models with a one line note each, set the reasoning effort, or browse every other model by provider, and the pill swaps to your choice in place.
 
@@ -688,7 +688,7 @@ Keywords: model picker, model selector, llm model switcher, ai model dropdown, r
 
 Files: demo.tsx, model-picker.module.css, model-picker.tsx
 
-## `pii-redaction` — PII redaction (Pro, special)
+## `pii-redaction` · PII redaction (Pro, special)
 
 A guardrail card where personal data is redacted before the prompt reaches the model. Scan marks each name, email, phone number and card with its type and swaps it for a placeholder like [EMAIL_1]. The safe prompt travels to Claude, and the reply comes back with the original values put back for the person.
 
@@ -704,7 +704,7 @@ Keywords: special, ai, new, pii, redaction, guardrail, privacy, data loss preven
 
 Files: demo.module.css, demo.tsx, pii-redaction.module.css, pii-redaction.tsx
 
-## `pixel-mascot` — Pixel mascot (Pro, special)
+## `pixel-mascot` · Pixel mascot (Pro, special)
 
 A pixel-art robot that shows what an AI assistant is doing. It idles, thinks, types, celebrates and errors in frame-stepped sprite animations, and stays crisp at every integer size from 24px to 192px.
 
@@ -720,7 +720,7 @@ Keywords: special, ai, motion, new, pixel art, 8-bit, 16-bit, sprite, mascot, ro
 
 Files: demo.module.css, demo.tsx, pixel-mascot.module.css, pixel-mascot.tsx
 
-## `prompt-studio` — Prompt studio (Pro, block)
+## `prompt-studio` · Prompt studio (Pro, block)
 
 One card for editing, testing and shipping a prompt template: variables as chips with sample values, a test run against the chosen model, and versions you can compare and promote to production.
 
@@ -736,7 +736,7 @@ Keywords: prompt studio, prompt editor, prompt template, prompt management, prom
 
 Files: demo.tsx, prompt-studio.module.css, prompt-studio.tsx
 
-## `provider-keys` — Provider keys (Pro, special)
+## `provider-keys` · Provider keys (Pro, special)
 
 A settings card for bring-your-own-key AI products. Each provider row shows its real mark, the masked key, a status and when the key was last used. You can reveal a key for five seconds, copy, rotate or remove it with undo. Adding or rotating a key opens an inline form that checks the format as you type, then tests the connection before saving.
 
@@ -752,7 +752,7 @@ Keywords: special, ai, new, api keys, provider keys, byok, bring your own key, a
 
 Files: demo.tsx, provider-keys.module.css, provider-keys.tsx
 
-## `provider-status` — Provider status (Pro, special)
+## `provider-status` · Provider status (Pro, special)
 
 A status card for the AI providers your product depends on. Each row shows the provider's real mark, its health as an icon and label, p50 latency and a 30-day uptime bar with a tooltip for each day. An incident row expands into its timeline of updates, and the card checks again on a visible countdown.
 
@@ -768,7 +768,7 @@ Keywords: special, ai, new, provider status, ai status, llm uptime, status page,
 
 Files: demo.tsx, provider-status.module.css, provider-status.tsx
 
-## `reasoning-block` — Reasoning block (Pro, special)
+## `reasoning-block` · Reasoning block (Pro, special)
 
 The collapsible thinking block of an AI reply. While the model thinks, a shimmering label counts the seconds and the latest reasoning streams underneath. When it finishes, it folds to "Thought for 7s" and opens to show the full reasoning as calm steps with headings.
 
@@ -784,7 +784,7 @@ Keywords: special, ai, new, reasoning, thinking, thought for, extended thinking,
 
 Files: demo.tsx, reasoning-block.module.css, reasoning-block.tsx
 
-## `referral-card` — Referral card (Pro, special)
+## `referral-card` · Referral card (Pro, special)
 
 A give-and-get referral card where people copy or share their invite link, invite friends by email as chips, and watch invites move from invited to signed up to earned, with the credit total counting up and a milestone reward unlocking.
 
@@ -800,7 +800,7 @@ Keywords: special, saas, new, referral, refer a friend, invite, give get, affili
 
 Files: demo.tsx, referral-card.module.css, referral-card.tsx
 
-## `reply-draft` — Reply draft (Pro, special)
+## `reply-draft` · Reply draft (Pro, special)
 
 An AI email reply drafter where Claude streams a reply under a received Gmail message. Quick replies steer a fresh draft, tone and length rewrite it with a single crossfade, and you can edit the finished draft before you insert it.
 
@@ -816,7 +816,7 @@ Keywords: special, ai, new, ai reply, email reply, smart reply, draft reply, hel
 
 Files: demo.tsx, reply-draft.module.css, reply-draft.tsx
 
-## `research-run` — Research run (Pro, block)
+## `research-run` · Research run (Pro, block)
 
 Deep research that plans searches, reads sources with their marks, and streams a cited answer where every chip lights up the sentence it supports.
 
@@ -832,7 +832,7 @@ Keywords: deep research, answer engine, citations, sources, streaming, perplexit
 
 Files: demo.tsx, research-run.module.css, research-run.tsx
 
-## `response-feedback` — Response feedback (Pro, special)
+## `response-feedback` · Response feedback (Pro, special)
 
 A feedback control for AI replies where thumbs down opens an inline panel with reason chips and an optional note, thumbs up fills and asks what was good, and a submit shows a short thank-you before folding back into the row.
 
@@ -848,7 +848,7 @@ Keywords: special, ai, new, thumbs up, thumbs down, feedback, ai feedback, respo
 
 Files: demo.tsx, response-feedback.module.css, response-feedback.tsx
 
-## `smart-form-fill` — Smart form fill (Pro, special)
+## `smart-form-fill` · Smart form fill (Pro, special)
 
 A paste-to-fill form card where AI reads an email signature or messy notes and fills a contact field by field. Each value flashes in with a confidence dot, its source lights up in the pasted text, low-confidence guesses ask for review, and Undo puts the old values back.
 
@@ -864,7 +864,7 @@ Keywords: special, ai, new, ai form fill, autofill, smart paste, extract contact
 
 Files: demo.module.css, demo.tsx, smart-form-fill.module.css, smart-form-fill.tsx
 
-## `social-proof-toast` — Social proof toast (Pro, special)
+## `social-proof-toast` · Social proof toast (Pro, special)
 
 A stack of social proof notifications for landing and pricing pages, where recent trials, upgrades and verified purchases from people and companies arrive every few seconds. The stack pauses and fans out on hover, and visitors can dismiss any toast.
 
@@ -880,7 +880,7 @@ Keywords: special, saas, new, social proof, fomo notification, recent purchase p
 
 Files: demo.module.css, demo.tsx, social-proof-toast-marks.tsx, social-proof-toast.module.css, social-proof-toast.tsx
 
-## `source-cards` — Source cards (Pro, special)
+## `source-cards` · Source cards (Pro, special)
 
 A row of cited sources under an AI answer where cards stream in with real site marks while the model searches, the overflow collapses into a stack of favicons, hovering lifts a preview with the passage, and an inline [n] citation highlights its card.
 
@@ -896,7 +896,7 @@ Keywords: special, ai, new, sources, citations, ai search, perplexity, reference
 
 Files: demo.tsx, source-cards.module.css, source-cards.tsx
 
-## `speech-player` — Speech player (Pro, special)
+## `speech-player` · Speech player (Pro, special)
 
 A read-aloud player for AI replies. The Read aloud button in the message's action row turns into a compact player with play, a scrubbable progress bar, speed and a voice picker, and a highlight follows the spoken word through the reply, karaoke style.
 
@@ -912,7 +912,7 @@ Keywords: special, ai, new, text to speech, tts, read aloud, speech player, kara
 
 Files: demo.tsx, speech-player.module.css, speech-player.tsx
 
-## `starter-prompts` — Starter prompts (Pro, special)
+## `starter-prompts` · Starter prompts (Pro, special)
 
 A greeting and a grid of starter cards for the empty state of an AI app. The cards are grouped into Write, Code, Analyze and Plan tabs, and a shuffle swaps them with a short staggered crossfade. Picking a card fills the composer, and cards that use a connected app show its mark (Gmail, GitHub, Notion, Linear, Google Calendar).
 
@@ -928,7 +928,7 @@ Keywords: special, ai, new, starter prompts, prompt suggestions, empty state, ai
 
 Files: demo.tsx, starter-prompts.module.css, starter-prompts.tsx
 
-## `team-switcher` — Team switcher (Pro, special)
+## `team-switcher` · Team switcher (Pro, special)
 
 A workspace switcher like Linear, Vercel or Slack. The trigger shows the current workspace's logo and plan. The menu has search, your role in each workspace and a Cmd+1 to 9 shortcut for each, and lets you create or join a workspace inline. A highlight glides between rows, and switching crossfades the trigger through a short loading state.
 
@@ -944,7 +944,7 @@ Keywords: special, saas, new, team switcher, workspace switcher, organization sw
 
 Files: demo.tsx, team-switcher.module.css, team-switcher.tsx
 
-## `ticket-router` — Ticket router (Pro, special)
+## `ticket-router` · Ticket router (Pro, special)
 
 A support ticket router where messages from Gmail, Intercom, Slack and Zendesk come in one at a time. An AI classifier labels each one with intent, sentiment and confidence, and the ticket moves into a team lane with an assignee. Low confidence tickets wait in a review lane, and one click there routes them to the suggested team.
 
@@ -960,7 +960,7 @@ Keywords: special, ai, new, ticket routing, support triage, ai classifier, helpd
 
 Files: demo.tsx, ticket-router.module.css, ticket-router.tsx
 
-## `tldr-toggle` — TL;DR toggle (Pro, special)
+## `tldr-toggle` · TL;DR toggle (Pro, special)
 
 An article card with a Full, Summary and Key points switch and a length slider. Switching streams an AI summary in place of the article as the card's height springs to fit, and each key point links back to the paragraph it came from, which gets scrolled to and highlighted.
 
@@ -976,7 +976,7 @@ Keywords: special, ai, new, tldr, summarize, summary toggle, ai summary, key poi
 
 Files: demo.tsx, tldr-toggle.module.css, tldr-toggle.tsx
 
-## `tone-tuner` — Tone tuner (Pro, special)
+## `tone-tuner` · Tone tuner (Pro, special)
 
 A brand voice card where two sliders (formality and detail) and Friendly, Confident and Empathetic chips rewrite a customer reply. Each changed sentence crossfades in place, new words can be highlighted against the original, and Copy takes the current version.
 
@@ -992,7 +992,7 @@ Keywords: special, saas, new, tone, brand voice, rewrite, ai writing, formality,
 
 Files: demo.module.css, demo.tsx, tone-tuner.module.css, tone-tuner.tsx
 
-## `tool-call` — Tool call (Pro, special)
+## `tool-call` · Tool call (Pro, special)
 
 A tool call row for agent transcripts: the tool's mark and the call in plain words, a live state while it runs, and the input and output a click away, with approval and retry when needed.
 
@@ -1008,7 +1008,7 @@ Keywords: special, motion, ai, new, tool call, tool use, function call, agent tr
 
 Files: demo.tsx, tool-call.module.css, tool-call.tsx
 
-## `training-run` — Training run (Pro, special)
+## `training-run` · Training run (Pro, special)
 
 A fine-tuning job card where a live train and validation loss curve draws across a fixed step axis that doubles as the epoch progress bar. It shows the learning rate, elapsed time, ETA and the latest evals and checkpoints, has Pause and Cancel while it runs, and ends in results with a Deploy button.
 
@@ -1024,7 +1024,7 @@ Keywords: special, ai, new, fine-tuning, training run, loss curve, lora, epochs,
 
 Files: demo.module.css, demo.tsx, training-run.module.css, training-run.tsx
 
-## `trial-banner` — Trial banner (Pro, special)
+## `trial-banner` · Trial banner (Pro, special)
 
 A trial status banner where a ring counts down the days left, the copy names what the workspace loses, and the upgrade path is one click away. It comes as a slim banner, a sidebar card or a header pill. It shifts to a warning tone in the last days, has expired and upgraded states, and folds into the pill when dismissed or snoozed.
 
@@ -1040,7 +1040,7 @@ Keywords: special, saas, new, trial banner, free trial, trial countdown, upgrade
 
 Files: demo.tsx, trial-banner.module.css, trial-banner.tsx
 
-## `upgrade-prompt` — Upgrade prompt (Pro, special)
+## `upgrade-prompt` · Upgrade prompt (Pro, special)
 
 An upgrade nudge for the moment someone hits a limit. It shows a usage meter at 50 of 50 AI credits, a rolling price with a monthly and yearly toggle, three concrete unlocks with real model marks, and Upgrade or Maybe later. Upgrading leads into a success state with the new limits, and the card never changes size between states.
 

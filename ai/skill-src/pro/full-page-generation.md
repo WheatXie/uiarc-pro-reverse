@@ -1,7 +1,7 @@
 # Full-page generation
 
 Turn a brief into a whole page: regions, every state, real copy, then verification. The order matters
-— planning the regions before writing JSX is what keeps a generated page from becoming six unrelated
+Planning the regions before writing JSX is what keeps a generated page from becoming six unrelated
 cards.
 
 ## 1. Brief
@@ -45,27 +45,27 @@ a wrong 900-line page is not.
 
 ## 3. Build in this order
 
-1. **Shell** — page container, navigation, page header (`h1`, lede, one action).
-2. **Skeleton of regions** — each region mounted with real item and sample data, no polishing.
-3. **Data shape** — types first, then the item. If a callback is typed `void | Promise<…>`, return the
+1. **Shell**: page container, navigation, page header (`h1`, lede, one action).
+2. **Skeleton of regions**: each region mounted with real item and sample data, no polishing.
+3. **Data shape**: types first, then the item. If a callback is typed `void | Promise<…>`, return the
    promise so the item can show pending, success and error itself.
-4. **States** — empty (`empty-state`), loading (`skeleton` matched to the final layout), error (inline
+4. **States**: empty (`empty-state`), loading (`skeleton` matched to the final layout), error (inline
    `alert` with a retry), success (in place, not a toast).
-5. **Copy** — sentence case, verbs on buttons, no eyebrows, no em dashes.
-6. **Motion** — only where a change would otherwise be a jump: panel open, row insert, value change.
-7. **Responsive** — 390 first (it is the width that breaks), then 768, 1024, 1440.
+5. **Copy**: sentence case, verbs on buttons, no eyebrows, no em dashes.
+6. **Motion**: only where a change would otherwise be a jump: panel open, row insert, value change.
+7. **Responsive**: 390 first (it is the width that breaks), then 768, 1024, 1440.
 
 ## 4. Verification
 
 Run all four, in this order, and paste the numbers into the summary:
 
-- **Widths** — 390, 768, 1024, 1440. No horizontal scroll; `document.documentElement.scrollWidth ===
+- **Widths**: 390, 768, 1024, 1440. No horizontal scroll; `document.documentElement.scrollWidth ===
   document.documentElement.clientWidth`. Wide tables scroll inside their card.
-- **States** — force each one (empty data, `?loading`, a rejected promise) and confirm it renders
+- **States**: force each one (empty data, `?loading`, a rejected promise) and confirm it renders
   inside the region, not as a blank page.
-- **Keyboard** — Tab through the page once: focus order follows reading order, focus is visible,
+- **Keyboard**: Tab through the page once: focus order follows reading order, focus is visible,
   Escape closes the topmost overlay, no trap outside a dialog.
-- **Dark** — switch theme; no element keeps a light-only background, no text drops below contrast.
+- **Dark**: switch theme; no element keeps a light-only background, no text drops below contrast.
 
 ## 5. Report
 

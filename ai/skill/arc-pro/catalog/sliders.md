@@ -1,6 +1,6 @@
 # Sliders
 
-## `elastic-slider` — Elastic slider (Free, component)
+## `elastic-slider` · Elastic slider (Free, component)
 
 A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.
 
@@ -16,7 +16,7 @@ Keywords: inputs, new, elastic slider, rubber band slider, react slider, volume 
 
 Files: registry/components/elastic-slider/elastic-slider.tsx, registry/components/elastic-slider/elastic-slider.module.css
 
-## `range-histogram-slider` — Range histogram slider (Free, component)
+## `range-histogram-slider` · Range histogram slider (Free, component)
 
 A price range over a live histogram of the data, lighting the bars inside the range and settling on bar edges.
 
@@ -32,7 +32,7 @@ Keywords: inputs, new, range slider with histogram, price range filter, airbnb p
 
 Files: registry/components/range-histogram-slider/range-histogram-slider.tsx, registry/components/range-histogram-slider/range-histogram-slider.module.css
 
-## `ruler-slider` — Ruler slider (Free, component)
+## `ruler-slider` · Ruler slider (Free, component)
 
 A tape of ticks that slides under a fixed needle, with momentum, snapping, and a rolling readout.
 
@@ -48,7 +48,7 @@ Keywords: inputs, new, ruler slider, tape measure input, height picker, weight p
 
 Files: registry/components/ruler-slider/ruler-slider.tsx, registry/components/ruler-slider/ruler-slider.module.css
 
-## `slider` — Slider (Free, component)
+## `slider` · Slider (Free, component)
 
 Pick a value or a range on a track that follows your finger.
 

@@ -1,6 +1,6 @@
 # Selects
 
-## `chip-group` — Chip group (Free, component)
+## `chip-group` · Chip group (Free, component)
 
 Filter by a few facets with chips that morph as you pick them.
 
@@ -16,7 +16,7 @@ Keywords: chips, filter, toggle, react chip group, filter chips, toggle chips, t
 
 Files: registry/components/chip-group/chip-group.tsx, registry/components/chip-group/chip-group.module.css
 
-## `combobox` — Combobox (Free, component)
+## `combobox` · Combobox (Free, component)
 
 Search and select from a list without leaving the field.
 
@@ -32,7 +32,7 @@ Keywords: field, search, react combobox, autocomplete, searchable select, typeah
 
 Files: registry/components/combobox/combobox.tsx, registry/components/combobox/combobox.module.css
 
-## `morph-select` — Morph select (Free, component)
+## `morph-select` · Morph select (Free, component)
 
 A select whose trigger grows into the list, with a gliding highlight and type-ahead.
 
@@ -48,7 +48,7 @@ Keywords: inputs, new, react select, animated select, morphing dropdown, listbox
 
 Files: registry/components/morph-select/morph-select.tsx, registry/components/morph-select/morph-select.module.css
 
-## `multi-select` — Multi-select (Free, component)
+## `multi-select` · Multi-select (Free, component)
 
 Select several values while keeping the field readable.
 
@@ -64,7 +64,7 @@ Keywords: field, choice, react multi select, multiselect dropdown, select multip
 
 Files: registry/components/multi-select/multi-select.tsx, registry/components/multi-select/multi-select.module.css
 
-## `select` — Select (Free, component)
+## `select` · Select (Free, component)
 
 A compact choice field with a keyboard friendly menu.
 

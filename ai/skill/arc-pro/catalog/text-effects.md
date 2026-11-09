@@ -1,6 +1,6 @@
 # Text effects
 
-## `in-view-title` — In-view title (Free, component)
+## `in-view-title` · In-view title (Free, component)
 
 Bring a section title in as it scrolls into view.
 
@@ -16,7 +16,7 @@ Keywords: text, motion, heading, react scroll animation title, animate on scroll
 
 Files: registry/components/in-view-title/in-view-title.tsx, registry/components/in-view-title/in-view-title.module.css
 
-## `text-morph` — Text morph (Free, component)
+## `text-morph` · Text morph (Free, component)
 
 Morph a label into its next state, letter by letter.
 
@@ -32,7 +32,7 @@ Keywords: text, motion, status, react text morph, morphing text, animated label,
 
 Files: registry/components/text-morph/text-morph.tsx, registry/components/text-morph/text-morph.module.css
 
-## `text-reveal` — Text reveal (Free, component)
+## `text-reveal` · Text reveal (Free, component)
 
 Reveal a short piece of content with restrained motion.
 
@@ -48,7 +48,7 @@ Keywords: text, motion, content, react text reveal, headline animation, hero tex
 
 Files: registry/components/text-reveal/text-reveal.tsx, registry/components/text-reveal/text-reveal.module.css
 
-## `text-shimmer` — Text shimmer (Free, component)
+## `text-shimmer` · Text shimmer (Free, component)
 
 Show ongoing work with a calm light across the words.
 

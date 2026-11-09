@@ -1,6 +1,6 @@
 # Text fields
 
-## `expanding-search` — Expanding search (Free, component)
+## `expanding-search` · Expanding search (Free, component)
 
 An icon that morphs into a search field with results beneath it.
 
@@ -16,7 +16,7 @@ Keywords: search, field, motion, react expanding search, search icon expand, ani
 
 Files: registry/components/expanding-search/expanding-search.tsx, registry/components/expanding-search/expanding-search.module.css
 
-## `inline-edit` — Inline edit (Free, component)
+## `inline-edit` · Inline edit (Free, component)
 
 Rename in place: the text becomes a field without moving.
 
@@ -32,7 +32,7 @@ Keywords: inline edit, rename, click to edit, react inline edit, editable text, 
 
 Files: registry/components/inline-edit/inline-edit.tsx, registry/components/inline-edit/inline-edit.module.css
 
-## `input` — Input (Free, component)
+## `input` · Input (Free, component)
 
 A single line field with clear labels and useful states.
 
@@ -48,7 +48,7 @@ Keywords: field, form, react input, text field, animated form input, input with 
 
 Files: registry/components/input/input.tsx, registry/components/input/input.module.css
 
-## `password-field` — Password field (Free, component)
+## `password-field` · Password field (Free, component)
 
 Capture sensitive text with a visible reveal control.
 
@@ -64,7 +64,7 @@ Keywords: field, security, react password input, show hide password, password to
 
 Files: registry/components/password-field/password-field.tsx, registry/components/password-field/password-field.module.css
 
-## `password-strength` — Password strength (Free, component)
+## `password-strength` · Password strength (Free, component)
 
 Show how strong a new password is while it is typed.
 
@@ -80,7 +80,7 @@ Keywords: password, strength meter, validation, react password strength, passwor
 
 Files: registry/components/password-strength/password-strength.tsx, registry/components/password-strength/password-strength.module.css
 
-## `search-field` — Search field (Free, component)
+## `search-field` · Search field (Free, component)
 
 A recognizable search entry point with clear affordances.
 
@@ -96,7 +96,7 @@ Keywords: field, search, react search input, search field, search bar with clear
 
 Files: registry/components/search-field/search-field.tsx, registry/components/search-field/search-field.module.css
 
-## `textarea` — Textarea (Free, component)
+## `textarea` · Textarea (Free, component)
 
 A multiline field for notes, descriptions, and longer text.
 

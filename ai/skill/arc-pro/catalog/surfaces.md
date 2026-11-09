@@ -1,6 +1,6 @@
 # Surfaces
 
-## `card-to-article` — Card to article (Pro, special)
+## `card-to-article` · Card to article (Pro, special)
 
 Story cards that open into full articles with one seamless morph and shrink back into their exact slot when dragged down.
 
@@ -16,7 +16,7 @@ Keywords: special, layout, gesture, new, app store card, card expand, shared ele
 
 Files: card-to-article.module.css, card-to-article.tsx, demo.tsx
 
-## `control-center` — Control center (Pro, special)
+## `control-center` · Control center (Pro, special)
 
 Workspace quick settings: tiles that morph into detail, a duration dial, and rubber-banded meters.
 
@@ -32,7 +32,7 @@ Keywords: special, settings, control center, react control center, quick setting
 
 Files: control-center.module.css, control-center.tsx, demo.module.css, demo.tsx
 
-## `holo-card` — Holo card (Pro, special)
+## `holo-card` · Holo card (Pro, special)
 
 A member card that tilts toward you with a holographic foil and flips to its back.
 
@@ -48,7 +48,7 @@ Keywords: special, motion, new, holographic card, holo card, foil card, pokemon 
 
 Files: demo.module.css, demo.tsx, holo-card.module.css, holo-card.tsx
 
-## `link-unfurl` — Link unfurl (Pro, special)
+## `link-unfurl` · Link unfurl (Pro, special)
 
 A composer where pasting a URL shows a loading shimmer on the link, then unfurls it into a rich preview card with title, image and favicon in one morph, which can be collapsed back to the inline link or removed.
 
@@ -64,7 +64,7 @@ Keywords: special, composer, link-preview, morph, motion, new, link preview, unf
 
 Files: demo.tsx, link-unfurl.module.css, link-unfurl.tsx
 
-## `sheet-stack` — Sheet stack (Pro, special)
+## `sheet-stack` · Sheet stack (Pro, special)
 
 Nested sheets that stack with depth, drag to dismiss, and become stacked dialogs on wide screens.
 
@@ -80,7 +80,7 @@ Keywords: special, new, react sheet stack, nested bottom sheets, stacked modals,
 
 Files: demo.tsx, sheet-stack.module.css, sheet-stack.tsx
 
-## `wallet-stack` — Wallet stack (Pro, special)
+## `wallet-stack` · Wallet stack (Pro, special)
 
 Fan a stack of cards and lift one out to see its activity.
 

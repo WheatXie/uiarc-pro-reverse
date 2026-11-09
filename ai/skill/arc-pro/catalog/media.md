@@ -1,6 +1,6 @@
 # Media
 
-## `card-stack` — Card stack (Free, component)
+## `card-stack` · Card stack (Free, component)
 
 Review a deck one card at a time, with a throw and an undo.
 
@@ -16,7 +16,7 @@ Keywords: gesture, motion, triage, react card stack, swipe cards, tinder swipe, 
 
 Files: registry/components/card-stack/card-stack.tsx, registry/components/card-stack/card-stack.module.css
 
-## `carousel` — Carousel (Free, component)
+## `carousel` · Carousel (Free, component)
 
 Browse a row of slides by dragging, flicking, or arrowing through them.
 
@@ -32,7 +32,7 @@ Keywords: carousel, slider, gallery, react carousel, image slider, swipe carouse
 
 Files: registry/components/carousel/carousel.tsx, registry/components/carousel/carousel.module.css
 
-## `gantt-timeline` — Gantt timelineNew (Pro, block)
+## `gantt-timeline` · Gantt timelineNew (Pro, block)
 
 A project timeline with draggable, resizable bars, dependency arrows that follow them, and animated zoom.
 
@@ -48,7 +48,7 @@ Keywords: react gantt chart, gantt timeline, project timeline, drag to reschedul
 
 Files: demo.tsx, gantt-timeline.module.css, gantt-timeline.tsx
 
-## `image-compare` — Image compare (Free, component)
+## `image-compare` · Image compare (Free, component)
 
 Drag a divider across two images to see what changed.
 
@@ -64,7 +64,7 @@ Keywords: before after, comparison, image, react image compare, before after sli
 
 Files: registry/components/image-compare/image-compare.tsx, registry/components/image-compare/image-compare.module.css
 
-## `release-readiness` — Release readiness (Pro, block)
+## `release-readiness` · Release readiness (Pro, block)
 
 A launch checklist that keeps prerequisites, progress, and the final action together.
 

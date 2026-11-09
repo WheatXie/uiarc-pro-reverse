@@ -1,6 +1,6 @@
 # Headers and footers
 
-## `customer-galaxy` — Customer galaxy (Pro, block)
+## `customer-galaxy` · Customer galaxy (Pro, block)
 
 2,400 accounts as a drifting galaxy that spirals into clusters by plan, region or health.
 
@@ -16,7 +16,7 @@ Keywords: react data galaxy, customer visualization, canvas particle clusters, z
 
 Files: customer-galaxy.module.css, customer-galaxy.tsx, demo.tsx
 
-## `layout-morph` — Layout morph (Pro, block)
+## `layout-morph` · Layout morph (Pro, block)
 
 A 24 card gallery that flies between grid, masonry, list, fan, carousel and a 3D helix.
 
@@ -32,7 +32,7 @@ Keywords: react layout animation, gallery layout switcher, masonry to grid anima
 
 Files: demo.tsx, layout-morph.module.css, layout-morph.tsx, morph-data.ts
 
-## `revenue-globe` — Revenue globe (Pro, block)
+## `revenue-globe` · Revenue globe (Pro, block)
 
 A dotted globe where live payments arc home to headquarters, with a replayable day.
 
@@ -48,7 +48,7 @@ Keywords: react globe, revenue globe, payments map animation, 3d globe canvas, l
 
 Files: demo.tsx, revenue-globe.module.css, revenue-globe.tsx
 
-## `semantic-zoom` — Semantic zoom (Pro, block)
+## `semantic-zoom` · Semantic zoom (Pro, block)
 
 An infinite-zoom map of a company that reveals teams, projects, tasks and people as you fly in.
 

@@ -1,6 +1,6 @@
 # Free registry · ai
 
-## `arc-skill` — Arc agent skill (Free, component)
+## `arc-skill` · Arc agent skill (Free, component)
 
 An Agent Skill that teaches Claude Code and other agents how to choose, install, and compose Arc components, with rule files for design, components, motion, accessibility, composition, and responsive layout.
 

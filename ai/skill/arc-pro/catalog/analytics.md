@@ -1,6 +1,6 @@
 # Analytics
 
-## `account-health` — Account health (Pro, block)
+## `account-health` · Account health (Pro, block)
 
 A customer success card where a health score gauge, a renewal countdown and five sourced signals with sparklines lead into an AI risk summary and one recommended next step, like scheduling a QBR before usage slips further.
 
@@ -16,7 +16,7 @@ Keywords: account health, customer health score, customer success, churn risk, r
 
 Files: account-health-data.tsx, account-health.module.css, account-health.tsx, demo.tsx
 
-## `choropleth-explorer` — Choropleth explorer (Pro, block)
+## `choropleth-explorer` · Choropleth explorer (Pro, block)
 
 A filled-region map that shades every state or region by revenue, growth or penetration on a stepped scale, with a country switch (United States, Canada, Brazil, United Kingdom, France, Germany, Italy, Australia), a hoverable legend, a synced ranked list and a camera zoom into local detail.
 
@@ -32,7 +32,7 @@ Keywords: choropleth, map, filled map, heat map, geography, states, counties, re
 
 Files: choropleth-explorer-data.ts, choropleth-explorer.module.css, choropleth-explorer.tsx, demo.tsx
 
-## `cohort-retention` — Cohort retention (Pro, block)
+## `cohort-retention` · Cohort retention (Pro, block)
 
 A cohort retention triangle that morphs into retention curves and rewashes by segment.
 
@@ -48,7 +48,7 @@ Keywords: react cohort retention chart, retention triangle, cohort analysis tabl
 
 Files: cohort-retention.module.css, cohort-retention.tsx, demo.tsx
 
-## `connected-scatter` — Connected scatter (Pro, block)
+## `connected-scatter` · Connected scatter (Pro, block)
 
 A connected scatterplot of monthly CAC against LTV where the path draws itself in, a scrubber moves a head along the curve, and a channel switch morphs the path against a shaded 3x target line.
 
@@ -64,7 +64,7 @@ Keywords: connected scatter, connected scatterplot, scatter plot, cac, ltv, ltv 
 
 Files: connected-scatter.module.css, connected-scatter.tsx, demo.tsx
 
-## `horizon-chart` — Horizon chart (Pro, block)
+## `horizon-chart` · Horizon chart (Pro, block)
 
 A horizon chart that stacks fourteen daily series as compact folded rows, with a synced crosshair, a sort by name, peak or latest, a band count setting that folds every row on one spring, and a legend that explains how to read the bands.
 
@@ -80,7 +80,7 @@ Keywords: horizon chart, horizon graph, time series, many series, deviation, bas
 
 Files: demo.tsx, horizon-chart.module.css, horizon-chart.tsx
 
-## `journey-flow` — Journey flow (Pro, block)
+## `journey-flow` · Journey flow (Pro, block)
 
 A Sankey of user journeys whose flows morph by channel and trace a cohort on hover.
 
@@ -96,7 +96,7 @@ Keywords: react sankey diagram, user journey flow, funnel flow chart, sankey cha
 
 Files: demo.tsx, journey-flow.module.css, journey-flow.tsx
 
-## `kpi-drilldown` — KPI drilldown (Pro, block)
+## `kpi-drilldown` · KPI drilldown (Pro, block)
 
 KPI cards that expand into a full detail chart with period comparison and a breakdown table, then fold back.
 
@@ -112,7 +112,7 @@ Keywords: kpi, dashboard, drilldown, metric card, shared layout, expand card, pe
 
 Files: demo.tsx, kpi-drilldown.module.css, kpi-drilldown.tsx
 
-## `metric-explorer` — Metric explorer (Pro, block)
+## `metric-explorer` · Metric explorer (Pro, block)
 
 KPI cards that open into a scrubbable chart and morph between metrics and ranges.
 
@@ -128,7 +128,7 @@ Keywords: react kpi cards, metric explorer, analytics dashboard chart, expandabl
 
 Files: demo.tsx, metric-data.ts, metric-explorer.module.css, metric-explorer.tsx
 
-## `metrics-dashboard` — Metrics dashboard (Pro, block)
+## `metrics-dashboard` · Metrics dashboard (Pro, block)
 
 A dense analytics view with KPI tabs, one inspectable chart, and top pages and sources.
 
@@ -144,7 +144,7 @@ Keywords: react metrics dashboard, analytics dashboard, kpi dashboard, dashboard
 
 Files: demo.tsx, metrics-dashboard.module.css, metrics-dashboard.tsx
 
-## `mrr-waterfall` — MRR waterfall (Pro, block)
+## `mrr-waterfall` · MRR waterfall (Pro, block)
 
 An MRR bridge whose floating bars morph by period and open the accounts behind each move.
 
@@ -160,7 +160,7 @@ Keywords: react waterfall chart, mrr bridge, revenue waterfall, mrr movements ch
 
 Files: demo.tsx, mrr-data.ts, mrr-waterfall.module.css, mrr-waterfall.tsx
 
-## `revenue-explorer` — Revenue explorer (Pro, block)
+## `revenue-explorer` · Revenue explorer (Pro, block)
 
 A SaaS revenue chart you zoom with a brush while paths, axes and figures glide to the range.
 
@@ -176,7 +176,7 @@ Keywords: react revenue chart, mrr chart, chart with brush zoom, range selector 
 
 Files: demo.tsx, revenue-explorer.module.css, revenue-explorer.tsx
 
-## `uptime-status` — Uptime status (Pro, block)
+## `uptime-status` · Uptime status (Pro, block)
 
 A status page with 90 day uptime bars, a morphing latency chart and an incident timeline.
 
@@ -192,7 +192,7 @@ Keywords: react status page, uptime monitor, service status page, uptime bars, i
 
 Files: demo.tsx, uptime-status.module.css, uptime-status.tsx
 
-## `usage-forecast` — Usage forecast (Pro, block)
+## `usage-forecast` · Usage forecast (Pro, block)
 
 A billing period usage chart with a forecast cone and a draggable budget that dates the crossing.
 

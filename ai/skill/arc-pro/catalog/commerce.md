@@ -1,6 +1,6 @@
 # Commerce
 
-## `activity-feed` — Activity feed (Pro, block)
+## `activity-feed` · Activity feed (Pro, block)
 
 A team activity feed grouped by day on a quiet avatar timeline, with a type filter, a live new updates button, expandable details, and a mark all read sweep.
 
@@ -16,7 +16,7 @@ Keywords: activity feed, team activity, timeline, recent activity, mark all read
 
 Files: activity-feed.module.css, activity-feed.tsx, demo.tsx
 
-## `help-center` — Help center (Pro, block)
+## `help-center` · Help center (Pro, block)
 
 A help center with instant search, topic cards, and popular articles that open into a readable article with an outline and feedback.
 
@@ -32,7 +32,7 @@ Keywords: help center, knowledge base, support, faq, search, instant search, art
 
 Files: demo.tsx, help-center-data.ts, help-center.module.css, help-center.tsx
 
-## `inbox-triage` — Inbox triage (Pro, block)
+## `inbox-triage` · Inbox triage (Pro, block)
 
 Process a focused inbox with archive, snooze, and restore actions.
 
@@ -48,7 +48,7 @@ Keywords: react inbox, email triage ui, inbox component, archive snooze inbox, m
 
 Files: demo.tsx, inbox-triage.module.css, inbox-triage.tsx
 
-## `seat-map` — Seat mapNew (Pro, block)
+## `seat-map` · Seat mapNew (Pro, block)
 
 An event seat picker with a curved concert hall map, price tiers, zoom and pan, sold, held and wheelchair seats, and a live summary with fees and a hold countdown.
 
@@ -64,7 +64,7 @@ Keywords: seat map, seat picker, seat selection, venue map, event tickets, ticke
 
 Files: demo.tsx, seat-map.module.css, seat-map.tsx
 
-## `support-conversation` — Support conversation (Pro, block)
+## `support-conversation` · Support conversation (Pro, block)
 
 A responsive message thread with useful quick replies and live feedback.
 
@@ -80,7 +80,7 @@ Keywords: react support chat, chat thread ui, customer support conversation, hel
 
 Files: demo.tsx, support-conversation.module.css, support-conversation.tsx
 
-## `support-widget` — Support widget (Pro, block)
+## `support-widget` · Support widget (Pro, block)
 
 An in-app help launcher that grows into live article search, reading, and a chat with your team.
 

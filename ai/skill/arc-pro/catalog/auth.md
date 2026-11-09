@@ -1,12 +1,12 @@
 # Auth
 
-## `login` — Login and sign up5, free and Pro variants (Free, block)
+## `login` · Login and sign up5, free and Pro variants (Free, block)
 
 Sign in and sign up pages, from a compact code card to full screen split and immersive layouts.
 
 Keywords: react sign in, passwordless login, email code login, magic code sign in, passkey login, sso buttons, otp login
 
-## `magic-link` — Magic link (Pro, block)
+## `magic-link` · Magic link (Pro, block)
 
 A passwordless sign in card where an email with inline validation and typo fixes sends a magic link, and the card crossfades in place to a check your inbox step with a sealing envelope, Gmail and Outlook shortcuts and a resend countdown. Google and GitHub sign in sit above, with their real marks.
 
@@ -22,7 +22,7 @@ Keywords: magic link, passwordless, email sign in, login, check your inbox, rese
 
 Files: demo.tsx, magic-link.module.css, magic-link.tsx
 
-## `multi-step-form` — Multi-step form (Pro, block)
+## `multi-step-form` · Multi-step form (Pro, block)
 
 A guided form that presents one decision at a time and preserves progress.
 
@@ -38,7 +38,7 @@ Keywords: react multi step form, form wizard, step form, onboarding form, wizard
 
 Files: demo.module.css, demo.tsx, multi-step-form.module.css, multi-step-form.tsx
 
-## `onboarding-illustration` — Onboarding illustration (Pro, block)
+## `onboarding-illustration` · Onboarding illustration (Pro, block)
 
 A compact onboarding card whose line illustration morphs from folder to files, team, and badge.
 
@@ -54,7 +54,7 @@ Keywords: react onboarding, onboarding modal, welcome dialog, first run experien
 
 Files: demo.tsx, onboarding-illustration.module.css, onboarding-illustration.tsx
 
-## `otp-input` — OTP input (Free, block)
+## `otp-input` · OTP input (Free, block)
 
 A six digit verification flow with paste support and keyboard navigation.
 
@@ -70,7 +70,7 @@ Keywords: react otp input, verification code input, 2fa code input, pin input, o
 
 Files: registry/components/otp-input/otp-input.tsx, registry/components/otp-input/otp-input.module.css
 
-## `two-factor-setup` — Two-factor setup (Pro, block)
+## `two-factor-setup` · Two-factor setup (Pro, block)
 
 A two-factor setup card where you scan a real, working authenticator QR code, type the 6-digit code into slots that move to the next box on their own, and save your backup codes before it turns on. Every step shares one fixed-size card, so it moves between steps with a short slide and never changes size.
 

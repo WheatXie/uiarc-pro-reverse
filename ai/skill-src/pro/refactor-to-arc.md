@@ -1,6 +1,6 @@
 # Refactor to Arc
 
-Migrate an existing surface — hand-rolled CSS, shadcn/ui, MUI, Chakra — onto Arc items without
+Migrate an existing surface: hand-rolled CSS, shadcn/ui, MUI, Chakra: onto Arc items without
 changing what the page means. The rule: one item at a time, each with a parity check, never a
 big-bang rewrite.
 
@@ -34,26 +34,26 @@ Keep a `MIGRATION.md` table like the above in the repo. It is the artifact revie
 
 ## 2. Sequence
 
-1. **Tokens first** — import `foundation.css`, delete the old theme constants, replace colour literals
+1. **Tokens first**: import `foundation.css`, delete the old theme constants, replace colour literals
    with semantic tokens. The page will look wrong here; that is expected and temporary.
-2. **Controls, then containers** — `button`, `input`, `select`, `checkbox`, `switch`, `segmented-control`
+2. **Controls, then containers**: `button`, `input`, `select`, `checkbox`, `switch`, `segmented-control`
    before `card`, `table`, `sidebar`. Controls carry most of the visual delta.
-3. **One region per commit** — a region is a self-contained block of the page. Each commit ships with
+3. **One region per commit**: a region is a self-contained block of the page. Each commit ships with
    its parity note.
-4. **Delete the old layer** — once a region is migrated, remove the old CSS module and the dependency
+4. **Delete the old layer**: once a region is migrated, remove the old CSS module and the dependency
    it needed. Leftover scaffolding is how a refactor half-lands.
 
 ## 3. Parity checks per region
 
 Run these on the migrated region and the baseline side by side:
 
-- **Copy** — byte-identical strings, unless the migration fixes a style violation (say so explicitly).
-- **Behaviour** — every interaction from the inventory still exists, including keyboard paths
+- **Copy**: byte-identical strings, unless the migration fixes a style violation (say so explicitly).
+- **Behaviour**: every interaction from the inventory still exists, including keyboard paths
   (Tab order, Enter/Space activation, Escape, arrow keys in menus and tables).
-- **States** — the four states from the inventory render, with the same trigger conditions.
-- **Numbers** — any computed value (totals, counts, percentages) matches to the digit.
-- **Widths** — 390 and 1440 for the region, not the page: no new overflow, no clipped labels.
-- **A11y** — roles and labels survive; a control that had an `aria-label` still has one.
+- **States**: the four states from the inventory render, with the same trigger conditions.
+- **Numbers**: any computed value (totals, counts, percentages) matches to the digit.
+- **Widths**: 390 and 1440 for the region, not the page: no new overflow, no clipped labels.
+- **A11y**: roles and labels survive; a control that had an `aria-label` still has one.
 
 A region is done when all six pass, not when it "looks like Arc".
 

@@ -1,6 +1,6 @@
 # Navigation
 
-## `breadcrumb` — Breadcrumb (Free, component)
+## `breadcrumb` · Breadcrumb (Free, component)
 
 Show where a page sits in a hierarchy.
 
@@ -16,7 +16,7 @@ Keywords: navigation, wayfinding, react breadcrumb, breadcrumb navigation, anima
 
 Files: registry/components/breadcrumb/breadcrumb.tsx, registry/components/breadcrumb/breadcrumb.module.css, lib/arc-provider.tsx
 
-## `mega-menu-morph` — Mega menu morph (Pro, component)
+## `mega-menu-morph` · Mega menu morph (Pro, component)
 
 A site header whose menus share one floating panel. Moving between sections morphs its size, slides the next menu in from that side and glides the caret under the new trigger, with hover intent, a safe triangle and an accordion sheet on narrow screens.
 
@@ -32,7 +32,7 @@ Keywords: navigation, menu, motion, new, mega menu, site header, navigation bar,
 
 Files: demo.tsx, mega-menu-morph.module.css, mega-menu-morph.tsx
 
-## `pagination` — Pagination (Free, component)
+## `pagination` · Pagination (Free, component)
 
 Move through a long collection with clear bounds.
 
@@ -48,7 +48,7 @@ Keywords: data, navigation, react pagination, pagination component, page numbers
 
 Files: registry/components/pagination/pagination.tsx, registry/components/pagination/pagination.module.css
 
-## `tabs` — Tabs (Free, component)
+## `tabs` · Tabs (Free, component)
 
 Switch between related content in the same context.
 
@@ -64,7 +64,7 @@ Keywords: navigation, layout, react tabs, animated tabs, radix tabs, tab compone
 
 Files: registry/components/tabs/tabs.tsx, registry/components/tabs/tabs.module.css
 
-## `toc-progress` — Table of contents progress (Pro, component)
+## `toc-progress` · Table of contents progress (Pro, component)
 
 A table of contents that reads along with you: a line bends through the nested headings, fills as you scroll, and carries a marker to the current section, with smooth jumps and a time-left countdown.
 

@@ -1,6 +1,6 @@
 # App shell
 
-## `command-palette` — Command palette (Free, block)
+## `command-palette` · Command palette (Free, block)
 
 A complete keyboard driven action surface with search, grouped results, and shortcuts.
 
@@ -16,7 +16,7 @@ Keywords: react command palette, cmd k menu, command menu, spotlight search, cmd
 
 Files: registry/components/command-palette/command-palette.tsx, registry/components/command-palette/command-palette.module.css
 
-## `empty-states` — Empty states (Free, block)
+## `empty-states` · Empty states (Free, block)
 
 Four empty states in one illustration whose shapes morph between scenes as you switch tabs.
 
@@ -32,7 +32,7 @@ Keywords: react empty state, empty state illustration, no results state, offline
 
 Files: registry/blocks/empty-states/empty-states.tsx, registry/blocks/empty-states/empty-states.module.css, registry/blocks/empty-states/empty-states-art.ts
 
-## `notification-center` — Notification center (Free, block)
+## `notification-center` · Notification center (Free, block)
 
 A home for updates with read state, grouped information, and animated disclosure.
 
@@ -48,7 +48,7 @@ Keywords: react notification center, notification bell, notification dropdown, i
 
 Files: registry/components/notification-center/notification-center.tsx, registry/components/notification-center/notification-center.module.css
 
-## `page-header` — Page header (Free, block)
+## `page-header` · Page header (Free, block)
 
 A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.
 
@@ -64,7 +64,7 @@ Keywords: react page header, project header, sticky header on scroll, condensing
 
 Files: registry/blocks/page-header/page-header.tsx, lib/use-copy-feedback.ts, registry/blocks/page-header/page-header.module.css
 
-## `search-results` — Search results (Pro, block)
+## `search-results` · Search results (Pro, block)
 
 A faceted workspace search page with suggestions, facet counts that follow the query, filter chips, mixed doc, person and file results with highlighted matches, a gliding keyboard cursor and a preview pane.
 
@@ -80,7 +80,7 @@ Keywords: search, search results, faceted search, filters, facets, highlight, ke
 
 Files: demo.tsx, search-results.module.css, search-results.tsx
 
-## `selection-toolbar` — Selection toolbar (Pro, block)
+## `selection-toolbar` · Selection toolbar (Pro, block)
 
 A contextual batch action surface that appears when items are selected.
 
@@ -95,7 +95,7 @@ Keywords: react selection toolbar, bulk actions bar, floating action bar, select
 
 Files: demo.module.css, demo.tsx, selection-toolbar.module.css, selection-toolbar.tsx
 
-## `sidebar` — SidebarPro4 (Pro, block)
+## `sidebar` · SidebarPro4 (Pro, block)
 
 App and docs sidebars: a folding rail, a workspace switcher, a mail shell, and a docs tree.
 

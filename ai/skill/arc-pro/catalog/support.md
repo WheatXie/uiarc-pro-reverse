@@ -1,6 +1,6 @@
 # Support
 
-## `availability-picker` — Availability picker (Pro, block)
+## `availability-picker` · Availability picker (Pro, block)
 
 Find a meeting time across people and see the choice come together.
 
@@ -16,7 +16,7 @@ Keywords: react availability picker, meeting time picker, group scheduling, cale
 
 Files: availability-picker.module.css, availability-picker.tsx, demo.tsx
 
-## `feature-voting` — Feature voting (Pro, block)
+## `feature-voting` · Feature voting (Pro, block)
 
 A public feature request board where votes roll digit by digit and the button fills with the accent. Top, New and Trending reorder the rows with one smooth move. A built-in composer suggests similar requests as you type, so people vote instead of posting duplicates.
 
@@ -32,7 +32,7 @@ Keywords: feature voting, feature requests, upvote, roadmap, feedback board, can
 
 Files: demo.tsx, feature-voting.module.css, feature-voting.tsx
 
-## `file-upload` — File upload (Free, block)
+## `file-upload` · File upload (Free, block)
 
 A complete file selection flow with constraints, progress, and error feedback.
 
@@ -48,7 +48,7 @@ Keywords: react file upload, drag and drop upload, upload progress, file dropzon
 
 Files: registry/components/file-upload/file-upload.tsx, registry/components/file-upload/file-upload.module.css
 
-## `media-player` — Media player (Pro, block)
+## `media-player` · Media player (Pro, block)
 
 An audio player with a living playlist and complete playback controls.
 
@@ -64,7 +64,7 @@ Keywords: react audio player, music player component, podcast player, playlist p
 
 Files: demo.tsx, media-player.module.css, media-player.tsx
 
-## `project-board` — Project board (Pro, block)
+## `project-board` · Project board (Pro, block)
 
 A living workflow board for moving work between stages.
 
@@ -80,7 +80,7 @@ Keywords: react kanban board, project board, task board, kanban component, acces
 
 Files: demo.tsx, project-board.module.css, project-board.tsx
 
-## `week-calendar` — Week calendar (Pro, block)
+## `week-calendar` · Week calendar (Pro, block)
 
 A week calendar where you drag to create, move, and resize events, with color coded calendars, day and agenda views, and swipes on phones.
 

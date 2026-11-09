@@ -1,6 +1,6 @@
 # Charts
 
-## `activity-heatmap` — Activity heatmap (Free, component)
+## `activity-heatmap` · Activity heatmap (Free, component)
 
 See a year of activity at a glance, one square per day.
 
@@ -16,7 +16,7 @@ Keywords: data, chart, calendar, react activity heatmap, contribution graph, git
 
 Files: registry/components/activity-heatmap/activity-heatmap.tsx, registry/components/activity-heatmap/activity-heatmap.module.css
 
-## `animated-counter` — Animated counter (Free, component)
+## `animated-counter` · Animated counter (Free, component)
 
 Give changing totals a clear sense of movement.
 
@@ -32,7 +32,7 @@ Keywords: data, motion, react animated counter, number ticker, odometer counter,
 
 Files: registry/components/animated-counter/animated-counter.tsx, registry/components/animated-counter/animated-counter.module.css
 
-## `bar-chart` — Bar chart (Free, component)
+## `bar-chart` · Bar chart (Free, component)
 
 Compare one measure across days and scrub any bar for its value.
 
@@ -48,7 +48,7 @@ Keywords: chart, bar, data, react bar chart, column chart, animated bar chart, s
 
 Files: registry/components/bar-chart/bar-chart.tsx, registry/components/bar-chart/bar-chart.module.css
 
-## `brush-chart` — Brush chart (Free, component)
+## `brush-chart` · Brush chart (Free, component)
 
 A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.
 
@@ -64,7 +64,7 @@ Keywords: data, chart, new, brush chart, zoomable time series, chart with overvi
 
 Files: registry/components/brush-chart/brush-chart.tsx, registry/components/brush-chart/brush-chart.module.css
 
-## `donut-chart` — Donut chart (Free, component)
+## `donut-chart` · Donut chart (Free, component)
 
 A donut whose arcs morph between datasets, with the active value rolling into the center.
 
@@ -80,7 +80,7 @@ Keywords: data, new, react donut chart, pie chart, ring chart, share of total ch
 
 Files: registry/components/donut-chart/donut-chart.tsx, registry/components/donut-chart/donut-chart.module.css
 
-## `gauge` — Gauge (Free, component)
+## `gauge` · Gauge (Free, component)
 
 Show a value against a known range.
 
@@ -96,7 +96,7 @@ Keywords: data, chart, react gauge, gauge chart, radial meter, progress ring, th
 
 Files: registry/components/gauge/gauge.tsx, registry/components/gauge/gauge.module.css
 
-## `line-chart` — Line chart (Free, component)
+## `line-chart` · Line chart (Free, component)
 
 A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.
 
@@ -112,7 +112,7 @@ Keywords: data, new, react line chart, time series chart, animated line chart, c
 
 Files: registry/components/line-chart/line-chart.tsx, registry/components/line-chart/line-chart.module.css
 
-## `ridgeline` — Ridgeline (Free, component)
+## `ridgeline` · Ridgeline (Free, component)
 
 Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.
 
@@ -128,7 +128,7 @@ Keywords: data, chart, new, ridgeline, joy plot, joyplot, density plot, distribu
 
 Files: registry/components/ridgeline/ridgeline.tsx, registry/components/ridgeline/ridgeline.module.css
 
-## `slope-chart` — Slope chart (Free, component)
+## `slope-chart` · Slope chart (Free, component)
 
 Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.
 
@@ -144,7 +144,7 @@ Keywords: data, chart, new, slope chart, slopegraph, before after chart, react s
 
 Files: registry/components/slope-chart/slope-chart.tsx, registry/components/slope-chart/slope-chart.module.css
 
-## `sparkline` — Sparkline (Free, component)
+## `sparkline` · Sparkline (Free, component)
 
 Show a compact trend beside a value.
 
@@ -160,7 +160,7 @@ Keywords: data, chart, react sparkline, mini line chart, trend line, inline char
 
 Files: registry/components/sparkline/sparkline.tsx, registry/components/sparkline/sparkline.module.css
 
-## `split-bar` — Split bar (Pro, component)
+## `split-bar` · Split bar (Pro, component)
 
 A single 100% bar split into shares: rest on a segment to widen it and read its exact figures, toggle segments from the legend and the rest reflow, with labels inside when they fit and on leader lines when they don't.
 
@@ -176,7 +176,7 @@ Keywords: data, chart, motion, new, split bar, stacked bar, 100% bar, part to wh
 
 Files: demo.module.css, demo.tsx, split-bar.module.css, split-bar.tsx
 
-## `streamgraph` — Streamgraph (Free, component)
+## `streamgraph` · Streamgraph (Free, component)
 
 Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.
 
@@ -192,7 +192,7 @@ Keywords: data, chart, new, streamgraph, stream graph react, stacked area chart,
 
 Files: registry/components/streamgraph/streamgraph.tsx, registry/components/streamgraph/streamgraph.module.css
 
-## `treemap` — Treemap (Free, component)
+## `treemap` · Treemap (Free, component)
 
 A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.
 
@@ -208,7 +208,7 @@ Keywords: data, chart, new, treemap, tree map, squarified, hierarchy, part to wh
 
 Files: registry/components/treemap/treemap.tsx, registry/components/treemap/treemap.module.css
 
-## `waffle-chart` — Waffle chart (Free, component)
+## `waffle-chart` · Waffle chart (Free, component)
 
 A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.
 

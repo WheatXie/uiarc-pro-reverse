@@ -1,6 +1,6 @@
 # Activity
 
-## `chat-thread` — Chat thread (Free, component)
+## `chat-thread` · Chat thread (Free, component)
 
 A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.
 
@@ -16,7 +16,7 @@ Keywords: data, new, react chat, chat thread, messaging ui, support chat widget,
 
 Files: registry/components/chat-thread/chat-thread.tsx, registry/components/chat-thread/chat-thread.module.css
 
-## `comment-thread` — Comment thread (Free, component)
+## `comment-thread` · Comment thread (Free, component)
 
 Threaded comments with replies, reactions, mentions, inline edit, and resolve.
 
@@ -32,7 +32,7 @@ Keywords: data, new, react comment thread, threaded comments, comment replies, r
 
 Files: registry/components/comment-thread/comment-thread.tsx, registry/components/comment-thread/comment-thread.module.css
 
-## `timeline` — Timeline (Free, component)
+## `timeline` · Timeline (Free, component)
 
 Follow what happened, newest first, grouped by day.
 

@@ -1,6 +1,6 @@
 # Showpieces
 
-## `exploded-view` — Exploded view (Pro, block)
+## `exploded-view` · Exploded view (Pro, block)
 
 A scroll driven exploded view where a live phone screen built from five CSS 3D layers lies back, separates in depth with labels that follow each layer, takes each layer into focus, and then reassembles.
 

@@ -1,6 +1,6 @@
 # Special inputs
 
-## `mention-input` — Mention input (Free, component)
+## `mention-input` · Mention input (Free, component)
 
 A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.
 
@@ -16,7 +16,7 @@ Keywords: inputs, new, react mention input, at mention textarea, mentions autoco
 
 Files: registry/components/mention-input/mention-input.tsx, registry/components/mention-input/mention-input.module.css
 
-## `money-input` — Money input (Free, component)
+## `money-input` · Money input (Free, component)
 
 A currency field with live grouping, stable width, rolling digits, and minor-unit output.
 
@@ -32,7 +32,7 @@ Keywords: inputs, new, react money input, currency input, amount field, price in
 
 Files: registry/components/money-input/money-input.tsx, registry/components/money-input/money-input.module.css
 
-## `number-field` — Number field (Free, component)
+## `number-field` · Number field (Free, component)
 
 Enter a bounded number with clear increment controls.
 
@@ -48,7 +48,7 @@ Keywords: field, numeric, react number input, number field, stepper input, quant
 
 Files: registry/components/number-field/number-field.tsx, registry/components/number-field/number-field.module.css
 
-## `phone-input` — Phone input (Free, component)
+## `phone-input` · Phone input (Free, component)
 
 A phone field with a country picker, formatting as you type, and E.164 output.
 
@@ -64,7 +64,7 @@ Keywords: inputs, new, react phone input, phone number field, country code picke
 
 Files: registry/components/phone-input/phone-input.tsx, registry/components/phone-input/phone-input.module.css
 
-## `scrub-input` — Scrub input (Free, component)
+## `scrub-input` · Scrub input (Free, component)
 
 A Figma-style number field: drag the label to scrub, or type values, units, and arithmetic.
 
@@ -80,7 +80,7 @@ Keywords: inputs, new, react scrub input, drag to change number, scrubbable numb
 
 Files: registry/components/scrub-input/scrub-input.tsx, registry/components/scrub-input/scrub-input.module.css
 
-## `shortcut-recorder` — Shortcut recorder (Free, component)
+## `shortcut-recorder` · Shortcut recorder (Free, component)
 
 Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.
 
@@ -96,7 +96,7 @@ Keywords: inputs, new, react shortcut recorder, keyboard shortcut input, hotkey 
 
 Files: registry/components/shortcut-recorder/shortcut-recorder.tsx, registry/components/shortcut-recorder/shortcut-recorder.module.css
 
-## `tag-input` — Tag input (Free, component)
+## `tag-input` · Tag input (Free, component)
 
 Turn short text values into removable tags.
 

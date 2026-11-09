@@ -1,6 +1,6 @@
 # People
 
-## `api-keys` — API keys (Pro, block)
+## `api-keys` · API keys (Pro, block)
 
 API key management where Create key unfolds into its form and each secret is shown once.
 
@@ -16,7 +16,7 @@ Keywords: react api keys, api key management, developer settings, create api key
 
 Files: api-keys.module.css, api-keys.tsx, demo.tsx
 
-## `domain-verify` — Domain verify (Pro, block)
+## `domain-verify` · Domain verify (Pro, block)
 
 A custom domain setup card where customers add a domain and copy the DNS records. A live checker then polls resolvers, marks each record valid, not found or misconfigured with a one-line fix, and finishes with the domain verified and the SSL certificate issued.
 
@@ -32,7 +32,7 @@ Keywords: custom domain, domain verification, dns records, cname, txt record, ca
 
 Files: demo.tsx, domain-verify.module.css, domain-verify.tsx
 
-## `env-variables` — Environment variables (Pro, block)
+## `env-variables` · Environment variables (Pro, block)
 
 An environment variables and secrets manager with masked values, per-environment scope toggles, .env paste import with duplicate and invalid key warnings, write-only sensitive values, an environment diff by fingerprint, and a redeploy banner.
 
@@ -48,7 +48,7 @@ Keywords: environment variables, env, dotenv, .env, secrets, config, configurati
 
 Files: demo.tsx, env-variables.module.css, env-variables.tsx
 
-## `integrations` — Integrations (Pro, block)
+## `integrations` · Integrations (Pro, block)
 
 An integrations directory where Connect morphs to Connected and the filters recount as you go.
 
@@ -64,7 +64,7 @@ Keywords: react integrations page, app marketplace, connect apps ui, integration
 
 Files: demo.tsx, integrations.module.css, integrations.tsx
 
-## `webhooks` — Webhooks (Pro, block)
+## `webhooks` · Webhooks (Pro, block)
 
 A webhooks console with delivery history, a payload inspector and retries that roll the rate.
 

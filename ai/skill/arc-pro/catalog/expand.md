@@ -1,6 +1,6 @@
 # Expand
 
-## `accordion` — Accordion (Free, component)
+## `accordion` · Accordion (Free, component)
 
 Progressively reveal supporting information in place.
 
@@ -16,7 +16,7 @@ Keywords: disclosure, layout, react accordion, faq accordion, collapsible sectio
 
 Files: registry/components/accordion/accordion.tsx, registry/components/accordion/accordion.module.css
 
-## `expandable-card` — Expandable card (Free, component)
+## `expandable-card` · Expandable card (Free, component)
 
 Give a dense card more room when requested.
 
@@ -32,7 +32,7 @@ Keywords: disclosure, layout, react expandable card, collapsible card, expand ca
 
 Files: registry/components/expandable-card/expandable-card.tsx, registry/components/expandable-card/expandable-card.module.css
 
-## `expandable-text` — Expandable text (Free, component)
+## `expandable-text` · Expandable text (Free, component)
 
 Long text clamped to a few lines with a soft fade that glides open with Read more and closes with Show less, shown only when the text overflows.
 
@@ -48,7 +48,7 @@ Keywords: disclosure, text, motion, new, read more, show more, show less, trunca
 
 Files: registry/components/expandable-text/expandable-text.tsx, registry/components/expandable-text/expandable-text.module.css
 
-## `resizable-panels` — Resizable panels (Free, component)
+## `resizable-panels` · Resizable panels (Free, component)
 
 Trade space between panes by dragging the divider between them.
 
@@ -64,7 +64,7 @@ Keywords: split view, resizable, panes, react resizable panels, resizable sideba
 
 Files: registry/components/resizable-panels/resizable-panels.tsx, registry/components/resizable-panels/resizable-panels.module.css
 
-## `scroll-area` — Scroll area (Free, component)
+## `scroll-area` · Scroll area (Free, component)
 
 A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.
 

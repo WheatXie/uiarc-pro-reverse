@@ -1,6 +1,6 @@
 # Avatars
 
-## `avatar` — Avatar (Free, component)
+## `avatar` · Avatar (Free, component)
 
 A compact identity marker for people and accounts.
 
@@ -16,7 +16,7 @@ Keywords: identity, people, react avatar, avatar component, user avatar with ini
 
 Files: registry/components/avatar/avatar.tsx, registry/components/avatar/avatar.module.css, lib/arc-provider.tsx
 
-## `avatar-group` — Avatar group (Free, component)
+## `avatar-group` · Avatar group (Free, component)
 
 Show a team or set of contributors in a small space.
 
@@ -32,7 +32,7 @@ Keywords: identity, people, react avatar group, avatar stack, overlapping avatar
 
 Files: registry/components/avatar-group/avatar-group.tsx, registry/components/avatar-group/avatar-group.module.css
 
-## `badge` — Badge (Free, component)
+## `badge` · Badge (Free, component)
 
 A small label for status, category, or metadata.
 
@@ -48,7 +48,7 @@ Keywords: label, status, react badge, status badge, status pill, animated badge,
 
 Files: registry/components/badge/badge.tsx, registry/components/badge/badge.module.css
 
-## `presence-stack` — Presence stack (Pro, component)
+## `presence-stack` · Presence stack (Pro, component)
 
 Avatars of the people here now: joins pop in as the stack reflows, a counter rolls past the limit, dots show typing and idle, and hover fans it out with a gliding name label.
 

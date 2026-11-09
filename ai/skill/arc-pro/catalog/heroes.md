@@ -1,6 +1,6 @@
 # Heroes
 
-## `comparison-table` — Comparison table (Free, block)
+## `comparison-table` · Comparison table (Free, block)
 
 An us versus them table with a sticky header, a highlighted column, and a stacked phone view.
 
@@ -16,7 +16,7 @@ Keywords: comparison table, us vs them, competitor comparison, feature compariso
 
 Files: registry/blocks/comparison-table/comparison-table.tsx, registry/blocks/comparison-table/comparison-table-data.ts, registry/blocks/comparison-table/comparison-table.module.css
 
-## `logo-marquee` — Logo marquee (Free, block)
+## `logo-marquee` · Logo marquee (Free, block)
 
 A quiet, continuously moving row of brand marks with a pause control.
 

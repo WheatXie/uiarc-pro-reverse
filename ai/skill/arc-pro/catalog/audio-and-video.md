@@ -1,6 +1,6 @@
 # Audio and video
 
-## `now-playing` — Now playing (Pro, special)
+## `now-playing` · Now playing (Pro, special)
 
 Grow a mini player into the full player in one continuous morph.
 
@@ -16,7 +16,7 @@ Keywords: special, media, music, react music player, now playing bar, mini playe
 
 Files: demo.module.css, demo.tsx, now-playing.module.css, now-playing.tsx
 
-## `voice-orb` — Voice orb (Pro, special)
+## `voice-orb` · Voice orb (Pro, special)
 
 A voice mode orb that listens, thinks, and speaks, with a live transcript and call controls.
 
@@ -32,7 +32,7 @@ Keywords: special, new, react voice orb, voice assistant ui, ai voice mode, audi
 
 Files: demo.tsx, voice-orb.module.css, voice-orb.tsx
 
-## `voice-recorder` — Voice recorder (Pro, special)
+## `voice-recorder` · Voice recorder (Pro, special)
 
 Record with a live waveform, review and scrub, then send the take into the thread.
 

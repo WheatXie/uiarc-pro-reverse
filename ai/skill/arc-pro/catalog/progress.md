@@ -1,6 +1,6 @@
 # Progress
 
-## `countdown` — Countdown (Free, component)
+## `countdown` · Countdown (Free, component)
 
 A launch countdown with rolling digits that morphs into a live state at zero.
 
@@ -16,7 +16,7 @@ Keywords: feedback, new, react countdown, countdown timer, launch countdown, eve
 
 Files: registry/components/countdown/countdown.tsx, registry/components/countdown/countdown.module.css
 
-## `onboarding-checklist` — Onboarding checklist (Free, component)
+## `onboarding-checklist` · Onboarding checklist (Free, component)
 
 Guide a new workspace through setup, one step at a time.
 
@@ -32,7 +32,7 @@ Keywords: onboarding, checklist, getting started, react onboarding checklist, ge
 
 Files: registry/components/onboarding-checklist/onboarding-checklist.tsx, registry/components/onboarding-checklist/onboarding-checklist.module.css
 
-## `progress` — Progress (Free, component)
+## `progress` · Progress (Free, component)
 
 Show how much of a known task is complete.
 
@@ -48,7 +48,7 @@ Keywords: status, loading, react progress bar, animated progress bar, upload pro
 
 Files: registry/components/progress/progress.tsx, registry/components/progress/progress.module.css
 
-## `skeleton` — Skeleton (Free, component)
+## `skeleton` · Skeleton (Free, component)
 
 Reserve space while content is still loading.
 
@@ -64,7 +64,7 @@ Keywords: loading, status, react skeleton, skeleton loader, loading placeholder,
 
 Files: registry/components/skeleton/skeleton.tsx, registry/components/skeleton/skeleton.module.css
 
-## `stepper` — Stepper (Free, component)
+## `stepper` · Stepper (Free, component)
 
 Show where a person is in a multi-step flow and what is done.
 
@@ -80,7 +80,7 @@ Keywords: motion, product, react stepper, step indicator, progress steps, wizard
 
 Files: registry/components/stepper/stepper.tsx, registry/components/stepper/stepper.module.css
 
-## `usage-meter` — Usage meter (Free, component)
+## `usage-meter` · Usage meter (Free, component)
 
 Show what fills an allowance and how close it is to the limit.
 

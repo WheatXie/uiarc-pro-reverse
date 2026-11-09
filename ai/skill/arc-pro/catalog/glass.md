@@ -1,6 +1,6 @@
 # Glass
 
-## `glass-card` — Glass card (Pro, special)
+## `glass-card` · Glass card (Pro, special)
 
 A glass info panel over a photo whose rim catches a pointer-following highlight while the card tilts; tap to morph it into a detail sheet.
 
@@ -16,7 +16,7 @@ Keywords: special, glass, card, new, glass card, glassmorphism card, profile car
 
 Files: demo.tsx, glass-card.module.css, glass-card.tsx
 
-## `glass-menu` — Glass menu (Pro, special)
+## `glass-menu` · Glass menu (Pro, special)
 
 A glass action menu whose trigger morphs into the panel, with a highlight pill that glides between rows, one in-place submenu, and full keyboard support.
 
@@ -32,7 +32,7 @@ Keywords: special, glass, menu, new, glass menu, dropdown, context menu, action 
 
 Files: demo.tsx, glass-menu-data.ts, glass-menu.module.css, glass-menu.tsx
 
-## `glass-segmented` — Glass segmented (Pro, special)
+## `glass-segmented` · Glass segmented (Pro, special)
 
 A glass segmented control whose liquid indicator stretches between segments and can be dragged and flung.
 
@@ -48,7 +48,7 @@ Keywords: special, glass, input, new, segmented control, liquid glass, toggle gr
 
 Files: demo.tsx, glass-segmented-data.ts, glass-segmented.module.css, glass-segmented.tsx
 
-## `glass-tabbar` — Glass tab bar (Pro, special)
+## `glass-tabbar` · Glass tab bar (Pro, special)
 
 A floating Liquid Glass tab bar that refracts what scrolls beneath it, with a glass lens that glides, magnifies and can be dragged between tabs, and an optional search bubble; it compacts on scroll down.
 

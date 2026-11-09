@@ -1,6 +1,6 @@
 # Loaders
 
-## `black-hole` — Black hole (Pro, special)
+## `black-hole` · Black hole (Pro, special)
 
 A delete transition that pulls the chosen items into a tiny singularity while the rest of the list bends around it; undo spins them back out.
 
@@ -16,7 +16,7 @@ Keywords: special, motion, webgl, new, delete animation, archive transition, bla
 
 Files: black-hole.module.css, black-hole.tsx, demo.module.css, demo.tsx
 
-## `charge-session` — Charge session (Pro, special)
+## `charge-session` · Charge session (Pro, special)
 
 An EV or device charging card. Energy packets flow from a charger along the cable into the battery pack, which fills toward a draggable charge limit. The charge curve tapers near full, and power, energy, time to limit and cost update live. Stop charging drains the flow.
 
@@ -32,7 +32,7 @@ Keywords: special, motion, progress, energy, new, ev charging, charging, battery
 
 Files: charge-session.module.css, charge-session.tsx, demo.module.css, demo.tsx
 
-## `morph-loader` — Morph loader (Pro, special)
+## `morph-loader` · Morph loader (Pro, special)
 
 Tiny loaders that morph between shapes and fold into a check or a cross when done.
 
@@ -48,7 +48,7 @@ Keywords: special, loading, new, loader, spinner, loading indicator, morphing lo
 
 Files: demo.module.css, demo.tsx, morph-loader.module.css, morph-loader.tsx
 
-## `skeleton-morph` — Skeleton morph (Pro, special)
+## `skeleton-morph` · Skeleton morph (Pro, special)
 
 Loading skeletons that grow into the real content, block by block, instead of swapping.
 
@@ -64,7 +64,7 @@ Keywords: special, loading, motion, new, skeleton loader, loading skeleton, skel
 
 Files: demo.tsx, skeleton-morph.module.css, skeleton-morph.tsx
 
-## `stretch-refresh` — Stretch refresh (Pro, special)
+## `stretch-refresh` · Stretch refresh (Pro, special)
 
 Pull a feed down and a line stretches to tell you when to let go.
 

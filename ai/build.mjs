@@ -221,7 +221,7 @@ lines.push("");
 lines.push(
   "Pick the item whose job matches, not the one that looks closest. Every id below is a real item in",
   "this repository: live preview at `/components/<id>` (`/components/blocks/<id>` for blocks), docs at",
-  "`public/docs/<id>.md`, and — for Pro items — the reconstructed source at `src/components/arc/<id>/`.",
+  "`public/docs/<id>.md`, and (for Pro items) the reconstructed source at `src/components/arc/<id>/`.",
 );
 lines.push("");
 lines.push(
@@ -230,13 +230,15 @@ lines.push(
   '"When not to use", then copy the files.',
 );
 lines.push("");
+lines.push("## Contents");
+lines.push("");
+lines.push(groupOrder.map((group) => `- [${group}](#${slugify(group)}-${byGroup.get(group).length})`).join("\n"));
+lines.push("");
 lines.push("## Groups");
 lines.push("");
 for (const group of groupOrder) {
   const items = byGroup.get(group);
-  lines.push(
-    `### ${group} (${items.length}) — [details](catalog/${slugify(group)}.md)`,
-  );
+  lines.push(`### ${group} (${items.length}) · [details](catalog/${slugify(group)}.md)`);
   lines.push("");
   lines.push(items.map((item) => `\`${item.id}\`${item.tier === "pro" ? " (Pro)" : ""}`).join(", "));
   lines.push("");
@@ -265,7 +267,7 @@ for (const group of groupOrder) {
   const out = [`# ${group}`, ""];
   for (const item of byGroup.get(group)) {
     const badge = item.tier === "pro" ? "Pro" : "Free";
-    out.push(`## \`${item.id}\` — ${item.title} (${badge}, ${item.kind})`);
+    out.push(`## \`${item.id}\` · ${item.title} (${badge}, ${item.kind})`);
     out.push("");
     out.push(item.summary);
     out.push("");

@@ -1,6 +1,6 @@
 # Toggles
 
-## `billing-toggle` — Billing toggle (Free, component)
+## `billing-toggle` · Billing toggle (Free, component)
 
 A monthly and yearly switch with a savings badge and prices that roll to the new amount.
 
@@ -16,7 +16,7 @@ Keywords: inputs, new, react billing toggle, monthly yearly switch, pricing peri
 
 Files: registry/components/billing-toggle/billing-toggle.tsx, registry/components/billing-toggle/billing-toggle.module.css
 
-## `checkbox` — Checkbox (Free, component)
+## `checkbox` · Checkbox (Free, component)
 
 A binary choice with a precise, legible state.
 
@@ -32,7 +32,7 @@ Keywords: field, form, react checkbox, animated checkbox, indeterminate checkbox
 
 Files: registry/components/checkbox/checkbox.tsx, registry/components/checkbox/checkbox.module.css
 
-## `radio-cards` — Radio cards (Free, component)
+## `radio-cards` · Radio cards (Free, component)
 
 Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.
 
@@ -48,7 +48,7 @@ Keywords: inputs, new, react radio cards, selectable cards, radio card group, pl
 
 Files: registry/components/radio-cards/radio-cards.tsx, registry/components/radio-cards/radio-cards.module.css
 
-## `radio-group` — Radio group (Free, component)
+## `radio-group` · Radio group (Free, component)
 
 Choose one option from a visible set.
 
@@ -64,7 +64,7 @@ Keywords: field, choice, react radio group, radio buttons, radio cards, plan pic
 
 Files: registry/components/radio-group/radio-group.tsx, registry/components/radio-group/radio-group.module.css
 
-## `rating` — Rating (Free, component)
+## `rating` · Rating (Free, component)
 
 A simple, accessible way to capture a numeric opinion.
 
@@ -80,7 +80,7 @@ Keywords: input, feedback, react star rating, rating component, half star rating
 
 Files: registry/components/rating/rating.tsx, registry/components/rating/rating.module.css
 
-## `segmented-control` — Segmented control (Free, component)
+## `segmented-control` · Segmented control (Free, component)
 
 Switch between a small set of related views.
 
@@ -96,7 +96,7 @@ Keywords: control, choice, react segmented control, segmented button, toggle gro
 
 Files: registry/components/segmented-control/segmented-control.tsx, registry/components/segmented-control/segmented-control.module.css
 
-## `switch` — Switch (Free, component)
+## `switch` · Switch (Free, component)
 
 A tactile toggle for settings that take effect immediately.
 
@@ -112,7 +112,7 @@ Keywords: toggle, settings, react switch, toggle switch, ios toggle, radix switc
 
 Files: registry/components/switch/switch.tsx, registry/components/switch/switch.module.css
 
-## `toggle-group` — Toggle group (Free, component)
+## `toggle-group` · Toggle group (Free, component)
 
 A row of icon or text toggles, single or multiple: one pressed fill glides between options, or each fades in on its own and neighbours join, as in a formatting toolbar.
 

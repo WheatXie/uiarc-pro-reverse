@@ -1,6 +1,6 @@
 # Cursor
 
-## `dot-grid` — Dot grid (Pro, special)
+## `dot-grid` · Dot grid (Pro, special)
 
 A dot field that bulges around the cursor like a lens and ripples from every click.
 
@@ -16,7 +16,7 @@ Keywords: special, motion, new, dot grid, interactive dot background, dot field,
 
 Files: demo.tsx, dot-grid.module.css, dot-grid.tsx
 
-## `gravity-well` — Gravity well (Pro, special)
+## `gravity-well` · Gravity well (Pro, special)
 
 A grid of tiles that bends toward the cursor like spacetime, with a click that sends a shockwave through it.
 
@@ -32,7 +32,7 @@ Keywords: special, grid, physics, new, gravity, spacetime, magnetic, lens, shock
 
 Files: demo.module.css, demo.tsx, gravity-well.module.css, gravity-well.tsx
 
-## `image-trail` — Image trail (Pro, special)
+## `image-trail` · Image trail (Pro, special)
 
 Moving the pointer leaves a curated trail of photos that pop in, lean, and fade away.
 
@@ -48,7 +48,7 @@ Keywords: special, media, cursor, new, image trail, cursor image trail, mouse tr
 
 Files: demo.module.css, demo.tsx, image-trail.module.css, image-trail.tsx
 
-## `ink-fluid` — Ink fluid (Pro, special)
+## `ink-fluid` · Ink fluid (Pro, special)
 
 A real time fluid simulation behind your hero: the cursor stirs soft ink that swirls, settles and fades; calm when left alone.
 

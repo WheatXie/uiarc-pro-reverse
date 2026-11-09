@@ -1,6 +1,6 @@
 # Illustrations
 
-## `agent-loop` — Agent loop (Pro, special)
+## `agent-loop` · Agent loop (Pro, special)
 
 An illustration of the agent loop: gather context, take action, verify, repeat, with a bright head circling three stations around the model.
 
@@ -16,7 +16,7 @@ Keywords: special, motion, illustration, new, agent loop, ai agent, tool use, to
 
 Files: agent-loop.module.css, agent-loop.tsx, demo.tsx
 
-## `branch-graph` — Branch graph (Pro, special)
+## `branch-graph` · Branch graph (Pro, special)
 
 A git commit graph where branches draw in as colored lanes, merge commits join lines, a rebase lifts commits and replays them onto main, a squash folds them into one, and hovering a commit shows its message, author and diff stats.
 
@@ -32,7 +32,7 @@ Keywords: special, git, graph, developer, motion, new, commit graph, branch, mer
 
 Files: branch-graph.module.css, branch-graph.tsx, demo.module.css, demo.tsx
 
-## `data-flow` — Data flow (Pro, special)
+## `data-flow` · Data flow (Pro, special)
 
 Data flow illustration. Sources (app, database, events) are on the left, a processing core with a live count sits in the middle, and destinations (warehouse, dashboard, alerts) are on the right. Records leave as hollow dots and travel curved paths. In the core they turn into solid accent squares, then fan out to each destination; alerts receives about every third record.
 
@@ -48,7 +48,7 @@ Keywords: special, motion, illustration, new, data flow, pipeline illustration, 
 
 Files: data-flow.module.css, data-flow.tsx, demo.tsx
 
-## `dns-resolution` — DNS resolution (Pro, special)
+## `dns-resolution` · DNS resolution (Pro, special)
 
 A browser asks for a domain and the query hops from the resolver to a root server, the TLD server and the authoritative nameserver, each pointing to the next, until an IP address comes back and the page connects. The resolver keeps the answer with a TTL ring that drains, and a second lookup is answered straight from that cache in one short hop.
 
@@ -64,7 +64,7 @@ Keywords: special, motion, illustration, new, dns, dns resolution, dns lookup, r
 
 Files: demo.module.css, demo.tsx, dns-resolution.module.css, dns-resolution.tsx
 
-## `mixture-of-experts` — Mixture of experts (Pro, special)
+## `mixture-of-experts` · Mixture of experts (Pro, special)
 
 An illustration of mixture of experts routing: each token is scored by a router, travels to its top experts, and their outputs merge into the token's result.
 
@@ -80,7 +80,7 @@ Keywords: special, motion, illustration, new, mixture of experts, moe, sparse mo
 
 Files: demo.tsx, mixture-of-experts.module.css, mixture-of-experts.tsx
 
-## `model-training` — Model training (Pro, special)
+## `model-training` · Model training (Pro, special)
 
 Training data batches feed a small neural net diagram whose connections strengthen, a loss curve descends beside it, and an evaluation check turns green at the end.
 
@@ -96,7 +96,7 @@ Keywords: special, motion, illustration, new, model training, machine learning, 
 
 Files: demo.module.css, demo.tsx, model-training.module.css, model-training.tsx
 
-## `multi-region-failover` — Multi-region failover (Pro, special)
+## `multi-region-failover` · Multi-region failover (Pro, special)
 
 Animated multi-region failover on a 2.5D stage: users stream requests through a global load balancer to two regions; the primary degrades, fails three health checks, traffic shifts smoothly to the healthy region, then it recovers, passes three checks and traffic ramps back to an even split.
 
@@ -112,7 +112,7 @@ Keywords: special, motion, illustration, new, failover, multi-region, region, hi
 
 Files: demo.module.css, demo.tsx, multi-region-failover.module.css, multi-region-failover.tsx
 
-## `payment-flow` — Payment flow (Pro, special)
+## `payment-flow` · Payment flow (Pro, special)
 
 A card tap goes to a processor, then the network, then the bank and back with authorization, then settlement; each hop lights up with a status label and the amount travels as a chip.
 
@@ -128,7 +128,7 @@ Keywords: special, motion, illustration, new, payment, card payment, authorizati
 
 Files: demo.tsx, payment-flow.module.css, payment-flow.tsx
 
-## `prompt-cache` — Prompt cache (Pro, special)
+## `prompt-cache` · Prompt cache (Pro, special)
 
 An animated explainer for prompt caching: the shared prefix of each request is cached once, later requests read it back, and the cost and time saved add up.
 
@@ -144,7 +144,7 @@ Keywords: special, motion, illustration, new, prompt caching, prompt cache, cach
 
 Files: demo.module.css, demo.tsx, prompt-cache.module.css, prompt-cache.tsx
 
-## `reasoning-tree` — Reasoning tree (Pro, special)
+## `reasoning-tree` · Reasoning tree (Pro, special)
 
 An illustration of tree search over thoughts: candidates are scored, weak branches fade, the best expand, and the winning path from question to answer draws in.
 
@@ -160,7 +160,7 @@ Keywords: special, motion, illustration, new, tree of thoughts, beam search, rea
 
 Files: demo.tsx, reasoning-tree.module.css, reasoning-tree.tsx
 
-## `speculative-decoding` — Speculative decoding (Pro, special)
+## `speculative-decoding` · Speculative decoding (Pro, special)
 
 An illustration of speculative decoding: a fast draft model guesses a few tokens, the target model checks them in one pass, and accepted guesses join the answer.
 
@@ -176,7 +176,7 @@ Keywords: special, motion, illustration, new, speculative decoding, draft model,
 
 Files: demo.tsx, speculative-decoding.module.css, speculative-decoding.tsx
 
-## `vector-search` — Vector search (Pro, special)
+## `vector-search` · Vector search (Pro, special)
 
 Documents drop onto a tilted embedding plane and fold into points that cluster by topic; the index links neighbours, a query is typed, embedded and lowered onto the plane, a signal hops along the graph toward it, and a widening ring lights the nearest documents with connecting lines, similarity scores and a ranked list.
 

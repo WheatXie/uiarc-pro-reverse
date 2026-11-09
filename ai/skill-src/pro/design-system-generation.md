@@ -30,7 +30,7 @@ Light/dark:  both required
 Create `brand.css` and import it **after** `foundation.css`. Override only what the brand changes.
 
 ```css
-/* brand.css — after foundation.css */
+/* brand.css: after foundation.css */
 :root {
   /* accent family: base, pressed/strong, tint, and the text colour that sits on the accent */
   --accent: oklch(58% 0.19 285);
@@ -92,18 +92,18 @@ light for white text, flip `--accent-foreground` to the dark neutral and re-chec
 ```
 
 If density changes, change `--control-height-sm` and the row heights together, then verify
-`data-grid`, `settings-page`, `sidebar` and `sortable-data-table` — those four are the ones that
+`data-grid`, `settings-page`, `sidebar` and `sortable-data-table`: those four are the ones that
 hardcode row rhythm.
 
 ## 5. Verify
 
-1. **Both themes** — every page screenshot twice; no light-only surface, no hard-coded `#fff`.
-2. **Contrast table** — paste the six measured pairs per theme.
-3. **Faces** — headings use the display face, body uses Inter, no weights above 500, no synthetic bold.
-4. **Component sweep** — load the item list and open five: a control (`button`), a field (`input`), a
+1. **Both themes**: every page screenshot twice; no light-only surface, no hard-coded `#fff`.
+2. **Contrast table**: paste the six measured pairs per theme.
+3. **Faces**: headings use the display face, body uses Inter, no weights above 500, no synthetic bold.
+4. **Component sweep**: load the item list and open five: a control (`button`), a field (`input`), a
    data surface (`data-grid`), a chart (`horizon-chart`), an overlay (`popover`). If one looks off, the
    token layer is missing a slot, not the component.
-5. **Logo colours** — third-party marks keep their real colours; never tint a partner logo with the
+5. **Logo colours**: third-party marks keep their real colours; never tint a partner logo with the
    accent.
 
 ## 6. Report

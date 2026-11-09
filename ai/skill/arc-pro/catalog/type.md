@@ -1,6 +1,6 @@
 # Type
 
-## `keycap-keyboard` — Keycap keyboard (Pro, special)
+## `keycap-keyboard` · Keycap keyboard (Pro, special)
 
 Mechanical keycaps that sink and light up as you type, with the text above the board.
 
@@ -16,7 +16,7 @@ Keywords: special, keyboard, motion, new, mechanical keyboard, keycap animation,
 
 Files: demo.module.css, demo.tsx, keycap-keyboard.module.css, keycap-keyboard.tsx
 
-## `sand-text` — Sand text (Pro, special)
+## `sand-text` · Sand text (Pro, special)
 
 A headline made of sand that pours into the letters, crumbles where the cursor digs, and heals itself.
 
@@ -32,7 +32,7 @@ Keywords: text, canvas, physics, new, sand, falling sand, cellular automaton, pa
 
 Files: demo.tsx, sand-text.module.css, sand-text.tsx
 
-## `typewriter-terminal` — Typewriter terminal (Pro, special)
+## `typewriter-terminal` · Typewriter terminal (Pro, special)
 
 A terminal that types a scripted CLI session with a seeded human cadence, colors the shell syntax, and streams output lines, progress bars and spinners, with a scrubber, play/pause and replay controls.
 
