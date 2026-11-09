@@ -33,9 +33,35 @@ const ARC = join(REPO, "src/components/arc");
 const FREE = join(REPO, "ai/vendor/free");
 const SKILL = join(REPO, "ai/skill/arc-pro");
 
+/** Document frequency over the catalogue, so rare words ("toggles") outrank common ones ("account"). */
+const DF = new Map();
+for (const item of ITEMS) {
+  const words = new Set(
+    `${item.id} ${item.title} ${item.group} ${item.summary} ${item.keywords.join(" ")}`
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .split(" ")
+      .filter(Boolean),
+  );
+  for (const word of words) DF.set(word, (DF.get(word) ?? 0) + 1);
+}
+const idf = (token) => {
+  const df = DF.get(token) ?? 0;
+  return 1 + Math.log((ITEMS.length + 1) / (df + 1));
+};
+
 const SOURCE_LIMIT = 160_000; // characters of source per call; larger items are truncated with a note
 
 const normalise = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+/** Words that carry no intent; dropping them stops "with" from counting as a match. */
+const STOP = new Set(["a", "an", "the", "with", "for", "and", "or", "of", "in", "on", "to", "that", "my", "your", "when", "like"]);
+
+function tokenise(query) {
+  const all = normalise(query).split(" ").filter(Boolean);
+  const meaningful = all.filter((t) => !STOP.has(t));
+  return meaningful.length ? meaningful : all;
+}
 
 async function doc(id) {
   const file = join(DOCS, `${id}.md`);
@@ -87,7 +113,7 @@ const SYNONYMS = {
   sidebar: ["nav", "navigation", "rail"],
   nav: ["navigation", "sidebar", "menu"],
   pricing: ["plans", "billing", "tier"],
-  settings: ["preferences", "account"],
+  preferences: ["settings"],
 };
 
 function expand(tokens) {
@@ -129,15 +155,21 @@ function score(item, tokens, phrase) {
   let total = 0;
   let matched = 0;
   let strong = 0;
+  let inName = 0;
   for (const token of tokens) {
-    const best = Math.max(...expand([token]).map(hit));
+    const expanded = expand([token]);
+    const literal = hit(token);
+    const best = Math.max(literal, ...expanded.filter((word) => word !== token).map((word) => hit(word) * 0.6));
     if (best) matched += 1;
     if (best >= 6) strong += 1;
-    total += best;
+    if (id.includes(token) || title.includes(token)) inName += 1;
+    total += best * idf(token);
   }
   const ratio = matched / tokens.length;
   if (strong === 0 || ratio < 0.6) return null;
-  if (phrase && title.includes(phrase)) total += 6;
+  // An item whose own name covers the query beats one that only mentions the words in prose.
+  total += 10 * (inName / tokens.length);
+  if (phrase && (id.includes(phrase.replace(/ /g, "-")) || title.includes(phrase))) total += 8;
   if (item.kind === "block") total += 0.5;
   return total;
 }
@@ -183,7 +215,7 @@ server.registerTool(
     },
   },
   async ({ query, kind, tier, group, limit }) => {
-    const tokens = normalise(query).split(" ").filter(Boolean);
+    const tokens = tokenise(query);
     const phrase = normalise(query);
     const ranked = ITEMS.filter(
       (item) =>
