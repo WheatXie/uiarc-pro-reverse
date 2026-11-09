@@ -197,6 +197,14 @@ for (const name of await readdir(join(AI, "skill-src"))) {
   await writeFile(join(SKILL_DIR, name), await readFile(join(AI, "skill-src", name)));
 }
 
+// 1b. Pro playbooks: authored here, because the site gates the originals behind an account.
+const PRO_DIR = join(SKILL_DIR, "pro");
+await mkdir(PRO_DIR, { recursive: true });
+for (const name of await readdir(join(AI, "skill-src/pro"))) {
+  if (!name.endsWith(".md")) continue;
+  await writeFile(join(PRO_DIR, name), await readFile(join(AI, "skill-src/pro", name)));
+}
+
 // 2. components.md — the whole catalogue, grouped, with the reason to reach for each item.
 const byGroup = new Map();
 for (const item of items) {

@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "arc-pro": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/ai/mcp/server.mjs"
+      ]
+    }
+  }
+}

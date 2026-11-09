@@ -54,9 +54,10 @@ source on a paid plan, and a skill whose catalogue lists free items. Both are re
 equivalents that know **all 380 ids** — 233 Pro plus 147 free — and can hand back the source.
 
 ```bash
-cd ai/mcp && pnpm install && cd ../..    # once: @modelcontextprotocol/sdk + zod
-node ai/mcp/server.mjs                   # stdio MCP server, no account
-cp -R ai/skill/arc-pro ~/.claude/skills/arc-pro   # optional: the skill folder
+cd ai/mcp && pnpm install && cd ../..   # once: @modelcontextprotocol/sdk + zod
+node ai/install.mjs --claude            # project .mcp.json + .claude/skills/arc-pro link
+node ai/install.mjs --all               # every supported client (see below)
+node ai/mcp/smoke.mjs                   # 17 assertions over the tool surface
 ```
 
 | MCP tool | Answers |
@@ -65,15 +66,56 @@ cp -R ai/skill/arc-pro ~/.claude/skills/arc-pro   # optional: the skill folder
 | `list_components` | browse 55 groups by kind, tier or group |
 | `get_component` | docs (when to use, usage, API reference, keyboard, a11y, motion, responsive) + source files |
 | `get_install_command` | shadcn command for free items, copy recipe for Pro items |
-| `get_skill` | any skill file, including per-group catalogues |
+| `get_skill` | any skill file, including per-group catalogues and the playbooks |
 
-```bash
-claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"
+### Installing into a client
+
+`ai/install.mjs` writes the config each client expects and copies or links the skill. Existing files
+are merged, never replaced; run it with no flag to see what it would do, or `--print` for the raw JSON.
+
+| Flag | Writes | Client picks it up from |
+| --- | --- | --- |
+| `--claude` | `.mcp.json` (project scope, committed) + `.claude/skills/arc-pro` symlink | Claude Code in this repo |
+| `--claude-user` | `~/.claude/skills/arc-pro` | Claude Code, every project |
+| `--cursor` | `.cursor/mcp.json` + `.cursor/rules/arc.mdc` | Cursor, this repo |
+| `--vscode` | `.vscode/mcp.json` | VS Code Copilot Chat agent mode |
+| `--codex` | `[mcp_servers.arc-pro]` in `~/.codex/config.toml` | Codex |
+| `--agents` | `~/.agents/skills/arc-pro` | agents that read `~/.agents/skills` |
+
+By hand, the same pair works anywhere:
+
+```json
+{ "mcpServers": { "arc-pro": { "command": "node", "args": ["/abs/path/uiarc/ai/mcp/server.mjs"] } } }
 ```
 
-`node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from `src/data/catalog.json`,
-`public/docs/*.md`, the ported source and the vendored free registry. Details and other client configs:
-[ai/README.md](ai/README.md).
+```bash
+claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"   # instead of editing .mcp.json
+```
+
+### Skill and playbooks
+
+`ai/skill/arc-pro/` is a normal skill folder (`SKILL.md` front matter `name: arc-pro`): the 10 Arc rule
+files verbatim, `INSTRUCTIONS.md` (always-on rules for `AGENTS.md` / `CLAUDE.md`), a generated
+`components.md` over all 380 ids, `catalog/<group>.md` for per-item detail, and `pro/` — six playbooks
+for whole surfaces:
+
+| Playbook | Use when |
+| --- | --- |
+| `pro/full-page-generation.md` | build a page region by region, with every state, or just the plan |
+| `pro/design-system-generation.md` | brand theme on Arc tokens, contrast checked in both themes |
+| `pro/refactor-to-arc.md` | migrate from shadcn/ui, MUI, Chakra or hand-rolled CSS with parity checks |
+| `pro/motion-recommendations.md` | inventory animations, assign tokens, delete decoration |
+| `pro/responsive-optimization.md` | measure five widths, fix overflow and touch, re-measure |
+| `pro/accessibility-audit.md` | ranked findings with patches, not a checklist |
+
+`node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from
+`src/data/catalog.json`, `public/docs/*.md`, the ported source and the vendored free registry.
+
+### Taking over this repo
+
+[AGENTS.md](AGENTS.md) is the handoff: commands, the two verification gates, the shared files that must
+not be edited for one item, and the UI rules the library is held to. [ai/README.md](ai/README.md) has
+the official-vs-local comparison, every client config and the tool contract.
 
 ## How it was reconstructed
 

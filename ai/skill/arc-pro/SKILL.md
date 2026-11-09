@@ -95,6 +95,21 @@ pending, success and error states.
 The full catalogue by group, with the reason to use and not to use each item, is in
 [components.md](components.md).
 
+## Pro playbooks
+
+Whole-surface work needs a procedure, not a component lookup. When the request is bigger than one
+item, open the matching playbook first ([pro/PRO.md](pro/PRO.md) has the router and the shared ground
+rules) and follow its steps and checkpoints.
+
+| Playbook | Use when |
+| --- | --- |
+| [pro/full-page-generation.md](pro/full-page-generation.md) | "build me a page / dashboard / settings screen / pricing page", or "just the plan" |
+| [pro/design-system-generation.md](pro/design-system-generation.md) | brand theme, dark mode, accent change, contrast in both themes |
+| [pro/refactor-to-arc.md](pro/refactor-to-arc.md) | migrating from shadcn/ui, MUI, Chakra or hand-rolled CSS |
+| [pro/motion-recommendations.md](pro/motion-recommendations.md) | animation inventory, retiming, deleting decoration, reduced motion |
+| [pro/responsive-optimization.md](pro/responsive-optimization.md) | overflow, mobile tables, split layouts, touch targets |
+| [pro/accessibility-audit.md](pro/accessibility-audit.md) | ranked a11y findings with patches |
+
 ## Reference files
 
 Read only the file the task needs. Each is one level from here.

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "arc-pro": {
+      "command": "node",
+      "args": [
+        "ai/mcp/server.mjs"
+      ]
+    }
+  }
+}
