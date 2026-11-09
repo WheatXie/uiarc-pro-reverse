@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: blog grid, blog index, article list, news page, blog cards, featured post, category filter, react blog template
 
-Files: registry/blocks/blog-grid/blog-grid.tsx, registry/blocks/blog-grid/blog-grid-data.ts, registry/blocks/blog-grid/blog-grid.module.css
+Files: src/components/arc/blocks/blog-grid/blog-grid-data.ts, src/components/arc/blocks/blog-grid/blog-grid.module.css, src/components/arc/blocks/blog-grid/blog-grid.tsx
 
 ## `contact-section` · Contact section (Free, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react contact form, contact section, contact page, office hours time zones, support channels, validated contact form
 
-Files: registry/blocks/contact-section/contact-section.tsx, registry/blocks/contact-section/contact-section.module.css, lib/media.ts
+Files: src/components/arc/blocks/contact-section/contact-section.module.css, src/components/arc/blocks/contact-section/contact-section.tsx
 
 ## `team-showcase` · Team showcase (Pro, block)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: react team section, meet the team, team page, about us team grid, team profiles, staff showcase
 
-Files: demo.tsx, team-showcase.module.css, team-showcase.tsx
+Files: src/components/arc/team-showcase/demo.tsx, src/components/arc/team-showcase/team-showcase.module.css, src/components/arc/team-showcase/team-showcase.tsx

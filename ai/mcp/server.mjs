@@ -30,7 +30,7 @@ const ITEMS = INDEX.items;
 const BY_ID = new Map(ITEMS.map((item) => [item.id, item]));
 const DOCS = join(REPO, "public/docs");
 const ARC = join(REPO, "src/components/arc");
-const FREE = join(REPO, "ai/vendor/free");
+const BLOCKS = join(ARC, "blocks");
 const SKILL = join(REPO, "ai/skill/arc-pro");
 
 /** Document frequency over the catalogue, so rare words ("toggles") outrank common ones ("account"). */
@@ -68,23 +68,17 @@ async function doc(id) {
   return existsSync(file) ? readFile(file, "utf8") : "";
 }
 
+/** Every item, free or Pro, is a directory in this repo: the single source of truth. */
 async function sourceFiles(id) {
-  const item = BY_ID.get(id);
-  if (!item) return [];
-  if (item.tier === "pro") {
-    const dir = join(ARC, id);
-    if (!existsSync(dir)) return [];
-    const names = (await readdir(dir)).filter((n) => /\.(tsx?|css)$/.test(n)).sort();
-    const out = [];
-    for (const name of names) out.push({ path: `src/components/arc/${id}/${name}`, body: await readFile(join(dir, name), "utf8") });
-    return out;
-  }
-  const file = join(FREE, `${id}.json`);
-  if (!existsSync(file)) return [];
-  const entry = JSON.parse(await readFile(file, "utf8"));
-  return (entry.files ?? [])
-    .filter((f) => f.content)
-    .map((f) => ({ path: f.path, body: f.content }));
+  if (!BY_ID.has(id)) return [];
+  const direct = join(ARC, id);
+  const dir = existsSync(direct) ? direct : join(BLOCKS, id);
+  if (!existsSync(dir)) return [];
+  const names = (await readdir(dir)).filter((n) => /\.(tsx?|css)$/.test(n)).sort();
+  const rel = dir === direct ? `src/components/arc/${id}` : `src/components/arc/blocks/${id}`;
+  const out = [];
+  for (const name of names) out.push({ path: `${rel}/${name}`, body: await readFile(join(dir, name), "utf8") });
+  return out;
 }
 
 /** Words people use for the same job; expands the query so intent survives vocabulary. */
@@ -380,8 +374,8 @@ server.registerTool(
   {
     title: "Install or copy one or more Arc items",
     description:
-      "The shadcn command for free items, and the copy recipe for Pro items — which the official registry gates " +
-      "behind a Pro token but which are already files in this repository.",
+      "Every item is a local directory in this repository, so this returns the import path for use here or the " +
+      "copy recipe for another project. Free items can also come from the public registry, which needs no account.",
     inputSchema: {
       ids: z.array(z.string()).min(1).max(20).describe("Item ids, e.g. [\"button\", \"emoji-picker\"]"),
       target: z.enum(["repo", "external"]).default("repo").describe("repo = use this checkout, external = copy into another project"),
@@ -395,13 +389,14 @@ server.registerTool(
         lines.push(`- ${id}: unknown id`);
         continue;
       }
-      if (item.tier === "free") {
-        lines.push(`- ${id} (free): npx shadcn@latest add @uiarc/${id}   → registry ${`https://uiarc.dev/r/${id}.json`}`);
-      } else if (target === "repo") {
-        lines.push(`- ${id} (pro): import from "@/components/arc/${id}/${id}" — already vendored, nothing to install`);
+      const isBlock = item.kind === "block" && item.tier === "free";
+      const dir = isBlock ? `src/components/arc/blocks/${id}` : `src/components/arc/${id}`;
+      const note = item.tier === "free" ? ` · free, also on the public registry: npx shadcn@latest add @uiarc/${id}` : "";
+      if (target === "repo") {
+        lines.push(`- ${id}: import from "${isBlock ? `@/components/arc/blocks/${id}/${id}` : `@/components/arc/${id}/${id}`}"${note}`);
       } else {
         const deps = item.dependencies.length ? ` · needs ${item.dependencies.join(", ")}` : "";
-        lines.push(`- ${id} (pro): copy src/components/arc/${id}/ into <project>/src/components/arc/${id}/${deps}`);
+        lines.push(`- ${id}: copy ${dir}/ into <project>/${dir}/${deps}${note}`);
       }
     }
     lines.push(

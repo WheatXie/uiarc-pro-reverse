@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: identity, people, react avatar, avatar component, user avatar with initials, profile picture, avatar with status, online indicator avatar
 
-Files: registry/components/avatar/avatar.tsx, registry/components/avatar/avatar.module.css, lib/arc-provider.tsx
+Files: src/components/arc/avatar/avatar.module.css, src/components/arc/avatar/avatar.tsx
 
 ## `avatar-group` · Avatar group (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: identity, people, react avatar group, avatar stack, overlapping avatars, team members avatars, avatar overflow count, collaborators list
 
-Files: registry/components/avatar-group/avatar-group.tsx, registry/components/avatar-group/avatar-group.module.css
+Files: src/components/arc/avatar-group/avatar-group.module.css, src/components/arc/avatar-group/avatar-group.tsx
 
 ## `badge` · Badge (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: label, status, react badge, status badge, status pill, animated badge, tag component, label pill, badge with icon
 
-Files: registry/components/badge/badge.tsx, registry/components/badge/badge.module.css
+Files: src/components/arc/badge/badge.module.css, src/components/arc/badge/badge.tsx
 
 ## `presence-stack` · Presence stack (Pro, component)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: data, avatar, realtime, new, presence, avatars, avatar stack, facepile, who is here, online, collaboration, multiplayer, typing indicator, idle, status, join, leave, overflow, roster
 
-Files: demo.tsx, presence-stack.module.css, presence-stack.tsx
+Files: src/components/arc/presence-stack/demo.tsx, src/components/arc/presence-stack/presence-stack.module.css, src/components/arc/presence-stack/presence-stack.tsx

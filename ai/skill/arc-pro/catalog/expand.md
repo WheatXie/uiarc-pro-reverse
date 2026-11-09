@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: disclosure, layout, react accordion, faq accordion, collapsible sections, animated accordion, radix accordion, expand collapse list, faq component
 
-Files: registry/components/accordion/accordion.tsx, registry/components/accordion/accordion.module.css
+Files: src/components/arc/accordion/accordion.module.css, src/components/arc/accordion/accordion.tsx
 
 ## `expandable-card` · Expandable card (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: disclosure, layout, react expandable card, collapsible card, expand card animation, disclosure card, show more card, card with details
 
-Files: registry/components/expandable-card/expandable-card.tsx, registry/components/expandable-card/expandable-card.module.css
+Files: src/components/arc/expandable-card/expandable-card.module.css, src/components/arc/expandable-card/expandable-card.tsx
 
 ## `expandable-text` · Expandable text (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: disclosure, text, motion, new, read more, show more, show less, truncate, line clamp, clamp, collapse text, expand text, see more, review, description, fade out text
 
-Files: registry/components/expandable-text/expandable-text.tsx, registry/components/expandable-text/expandable-text.module.css
+Files: src/components/arc/expandable-text/expandable-text.module.css, src/components/arc/expandable-text/expandable-text.tsx
 
 ## `resizable-panels` · Resizable panels (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: split view, resizable, panes, react resizable panels, resizable sidebar, draggable divider, split pane, collapsible panel, resizable layout
 
-Files: registry/components/resizable-panels/resizable-panels.tsx, registry/components/resizable-panels/resizable-panels.module.css
+Files: src/components/arc/resizable-panels/resizable-panels.module.css, src/components/arc/resizable-panels/resizable-panels.tsx
 
 ## `scroll-area` · Scroll area (Free, component)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: disclosure, new, react scroll area, custom scrollbar, overlay scrollbar, scroll fade edges, horizontal scroll container, scroll snap container, scrollable panel
 
-Files: registry/components/scroll-area/scroll-area.tsx, registry/components/scroll-area/scroll-area.module.css
+Files: src/components/arc/scroll-area/scroll-area.module.css, src/components/arc/scroll-area/scroll-area.tsx

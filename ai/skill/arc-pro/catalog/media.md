@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: gesture, motion, triage, react card stack, swipe cards, tinder swipe, swipeable card deck, card triage, swipe left right
 
-Files: registry/components/card-stack/card-stack.tsx, registry/components/card-stack/card-stack.module.css
+Files: src/components/arc/card-stack/card-stack.module.css, src/components/arc/card-stack/card-stack.tsx
 
 ## `carousel` · Carousel (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: carousel, slider, gallery, react carousel, image slider, swipe carousel, autoplay carousel, accessible carousel, slideshow component
 
-Files: registry/components/carousel/carousel.tsx, registry/components/carousel/carousel.module.css
+Files: src/components/arc/carousel/carousel.module.css, src/components/arc/carousel/carousel.tsx
 
 ## `gantt-timeline` · Gantt timelineNew (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react gantt chart, gantt timeline, project timeline, drag to reschedule, task dependencies, roadmap timeline, project planning chart, resizable task bars
 
-Files: demo.tsx, gantt-timeline.module.css, gantt-timeline.tsx
+Files: src/components/arc/gantt-timeline/demo.tsx, src/components/arc/gantt-timeline/gantt-timeline.module.css, src/components/arc/gantt-timeline/gantt-timeline.tsx
 
 ## `image-compare` · Image compare (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: before after, comparison, image, react image compare, before after slider, image comparison slider, compare images, photo diff slider
 
-Files: registry/components/image-compare/image-compare.tsx, registry/components/image-compare/image-compare.module.css
+Files: src/components/arc/image-compare/image-compare.module.css, src/components/arc/image-compare/image-compare.tsx
 
 ## `release-readiness` · Release readiness (Pro, block)
 
@@ -77,4 +77,4 @@ When not to use:
 
 Keywords: react release checklist, launch readiness, pre release checklist, deploy gate, checklist with progress bar, handoff checklist
 
-Files: demo.tsx, release-readiness.module.css, release-readiness.tsx
+Files: src/components/arc/release-readiness/demo.tsx, src/components/arc/release-readiness/release-readiness.module.css, src/components/arc/release-readiness/release-readiness.tsx

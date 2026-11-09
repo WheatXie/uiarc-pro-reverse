@@ -20,7 +20,7 @@ When not to use:
 
 Keywords: magic link, passwordless, email sign in, login, check your inbox, resend countdown, sign in with google, sign in with github, auth, open gmail
 
-Files: demo.tsx, magic-link.module.css, magic-link.tsx
+Files: src/components/arc/magic-link/demo.tsx, src/components/arc/magic-link/magic-link.module.css, src/components/arc/magic-link/magic-link.tsx
 
 ## `multi-step-form` · Multi-step form (Pro, block)
 
@@ -36,7 +36,7 @@ When not to use:
 
 Keywords: react multi step form, form wizard, step form, onboarding form, wizard component, multi page form
 
-Files: demo.module.css, demo.tsx, multi-step-form.module.css, multi-step-form.tsx
+Files: src/components/arc/multi-step-form/demo.module.css, src/components/arc/multi-step-form/demo.tsx, src/components/arc/multi-step-form/multi-step-form.module.css, src/components/arc/multi-step-form/multi-step-form.tsx
 
 ## `onboarding-illustration` · Onboarding illustration (Pro, block)
 
@@ -52,7 +52,7 @@ When not to use:
 
 Keywords: react onboarding, onboarding modal, welcome dialog, first run experience, onboarding steps illustration, animated svg onboarding
 
-Files: demo.tsx, onboarding-illustration.module.css, onboarding-illustration.tsx
+Files: src/components/arc/onboarding-illustration/demo.tsx, src/components/arc/onboarding-illustration/onboarding-illustration.module.css, src/components/arc/onboarding-illustration/onboarding-illustration.tsx
 
 ## `otp-input` · OTP input (Free, block)
 
@@ -68,7 +68,7 @@ When not to use:
 
 Keywords: react otp input, verification code input, 2fa code input, pin input, one time code, sms code input
 
-Files: registry/components/otp-input/otp-input.tsx, registry/components/otp-input/otp-input.module.css
+Files: src/components/arc/otp-input/otp-input.module.css, src/components/arc/otp-input/otp-input.tsx
 
 ## `two-factor-setup` · Two-factor setup (Pro, block)
 
@@ -84,4 +84,4 @@ When not to use:
 
 Keywords: two-factor authentication, 2fa setup, totp, authenticator app, qr code, google authenticator, 1password, backup codes, recovery codes, mfa enrolment, otp input, account security
 
-Files: demo.tsx, two-factor-setup.module.css, two-factor-setup.tsx
+Files: src/components/arc/two-factor-setup/demo.tsx, src/components/arc/two-factor-setup/two-factor-setup.module.css, src/components/arc/two-factor-setup/two-factor-setup.tsx

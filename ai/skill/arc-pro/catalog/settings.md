@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react cancel subscription flow, churn prevention flow, cancellation survey, retention offer, pause subscription, cancel flow saas
 
-Files: cancel-flow.module.css, cancel-flow.tsx, demo.tsx
+Files: src/components/arc/cancel-flow/cancel-flow.module.css, src/components/arc/cancel-flow/cancel-flow.tsx, src/components/arc/cancel-flow/demo.tsx
 
 ## `invite-people` · Invite people (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react invite people, invite teammates form, email chip input, workspace invite, seat limit meter, invite by email, team invite with roles, paste email list
 
-Files: demo.tsx, invite-people.module.css, invite-people.tsx
+Files: src/components/arc/invite-people/demo.tsx, src/components/arc/invite-people/invite-people.module.css, src/components/arc/invite-people/invite-people.tsx
 
 ## `onboarding-survey` · Onboarding survey (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: onboarding survey, welcome survey, post signup, personalization, onboarding questions, role picker, team size, option cards, multi step form, typeform style, workspace setup, keyboard shortcuts
 
-Files: demo.tsx, onboarding-survey.module.css, onboarding-survey.tsx
+Files: src/components/arc/onboarding-survey/demo.tsx, src/components/arc/onboarding-survey/onboarding-survey.module.css, src/components/arc/onboarding-survey/onboarding-survey.tsx
 
 ## `profile-page` · Profile page (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: profile, user profile, account page, edit profile, cover photo, avatar, bio, activity tab, projects
 
-Files: demo.tsx, profile-page.module.css, profile-page.tsx
+Files: src/components/arc/profile-page/demo.tsx, src/components/arc/profile-page/profile-page.module.css, src/components/arc/profile-page/profile-page.tsx
 
 ## `roles-permissions` · Roles and permissions (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: react permissions matrix, roles and permissions ui, rbac settings, access control table, role editor, permission toggles
 
-Files: demo.tsx, roles-permissions.module.css, roles-permissions.tsx
+Files: src/components/arc/roles-permissions/demo.tsx, src/components/arc/roles-permissions/roles-permissions.module.css, src/components/arc/roles-permissions/roles-permissions.tsx
 
 ## `spend-alert` · Spend alert (Pro, block)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: spend alert, budget alert, billing threshold, usage alert, cost alert, ai spend, slack notification preview, pagerduty, hard stop, budget settings
 
-Files: demo.module.css, demo.tsx, spend-alert.module.css, spend-alert.tsx
+Files: src/components/arc/spend-alert/demo.module.css, src/components/arc/spend-alert/demo.tsx, src/components/arc/spend-alert/spend-alert.module.css, src/components/arc/spend-alert/spend-alert.tsx
 
 ## `team-directory` · Team directory (Pro, block)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: react team directory, employee directory, people search, staff directory ui, company directory, team list with profile
 
-Files: demo.tsx, team-directory.module.css, team-directory.tsx
+Files: src/components/arc/team-directory/demo.tsx, src/components/arc/team-directory/team-directory.module.css, src/components/arc/team-directory/team-directory.tsx
 
 ## `team-members` · Team members (Pro, block)
 
@@ -126,4 +126,4 @@ When not to use:
 
 Keywords: react team members, invite team members, member management, user roles table, invite by email, seat management, workspace members
 
-Files: demo.tsx, team-members.module.css, team-members.tsx
+Files: src/components/arc/team-members/demo.tsx, src/components/arc/team-members/team-members.module.css, src/components/arc/team-members/team-members.tsx

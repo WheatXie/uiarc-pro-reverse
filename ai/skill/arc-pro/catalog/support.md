@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react availability picker, meeting time picker, group scheduling, calendly style picker, time slot picker, book a meeting ui
 
-Files: availability-picker.module.css, availability-picker.tsx, demo.tsx
+Files: src/components/arc/availability-picker/availability-picker.module.css, src/components/arc/availability-picker/availability-picker.tsx, src/components/arc/availability-picker/demo.tsx
 
 ## `feature-voting` · Feature voting (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: feature voting, feature requests, upvote, roadmap, feedback board, canny, product feedback, duplicate detection, customer ideas, vote button
 
-Files: demo.tsx, feature-voting.module.css, feature-voting.tsx
+Files: src/components/arc/feature-voting/demo.tsx, src/components/arc/feature-voting/feature-voting.module.css, src/components/arc/feature-voting/feature-voting.tsx
 
 ## `file-upload` · File upload (Free, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react file upload, drag and drop upload, upload progress, file dropzone, multiple file upload, upload with retry
 
-Files: registry/components/file-upload/file-upload.tsx, registry/components/file-upload/file-upload.module.css
+Files: src/components/arc/file-upload/file-upload.module.css, src/components/arc/file-upload/file-upload.tsx
 
 ## `media-player` · Media player (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react audio player, music player component, podcast player, playlist player, custom audio controls, media player ui
 
-Files: demo.tsx, media-player.module.css, media-player.tsx
+Files: src/components/arc/media-player/demo.tsx, src/components/arc/media-player/media-player.module.css, src/components/arc/media-player/media-player.tsx
 
 ## `project-board` · Project board (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: react kanban board, project board, task board, kanban component, accessible kanban, trello style board
 
-Files: demo.tsx, project-board.module.css, project-board.tsx
+Files: src/components/arc/project-board/demo.tsx, src/components/arc/project-board/project-board.module.css, src/components/arc/project-board/project-board.tsx
 
 ## `week-calendar` · Week calendar (Pro, block)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: react week calendar, drag and drop calendar, google calendar clone, scheduler component, time blocking calendar, event scheduler, react calendar with time zones
 
-Files: demo.tsx, week-calendar-data.ts, week-calendar.module.css, week-calendar.tsx
+Files: src/components/arc/week-calendar/demo.tsx, src/components/arc/week-calendar/week-calendar-data.ts, src/components/arc/week-calendar/week-calendar.module.css, src/components/arc/week-calendar/week-calendar.tsx

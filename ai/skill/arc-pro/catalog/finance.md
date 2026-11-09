@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: budget, budget vs actual, variance, bullet chart, finance, fp&a, operating expenses, opex, cost center, department spend, favorable, unfavorable, plan vs actual, month close
 
-Files: budget-variance.module.css, budget-variance.tsx, demo.tsx
+Files: src/components/arc/budget-variance/budget-variance.module.css, src/components/arc/budget-variance/budget-variance.tsx, src/components/arc/budget-variance/demo.tsx
 
 ## `market-terminal` · Market terminal (Pro, block)
 
@@ -30,4 +30,4 @@ When not to use:
 
 Keywords: trading, stocks, market, candlestick, ohlc, volume, moving average, watchlist, order ticket, brokerage, paper trading, limit order, crosshair, zoom, pan, live prices, finance, terminal
 
-Files: demo.tsx, market-terminal.module.css, market-terminal.tsx
+Files: src/components/arc/market-terminal/demo.tsx, src/components/arc/market-terminal/market-terminal.module.css, src/components/arc/market-terminal/market-terminal.tsx

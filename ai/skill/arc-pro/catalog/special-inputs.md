@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: inputs, new, react mention input, at mention textarea, mentions autocomplete, tag people in comment, channel mention, slack style mentions, mention suggestions, textarea with mentions
 
-Files: registry/components/mention-input/mention-input.tsx, registry/components/mention-input/mention-input.module.css
+Files: src/components/arc/mention-input/mention-input.module.css, src/components/arc/mention-input/mention-input.tsx
 
 ## `money-input` · Money input (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: inputs, new, react money input, currency input, amount field, price input, cents input, currency selector, formatted number input, payment amount
 
-Files: registry/components/money-input/money-input.tsx, registry/components/money-input/money-input.module.css
+Files: src/components/arc/money-input/money-input.module.css, src/components/arc/money-input/money-input.tsx
 
 ## `number-field` · Number field (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: field, numeric, react number input, number field, stepper input, quantity selector, numeric input with buttons, scrub input, odometer number input
 
-Files: registry/components/number-field/number-field.tsx, registry/components/number-field/number-field.module.css
+Files: src/components/arc/number-field/number-field.module.css, src/components/arc/number-field/number-field.tsx
 
 ## `phone-input` · Phone input (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: inputs, new, react phone input, phone number field, country code picker, international phone input, e164 phone, phone number formatting, tel input with flag
 
-Files: registry/components/phone-input/phone-input.tsx, registry/components/phone-input/phone-input.module.css
+Files: src/components/arc/phone-input/phone-input.module.css, src/components/arc/phone-input/phone-input.tsx
 
 ## `scrub-input` · Scrub input (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: inputs, new, react scrub input, drag to change number, scrubbable number field, inspector input, figma number input, math expression input, unit input
 
-Files: registry/components/scrub-input/scrub-input.tsx, registry/components/scrub-input/scrub-input.module.css
+Files: src/components/arc/scrub-input/scrub-input.module.css, src/components/arc/scrub-input/scrub-input.tsx
 
 ## `shortcut-recorder` · Shortcut recorder (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: inputs, new, react shortcut recorder, keyboard shortcut input, hotkey recorder, keybinding editor, kbd component, keyboard shortcuts cheatsheet, record hotkey
 
-Files: registry/components/shortcut-recorder/shortcut-recorder.tsx, registry/components/shortcut-recorder/shortcut-recorder.module.css
+Files: src/components/arc/shortcut-recorder/shortcut-recorder.module.css, src/components/arc/shortcut-recorder/shortcut-recorder.tsx
 
 ## `tag-input` · Tag input (Free, component)
 
@@ -110,4 +110,4 @@ When not to use:
 
 Keywords: field, tags, react tag input, tags input, chip input, multi value input, email chips input, keyword input
 
-Files: registry/components/tag-input/tag-input.tsx, registry/components/tag-input/tag-input.module.css
+Files: src/components/arc/tag-input/tag-input.module.css, src/components/arc/tag-input/tag-input.tsx

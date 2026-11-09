@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, cover flow, carousel, react cover flow, coverflow carousel, 3d carousel, album carousel, image rail, itunes cover flow
 
-Files: cover-flow.module.css, cover-flow.tsx, demo.tsx
+Files: src/components/arc/cover-flow/cover-flow.module.css, src/components/arc/cover-flow/cover-flow.tsx, src/components/arc/cover-flow/demo.tsx
 
 ## `lightbox-gallery` · Lightbox gallery (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, gallery, lightbox, images, react lightbox, image gallery, masonry gallery, photo lightbox, fullscreen image viewer, zoomable gallery, next image gallery
 
-Files: demo.module.css, demo.tsx, lightbox-gallery.module.css, lightbox-gallery.tsx
+Files: src/components/arc/lightbox-gallery/demo.module.css, src/components/arc/lightbox-gallery/demo.tsx, src/components/arc/lightbox-gallery/lightbox-gallery.module.css, src/components/arc/lightbox-gallery/lightbox-gallery.tsx
 
 ## `photo-grid` · Photo grid (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, photos, gallery, react photo grid, photo library, pinch to zoom grid, ios photos grid, image gallery with viewer, album grid, photo viewer
 
-Files: demo.tsx, photo-grid-data.ts, photo-grid.module.css, photo-grid.tsx
+Files: src/components/arc/photo-grid/demo.tsx, src/components/arc/photo-grid/photo-grid-data.ts, src/components/arc/photo-grid/photo-grid.module.css, src/components/arc/photo-grid/photo-grid.tsx
 
 ## `product-gallery` · Product gallery (Pro, special)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: special, new, react product gallery, product image zoom, ecommerce gallery, image magnifier, variant picker, color and size selector, product detail page, fullscreen image viewer
 
-Files: demo.tsx, product-gallery.module.css, product-gallery.tsx
+Files: src/components/arc/product-gallery/demo.tsx, src/components/arc/product-gallery/product-gallery.module.css, src/components/arc/product-gallery/product-gallery.tsx

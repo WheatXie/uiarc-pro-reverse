@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react api keys, api key management, developer settings, create api key, revoke api key, secret reveal, token management
 
-Files: api-keys.module.css, api-keys.tsx, demo.tsx
+Files: src/components/arc/api-keys/api-keys.module.css, src/components/arc/api-keys/api-keys.tsx, src/components/arc/api-keys/demo.tsx
 
 ## `domain-verify` · Domain verify (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: custom domain, domain verification, dns records, cname, txt record, caa, ssl certificate, propagation, verify domain, sending domain, dkim, vercel domains, resend domains
 
-Files: demo.tsx, domain-verify.module.css, domain-verify.tsx
+Files: src/components/arc/domain-verify/demo.tsx, src/components/arc/domain-verify/domain-verify.module.css, src/components/arc/domain-verify/domain-verify.tsx
 
 ## `env-variables` · Environment variables (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: environment variables, env, dotenv, .env, secrets, config, configuration, vercel, netlify, deploy, redeploy, preview, production, development, sensitive, masked, diff, compare environments, developer settings
 
-Files: demo.tsx, env-variables.module.css, env-variables.tsx
+Files: src/components/arc/env-variables/demo.tsx, src/components/arc/env-variables/env-variables.module.css, src/components/arc/env-variables/env-variables.tsx
 
 ## `integrations` · Integrations (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react integrations page, app marketplace, connect apps ui, integrations directory, oauth connect button, third party integrations
 
-Files: demo.tsx, integrations.module.css, integrations.tsx
+Files: src/components/arc/integrations/demo.tsx, src/components/arc/integrations/integrations.module.css, src/components/arc/integrations/integrations.tsx
 
 ## `webhooks` · Webhooks (Pro, block)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: react webhooks dashboard, webhook endpoints ui, webhook delivery logs, retry webhook, payload inspector, developer settings webhooks
 
-Files: demo.tsx, webhooks.module.css, webhooks.tsx
+Files: src/components/arc/webhooks/demo.tsx, src/components/arc/webhooks/webhooks.module.css, src/components/arc/webhooks/webhooks.tsx

@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: comparison table, us vs them, competitor comparison, feature comparison, alternatives page, sticky header table, react comparison table
 
-Files: registry/blocks/comparison-table/comparison-table.tsx, registry/blocks/comparison-table/comparison-table-data.ts, registry/blocks/comparison-table/comparison-table.module.css
+Files: src/components/arc/blocks/comparison-table/comparison-table-data.ts, src/components/arc/blocks/comparison-table/comparison-table.module.css, src/components/arc/blocks/comparison-table/comparison-table.tsx
 
 ## `logo-marquee` · Logo marquee (Free, block)
 
@@ -30,4 +30,4 @@ When not to use:
 
 Keywords: react logo marquee, logo cloud, infinite logo scroll, trusted by logos, customer logos strip, css marquee
 
-Files: registry/blocks/logo-marquee/logo-marquee.tsx, registry/blocks/logo-marquee/logo-marquee.module.css
+Files: src/components/arc/blocks/logo-marquee/logo-marquee.module.css, src/components/arc/blocks/logo-marquee/logo-marquee.tsx

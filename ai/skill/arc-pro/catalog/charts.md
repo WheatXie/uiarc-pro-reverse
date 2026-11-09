@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: data, chart, calendar, react activity heatmap, contribution graph, github calendar heatmap, calendar heatmap, streak chart, activity calendar
 
-Files: registry/components/activity-heatmap/activity-heatmap.tsx, registry/components/activity-heatmap/activity-heatmap.module.css
+Files: src/components/arc/activity-heatmap/activity-heatmap.module.css, src/components/arc/activity-heatmap/activity-heatmap.tsx
 
 ## `animated-counter` · Animated counter (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: data, motion, react animated counter, number ticker, odometer counter, rolling digits, count up animation, animated number
 
-Files: registry/components/animated-counter/animated-counter.tsx, registry/components/animated-counter/animated-counter.module.css
+Files: src/components/arc/animated-counter/animated-counter.module.css, src/components/arc/animated-counter/animated-counter.tsx
 
 ## `bar-chart` · Bar chart (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: chart, bar, data, react bar chart, column chart, animated bar chart, svg bar chart, scrubbable chart, daily activity chart
 
-Files: registry/components/bar-chart/bar-chart.tsx, registry/components/bar-chart/bar-chart.module.css
+Files: src/components/arc/bar-chart/bar-chart.module.css, src/components/arc/bar-chart/bar-chart.tsx
 
 ## `brush-chart` · Brush chart (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: data, chart, new, brush chart, zoomable time series, chart with overview, range selector chart, focus and context chart, stock chart brush, d3 brush react, annotated line chart
 
-Files: registry/components/brush-chart/brush-chart.tsx, registry/components/brush-chart/brush-chart.module.css
+Files: src/components/arc/brush-chart/brush-chart.module.css, src/components/arc/brush-chart/brush-chart.tsx
 
 ## `donut-chart` · Donut chart (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: data, new, react donut chart, pie chart, ring chart, share of total chart, animated donut, chart with legend, category breakdown, accessible pie chart
 
-Files: registry/components/donut-chart/donut-chart.tsx, registry/components/donut-chart/donut-chart.module.css
+Files: src/components/arc/donut-chart/donut-chart.module.css, src/components/arc/donut-chart/donut-chart.tsx
 
 ## `gauge` · Gauge (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: data, chart, react gauge, gauge chart, radial meter, progress ring, threshold gauge, dashboard gauge
 
-Files: registry/components/gauge/gauge.tsx, registry/components/gauge/gauge.module.css
+Files: src/components/arc/gauge/gauge.module.css, src/components/arc/gauge/gauge.tsx
 
 ## `line-chart` · Line chart (Free, component)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: data, new, react line chart, time series chart, animated line chart, chart with crosshair, trend chart, multi series line chart, dashboard chart, accessible chart
 
-Files: registry/components/line-chart/line-chart.tsx, registry/components/line-chart/line-chart.module.css
+Files: src/components/arc/line-chart/line-chart.module.css, src/components/arc/line-chart/line-chart.tsx
 
 ## `ridgeline` · Ridgeline (Free, component)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: data, chart, new, ridgeline, joy plot, joyplot, density plot, distribution, kde, quartiles
 
-Files: registry/components/ridgeline/ridgeline.tsx, registry/components/ridgeline/ridgeline.module.css
+Files: src/components/arc/ridgeline/ridgeline.module.css, src/components/arc/ridgeline/ridgeline.tsx
 
 ## `slope-chart` · Slope chart (Free, component)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: data, chart, new, slope chart, slopegraph, before after chart, react slope chart, rank change chart, two period comparison, bump chart, animated slope chart
 
-Files: registry/components/slope-chart/slope-chart.tsx, registry/components/slope-chart/slope-chart.module.css
+Files: src/components/arc/slope-chart/slope-chart.module.css, src/components/arc/slope-chart/slope-chart.tsx
 
 ## `sparkline` · Sparkline (Free, component)
 
@@ -158,7 +158,7 @@ When not to use:
 
 Keywords: data, chart, react sparkline, mini line chart, trend line, inline chart, scrubbable chart, svg sparkline
 
-Files: registry/components/sparkline/sparkline.tsx, registry/components/sparkline/sparkline.module.css
+Files: src/components/arc/sparkline/sparkline.module.css, src/components/arc/sparkline/sparkline.tsx
 
 ## `split-bar` · Split bar (Pro, component)
 
@@ -174,7 +174,7 @@ When not to use:
 
 Keywords: data, chart, motion, new, split bar, stacked bar, 100% bar, part to whole, share, proportion, percent, traffic sources, budget, storage bar, legend toggle, leader lines, segment, breakdown
 
-Files: demo.module.css, demo.tsx, split-bar.module.css, split-bar.tsx
+Files: src/components/arc/split-bar/demo.module.css, src/components/arc/split-bar/demo.tsx, src/components/arc/split-bar/split-bar.module.css, src/components/arc/split-bar/split-bar.tsx
 
 ## `streamgraph` · Streamgraph (Free, component)
 
@@ -190,7 +190,7 @@ When not to use:
 
 Keywords: data, chart, new, streamgraph, stream graph react, stacked area chart, wiggle chart, theme river, stacked stream chart, layered area chart, animated streamgraph
 
-Files: registry/components/streamgraph/streamgraph.tsx, registry/components/streamgraph/streamgraph.module.css
+Files: src/components/arc/streamgraph/streamgraph.module.css, src/components/arc/streamgraph/streamgraph.tsx
 
 ## `treemap` · Treemap (Free, component)
 
@@ -206,7 +206,7 @@ When not to use:
 
 Keywords: data, chart, new, treemap, tree map, squarified, hierarchy, part to whole, drill down, zoomable treemap
 
-Files: registry/components/treemap/treemap.tsx, registry/components/treemap/treemap.module.css
+Files: src/components/arc/treemap/treemap.module.css, src/components/arc/treemap/treemap.tsx
 
 ## `waffle-chart` · Waffle chart (Free, component)
 
@@ -222,4 +222,4 @@ When not to use:
 
 Keywords: data, chart, new, waffle chart, unit chart, square pie chart, percentage grid, part to whole chart, react waffle chart, animated waffle, isotype chart
 
-Files: registry/components/waffle-chart/waffle-chart.tsx, registry/components/waffle-chart/waffle-chart.module.css
+Files: src/components/arc/waffle-chart/waffle-chart.module.css, src/components/arc/waffle-chart/waffle-chart.tsx

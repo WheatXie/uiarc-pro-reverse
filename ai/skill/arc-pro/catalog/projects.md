@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: bento, bento grid, feature grid, features section, landing page, product features, marketing section
 
-Files: demo.tsx, feature-bento.module.css, feature-bento.tsx
+Files: src/components/arc/feature-bento/demo.tsx, src/components/arc/feature-bento/feature-bento.module.css, src/components/arc/feature-bento/feature-bento.tsx
 
 ## `feedback-board` · Feedback board (Pro, block)
 
@@ -29,7 +29,7 @@ When not to use:
 
 Keywords: feedback board, feature requests, upvote, voting, ideas, product feedback, canny, suggestions
 
-Files: demo.tsx, feedback-board.module.css, feedback-board.tsx
+Files: src/components/arc/feedback-board/demo.tsx, src/components/arc/feedback-board/feedback-board.module.css, src/components/arc/feedback-board/feedback-board.tsx
 
 ## `goal-tracker` · Goal tracker (Pro, block)
 
@@ -45,7 +45,7 @@ When not to use:
 
 Keywords: okr, goals, objectives, key results, goal tracker, check-in, progress bar, quarterly goals, confidence, lattice, team goals
 
-Files: demo.tsx, goal-tracker.module.css, goal-tracker.tsx
+Files: src/components/arc/goal-tracker/demo.tsx, src/components/arc/goal-tracker/goal-tracker.module.css, src/components/arc/goal-tracker/goal-tracker.tsx
 
 ## `hero-section` · Hero section (Free, block)
 
@@ -61,7 +61,7 @@ When not to use:
 
 Keywords: react hero section, saas hero, landing page hero, hero with dashboard screenshot, mesh gradient hero, workflow hero, perspective screenshot hero
 
-Files: registry/blocks/hero-section/hero-section.tsx, registry/blocks/hero-section/hero-section.module.css, registry/blocks/hero-section/hero-content.tsx, registry/blocks/hero-section/hero-content.module.css, registry/blocks/hero-section/hero-motion.ts, registry/blocks/hero-section/hero-mesh.tsx, registry/blocks/hero-section/hero-mesh.module.css, registry/blocks/hero-section/hero-cadence.tsx, registry/blocks/hero-section/hero-cadence.module.css, registry/blocks/hero-section/hero-relay.tsx, registry/blocks/hero-section/hero-relay.module.css, registry/blocks/hero-section/hero-lumen.tsx, registry/blocks/hero-section/hero-lumen.module.css, registry/blocks/hero-section/hero-lumen-data.ts, lib/media.ts
+Files: src/components/arc/blocks/hero-section/hero-cadence.module.css, src/components/arc/blocks/hero-section/hero-cadence.tsx, src/components/arc/blocks/hero-section/hero-content.module.css, src/components/arc/blocks/hero-section/hero-content.tsx, src/components/arc/blocks/hero-section/hero-lumen-data.ts, src/components/arc/blocks/hero-section/hero-lumen.module.css, src/components/arc/blocks/hero-section/hero-lumen.tsx, src/components/arc/blocks/hero-section/hero-mesh.module.css, src/components/arc/blocks/hero-section/hero-mesh.tsx, src/components/arc/blocks/hero-section/hero-motion.ts, src/components/arc/blocks/hero-section/hero-relay.module.css, src/components/arc/blocks/hero-section/hero-relay.tsx, src/components/arc/blocks/hero-section/hero-section.module.css, src/components/arc/blocks/hero-section/hero-section.tsx
 
 ## `hero-signup` · Hero signup (Pro, block)
 
@@ -77,7 +77,7 @@ When not to use:
 
 Keywords: hero, waitlist, email signup, mesh gradient, early access, landing page, email capture, launch
 
-Files: demo.tsx, gradient-mesh.module.css, gradient-mesh.tsx, hero-signup.module.css, hero-signup.tsx
+Files: src/components/arc/hero-signup/demo.tsx, src/components/arc/hero-signup/gradient-mesh.module.css, src/components/arc/hero-signup/gradient-mesh.tsx, src/components/arc/hero-signup/hero-signup.module.css, src/components/arc/hero-signup/hero-signup.tsx
 
 ## `kanban-board` · Kanban board (Pro, block)
 
@@ -93,7 +93,7 @@ When not to use:
 
 Keywords: kanban, board, drag and drop, swimlanes, wip limit, task board, pipeline, issue tracker
 
-Files: demo.tsx, kanban-board.module.css, kanban-board.tsx
+Files: src/components/arc/kanban-board/demo.tsx, src/components/arc/kanban-board/kanban-board.module.css, src/components/arc/kanban-board/kanban-board.tsx
 
 ## `scroll-story` · Scroll story (Pro, block)
 
@@ -109,7 +109,7 @@ When not to use:
 
 Keywords: react scroll story, scrollytelling, sticky scroll section, scroll driven animation, product walkthrough on scroll, apple style scroll section
 
-Files: demo.tsx, scroll-story.module.css, scroll-story.tsx
+Files: src/components/arc/scroll-story/demo.tsx, src/components/arc/scroll-story/scroll-story.module.css, src/components/arc/scroll-story/scroll-story.tsx
 
 ## `smart-scheduler` · Smart scheduler (Pro, block)
 
@@ -125,7 +125,7 @@ When not to use:
 
 Keywords: ai scheduling, natural language scheduling, find a time, meeting scheduler, availability, free busy, calendar assistant, google calendar, outlook, google meet, invite, booking
 
-Files: demo.tsx, smart-scheduler-data.ts, smart-scheduler.module.css, smart-scheduler.tsx
+Files: src/components/arc/smart-scheduler/demo.tsx, src/components/arc/smart-scheduler/smart-scheduler-data.ts, src/components/arc/smart-scheduler/smart-scheduler.module.css, src/components/arc/smart-scheduler/smart-scheduler.tsx
 
 ## `spotlight-grid` · Spotlight grid (Pro, block)
 
@@ -141,7 +141,7 @@ When not to use:
 
 Keywords: react spotlight grid, feature grid, bento grid, interactive feature section, landing page features, card spotlight hover, expanding feature cards, shared layout card morph
 
-Files: demo.tsx, spotlight-grid.module.css, spotlight-grid.tsx
+Files: src/components/arc/spotlight-grid/demo.tsx, src/components/arc/spotlight-grid/spotlight-grid.module.css, src/components/arc/spotlight-grid/spotlight-grid.tsx
 
 ## `task-breakdown` · Task breakdown (Pro, block)
 
@@ -157,4 +157,4 @@ When not to use:
 
 Keywords: task breakdown, ai project plan, goal to tasks, linear export, jira export, estimates, critical path, timeline, drag reorder, ai planning, work breakdown
 
-Files: demo.tsx, task-breakdown.module.css, task-breakdown.tsx
+Files: src/components/arc/task-breakdown/demo.tsx, src/components/arc/task-breakdown/task-breakdown.module.css, src/components/arc/task-breakdown/task-breakdown.tsx

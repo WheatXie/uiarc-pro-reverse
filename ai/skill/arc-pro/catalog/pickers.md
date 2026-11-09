@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: date, field, react calendar, date calendar, month calendar, inline date picker, booking calendar, animated calendar
 
-Files: registry/components/calendar/calendar.tsx, lib/use-today.ts, registry/components/calendar/calendar.module.css
+Files: src/components/arc/calendar/calendar.module.css, src/components/arc/calendar/calendar.tsx
 
 ## `color-picker` · Color picker (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: inputs, new, react color picker, hex color input, oklch color picker, hsl picker, eyedropper, color contrast checker, color swatches, alpha color picker
 
-Files: registry/components/color-picker/color-picker.tsx, registry/components/color-picker/color-picker.module.css
+Files: src/components/arc/color-picker/color-picker.module.css, src/components/arc/color-picker/color-picker.tsx
 
 ## `date-picker` · Date picker (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: date, field, react date picker, datepicker, date input with calendar, calendar popover, form date field, animated date picker
 
-Files: registry/components/date-picker/date-picker.tsx, registry/components/date-picker/date-picker.module.css
+Files: src/components/arc/date-picker/date-picker.module.css, src/components/arc/date-picker/date-picker.tsx
 
 ## `date-range-picker` · Date range picker (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: inputs, new, react date range picker, date range, calendar range selection, analytics date filter, start and end date, date presets, booking date picker
 
-Files: registry/components/date-range-picker/date-range-picker.tsx, lib/use-today.ts, registry/components/date-range-picker/date-range-picker.module.css
+Files: src/components/arc/date-range-picker/date-range-picker.module.css, src/components/arc/date-range-picker/date-range-picker.tsx
 
 ## `emoji-picker` · Emoji picker (Pro, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: input, picker, emoji, new, emoji picker, emoji keyboard, smiley, emoticon, skin tone, recent emoji, frequently used, chat, composer, insert emoji, reaction picker
 
-Files: demo.module.css, demo.tsx, emoji-data.ts, emoji-picker.module.css, emoji-picker.tsx
+Files: src/components/arc/emoji-picker/demo.module.css, src/components/arc/emoji-picker/demo.tsx, src/components/arc/emoji-picker/emoji-data.ts, src/components/arc/emoji-picker/emoji-picker.module.css, src/components/arc/emoji-picker/emoji-picker.tsx
 
 ## `time-picker` · Time picker (Free, component)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: time, field, react time picker, time select, time input, meeting time picker, 12 hour time picker, time dropdown
 
-Files: registry/components/time-picker/time-picker.tsx, registry/components/time-picker/time-picker.module.css
+Files: src/components/arc/time-picker/time-picker.module.css, src/components/arc/time-picker/time-picker.tsx

@@ -108,8 +108,10 @@ for whole surfaces:
 | `pro/responsive-optimization.md` | measure five widths, fix overflow and touch, re-measure |
 | `pro/accessibility-audit.md` | ranked findings with patches, not a checklist |
 
-`node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from
-`src/data/catalog.json`, `public/docs/*.md`, the ported source and the vendored free registry.
+Every item, free or Pro, is a directory under `src/components/arc/`, so the MCP server and the skill read
+local files only. `node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from
+`src/data/catalog.json`, `public/docs/*.md` and that source; `node scripts/sync-free.mjs` re-checks the
+free half against the public registry whenever you want to compare.
 
 ### Taking over this repo
 

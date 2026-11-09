@@ -6,7 +6,8 @@
  *   src/data/catalog.json      — the catalogue: 267 items in 57 groups, each with a pro flag
  *   public/docs/<slug>.md      — the item docs the site serves publicly (props, usage, a11y, motion)
  *   src/components/arc/<slug>/ — the reconstructed source of the 233 Pro items
- *   ai/vendor/free/<name>.json — registry items for the 146 free items, file contents included
+ *   src/components/arc/<id>/    — the source of every item, free and Pro alike
+ *   src/data/free-items.json   — the free registry metadata (title, type, files, shas)
  *   ai/skill-src/*.md          — the free Arc skill prose (design, copy, motion, …), verbatim
  *
  * Outputs:
@@ -23,7 +24,8 @@ const ROOT = new URL("..", import.meta.url).pathname;
 const AI = join(ROOT, "ai");
 const DOCS = join(ROOT, "public/docs");
 const SOURCE = join(ROOT, "src/components/arc");
-const VENDOR = join(AI, "vendor/free");
+const FREE_ITEMS = JSON.parse(await readFile(join(ROOT, "src/data/free-items.json"), "utf8")).items;
+const FREE_BY_ID = new Map(FREE_ITEMS.map((i) => [i.id, i]));
 
 const catalog = JSON.parse(await readFile(join(ROOT, "src/data/catalog.json"), "utf8"));
 
@@ -79,13 +81,12 @@ async function listFiles(dir) {
   return files;
 }
 
-const vendorCache = new Map();
-async function freeFiles(id) {
-  if (!vendorCache.has(id)) {
-    const file = join(VENDOR, `${id}.json`);
-    vendorCache.set(id, existsSync(file) ? JSON.parse(await readFile(file, "utf8")) : null);
-  }
-  return vendorCache.get(id)?.files ?? [];
+/** Files of any item: free blocks live at src/components/arc/blocks/<id>, everything else one level up. */
+async function filesFor(id) {
+  const direct = join(SOURCE, id);
+  const dir = existsSync(direct) ? direct : join(SOURCE, "blocks", id);
+  const rel = dir === direct ? `src/components/arc/${id}` : `src/components/arc/blocks/${id}`;
+  return (await listFiles(dir)).map((f) => ({ ...f, path: `${rel}/${f.path}` }));
 }
 
 const items = [];
@@ -103,8 +104,7 @@ for (const [kind, groups] of [
         : "";
       const meta = frontMatter(markdown);
       const pro = Boolean(item.pro);
-      const files = pro ? await listFiles(join(SOURCE, item.slug)) : [];
-      const free = pro ? [] : await freeFiles(item.slug);
+      const files = await filesFor(item.slug);
       const variants = Number(markdown.match(/^- Type: Block with (\d+) variants/m)?.[1] ?? 0);
       items.push({
         id: item.slug,
@@ -120,44 +120,39 @@ for (const [kind, groups] of [
         uses: firstBullets(markdown, "When to use"),
         avoids: firstBullets(markdown, "When not to use"),
         sections: Object.keys(sections(markdown)),
-        files: pro ? files : free.map((f) => ({ path: f.path, bytes: (f.content ?? "").length })),
-        hasSource: pro ? files.length > 0 : free.length > 0,
+        files,
+        hasSource: files.length > 0,
         docBytes: markdown.length,
       });
     }
   }
 }
 
-/* Registry items that are not in the site catalogue (theme-switch variants, sign-in, signup-form,
-   slot-text, the foundations and the skill itself). They are free and installable, so the AI layer
-   must know them too — otherwise it invents names that do not exist. */
-const registryPath = join(VENDOR, "registry.json");
-const registry = existsSync(registryPath)
-  ? JSON.parse(await readFile(registryPath, "utf8")).items ?? []
-  : [];
+/* Free registry items that are not in the site catalogue (theme-switch variants, sign-in,
+   signup-form, slot-text, the foundations and the skill itself). They are installable, so the AI layer
+   must know them too, otherwise it invents names that do not exist. Their metadata comes from
+   src/data/free-items.json, written by scripts/vendor-free.mjs. */
 const known = new Set(items.map((i) => i.id));
-for (const entry of registry) {
-  if (known.has(entry.name)) continue;
-  const vendored = existsSync(join(VENDOR, `${entry.name}.json`))
-    ? JSON.parse(await readFile(join(VENDOR, `${entry.name}.json`), "utf8"))
-    : null;
-  const files = vendored?.files ?? entry.files ?? [];
+const freeMeta = new Map(FREE_ITEMS.map((i) => [i.id, i]));
+for (const entry of FREE_ITEMS) {
+  if (known.has(entry.id)) continue;
+  const isBlock = entry.files[0]?.startsWith("blocks/");
   items.push({
-    id: entry.name,
+    id: entry.id,
     variants: 0,
-    title: entry.title ?? entry.name,
-    kind: entry.type === "registry:block" ? "block" : "component",
-    group: (entry.categories ?? [])[0] ? `Free registry · ${entry.categories[0]}` : "Free registry",
-    categories: entry.categories ?? [],
+    title: entry.title,
+    kind: isBlock ? "block" : "component",
+    group: entry.categories[0] ? `Free registry · ${entry.categories[0]}` : "Free registry",
+    categories: entry.categories,
     tier: "free",
-    summary: entry.description ?? "",
-    keywords: [...(entry.categories ?? []), ...entry.name.split("-")],
-    dependencies: entry.dependencies ?? [],
+    summary: entry.description,
+    keywords: [...entry.categories, ...entry.id.split("-")],
+    dependencies: entry.dependencies,
     uses: [],
     avoids: [],
     sections: [],
-    files: files.map((f) => ({ path: f.path, bytes: (f.content ?? "").length })),
-    hasSource: files.some((f) => f.content),
+    files: entry.files.map((path) => ({ path: `src/components/arc/${path}`, bytes: 0 })),
+    hasSource: entry.files.length > 0,
     docBytes: 0,
     registryOnly: true,
   });

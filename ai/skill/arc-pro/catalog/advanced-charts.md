@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: data, table, spreadsheet, editing, react data grid, spreadsheet component, editable table, excel like grid, inline cell editing, copy paste from excel, fill handle, virtualized table, pinned columns, column filters
 
-Files: data-grid.module.css, data-grid.tsx, demo.tsx
+Files: src/components/arc/data-grid/data-grid.module.css, src/components/arc/data-grid/data-grid.tsx, src/components/arc/data-grid/demo.tsx
 
 ## `funnel-chart` · Funnel chart (Pro, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: data, chart, new, funnel chart, conversion funnel, react funnel chart, drop-off chart, checkout funnel, animated funnel, segment comparison funnel, growth funnel
 
-Files: demo.module.css, demo.tsx, funnel-chart.module.css, funnel-chart.tsx
+Files: src/components/arc/funnel-chart/demo.module.css, src/components/arc/funnel-chart/demo.tsx, src/components/arc/funnel-chart/funnel-chart.module.css, src/components/arc/funnel-chart/funnel-chart.tsx
 
 ## `race-bar-chart` · Race bar chart (Pro, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: data, chart, new, bar chart race, racing bars, ranking over time, animated bar chart, leaderboard, timeline, data story
 
-Files: demo.module.css, demo.tsx, race-bar-chart.module.css, race-bar-chart.tsx
+Files: src/components/arc/race-bar-chart/demo.module.css, src/components/arc/race-bar-chart/demo.tsx, src/components/arc/race-bar-chart/race-bar-chart.module.css, src/components/arc/race-bar-chart/race-bar-chart.tsx
 
 ## `radar-chart` · Radar chart (Pro, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: data, chart, new, radar chart, spider chart, web chart, react radar chart, comparison chart, animated radar chart, profile comparison, polar chart
 
-Files: demo.module.css, demo.tsx, radar-chart.module.css, radar-chart.tsx
+Files: src/components/arc/radar-chart/demo.module.css, src/components/arc/radar-chart/demo.tsx, src/components/arc/radar-chart/radar-chart.module.css, src/components/arc/radar-chart/radar-chart.tsx
 
 ## `realtime-stream` · Realtime stream (Pro, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: data, chart, live, new, realtime chart, live chart, streaming chart, react live line chart, monitoring chart, scrolling chart, anomaly chart, 60fps chart
 
-Files: demo.tsx, realtime-stream.module.css, realtime-stream.tsx
+Files: src/components/arc/realtime-stream/demo.tsx, src/components/arc/realtime-stream/realtime-stream.module.css, src/components/arc/realtime-stream/realtime-stream.tsx
 
 ## `sankey-flow` · Sankey flow (Pro, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: data, chart, new, sankey diagram, sankey chart react, flow diagram, funnel flow, user journey chart, alluvial diagram, particle flow chart, conversion flow
 
-Files: demo.module.css, demo.tsx, sankey-flow.module.css, sankey-flow.tsx
+Files: src/components/arc/sankey-flow/demo.module.css, src/components/arc/sankey-flow/demo.tsx, src/components/arc/sankey-flow/sankey-flow.module.css, src/components/arc/sankey-flow/sankey-flow.tsx
 
 ## `sunburst` · Sunburst (Pro, component)
 
@@ -110,4 +110,4 @@ When not to use:
 
 Keywords: data, chart, new, sunburst chart, zoomable sunburst, hierarchical pie chart, radial treemap, drill down chart, multi level donut, cloud cost breakdown, react sunburst
 
-Files: demo.module.css, demo.tsx, sunburst.module.css, sunburst.tsx
+Files: src/components/arc/sunburst/demo.module.css, src/components/arc/sunburst/demo.tsx, src/components/arc/sunburst/sunburst.module.css, src/components/arc/sunburst/sunburst.tsx

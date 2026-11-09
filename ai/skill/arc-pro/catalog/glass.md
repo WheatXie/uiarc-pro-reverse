@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, glass, card, new, glass card, glassmorphism card, profile card, tilt card, specular highlight, frosted glass, expandable card, shared layout
 
-Files: demo.tsx, glass-card.module.css, glass-card.tsx
+Files: src/components/arc/glass-card/demo.tsx, src/components/arc/glass-card/glass-card.module.css, src/components/arc/glass-card/glass-card.tsx
 
 ## `glass-menu` · Glass menu (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, glass, menu, new, glass menu, dropdown, context menu, action menu, liquid glass, frosted, shared layout, morph, submenu
 
-Files: demo.tsx, glass-menu-data.ts, glass-menu.module.css, glass-menu.tsx
+Files: src/components/arc/glass-menu/demo.tsx, src/components/arc/glass-menu/glass-menu-data.ts, src/components/arc/glass-menu/glass-menu.module.css, src/components/arc/glass-menu/glass-menu.tsx
 
 ## `glass-segmented` · Glass segmented (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, glass, input, new, segmented control, liquid glass, toggle group, tabs, gooey indicator, stretch, frosted, drag
 
-Files: demo.tsx, glass-segmented-data.ts, glass-segmented.module.css, glass-segmented.tsx
+Files: src/components/arc/glass-segmented/demo.tsx, src/components/arc/glass-segmented/glass-segmented-data.ts, src/components/arc/glass-segmented/glass-segmented.module.css, src/components/arc/glass-segmented/glass-segmented.tsx
 
 ## `glass-tabbar` · Glass tab bar (Pro, special)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: special, glass, navigation, new, liquid glass, glass tab bar, floating tab bar, bottom navigation, mobile tab bar, ios tab bar, refraction, lens indicator, draggable tab indicator, collapsing tab bar, hide on scroll, glassmorphism navigation
 
-Files: demo.tsx, glass-tabbar.module.css, glass-tabbar.tsx
+Files: src/components/arc/glass-tabbar/demo.tsx, src/components/arc/glass-tabbar/glass-tabbar.module.css, src/components/arc/glass-tabbar/glass-tabbar.tsx

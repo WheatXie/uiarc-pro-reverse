@@ -1,0 +1,3593 @@
+{
+  "note": "Free registry items copied verbatim from the public Arc registry; paths are relative to src/components/arc/",
+  "items": [
+    {
+      "id": "accordion",
+      "title": "Accordion",
+      "type": "registry:ui",
+      "description": "Progressively reveal supporting information in place.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "accordion/accordion.tsx",
+        "accordion/accordion.module.css"
+      ],
+      "shas": [
+        "4d24d519b511812d",
+        "8a4fc9578571f3d7"
+      ]
+    },
+    {
+      "id": "action-button",
+      "title": "Action button",
+      "type": "registry:ui",
+      "description": "A compact button for frequent toolbar actions.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "action-button/action-button.tsx",
+        "action-button/action-button.module.css"
+      ],
+      "shas": [
+        "2cb2354db41b0dd0",
+        "fe09236a2f499755"
+      ]
+    },
+    {
+      "id": "action-swap",
+      "title": "Action swap",
+      "type": "registry:ui",
+      "description": "Swap an action label while preserving its place and intent.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "action-swap/action-swap.tsx",
+        "action-swap/action-swap.module.css"
+      ],
+      "shas": [
+        "b152c93287b16ebc",
+        "8467c23b63fa4738"
+      ]
+    },
+    {
+      "id": "activity-heatmap",
+      "title": "Activity heatmap",
+      "type": "registry:ui",
+      "description": "See a year of activity at a glance, one square per day.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "activity-heatmap/activity-heatmap.tsx",
+        "activity-heatmap/activity-heatmap.module.css"
+      ],
+      "shas": [
+        "47b16d2211727d8f",
+        "b509d20ff7f15209"
+      ]
+    },
+    {
+      "id": "alert",
+      "title": "Alert",
+      "type": "registry:ui",
+      "description": "A persistent message that helps people recover or continue.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "alert/alert.tsx",
+        "alert/alert.module.css"
+      ],
+      "shas": [
+        "ddcd481e2ebc6a1c",
+        "ce86d259fa778a5b"
+      ]
+    },
+    {
+      "id": "animated-counter",
+      "title": "Animated counter",
+      "type": "registry:ui",
+      "description": "Give changing totals a clear sense of movement.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "animated-counter/animated-counter.tsx",
+        "animated-counter/animated-counter.module.css"
+      ],
+      "shas": [
+        "2542f8bcd8a413c7",
+        "33b7d7f0081f4fd3"
+      ]
+    },
+    {
+      "id": "announcement-bar",
+      "title": "Announcement bar",
+      "type": "registry:ui",
+      "description": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "announcement-bar/announcement-bar.tsx",
+        "announcement-bar/announcement-bar.module.css"
+      ],
+      "shas": [
+        "2c17869b4bf7065e",
+        "d181f87bcab4aefb"
+      ]
+    },
+    {
+      "id": "arc-foundation",
+      "title": "Arc foundation",
+      "type": "registry:item",
+      "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "foundation.css"
+      ],
+      "shas": [
+        "a30519d85c447229"
+      ]
+    },
+    {
+      "id": "arc-motion-tokens",
+      "title": "Arc motion tokens",
+      "type": "registry:item",
+      "description": "The shared motion presets (durations, easings, springs, staggers) Arc components import. Installed automatically with any item that uses them.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "motion-tokens.ts",
+        "lib/motion-tokens.ts"
+      ],
+      "shas": [
+        "81235a2bf09738ff",
+        "bec65d2e1b180dd3"
+      ]
+    },
+    {
+      "id": "arc-skill",
+      "title": "Arc agent skill",
+      "type": "registry:file",
+      "description": "An Agent Skill that teaches Claude Code and other agents how to choose, install, and compose Arc components, with rule files for design, components, motion, accessibility, composition, and responsive layout.",
+      "categories": [
+        "ai"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "skills/arc/SKILL.md",
+        "skills/arc/INSTRUCTIONS.md",
+        "skills/arc/accessibility.md",
+        "skills/arc/checklist.md",
+        "skills/arc/components.md",
+        "skills/arc/composition.md",
+        "skills/arc/copy.md",
+        "skills/arc/design.md",
+        "skills/arc/example-dashboard.md",
+        "skills/arc/example-pricing.md",
+        "skills/arc/example-settings.md",
+        "skills/arc/motion.md",
+        "skills/arc/responsive.md"
+      ],
+      "shas": [
+        "ff5fe31608a46e03",
+        "31da3f4d20b1f80a",
+        "9c456fc18184e1b4",
+        "272abb09bbc3497f",
+        "b1762e267bfa6da8",
+        "456ff7e68c1d2d70",
+        "f09f88e690957ff2",
+        "bef6daa6cb0cba3c",
+        "de18e8c5ab516919",
+        "ca0c30161b20dd84",
+        "be1fb71913ca5f7c",
+        "99d8750bddc1545e",
+        "ea76bea1fce9a46d"
+      ]
+    },
+    {
+      "id": "avatar-group",
+      "title": "Avatar group",
+      "type": "registry:ui",
+      "description": "Show a team or set of contributors in a small space.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/avatar.json"
+      ],
+      "files": [
+        "avatar-group/avatar-group.tsx",
+        "avatar-group/avatar-group.module.css"
+      ],
+      "shas": [
+        "8383dc60829fb281",
+        "987f967d124195ff"
+      ]
+    },
+    {
+      "id": "avatar",
+      "title": "Avatar",
+      "type": "registry:ui",
+      "description": "A compact identity marker for people and accounts.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "avatar/avatar.tsx",
+        "avatar/avatar.module.css",
+        "lib/arc-provider.tsx"
+      ],
+      "shas": [
+        "94c22aa1f558a72d",
+        "7a24bd77c83d3c14",
+        "bcc7358163968a95"
+      ]
+    },
+    {
+      "id": "badge",
+      "title": "Badge",
+      "type": "registry:ui",
+      "description": "A small label for status, category, or metadata.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "badge/badge.tsx",
+        "badge/badge.module.css"
+      ],
+      "shas": [
+        "c0927a45e77f340a",
+        "31709106e0035932"
+      ]
+    },
+    {
+      "id": "bar-chart",
+      "title": "Bar chart",
+      "type": "registry:ui",
+      "description": "Compare one measure across days and scrub any bar for its value.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "bar-chart/bar-chart.tsx",
+        "bar-chart/bar-chart.module.css"
+      ],
+      "shas": [
+        "cca5e519cc0ed858",
+        "e647e55f0622ff4f"
+      ]
+    },
+    {
+      "id": "billing-toggle",
+      "title": "Billing toggle",
+      "type": "registry:ui",
+      "description": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/animated-counter.json"
+      ],
+      "files": [
+        "billing-toggle/billing-toggle.tsx",
+        "billing-toggle/billing-toggle.module.css"
+      ],
+      "shas": [
+        "e17e3900f6c5efa2",
+        "0695e1f157d9a0b2"
+      ]
+    },
+    {
+      "id": "blog-grid",
+      "title": "Blog grid",
+      "type": "registry:block",
+      "description": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "blocks/blog-grid/blog-grid.tsx",
+        "blocks/blog-grid/blog-grid-data.ts",
+        "blocks/blog-grid/blog-grid.module.css"
+      ],
+      "shas": [
+        "73cd70f3ccd522c9",
+        "b1cd17e20c62ecea",
+        "618754a1f3c7c1b8"
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "title": "Bottom sheet",
+      "type": "registry:ui",
+      "description": "A sheet that rests at a peek or full height and follows your finger.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "bottom-sheet/bottom-sheet.tsx",
+        "bottom-sheet/bottom-sheet.module.css"
+      ],
+      "shas": [
+        "c31e59f706c6da72",
+        "7e7f5d9d09757b8c"
+      ]
+    },
+    {
+      "id": "breadcrumb",
+      "title": "Breadcrumb",
+      "type": "registry:ui",
+      "description": "Show where a page sits in a hierarchy.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "breadcrumb/breadcrumb.tsx",
+        "breadcrumb/breadcrumb.module.css",
+        "lib/arc-provider.tsx"
+      ],
+      "shas": [
+        "e2431ed423d9cfd9",
+        "e6357d15da3a9e27",
+        "bcc7358163968a95"
+      ]
+    },
+    {
+      "id": "brush-chart",
+      "title": "Brush chart",
+      "type": "registry:ui",
+      "description": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "brush-chart/brush-chart.tsx",
+        "brush-chart/brush-chart.module.css"
+      ],
+      "shas": [
+        "d37c0f866336bd4a",
+        "de7ee8510ef381ef"
+      ]
+    },
+    {
+      "id": "button-group",
+      "title": "Button group",
+      "type": "registry:ui",
+      "description": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "button-group/button-group.tsx",
+        "button-group/button-group.module.css"
+      ],
+      "shas": [
+        "843ccf5fdec648e2",
+        "660ea137acde2f4f"
+      ]
+    },
+    {
+      "id": "button",
+      "title": "Button",
+      "type": "registry:ui",
+      "description": "A clear, responsive action with quiet secondary states.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "button/button.tsx",
+        "button/button.module.css"
+      ],
+      "shas": [
+        "d051d08351db8059",
+        "77323140c3f9fbad"
+      ]
+    },
+    {
+      "id": "calendar",
+      "title": "Calendar",
+      "type": "registry:ui",
+      "description": "Browse dates in a clear, compact month view.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "calendar/calendar.tsx",
+        "lib/use-today.ts",
+        "calendar/calendar.module.css"
+      ],
+      "shas": [
+        "cf09873e5d895e46",
+        "069a833b34cb1030",
+        "2e019a6ca658f124"
+      ]
+    },
+    {
+      "id": "card-stack",
+      "title": "Card stack",
+      "type": "registry:ui",
+      "description": "Review a deck one card at a time, with a throw and an undo.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "card-stack/card-stack.tsx",
+        "card-stack/card-stack.module.css"
+      ],
+      "shas": [
+        "dfab6b6961d0e53b",
+        "cc56bd67bcebd7c0"
+      ]
+    },
+    {
+      "id": "card",
+      "title": "Card",
+      "type": "registry:ui",
+      "description": "A contained group of related content and actions.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "card/card.tsx",
+        "card/card.module.css"
+      ],
+      "shas": [
+        "1e82f064e152aefe",
+        "70bd80f3f6245f51"
+      ]
+    },
+    {
+      "id": "carousel",
+      "title": "Carousel",
+      "type": "registry:ui",
+      "description": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "carousel/carousel.tsx",
+        "carousel/carousel.module.css"
+      ],
+      "shas": [
+        "d6a10bf50641fec5",
+        "0ea3d62c03daf3a0"
+      ]
+    },
+    {
+      "id": "changelog-feed",
+      "title": "Changelog feed",
+      "type": "registry:block",
+      "description": "Release notes you can filter, open in place, and scroll through month by month.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/copy-button.json"
+      ],
+      "files": [
+        "blocks/changelog-feed/changelog-feed.tsx",
+        "blocks/changelog-feed/changelog-feed.module.css",
+        "lib/media.ts"
+      ],
+      "shas": [
+        "86bba12881fb6eab",
+        "84b99e472af69d14",
+        "84c9244304b9e494"
+      ]
+    },
+    {
+      "id": "chat-thread",
+      "title": "Chat thread",
+      "type": "registry:ui",
+      "description": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "chat-thread/chat-thread.tsx",
+        "chat-thread/chat-thread.module.css"
+      ],
+      "shas": [
+        "4566c8390ec9b22c",
+        "31ea2e7d3e7593c5"
+      ]
+    },
+    {
+      "id": "checkbox",
+      "title": "Checkbox",
+      "type": "registry:ui",
+      "description": "A binary choice with a precise, legible state.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "checkbox/checkbox.tsx",
+        "checkbox/checkbox.module.css"
+      ],
+      "shas": [
+        "4759251a0b2a8332",
+        "6cc8ae35edbd99da"
+      ]
+    },
+    {
+      "id": "chip-group",
+      "title": "Chip group",
+      "type": "registry:ui",
+      "description": "Filter by a few facets with chips that morph as you pick them.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "chip-group/chip-group.tsx",
+        "chip-group/chip-group.module.css"
+      ],
+      "shas": [
+        "18bd79ee819c6546",
+        "cc8c6c63756b0dee"
+      ]
+    },
+    {
+      "id": "code-block",
+      "title": "Code block",
+      "type": "registry:ui",
+      "description": "Present code with legible hierarchy and copy access.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/copy-button.json"
+      ],
+      "files": [
+        "code-block/code-block.tsx",
+        "code-block/code-block.module.css"
+      ],
+      "shas": [
+        "af1c47e8f90e1287",
+        "a76414fc4141b0b7"
+      ]
+    },
+    {
+      "id": "color-picker",
+      "title": "Color picker",
+      "type": "registry:ui",
+      "description": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/text-morph.json"
+      ],
+      "files": [
+        "color-picker/color-picker.tsx",
+        "color-picker/color-picker.module.css"
+      ],
+      "shas": [
+        "125f022e7abc7abb",
+        "c5fd30e3c4c63819"
+      ]
+    },
+    {
+      "id": "combobox",
+      "title": "Combobox",
+      "type": "registry:ui",
+      "description": "Search and select from a list without leaving the field.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "combobox/combobox.tsx",
+        "combobox/combobox.module.css"
+      ],
+      "shas": [
+        "12ae9a73956f4d48",
+        "d6515c41a6d61e71"
+      ]
+    },
+    {
+      "id": "command-palette",
+      "title": "Command palette",
+      "type": "registry:block",
+      "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "command-palette/command-palette.tsx",
+        "command-palette/command-palette.module.css"
+      ],
+      "shas": [
+        "b6f1354a62a8a3b1",
+        "7a6c8d1d2dbbd3fd"
+      ]
+    },
+    {
+      "id": "comment-thread",
+      "title": "Comment thread",
+      "type": "registry:ui",
+      "description": "Threaded comments with replies, reactions, mentions, inline edit, and resolve.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "comment-thread/comment-thread.tsx",
+        "comment-thread/comment-thread.module.css"
+      ],
+      "shas": [
+        "cd6a270befb55c81",
+        "5bdcb52d70d94d70"
+      ]
+    },
+    {
+      "id": "comparison-table",
+      "title": "Comparison table",
+      "type": "registry:block",
+      "description": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "blocks/comparison-table/comparison-table.tsx",
+        "blocks/comparison-table/comparison-table-data.ts",
+        "blocks/comparison-table/comparison-table.module.css"
+      ],
+      "shas": [
+        "21e121691a7b7eba",
+        "3410f9d5483fd7a8",
+        "bf60cab371cc1a50"
+      ]
+    },
+    {
+      "id": "confirm-morph",
+      "title": "Confirm morph",
+      "type": "registry:ui",
+      "description": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "confirm-morph/confirm-morph.tsx",
+        "confirm-morph/confirm-morph.module.css"
+      ],
+      "shas": [
+        "151698eb1a316e38",
+        "0117c11659e56d60"
+      ]
+    },
+    {
+      "id": "contact-section",
+      "title": "Contact section",
+      "type": "registry:block",
+      "description": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/avatar.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/copy-button.json",
+        "https://uiarc.dev/r/input.json",
+        "https://uiarc.dev/r/segmented-control.json",
+        "https://uiarc.dev/r/textarea.json"
+      ],
+      "files": [
+        "blocks/contact-section/contact-section.tsx",
+        "blocks/contact-section/contact-section.module.css",
+        "lib/media.ts"
+      ],
+      "shas": [
+        "93c074391b1da2ac",
+        "0afef3b39537f27d",
+        "84c9244304b9e494"
+      ]
+    },
+    {
+      "id": "context-menu",
+      "title": "Context menu",
+      "type": "registry:ui",
+      "description": "Secondary actions kept close to the selected object.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "context-menu/context-menu.tsx",
+        "context-menu/context-menu.module.css"
+      ],
+      "shas": [
+        "84301492fadf8cfb",
+        "bde4e0d0430b1f6a"
+      ]
+    },
+    {
+      "id": "cookie-consent",
+      "title": "Cookie consent",
+      "type": "registry:ui",
+      "description": "A consent bar that morphs into preferences and folds into a reopen button.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/switch.json"
+      ],
+      "files": [
+        "cookie-consent/cookie-consent.tsx",
+        "cookie-consent/cookie-consent.module.css"
+      ],
+      "shas": [
+        "a197fe4a9fc015b9",
+        "869f8afe5f49740c"
+      ]
+    },
+    {
+      "id": "copy-button",
+      "title": "Copy button",
+      "type": "registry:ui",
+      "description": "Copy a value with immediate confirmation.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "copy-button/copy-button.tsx",
+        "copy-button/copy-button.module.css",
+        "lib/use-copy-feedback.ts"
+      ],
+      "shas": [
+        "6bf34e1070d8b962",
+        "99434829f623b8e2",
+        "d8dd6e434d362e83"
+      ]
+    },
+    {
+      "id": "countdown",
+      "title": "Countdown",
+      "type": "registry:ui",
+      "description": "A launch countdown with rolling digits that morphs into a live state at zero.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "countdown/countdown.tsx",
+        "countdown/countdown.module.css"
+      ],
+      "shas": [
+        "41717eb6d74e220d",
+        "97b99d7435bd26f2"
+      ]
+    },
+    {
+      "id": "cta-section",
+      "title": "CTA section",
+      "type": "registry:block",
+      "description": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/segmented-control.json"
+      ],
+      "files": [
+        "blocks/cta-section/cta-section.tsx",
+        "blocks/cta-section/cta-section-data.ts",
+        "lib/media.ts",
+        "blocks/cta-section/cta-section.module.css"
+      ],
+      "shas": [
+        "f81f3073cbe12191",
+        "c66c14922ff9a3b9",
+        "84c9244304b9e494",
+        "44829bc68844a21a"
+      ]
+    },
+    {
+      "id": "date-picker",
+      "title": "Date picker",
+      "type": "registry:ui",
+      "description": "Choose a date without losing context.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/calendar.json"
+      ],
+      "files": [
+        "date-picker/date-picker.tsx",
+        "date-picker/date-picker.module.css"
+      ],
+      "shas": [
+        "996d6b6703f7478c",
+        "fc3907dc484832ef"
+      ]
+    },
+    {
+      "id": "date-range-picker",
+      "title": "Date range picker",
+      "type": "registry:ui",
+      "description": "A range picker that grows from its trigger into two months with presets and a stretching range highlight.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "date-range-picker/date-range-picker.tsx",
+        "lib/use-today.ts",
+        "date-range-picker/date-range-picker.module.css"
+      ],
+      "shas": [
+        "93658f3a1a4fc15f",
+        "069a833b34cb1030",
+        "40db1644922b78c2"
+      ]
+    },
+    {
+      "id": "dialog",
+      "title": "Dialog",
+      "type": "registry:ui",
+      "description": "A focused surface for decisions that need attention.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "dialog/dialog.tsx",
+        "dialog/dialog.module.css"
+      ],
+      "shas": [
+        "eb84a7eb2ac864dc",
+        "a71ce7476732e9a9"
+      ]
+    },
+    {
+      "id": "donut-chart",
+      "title": "Donut chart",
+      "type": "registry:ui",
+      "description": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "donut-chart/donut-chart.tsx",
+        "donut-chart/donut-chart.module.css"
+      ],
+      "shas": [
+        "31ce6f4502dbf2e4",
+        "bfd5bb52ff46a7f1"
+      ]
+    },
+    {
+      "id": "drawer",
+      "title": "Drawer",
+      "type": "registry:ui",
+      "description": "A temporary side surface for focused work.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "drawer/drawer.tsx",
+        "drawer/drawer.module.css"
+      ],
+      "shas": [
+        "eca310cb947c8da8",
+        "f0bbe416307a5203"
+      ]
+    },
+    {
+      "id": "dropdown-menu",
+      "title": "Dropdown menu",
+      "type": "registry:ui",
+      "description": "A focused list of actions anchored to a trigger.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "dropdown-menu/dropdown-menu.tsx",
+        "dropdown-menu/dropdown-menu.module.css"
+      ],
+      "shas": [
+        "93bcd49526288991",
+        "4a1a34dbbb4f327c"
+      ]
+    },
+    {
+      "id": "elastic-slider",
+      "title": "Elastic slider",
+      "type": "registry:ui",
+      "description": "A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "elastic-slider/elastic-slider.tsx",
+        "elastic-slider/elastic-slider.module.css"
+      ],
+      "shas": [
+        "25deb1d0c69dc370",
+        "67fa7e4b5906daf0"
+      ]
+    },
+    {
+      "id": "empty-state",
+      "title": "Empty state",
+      "type": "registry:ui",
+      "description": "A useful next step when there is nothing to show yet.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "empty-state/empty-state.tsx",
+        "empty-state/empty-state.module.css"
+      ],
+      "shas": [
+        "e99e39c02b03e777",
+        "e65e4c4b6e3bd31b"
+      ]
+    },
+    {
+      "id": "empty-states",
+      "title": "Empty states",
+      "type": "registry:block",
+      "description": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "blocks/empty-states/empty-states.tsx",
+        "blocks/empty-states/empty-states.module.css",
+        "blocks/empty-states/empty-states-art.ts"
+      ],
+      "shas": [
+        "5c24e909420b3874",
+        "ff517745774f84eb",
+        "86c5c3d763041683"
+      ]
+    },
+    {
+      "id": "expandable-card",
+      "title": "Expandable card",
+      "type": "registry:ui",
+      "description": "Give a dense card more room when requested.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "expandable-card/expandable-card.tsx",
+        "expandable-card/expandable-card.module.css"
+      ],
+      "shas": [
+        "3373b06531786924",
+        "f85ff47844ffd2c8"
+      ]
+    },
+    {
+      "id": "expandable-text",
+      "title": "Expandable text",
+      "type": "registry:ui",
+      "description": "Long text clamped to a few lines with a soft fade that glides open with Read more and closes with Show less, shown only when the text overflows.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "expandable-text/expandable-text.tsx",
+        "expandable-text/expandable-text.module.css"
+      ],
+      "shas": [
+        "946d4eb56a6eab84",
+        "3921d0b286516e8c"
+      ]
+    },
+    {
+      "id": "expanding-button-group",
+      "title": "Expanding button group",
+      "type": "registry:ui",
+      "description": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "expanding-button-group/expanding-button-group.tsx",
+        "expanding-button-group/expanding-button-group.module.css"
+      ],
+      "shas": [
+        "a41472ade73b7bd4",
+        "86fb44cde48fa77b"
+      ]
+    },
+    {
+      "id": "expanding-search",
+      "title": "Expanding search",
+      "type": "registry:ui",
+      "description": "An icon that morphs into a search field with results beneath it.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "expanding-search/expanding-search.tsx",
+        "expanding-search/expanding-search.module.css"
+      ],
+      "shas": [
+        "d76550fe9c4227e5",
+        "bd66136f51a698d3"
+      ]
+    },
+    {
+      "id": "faq-section",
+      "title": "FAQ section",
+      "type": "registry:block",
+      "description": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/search-field.json",
+        "https://uiarc.dev/r/segmented-control.json"
+      ],
+      "files": [
+        "blocks/faq-section/faq-section.tsx",
+        "blocks/faq-section/faq-section.module.css"
+      ],
+      "shas": [
+        "c0695746816ebeda",
+        "3346449f678590ac"
+      ]
+    },
+    {
+      "id": "file-dropzone",
+      "title": "File dropzone",
+      "type": "registry:ui",
+      "description": "A generous target for dropping one or more files.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "file-dropzone/file-dropzone.tsx",
+        "file-dropzone/file-dropzone.module.css"
+      ],
+      "shas": [
+        "1702b59c1f5e2367",
+        "0d1cc9a41e724b04"
+      ]
+    },
+    {
+      "id": "file-upload",
+      "title": "File upload",
+      "type": "registry:block",
+      "description": "A complete file selection flow with constraints, progress, and error feedback.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "file-upload/file-upload.tsx",
+        "file-upload/file-upload.module.css"
+      ],
+      "shas": [
+        "568d3932d11ee7bf",
+        "3a4ef30a0872ce36"
+      ]
+    },
+    {
+      "id": "filter-toolbar",
+      "title": "Filter toolbar",
+      "type": "registry:ui",
+      "description": "Keep collection filters close and easy to reset.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "filter-toolbar/filter-toolbar.tsx",
+        "filter-toolbar/filter-toolbar.module.css"
+      ],
+      "shas": [
+        "90fbd7b5dfca993b",
+        "b24254c41e9113d0"
+      ]
+    },
+    {
+      "id": "floating-button-group",
+      "title": "Floating button group",
+      "type": "registry:ui",
+      "description": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/tooltip.json"
+      ],
+      "files": [
+        "floating-button-group/floating-button-group.tsx",
+        "floating-button-group/floating-button-group.module.css"
+      ],
+      "shas": [
+        "2de3b52da32ed257",
+        "a79a1fa8cb57d963"
+      ]
+    },
+    {
+      "id": "gauge",
+      "title": "Gauge",
+      "type": "registry:ui",
+      "description": "Show a value against a known range.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "gauge/gauge.tsx",
+        "gauge/gauge.module.css"
+      ],
+      "shas": [
+        "c8cab550f9d0b7d0",
+        "523456638d3edcb0"
+      ]
+    },
+    {
+      "id": "hero-section",
+      "title": "Hero section",
+      "type": "registry:block",
+      "description": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/avatar.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/copy-button.json",
+        "https://uiarc.dev/r/line-chart.json",
+        "https://uiarc.dev/r/segmented-control.json",
+        "https://uiarc.dev/r/sparkline.json"
+      ],
+      "files": [
+        "blocks/hero-section/hero-section.tsx",
+        "blocks/hero-section/hero-section.module.css",
+        "blocks/hero-section/hero-content.tsx",
+        "blocks/hero-section/hero-content.module.css",
+        "blocks/hero-section/hero-motion.ts",
+        "blocks/hero-section/hero-mesh.tsx",
+        "blocks/hero-section/hero-mesh.module.css",
+        "blocks/hero-section/hero-cadence.tsx",
+        "blocks/hero-section/hero-cadence.module.css",
+        "blocks/hero-section/hero-relay.tsx",
+        "blocks/hero-section/hero-relay.module.css",
+        "blocks/hero-section/hero-lumen.tsx",
+        "blocks/hero-section/hero-lumen.module.css",
+        "blocks/hero-section/hero-lumen-data.ts",
+        "lib/media.ts"
+      ],
+      "shas": [
+        "9d7a48244ac5238e",
+        "f95f31a08dad069c",
+        "bc1b5672c25bc4ae",
+        "0fb963f57acb7e7f",
+        "13b3c25c7316aa0f",
+        "294ea55a1e55ed19",
+        "bf374595c4b0aaf8",
+        "edb81cd4b7c7e12a",
+        "a922cd6e5059e0d8",
+        "fd0b40a5c91c56b3",
+        "bef60949c8a63a72",
+        "fd2e51c7355954d5",
+        "c61c36afeb17b90b",
+        "36bb459e1e9e6bdb",
+        "84c9244304b9e494"
+      ]
+    },
+    {
+      "id": "hold-to-confirm",
+      "title": "Hold to confirm",
+      "type": "registry:ui",
+      "description": "Confirm a destructive action by holding, not tapping.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "hold-to-confirm/hold-to-confirm.tsx",
+        "hold-to-confirm/hold-to-confirm.module.css"
+      ],
+      "shas": [
+        "1d5905798dedde34",
+        "1dd13d04ac68b879"
+      ]
+    },
+    {
+      "id": "hover-card",
+      "title": "Hover card",
+      "type": "registry:ui",
+      "description": "Preview a person or link on hover or focus without leaving the page.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "hover-card/hover-card.tsx",
+        "hover-card/hover-card.module.css"
+      ],
+      "shas": [
+        "8fe88d6df8541251",
+        "2a847a6020215674"
+      ]
+    },
+    {
+      "id": "icon-morph",
+      "title": "Icon morph",
+      "type": "registry:ui",
+      "description": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "icon-morph/icon-morph.tsx",
+        "icon-morph/icon-morph.module.css"
+      ],
+      "shas": [
+        "3b4007971a84b991",
+        "10e3e55bfce92594"
+      ]
+    },
+    {
+      "id": "image-compare",
+      "title": "Image compare",
+      "type": "registry:ui",
+      "description": "Drag a divider across two images to see what changed.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "image-compare/image-compare.tsx",
+        "image-compare/image-compare.module.css"
+      ],
+      "shas": [
+        "9f97bed616271952",
+        "d9538b7da60d8237"
+      ]
+    },
+    {
+      "id": "in-view-title",
+      "title": "In-view title",
+      "type": "registry:ui",
+      "description": "Bring a section title in as it scrolls into view.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "in-view-title/in-view-title.tsx",
+        "in-view-title/in-view-title.module.css"
+      ],
+      "shas": [
+        "2046b2490078f288",
+        "7af8fbeef5d0d75b"
+      ]
+    },
+    {
+      "id": "inline-edit",
+      "title": "Inline edit",
+      "type": "registry:ui",
+      "description": "Rename in place: the text becomes a field without moving.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "inline-edit/inline-edit.tsx",
+        "inline-edit/inline-edit.module.css"
+      ],
+      "shas": [
+        "7040d60275c468ae",
+        "c689027c6c24a43a"
+      ]
+    },
+    {
+      "id": "input",
+      "title": "Input",
+      "type": "registry:ui",
+      "description": "A single line field with clear labels and useful states.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "input/input.tsx",
+        "input/input.module.css"
+      ],
+      "shas": [
+        "16a4e761b51482e9",
+        "ef6716aa7b9f4589"
+      ]
+    },
+    {
+      "id": "json-viewer",
+      "title": "JSON viewer",
+      "type": "registry:ui",
+      "description": "A collapsible JSON tree with search, paging for long arrays, and copy value or path.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "json-viewer/json-viewer.tsx",
+        "json-viewer/json-viewer.module.css"
+      ],
+      "shas": [
+        "6ca4f99eb84de108",
+        "c6ffedc6fb954166"
+      ]
+    },
+    {
+      "id": "line-chart",
+      "title": "Line chart",
+      "type": "registry:ui",
+      "description": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "line-chart/line-chart.tsx",
+        "line-chart/line-chart.module.css"
+      ],
+      "shas": [
+        "f05816e33d5d7b32",
+        "6ab0971d5471b39e"
+      ]
+    },
+    {
+      "id": "login-centered",
+      "title": "Centered login",
+      "type": "registry:block",
+      "description": "A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/input.json",
+        "https://uiarc.dev/r/otp-input.json"
+      ],
+      "files": [
+        "blocks/login-centered/login-centered.tsx",
+        "blocks/login-centered/login-centered.module.css"
+      ],
+      "shas": [
+        "2a4976fb83f34a8d",
+        "a6d3716eca7851b9"
+      ]
+    },
+    {
+      "id": "logo-marquee",
+      "title": "Logo marquee",
+      "type": "registry:block",
+      "description": "A quiet, continuously moving row of brand marks with a pause control.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "blocks/logo-marquee/logo-marquee.tsx",
+        "blocks/logo-marquee/logo-marquee.module.css"
+      ],
+      "shas": [
+        "6b948512cfb18ecb",
+        "781d21f6299b7f1d"
+      ]
+    },
+    {
+      "id": "mention-input",
+      "title": "Mention input",
+      "type": "registry:ui",
+      "description": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "mention-input/mention-input.tsx",
+        "mention-input/mention-input.module.css"
+      ],
+      "shas": [
+        "aef3f5eb1bcf6f83",
+        "ff715146d8d89a0b"
+      ]
+    },
+    {
+      "id": "metric-card",
+      "title": "Metric card",
+      "type": "registry:ui",
+      "description": "A compact summary for a number that needs context.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/animated-counter.json"
+      ],
+      "files": [
+        "metric-card/metric-card.tsx",
+        "metric-card/metric-card.module.css"
+      ],
+      "shas": [
+        "ac550e49b6e9f680",
+        "733ad2b10292f583"
+      ]
+    },
+    {
+      "id": "money-input",
+      "title": "Money input",
+      "type": "registry:ui",
+      "description": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "money-input/money-input.tsx",
+        "money-input/money-input.module.css"
+      ],
+      "shas": [
+        "55411d79e0e1d0e5",
+        "88559c08f38ebd4f"
+      ]
+    },
+    {
+      "id": "morph-select",
+      "title": "Morph select",
+      "type": "registry:ui",
+      "description": "A select whose trigger grows into the list, with a gliding highlight and type-ahead.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "morph-select/morph-select.tsx",
+        "morph-select/morph-select.module.css"
+      ],
+      "shas": [
+        "8417d32c57ab0e79",
+        "a04d516ec799568d"
+      ]
+    },
+    {
+      "id": "multi-select",
+      "title": "Multi-select",
+      "type": "registry:ui",
+      "description": "Select several values while keeping the field readable.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "multi-select/multi-select.tsx",
+        "multi-select/multi-select.module.css"
+      ],
+      "shas": [
+        "08fbcb055525cb74",
+        "6bf5c9137cc0816d"
+      ]
+    },
+    {
+      "id": "newsletter-signup",
+      "title": "Newsletter signup",
+      "type": "registry:block",
+      "description": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/animated-counter.json",
+        "https://uiarc.dev/r/segmented-control.json",
+        "https://uiarc.dev/r/switch.json"
+      ],
+      "files": [
+        "blocks/newsletter-signup/newsletter-signup.tsx",
+        "blocks/newsletter-signup/newsletter-signup-data.ts",
+        "lib/media.ts",
+        "blocks/newsletter-signup/newsletter-signup.module.css"
+      ],
+      "shas": [
+        "9b68c369f2ec093e",
+        "c4644181d5a5e78a",
+        "84c9244304b9e494",
+        "6192188b962b10a3"
+      ]
+    },
+    {
+      "id": "notification-center",
+      "title": "Notification center",
+      "type": "registry:block",
+      "description": "A home for updates with read state, grouped information, and animated disclosure.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/avatar.json"
+      ],
+      "files": [
+        "notification-center/notification-center.tsx",
+        "notification-center/notification-center.module.css"
+      ],
+      "shas": [
+        "189f98adcdbb6fb3",
+        "4411f6909360d678"
+      ]
+    },
+    {
+      "id": "number-field",
+      "title": "Number field",
+      "type": "registry:ui",
+      "description": "Enter a bounded number with clear increment controls.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "number-field/number-field.tsx",
+        "number-field/number-field.module.css"
+      ],
+      "shas": [
+        "ad4bba584f462693",
+        "3898aa73a014b3f7"
+      ]
+    },
+    {
+      "id": "onboarding-checklist",
+      "title": "Onboarding checklist",
+      "type": "registry:ui",
+      "description": "Guide a new workspace through setup, one step at a time.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "onboarding-checklist/onboarding-checklist.tsx",
+        "onboarding-checklist/onboarding-checklist.module.css"
+      ],
+      "shas": [
+        "74b252594a15b747",
+        "768e85ab736535f7"
+      ]
+    },
+    {
+      "id": "otp-input",
+      "title": "OTP input",
+      "type": "registry:block",
+      "description": "A six digit verification flow with paste support and keyboard navigation.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "otp-input/otp-input.tsx",
+        "otp-input/otp-input.module.css"
+      ],
+      "shas": [
+        "9b7c948a73d93c2d",
+        "4bcfd659a2d6597f"
+      ]
+    },
+    {
+      "id": "page-header",
+      "title": "Page header",
+      "type": "registry:block",
+      "description": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/animated-counter.json",
+        "https://uiarc.dev/r/avatar-group.json",
+        "https://uiarc.dev/r/avatar.json",
+        "https://uiarc.dev/r/badge.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/progress.json"
+      ],
+      "files": [
+        "blocks/page-header/page-header.tsx",
+        "lib/use-copy-feedback.ts",
+        "blocks/page-header/page-header.module.css"
+      ],
+      "shas": [
+        "8198b187c313e5d7",
+        "d8dd6e434d362e83",
+        "e030817363d8629e"
+      ]
+    },
+    {
+      "id": "pagination",
+      "title": "Pagination",
+      "type": "registry:ui",
+      "description": "Move through a long collection with clear bounds.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "pagination/pagination.tsx",
+        "pagination/pagination.module.css"
+      ],
+      "shas": [
+        "c687e93ea563bd39",
+        "9db319c0314c341b"
+      ]
+    },
+    {
+      "id": "password-field",
+      "title": "Password field",
+      "type": "registry:ui",
+      "description": "Capture sensitive text with a visible reveal control.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "password-field/password-field.tsx",
+        "password-field/password-field.module.css"
+      ],
+      "shas": [
+        "2064f0f2d6ab79aa",
+        "75a61ff590b70081"
+      ]
+    },
+    {
+      "id": "password-strength",
+      "title": "Password strength",
+      "type": "registry:ui",
+      "description": "Show how strong a new password is while it is typed.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "password-strength/password-strength.tsx",
+        "password-strength/password-strength.module.css"
+      ],
+      "shas": [
+        "8271b05ab8102aaf",
+        "57080bc46186fa86"
+      ]
+    },
+    {
+      "id": "phone-input",
+      "title": "Phone input",
+      "type": "registry:ui",
+      "description": "A phone field with a country picker, formatting as you type, and E.164 output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "phone-input/phone-input.tsx",
+        "phone-input/phone-input.module.css"
+      ],
+      "shas": [
+        "ef8ef7664319a8ef",
+        "d0f27fe2f5492773"
+      ]
+    },
+    {
+      "id": "plan-comparison",
+      "title": "Plan comparison",
+      "type": "registry:block",
+      "description": "Compare meaningful differences between plans and billing periods.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/segmented-control.json",
+        "https://uiarc.dev/r/switch.json"
+      ],
+      "files": [
+        "blocks/plan-comparison/plan-comparison.tsx",
+        "blocks/plan-comparison/plan-comparison.module.css"
+      ],
+      "shas": [
+        "381004e6e9cfa1e6",
+        "8554773b001e19d1"
+      ]
+    },
+    {
+      "id": "popover",
+      "title": "Popover",
+      "type": "registry:ui",
+      "description": "A small anchored surface for contextual information.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "popover/popover.tsx",
+        "popover/popover.module.css"
+      ],
+      "shas": [
+        "c564d1974bc55e80",
+        "6b92cdac211568a5"
+      ]
+    },
+    {
+      "id": "progress",
+      "title": "Progress",
+      "type": "registry:ui",
+      "description": "Show how much of a known task is complete.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "progress/progress.tsx",
+        "progress/progress.module.css"
+      ],
+      "shas": [
+        "53f96b8e42315c9c",
+        "f0e527c419a7ebd3"
+      ]
+    },
+    {
+      "id": "radio-cards",
+      "title": "Radio cards",
+      "type": "registry:ui",
+      "description": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "radio-cards/radio-cards.tsx",
+        "radio-cards/radio-cards.module.css"
+      ],
+      "shas": [
+        "636b6f150bc5f24e",
+        "5f6e5cd90a57fd7c"
+      ]
+    },
+    {
+      "id": "radio-group",
+      "title": "Radio group",
+      "type": "registry:ui",
+      "description": "Choose one option from a visible set.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "radio-group/radio-group.tsx",
+        "radio-group/radio-group.module.css"
+      ],
+      "shas": [
+        "b64932d460b1366d",
+        "b5a7ececee88f400"
+      ]
+    },
+    {
+      "id": "range-histogram-slider",
+      "title": "Range histogram slider",
+      "type": "registry:ui",
+      "description": "A price range over a live histogram of the data, lighting the bars inside the range and settling on bar edges.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "range-histogram-slider/range-histogram-slider.tsx",
+        "range-histogram-slider/range-histogram-slider.module.css"
+      ],
+      "shas": [
+        "9b8af4d5e489cea9",
+        "056e370ab831e68f"
+      ]
+    },
+    {
+      "id": "rating",
+      "title": "Rating",
+      "type": "registry:ui",
+      "description": "A simple, accessible way to capture a numeric opinion.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "rating/rating.tsx",
+        "rating/rating.module.css"
+      ],
+      "shas": [
+        "d55bd061628a4e80",
+        "f62d971f0e4a5fc9"
+      ]
+    },
+    {
+      "id": "reactions",
+      "title": "Reactions",
+      "type": "registry:ui",
+      "description": "Acknowledge a post in one tap, with counts that roll.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "reactions/reactions.tsx",
+        "reactions/reactions.module.css"
+      ],
+      "shas": [
+        "70eafd27d801e1f0",
+        "2cbff83746d0c63c"
+      ]
+    },
+    {
+      "id": "reorderable-list",
+      "title": "Reorderable list",
+      "type": "registry:ui",
+      "description": "Organize items with direct drag and drop.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "reorderable-list/reorderable-list.tsx",
+        "reorderable-list/reorderable-list.module.css"
+      ],
+      "shas": [
+        "3521ec8b6f86aac4",
+        "a09dd01e59447960"
+      ]
+    },
+    {
+      "id": "resizable-panels",
+      "title": "Resizable panels",
+      "type": "registry:ui",
+      "description": "Trade space between panes by dragging the divider between them.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "resizable-panels/resizable-panels.tsx",
+        "resizable-panels/resizable-panels.module.css"
+      ],
+      "shas": [
+        "398523f0602c829e",
+        "3d695c6a6a634b44"
+      ]
+    },
+    {
+      "id": "rich-text-editor",
+      "title": "Rich text editor",
+      "type": "registry:ui",
+      "description": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "rich-text-editor/rich-text-editor.tsx",
+        "rich-text-editor/rich-text-editor.module.css"
+      ],
+      "shas": [
+        "daa384e877a82da1",
+        "6833c362e0f58e0d"
+      ]
+    },
+    {
+      "id": "ridgeline",
+      "title": "Ridgeline",
+      "type": "registry:ui",
+      "description": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "ridgeline/ridgeline.tsx",
+        "ridgeline/ridgeline.module.css"
+      ],
+      "shas": [
+        "82048bc381bc1755",
+        "5f05deb648fea914"
+      ]
+    },
+    {
+      "id": "ruler-slider",
+      "title": "Ruler slider",
+      "type": "registry:ui",
+      "description": "A tape of ticks that slides under a fixed needle, with momentum, snapping, and a rolling readout.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "ruler-slider/ruler-slider.tsx",
+        "ruler-slider/ruler-slider.module.css"
+      ],
+      "shas": [
+        "b0042cee660e0fc8",
+        "5f24cb764bf79e61"
+      ]
+    },
+    {
+      "id": "scroll-area",
+      "title": "Scroll area",
+      "type": "registry:ui",
+      "description": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "scroll-area/scroll-area.tsx",
+        "scroll-area/scroll-area.module.css"
+      ],
+      "shas": [
+        "82c53c56af335d0a",
+        "904fdc63e0f818ad"
+      ]
+    },
+    {
+      "id": "scrub-input",
+      "title": "Scrub input",
+      "type": "registry:ui",
+      "description": "A Figma-style number field: drag the label to scrub, or type values, units, and arithmetic.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "scrub-input/scrub-input.tsx",
+        "scrub-input/scrub-input.module.css"
+      ],
+      "shas": [
+        "f05fc474a66617ba",
+        "0067119fad41efad"
+      ]
+    },
+    {
+      "id": "search-field",
+      "title": "Search field",
+      "type": "registry:ui",
+      "description": "A recognizable search entry point with clear affordances.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "search-field/search-field.tsx",
+        "search-field/search-field.module.css"
+      ],
+      "shas": [
+        "d93a8d0778c83d33",
+        "3b74ebb74a675ab8"
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "title": "Segmented control",
+      "type": "registry:ui",
+      "description": "Switch between a small set of related views.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "segmented-control/segmented-control.tsx",
+        "segmented-control/segmented-control.module.css"
+      ],
+      "shas": [
+        "9e1a4bc135246c86",
+        "029f038c7f03762c"
+      ]
+    },
+    {
+      "id": "select",
+      "title": "Select",
+      "type": "registry:ui",
+      "description": "A compact choice field with a keyboard friendly menu.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-select",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "select/select.tsx",
+        "select/select.module.css"
+      ],
+      "shas": [
+        "673dc0c887a255c8",
+        "f700250cfa39db22"
+      ]
+    },
+    {
+      "id": "shortcut-recorder",
+      "title": "Shortcut recorder",
+      "type": "registry:ui",
+      "description": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "shortcut-recorder/shortcut-recorder.tsx",
+        "shortcut-recorder/shortcut-recorder.module.css"
+      ],
+      "shas": [
+        "e9941d875579297a",
+        "a658a5ccd0d5c3d3"
+      ]
+    },
+    {
+      "id": "sign-in",
+      "title": "Sign in",
+      "type": "registry:block",
+      "description": "A sign in card that morphs from email to a six digit code to your account.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/avatar.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/input.json",
+        "https://uiarc.dev/r/otp-input.json"
+      ],
+      "files": [
+        "blocks/sign-in/sign-in.tsx",
+        "blocks/sign-in/sign-in.module.css",
+        "lib/media.ts"
+      ],
+      "shas": [
+        "c711c3f51ee7c82c",
+        "30efd256b8d7bba0",
+        "84c9244304b9e494"
+      ]
+    },
+    {
+      "id": "signature-pad",
+      "title": "Signature pad",
+      "type": "registry:ui",
+      "description": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "signature-pad/signature-pad.tsx",
+        "signature-pad/signature-pad.module.css"
+      ],
+      "shas": [
+        "59549b8aaac417b7",
+        "b3ab146170d37529"
+      ]
+    },
+    {
+      "id": "signup-form",
+      "title": "Sign up form",
+      "type": "registry:block",
+      "description": "An account creation flow with field validation, password strength, and a clear completion state.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/checkbox.json",
+        "https://uiarc.dev/r/input.json",
+        "https://uiarc.dev/r/password-field.json"
+      ],
+      "files": [
+        "blocks/signup-form/signup-form.tsx",
+        "blocks/signup-form/signup-form.module.css"
+      ],
+      "shas": [
+        "85931dc6b748a807",
+        "d4f07da3bbb2d4b6"
+      ]
+    },
+    {
+      "id": "site-footer",
+      "title": "Site footer",
+      "type": "registry:block",
+      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json",
+        "https://uiarc.dev/r/segmented-control.json"
+      ],
+      "files": [
+        "blocks/site-footer/site-footer.tsx",
+        "blocks/site-footer/site-footer.module.css"
+      ],
+      "shas": [
+        "46124b5a7831dee9",
+        "5ae615d3bd0013d6"
+      ]
+    },
+    {
+      "id": "site-header",
+      "title": "Site header",
+      "type": "registry:block",
+      "description": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/segmented-control.json"
+      ],
+      "files": [
+        "blocks/site-header/site-header.tsx",
+        "blocks/site-header/site-header.module.css",
+        "lib/media.ts"
+      ],
+      "shas": [
+        "1215716e4271ce00",
+        "3a47b072bd58364d",
+        "84c9244304b9e494"
+      ]
+    },
+    {
+      "id": "skeleton",
+      "title": "Skeleton",
+      "type": "registry:ui",
+      "description": "Reserve space while content is still loading.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "skeleton/skeleton.tsx",
+        "skeleton/skeleton.module.css"
+      ],
+      "shas": [
+        "73b97715698fa54f",
+        "ba4b3fa1d7f9df34"
+      ]
+    },
+    {
+      "id": "slider",
+      "title": "Slider",
+      "type": "registry:ui",
+      "description": "Pick a value or a range on a track that follows your finger.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "slider/slider.tsx",
+        "slider/slider.module.css"
+      ],
+      "shas": [
+        "4f460de666d2fb4c",
+        "d87a96b49a67a497"
+      ]
+    },
+    {
+      "id": "slope-chart",
+      "title": "Slope chart",
+      "type": "registry:ui",
+      "description": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "slope-chart/slope-chart.tsx",
+        "slope-chart/slope-chart.module.css"
+      ],
+      "shas": [
+        "84f25522305d5120",
+        "de9db30d2c637664"
+      ]
+    },
+    {
+      "id": "slot-text",
+      "title": "Slot text",
+      "type": "registry:ui",
+      "description": "Text and numbers that spin into their new value on staggered slot machine reels.",
+      "categories": [
+        "special"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "slot-text/slot-text.tsx",
+        "slot-text/slot-text.module.css"
+      ],
+      "shas": [
+        "35ec44001e89ebdd",
+        "d72527fa79c320f2"
+      ]
+    },
+    {
+      "id": "sortable-data-table",
+      "title": "Sortable data table",
+      "type": "registry:ui",
+      "description": "Compare structured records with sortable columns.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "sortable-data-table/sortable-data-table.tsx",
+        "sortable-data-table/sortable-data-table.module.css"
+      ],
+      "shas": [
+        "90350cd5d18abdd5",
+        "d6b89098f7ce0d36"
+      ]
+    },
+    {
+      "id": "sparkline",
+      "title": "Sparkline",
+      "type": "registry:ui",
+      "description": "Show a compact trend beside a value.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "sparkline/sparkline.tsx",
+        "sparkline/sparkline.module.css"
+      ],
+      "shas": [
+        "b61f2b54bac7774d",
+        "0b7995379fb5a795"
+      ]
+    },
+    {
+      "id": "split-button",
+      "title": "Split button",
+      "type": "registry:ui",
+      "description": "A primary action with a menu of nearby alternatives.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "split-button/split-button.tsx",
+        "split-button/split-button.module.css"
+      ],
+      "shas": [
+        "fb9de18f553984b6",
+        "d558b41e31264911"
+      ]
+    },
+    {
+      "id": "stats-band",
+      "title": "Stats band",
+      "type": "registry:block",
+      "description": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/segmented-control.json"
+      ],
+      "files": [
+        "blocks/stats-band/stats-band.tsx",
+        "blocks/stats-band/stats-band-data.ts",
+        "blocks/stats-band/stats-band.module.css",
+        "blocks/stats-band/stats-band-world.ts"
+      ],
+      "shas": [
+        "0d6a2042c103ce57",
+        "e0cc847732c8d3bd",
+        "43121f42f3140161",
+        "ffb88c3b89a1f4ae"
+      ]
+    },
+    {
+      "id": "stepper",
+      "title": "Stepper",
+      "type": "registry:ui",
+      "description": "Show where a person is in a multi-step flow and what is done.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "stepper/stepper.tsx",
+        "stepper/stepper.module.css"
+      ],
+      "shas": [
+        "7b4034915b0902b1",
+        "3762deb9d9cda692"
+      ]
+    },
+    {
+      "id": "streamgraph",
+      "title": "Streamgraph",
+      "type": "registry:ui",
+      "description": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "streamgraph/streamgraph.tsx",
+        "streamgraph/streamgraph.module.css"
+      ],
+      "shas": [
+        "abdb5fa4be4c4ae0",
+        "63f6baa58b07997a"
+      ]
+    },
+    {
+      "id": "swipe-actions",
+      "title": "Swipe actions",
+      "type": "registry:ui",
+      "description": "Reveal row actions with a swipe, or from the same actions in a menu.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "swipe-actions/swipe-actions.tsx",
+        "swipe-actions/swipe-actions.module.css"
+      ],
+      "shas": [
+        "44636a22e832e09a",
+        "2acdbeda8ff1c228"
+      ]
+    },
+    {
+      "id": "switch",
+      "title": "Switch",
+      "type": "registry:ui",
+      "description": "A tactile toggle for settings that take effect immediately.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "switch/switch.tsx",
+        "switch/switch.module.css"
+      ],
+      "shas": [
+        "6ab95cb9c0aaa805",
+        "3793e7ee1a4c2db4"
+      ]
+    },
+    {
+      "id": "tabs",
+      "title": "Tabs",
+      "type": "registry:ui",
+      "description": "Switch between related content in the same context.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "tabs/tabs.tsx",
+        "tabs/tabs.module.css"
+      ],
+      "shas": [
+        "3b0aaf6f0c41ce48",
+        "573e4a572e884b5f"
+      ]
+    },
+    {
+      "id": "tag-input",
+      "title": "Tag input",
+      "type": "registry:ui",
+      "description": "Turn short text values into removable tags.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "tag-input/tag-input.tsx",
+        "tag-input/tag-input.module.css"
+      ],
+      "shas": [
+        "c17d9903f365a290",
+        "d6b84d67e6ff5626"
+      ]
+    },
+    {
+      "id": "text-morph",
+      "title": "Text morph",
+      "type": "registry:ui",
+      "description": "Morph a label into its next state, letter by letter.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "text-morph/text-morph.tsx",
+        "text-morph/text-morph.module.css"
+      ],
+      "shas": [
+        "24b6559369ab4e5c",
+        "bd51e5ba739e7b72"
+      ]
+    },
+    {
+      "id": "text-reveal",
+      "title": "Text reveal",
+      "type": "registry:ui",
+      "description": "Reveal a short piece of content with restrained motion.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "text-reveal/text-reveal.tsx",
+        "text-reveal/text-reveal.module.css"
+      ],
+      "shas": [
+        "cd72c228df506da3",
+        "83a08d89b710a79b"
+      ]
+    },
+    {
+      "id": "text-shimmer",
+      "title": "Text shimmer",
+      "type": "registry:ui",
+      "description": "Show ongoing work with a calm light across the words.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "text-shimmer/text-shimmer.tsx",
+        "text-shimmer/text-shimmer.module.css"
+      ],
+      "shas": [
+        "021bfe6d2ae791f2",
+        "a16da76e363bd7ce"
+      ]
+    },
+    {
+      "id": "textarea",
+      "title": "Textarea",
+      "type": "registry:ui",
+      "description": "A multiline field for notes, descriptions, and longer text.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "textarea/textarea.tsx",
+        "textarea/textarea.module.css"
+      ],
+      "shas": [
+        "1ed43b87e45b0418",
+        "57a9294f6f7eea90"
+      ]
+    },
+    {
+      "id": "theme-switch-eclipse",
+      "title": "Eclipse",
+      "type": "registry:ui",
+      "description": "The next appearance crosses the page like an eclipse.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "theme-switch/theme-switch.tsx",
+        "theme-switch/theme-switch.module.css"
+      ],
+      "shas": [
+        "ab77cf084065de4d",
+        "271d73fdd37bbcec"
+      ]
+    },
+    {
+      "id": "theme-switch-rise",
+      "title": "Rise",
+      "type": "registry:ui",
+      "description": "The next appearance rises into place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "theme-switch/theme-switch.tsx",
+        "theme-switch/theme-switch.module.css"
+      ],
+      "shas": [
+        "ab77cf084065de4d",
+        "271d73fdd37bbcec"
+      ]
+    },
+    {
+      "id": "theme-switch-split",
+      "title": "Split",
+      "type": "registry:ui",
+      "description": "The next appearance opens from a slim center seam.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "theme-switch/theme-switch.tsx",
+        "theme-switch/theme-switch.module.css"
+      ],
+      "shas": [
+        "ab77cf084065de4d",
+        "271d73fdd37bbcec"
+      ]
+    },
+    {
+      "id": "theme-switch",
+      "title": "Theme switcher",
+      "type": "registry:ui",
+      "description": "Four smooth ways to move between light and dark appearance.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/button.json"
+      ],
+      "files": [
+        "theme-switch/theme-switch.tsx",
+        "theme-switch/theme-switch.module.css"
+      ],
+      "shas": [
+        "ab77cf084065de4d",
+        "271d73fdd37bbcec"
+      ]
+    },
+    {
+      "id": "time-picker",
+      "title": "Time picker",
+      "type": "registry:ui",
+      "description": "Choose a time with sensible keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "time-picker/time-picker.tsx",
+        "time-picker/time-picker.module.css"
+      ],
+      "shas": [
+        "0acb7e628b37a1e9",
+        "571d5dd081caa1bb"
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "Timeline",
+      "type": "registry:ui",
+      "description": "Follow what happened, newest first, grouped by day.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "timeline/timeline.tsx",
+        "timeline/timeline.module.css"
+      ],
+      "shas": [
+        "ea458dc8893e9f70",
+        "34712f6b90d29cbc"
+      ]
+    },
+    {
+      "id": "toast-stack",
+      "title": "Toast stack",
+      "type": "registry:ui",
+      "description": "Stack short results at the edge until you reach for them.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "toast-stack/toast-stack.tsx",
+        "toast-stack/toast-stack.module.css"
+      ],
+      "shas": [
+        "ba422f5d6e330c49",
+        "e62078efb9727b30"
+      ]
+    },
+    {
+      "id": "toast",
+      "title": "Toast",
+      "type": "registry:ui",
+      "description": "Brief confirmation for a completed background action.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "toast/toast.tsx",
+        "toast/toast.module.css"
+      ],
+      "shas": [
+        "cc68a59e0db6f1f1",
+        "7c971d71804b5d4b"
+      ]
+    },
+    {
+      "id": "toggle-group",
+      "title": "Toggle group",
+      "type": "registry:ui",
+      "description": "A row of icon or text toggles, single or multiple: one pressed fill glides between options, or each fades in on its own and neighbours join, as in a formatting toolbar.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "toggle-group/toggle-group.tsx",
+        "toggle-group/toggle-group.module.css"
+      ],
+      "shas": [
+        "81505030e027276c",
+        "2d8c1a59930eeb9e"
+      ]
+    },
+    {
+      "id": "tooltip",
+      "title": "Tooltip",
+      "type": "registry:ui",
+      "description": "Short supporting text for unfamiliar controls.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "tooltip/tooltip.tsx",
+        "tooltip/tooltip.module.css"
+      ],
+      "shas": [
+        "25ad5ea2b707da61",
+        "a6126eda83bbbc11"
+      ]
+    },
+    {
+      "id": "tree-table",
+      "title": "Tree table",
+      "type": "registry:ui",
+      "description": "A table with nested rows, tri-state selection, hierarchy-preserving sort, and lazy-loaded children.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json",
+        "https://uiarc.dev/r/checkbox.json"
+      ],
+      "files": [
+        "tree-table/tree-table.tsx",
+        "tree-table/tree-table.module.css"
+      ],
+      "shas": [
+        "5f549e8f104b2c0b",
+        "168edc4471cf3338"
+      ]
+    },
+    {
+      "id": "tree-view",
+      "title": "Tree view",
+      "type": "registry:ui",
+      "description": "Navigate nested folders and structured content.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "tree-view/tree-view.tsx",
+        "tree-view/tree-view.module.css"
+      ],
+      "shas": [
+        "f7233c6349a4d9fb",
+        "6b8917e241118187"
+      ]
+    },
+    {
+      "id": "treemap",
+      "title": "Treemap",
+      "type": "registry:ui",
+      "description": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "treemap/treemap.tsx",
+        "treemap/treemap.module.css"
+      ],
+      "shas": [
+        "80615b9948ab7e5e",
+        "5c619a046f32a618"
+      ]
+    },
+    {
+      "id": "usage-meter",
+      "title": "Usage meter",
+      "type": "registry:ui",
+      "description": "Show what fills an allowance and how close it is to the limit.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "usage-meter/usage-meter.tsx",
+        "usage-meter/usage-meter.module.css"
+      ],
+      "shas": [
+        "3dafab782abe29de",
+        "a5570a22c9ec41d7"
+      ]
+    },
+    {
+      "id": "user-menu",
+      "title": "User menu",
+      "type": "registry:ui",
+      "description": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "user-menu/user-menu.tsx",
+        "user-menu/user-menu.module.css"
+      ],
+      "shas": [
+        "ea41adfd5ef81396",
+        "765627540a3767d9"
+      ]
+    },
+    {
+      "id": "waffle-chart",
+      "title": "Waffle chart",
+      "type": "registry:ui",
+      "description": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://uiarc.dev/r/arc-motion-tokens.json"
+      ],
+      "files": [
+        "waffle-chart/waffle-chart.tsx",
+        "waffle-chart/waffle-chart.module.css"
+      ],
+      "shas": [
+        "f1538515ae585da3",
+        "55213a52b0b2b1a1"
+      ]
+    }
+  ]
+}

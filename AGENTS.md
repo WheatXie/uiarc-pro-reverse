@@ -7,7 +7,8 @@ landing page.
 
 A reconstruction of [uiarc.dev](https://uiarc.dev)'s gated library: **233 Pro items** (17 components,
 113 blocks, 103 special components) rebuilt as plain React source, plus the **147 free registry items**
-vendored as served. 380 ids in total, each with docs, a live preview and source in this checkout.
+copied verbatim. 380 ids in total, every one a directory under `src/components/arc/` (`blocks/<id>/` for
+the free blocks), with docs in `public/docs/`. 233 of them also have a live preview page.
 
 Nothing here calls the site at runtime. The code tab reads local files through `import.meta.glob`.
 
@@ -19,6 +20,7 @@ pnpm dev                # http://localhost:5183 (the docs shell; keep it running
 pnpm build              # tsc --noEmit && vite build
 npx tsc --noEmit        # type gate
 node ai/build.mjs       # rebuild ai/data/index.json + ai/skill/arc-pro from the catalogue
+node scripts/sync-free.mjs   # re-check the free half against the public registry (dry run)
 node ai/mcp/smoke.mjs   # assert the MCP tool surface + 10 intent rankings
 node scripts/smoke.mjs  # every item page: 200, preview mounts, code files present, 0 console errors
 ```

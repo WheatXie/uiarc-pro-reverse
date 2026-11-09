@@ -14,4 +14,4 @@ When not to use:
 
 Keywords: exploded view, layers, 3d, css 3d, perspective, isometric, scroll driven, scrollytelling, product screen, phone mockup, design system, showpiece, sticky section, depth
 
-Files: demo.tsx, exploded-view.module.css, exploded-view.tsx
+Files: src/components/arc/exploded-view/demo.tsx, src/components/arc/exploded-view/exploded-view.module.css, src/components/arc/exploded-view/exploded-view.tsx

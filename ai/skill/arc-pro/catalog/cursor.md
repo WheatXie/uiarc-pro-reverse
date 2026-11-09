@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, motion, new, dot grid, interactive dot background, dot field, magnetic dots, ripple background, hero background, canvas dots, lens effect
 
-Files: demo.tsx, dot-grid.module.css, dot-grid.tsx
+Files: src/components/arc/dot-grid/demo.tsx, src/components/arc/dot-grid/dot-grid.module.css, src/components/arc/dot-grid/dot-grid.tsx
 
 ## `gravity-well` · Gravity well (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, grid, physics, new, gravity, spacetime, magnetic, lens, shockwave, ripple, tiles, springs
 
-Files: demo.module.css, demo.tsx, gravity-well.module.css, gravity-well.tsx
+Files: src/components/arc/gravity-well/demo.module.css, src/components/arc/gravity-well/demo.tsx, src/components/arc/gravity-well/gravity-well.module.css, src/components/arc/gravity-well/gravity-well.tsx
 
 ## `image-trail` · Image trail (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, media, cursor, new, image trail, cursor image trail, mouse trail photos, hover photo trail, portfolio hero effect, image cursor follow, react image trail
 
-Files: demo.module.css, demo.tsx, image-trail.module.css, image-trail.tsx
+Files: src/components/arc/image-trail/demo.module.css, src/components/arc/image-trail/demo.tsx, src/components/arc/image-trail/image-trail.module.css, src/components/arc/image-trail/image-trail.tsx
 
 ## `ink-fluid` · Ink fluid (Pro, special)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: special, background, webgl, new, fluid simulation, ink, smoke, hero background, stable fluids, interactive background, cursor effect, navier stokes
 
-Files: demo.tsx, ink-fluid.module.css, ink-fluid.tsx
+Files: src/components/arc/ink-fluid/demo.tsx, src/components/arc/ink-fluid/ink-fluid.module.css, src/components/arc/ink-fluid/ink-fluid.tsx

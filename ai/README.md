@@ -24,6 +24,11 @@ node ai/install.mjs --all              # claude + claude-user + cursor + vscode 
 node ai/install.mjs --print            # raw JSON for the server and the codex TOML block
 ```
 
+The repository is the only data source at runtime: `ai/mcp/server.mjs` and the skill read
+`src/components/arc/**` and `public/docs/*.md`, nothing else. `node scripts/sync-free.mjs` re-checks the
+free half against the public registry (dry run by default, `--apply` writes only missing files and never
+overwrites drift).
+
 `ai/install.mjs` merges into existing config files instead of replacing them, prints every path it
 writes, and can be re-run safely. It resolves the server path from its own location, so the repo can be
 moved, and the project symlink is relative so a clone works at any path.
@@ -106,7 +111,8 @@ node ai/install.mjs --agents        # copy into ~/.agents/skills
 | Path | What |
 | --- | --- |
 | `ai/data/index.json` | 380 items: id, title, kind, group, tier, summary, keywords, deps, use/avoid bullets, sections, files, sizes |
-| `ai/vendor/free/*.json` | the 146 free registry items as served by `https://uiarc.dev/r/<name>.json`, file contents included |
+| `src/components/arc/<id>/` | the source of every item: 233 reconstructed Pro dirs plus 146 free dirs copied verbatim (`src/components/arc/blocks/<id>/` for the free blocks) |
+| `src/data/free-items.json` | manifest of the free items: id, title, type, categories, files, per-file sha256 prefix |
 | `ai/build.mjs` | regenerates `ai/data/index.json`, `ai/skill/arc-pro/components.md`, `catalog/` and `pro/` |
 | `ai/install.mjs` | writes client configs and installs the skill |
 | `ai/mcp/smoke.mjs` | asserts the tool surface and ten intent rankings |

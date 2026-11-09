@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: search, field, motion, react expanding search, search icon expand, animated search bar, header search, search with results dropdown, collapsible search
 
-Files: registry/components/expanding-search/expanding-search.tsx, registry/components/expanding-search/expanding-search.module.css
+Files: src/components/arc/expanding-search/expanding-search.module.css, src/components/arc/expanding-search/expanding-search.tsx
 
 ## `inline-edit` · Inline edit (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: inline edit, rename, click to edit, react inline edit, editable text, inline editing, rename in place, optimistic save field
 
-Files: registry/components/inline-edit/inline-edit.tsx, registry/components/inline-edit/inline-edit.module.css
+Files: src/components/arc/inline-edit/inline-edit.module.css, src/components/arc/inline-edit/inline-edit.tsx
 
 ## `input` · Input (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: field, form, react input, text field, animated form input, input with error message, form field validation, labelled input, input helper text
 
-Files: registry/components/input/input.tsx, registry/components/input/input.module.css
+Files: src/components/arc/input/input.module.css, src/components/arc/input/input.tsx
 
 ## `password-field` · Password field (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: field, security, react password input, show hide password, password toggle, password field with eye icon, login password field
 
-Files: registry/components/password-field/password-field.tsx, registry/components/password-field/password-field.module.css
+Files: src/components/arc/password-field/password-field.module.css, src/components/arc/password-field/password-field.tsx
 
 ## `password-strength` · Password strength (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: password, strength meter, validation, react password strength, password strength meter, password requirements checklist, new password field, password validation, signup password
 
-Files: registry/components/password-strength/password-strength.tsx, registry/components/password-strength/password-strength.module.css
+Files: src/components/arc/password-strength/password-strength.module.css, src/components/arc/password-strength/password-strength.tsx
 
 ## `search-field` · Search field (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: field, search, react search input, search field, search bar with clear button, filter input, list filter search
 
-Files: registry/components/search-field/search-field.tsx, registry/components/search-field/search-field.module.css
+Files: src/components/arc/search-field/search-field.module.css, src/components/arc/search-field/search-field.tsx
 
 ## `textarea` · Textarea (Free, component)
 
@@ -110,4 +110,4 @@ When not to use:
 
 Keywords: field, form, react textarea, multi-line input, textarea with character count, animated textarea, comment field, form textarea
 
-Files: registry/components/textarea/textarea.tsx, registry/components/textarea/textarea.module.css
+Files: src/components/arc/textarea/textarea.module.css, src/components/arc/textarea/textarea.tsx

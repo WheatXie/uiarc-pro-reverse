@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: action, toolbar, react action button, async button, submit button with success state, save button animation, loading to success button, cta button with arrow, publish button
 
-Files: registry/components/action-button/action-button.tsx, registry/components/action-button/action-button.module.css
+Files: src/components/arc/action-button/action-button.module.css, src/components/arc/action-button/action-button.tsx
 
 ## `action-swap` · Action swap (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: action, motion, react toggle button, follow button, state cycling button, action swap, morphing button, send button animation, async toggle button
 
-Files: registry/components/action-swap/action-swap.tsx, registry/components/action-swap/action-swap.module.css
+Files: src/components/arc/action-swap/action-swap.module.css, src/components/arc/action-swap/action-swap.tsx
 
 ## `button` · Button (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: action, control, react button, animated button, loading button, button with spinner, button press animation, morphing button label, primary button
 
-Files: registry/components/button/button.tsx, registry/components/button/button.module.css
+Files: src/components/arc/button/button.module.css, src/components/arc/button/button.tsx
 
 ## `button-group` · Button group (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: action, group, toolbar, new, button group, joined buttons, action group, segmented buttons, button bar, attached buttons, zoom controls, more actions, dropdown, split, actions
 
-Files: registry/components/button-group/button-group.tsx, registry/components/button-group/button-group.module.css
+Files: src/components/arc/button-group/button-group.module.css, src/components/arc/button-group/button-group.tsx
 
 ## `confirm-morph` · Confirm morph (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: actions, new, react confirm button, inline confirmation, delete confirmation button, confirm delete without modal, undo button, two step button, destructive action button
 
-Files: registry/components/confirm-morph/confirm-morph.tsx, registry/components/confirm-morph/confirm-morph.module.css
+Files: src/components/arc/confirm-morph/confirm-morph.module.css, src/components/arc/confirm-morph/confirm-morph.tsx
 
 ## `copy-button` · Copy button (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: action, utility, react copy button, copy to clipboard, copy button animation, clipboard button, copy code button, copied feedback
 
-Files: registry/components/copy-button/copy-button.tsx, registry/components/copy-button/copy-button.module.css, lib/use-copy-feedback.ts
+Files: src/components/arc/copy-button/copy-button.module.css, src/components/arc/copy-button/copy-button.tsx
 
 ## `expanding-button-group` · Expanding button group (Free, component)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: action, group, toolbar, new, button group, icon buttons, expanding, reveal label, hover label, action bar, message actions, file actions, confirm in place, morph, pill
 
-Files: registry/components/expanding-button-group/expanding-button-group.tsx, registry/components/expanding-button-group/expanding-button-group.module.css
+Files: src/components/arc/expanding-button-group/expanding-button-group.module.css, src/components/arc/expanding-button-group/expanding-button-group.tsx
 
 ## `floating-button-group` · Floating button group (Free, component)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: action, group, toolbar, new, button group, floating toolbar, action bar, editor toolbar, selection toolbar, tools rail, hover highlight, shared highlight, icon buttons
 
-Files: registry/components/floating-button-group/floating-button-group.tsx, registry/components/floating-button-group/floating-button-group.module.css
+Files: src/components/arc/floating-button-group/floating-button-group.module.css, src/components/arc/floating-button-group/floating-button-group.tsx
 
 ## `icon-morph` · Icon morph (Free, component)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: actions, new, react icon morph, animated icon, hamburger to close, play pause morph, copy check icon, sun moon toggle icon, like heart animation, morphing svg icon
 
-Files: registry/components/icon-morph/icon-morph.tsx, registry/components/icon-morph/icon-morph.module.css
+Files: src/components/arc/icon-morph/icon-morph.module.css, src/components/arc/icon-morph/icon-morph.tsx
 
 ## `split-button` · Split button (Free, component)
 
@@ -158,7 +158,7 @@ When not to use:
 
 Keywords: action, menu, react split button, button with dropdown, split button menu, merge button, dropdown button, primary action with options
 
-Files: registry/components/split-button/split-button.tsx, registry/components/split-button/split-button.module.css
+Files: src/components/arc/split-button/split-button.module.css, src/components/arc/split-button/split-button.tsx
 
 ## `theme-switch` · Theme switcher (Free, component)
 
@@ -174,4 +174,4 @@ When not to use:
 
 Keywords: theme, appearance, motion, react theme switch, dark mode toggle, light dark switch, theme toggle button, view transition theme, sun moon toggle
 
-Files: registry/components/theme-switch/theme-switch.tsx, registry/components/theme-switch/theme-switch.module.css
+Files: src/components/arc/theme-switch/theme-switch.module.css, src/components/arc/theme-switch/theme-switch.tsx

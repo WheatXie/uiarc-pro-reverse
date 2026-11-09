@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, motion, integrations, logos, new, orbit logos, integration hero, logo orbit, orbiting logos, integrations page, connect apps, ecosystem, partners, tech stack
 
-Files: demo.tsx, orbit-logos.module.css, orbit-logos.tsx
+Files: src/components/arc/orbit-logos/demo.tsx, src/components/arc/orbit-logos/orbit-logos.module.css, src/components/arc/orbit-logos/orbit-logos.tsx
 
 ## `page-curl` · Page curl (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, gesture, book, new, page curl, page flip, flipbook, turn page animation, book component, magazine viewer, react page flip, page turn
 
-Files: demo.tsx, page-curl.module.css, page-curl.tsx
+Files: src/components/arc/page-curl/demo.tsx, src/components/arc/page-curl/page-curl.module.css, src/components/arc/page-curl/page-curl.tsx
 
 ## `prize-wheel` · Prize wheel (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, gesture, physics, new, prize wheel, spin the wheel, wheel of fortune, referral, promo code, coupon, reward, giveaway, gamification, spinner, momentum
 
-Files: demo.tsx, prize-wheel.module.css, prize-wheel.tsx
+Files: src/components/arc/prize-wheel/demo.tsx, src/components/arc/prize-wheel/prize-wheel.module.css, src/components/arc/prize-wheel/prize-wheel.tsx
 
 ## `sticker-peel` · Sticker peel (Pro, special)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: special, motion, new, sticker peel, peel effect, sticker drag, page curl, laptop stickers, draggable stickers, react sticker, peel off animation
 
-Files: demo.tsx, sticker-peel.module.css, sticker-peel.tsx
+Files: src/components/arc/sticker-peel/demo.tsx, src/components/arc/sticker-peel/sticker-peel.module.css, src/components/arc/sticker-peel/sticker-peel.tsx

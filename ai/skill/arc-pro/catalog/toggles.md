@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: inputs, new, react billing toggle, monthly yearly switch, pricing period toggle, annual billing discount, save 20 percent badge, animated price, pricing toggle
 
-Files: registry/components/billing-toggle/billing-toggle.tsx, registry/components/billing-toggle/billing-toggle.module.css
+Files: src/components/arc/billing-toggle/billing-toggle.module.css, src/components/arc/billing-toggle/billing-toggle.tsx
 
 ## `checkbox` · Checkbox (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: field, form, react checkbox, animated checkbox, indeterminate checkbox, radix checkbox, checkbox with description, terms checkbox
 
-Files: registry/components/checkbox/checkbox.tsx, registry/components/checkbox/checkbox.module.css
+Files: src/components/arc/checkbox/checkbox.module.css, src/components/arc/checkbox/checkbox.tsx
 
 ## `radio-cards` · Radio cards (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: inputs, new, react radio cards, selectable cards, radio card group, plan selector, shipping options, option cards, card radio buttons
 
-Files: registry/components/radio-cards/radio-cards.tsx, registry/components/radio-cards/radio-cards.module.css
+Files: src/components/arc/radio-cards/radio-cards.module.css, src/components/arc/radio-cards/radio-cards.tsx
 
 ## `radio-group` · Radio group (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: field, choice, react radio group, radio buttons, radio cards, plan picker, animated radio, radio with description
 
-Files: registry/components/radio-group/radio-group.tsx, registry/components/radio-group/radio-group.module.css
+Files: src/components/arc/radio-group/radio-group.module.css, src/components/arc/radio-group/radio-group.tsx
 
 ## `rating` · Rating (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: input, feedback, react star rating, rating component, half star rating, review stars, accessible rating, 5 star rating
 
-Files: registry/components/rating/rating.tsx, registry/components/rating/rating.module.css
+Files: src/components/arc/rating/rating.module.css, src/components/arc/rating/rating.tsx
 
 ## `segmented-control` · Segmented control (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: control, choice, react segmented control, segmented button, toggle group, ios segmented control, view switcher, sliding pill toggle
 
-Files: registry/components/segmented-control/segmented-control.tsx, registry/components/segmented-control/segmented-control.module.css
+Files: src/components/arc/segmented-control/segmented-control.module.css, src/components/arc/segmented-control/segmented-control.tsx
 
 ## `switch` · Switch (Free, component)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: toggle, settings, react switch, toggle switch, ios toggle, radix switch, settings toggle, animated switch
 
-Files: registry/components/switch/switch.tsx, registry/components/switch/switch.module.css
+Files: src/components/arc/switch/switch.module.css, src/components/arc/switch/switch.tsx
 
 ## `toggle-group` · Toggle group (Free, component)
 
@@ -126,4 +126,4 @@ When not to use:
 
 Keywords: input, toggle, toolbar, new, toggle group, toggle buttons, formatting, bold italic underline, text alignment, icon buttons, pressed, multi select, button group
 
-Files: registry/components/toggle-group/toggle-group.tsx, registry/components/toggle-group/toggle-group.module.css
+Files: src/components/arc/toggle-group/toggle-group.module.css, src/components/arc/toggle-group/toggle-group.tsx

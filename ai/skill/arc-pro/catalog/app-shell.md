@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react command palette, cmd k menu, command menu, spotlight search, cmdk alternative, keyboard command palette, quick actions
 
-Files: registry/components/command-palette/command-palette.tsx, registry/components/command-palette/command-palette.module.css
+Files: src/components/arc/command-palette/command-palette.module.css, src/components/arc/command-palette/command-palette.tsx
 
 ## `empty-states` · Empty states (Free, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react empty state, empty state illustration, no results state, offline state, 404 page illustration, inbox zero, morphing svg illustration
 
-Files: registry/blocks/empty-states/empty-states.tsx, registry/blocks/empty-states/empty-states.module.css, registry/blocks/empty-states/empty-states-art.ts
+Files: src/components/arc/blocks/empty-states/empty-states-art.ts, src/components/arc/blocks/empty-states/empty-states.module.css, src/components/arc/blocks/empty-states/empty-states.tsx
 
 ## `notification-center` · Notification center (Free, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react notification center, notification bell, notification dropdown, inbox popover, unread notifications, activity feed popover
 
-Files: registry/components/notification-center/notification-center.tsx, registry/components/notification-center/notification-center.module.css
+Files: src/components/arc/notification-center/notification-center.module.css, src/components/arc/notification-center/notification-center.tsx
 
 ## `page-header` · Page header (Free, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react page header, project header, sticky header on scroll, condensing header, record header with tabs, breadcrumb header, page title with actions
 
-Files: registry/blocks/page-header/page-header.tsx, lib/use-copy-feedback.ts, registry/blocks/page-header/page-header.module.css
+Files: src/components/arc/blocks/page-header/page-header.module.css, src/components/arc/blocks/page-header/page-header.tsx
 
 ## `search-results` · Search results (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: search, search results, faceted search, filters, facets, highlight, keyboard navigation, skeleton, no results, workspace search, app shell
 
-Files: demo.tsx, search-results.module.css, search-results.tsx
+Files: src/components/arc/search-results/demo.tsx, src/components/arc/search-results/search-results.module.css, src/components/arc/search-results/search-results.tsx
 
 ## `selection-toolbar` · Selection toolbar (Pro, block)
 
@@ -93,7 +93,7 @@ When not to use:
 
 Keywords: react selection toolbar, bulk actions bar, floating action bar, selected items toolbar, table bulk actions, multi select actions
 
-Files: demo.module.css, demo.tsx, selection-toolbar.module.css, selection-toolbar.tsx
+Files: src/components/arc/selection-toolbar/demo.module.css, src/components/arc/selection-toolbar/demo.tsx, src/components/arc/selection-toolbar/selection-toolbar.module.css, src/components/arc/selection-toolbar/selection-toolbar.tsx
 
 ## `sidebar` · SidebarPro4 (Pro, block)
 
@@ -101,4 +101,4 @@ App and docs sidebars: a folding rail, a workspace switcher, a mail shell, and a
 
 Keywords: react app shell, sidebar layout, collapsible sidebar, icon rail navigation, mobile nav sheet, dashboard layout, nested sidebar
 
-Files: demo.tsx, sidebar.module.css, sidebar.tsx
+Files: src/components/arc/sidebar/demo.tsx, src/components/arc/sidebar/sidebar.module.css, src/components/arc/sidebar/sidebar.tsx

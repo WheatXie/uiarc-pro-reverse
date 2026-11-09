@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: feedback, new, react countdown, countdown timer, launch countdown, event timer, digit roll animation, deadline timer, time zone countdown
 
-Files: registry/components/countdown/countdown.tsx, registry/components/countdown/countdown.module.css
+Files: src/components/arc/countdown/countdown.module.css, src/components/arc/countdown/countdown.tsx
 
 ## `onboarding-checklist` · Onboarding checklist (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: onboarding, checklist, getting started, react onboarding checklist, getting started checklist, setup checklist, user onboarding, progress checklist, task list onboarding
 
-Files: registry/components/onboarding-checklist/onboarding-checklist.tsx, registry/components/onboarding-checklist/onboarding-checklist.module.css
+Files: src/components/arc/onboarding-checklist/onboarding-checklist.module.css, src/components/arc/onboarding-checklist/onboarding-checklist.tsx
 
 ## `progress` · Progress (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: status, loading, react progress bar, animated progress bar, upload progress, loading bar, percentage bar, progress indicator
 
-Files: registry/components/progress/progress.tsx, registry/components/progress/progress.module.css
+Files: src/components/arc/progress/progress.module.css, src/components/arc/progress/progress.tsx
 
 ## `skeleton` · Skeleton (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: loading, status, react skeleton, skeleton loader, loading placeholder, content placeholder, shimmer loading, skeleton screen
 
-Files: registry/components/skeleton/skeleton.tsx, registry/components/skeleton/skeleton.module.css
+Files: src/components/arc/skeleton/skeleton.module.css, src/components/arc/skeleton/skeleton.tsx
 
 ## `stepper` · Stepper (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: motion, product, react stepper, step indicator, progress steps, wizard steps, checkout steps, vertical stepper, multi step progress
 
-Files: registry/components/stepper/stepper.tsx, registry/components/stepper/stepper.module.css
+Files: src/components/arc/stepper/stepper.module.css, src/components/arc/stepper/stepper.tsx
 
 ## `usage-meter` · Usage meter (Free, component)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: meter, usage, storage, react usage meter, storage usage bar, quota meter, plan limit indicator, segmented progress bar, billing usage
 
-Files: registry/components/usage-meter/usage-meter.tsx, registry/components/usage-meter/usage-meter.module.css
+Files: src/components/arc/usage-meter/usage-meter.module.css, src/components/arc/usage-meter/usage-meter.tsx

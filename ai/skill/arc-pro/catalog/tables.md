@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: content, developer, react code block, syntax highlighting, code snippet component, copy code block, collapsible code, code viewer
 
-Files: registry/components/code-block/code-block.tsx, registry/components/code-block/code-block.module.css
+Files: src/components/arc/code-block/code-block.module.css, src/components/arc/code-block/code-block.tsx
 
 ## `filter-toolbar` · Filter toolbar (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: data, filter, react filter toolbar, filter chips, add filter menu, faceted filters, filter bar, removable chips, table filters
 
-Files: registry/components/filter-toolbar/filter-toolbar.tsx, registry/components/filter-toolbar/filter-toolbar.module.css
+Files: src/components/arc/filter-toolbar/filter-toolbar.module.css, src/components/arc/filter-toolbar/filter-toolbar.tsx
 
 ## `json-viewer` · JSON viewer (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: data, new, react json viewer, json tree, json inspector, collapsible json, json explorer, copy json path, search json, api response viewer
 
-Files: registry/components/json-viewer/json-viewer.tsx, registry/components/json-viewer/json-viewer.module.css
+Files: src/components/arc/json-viewer/json-viewer.module.css, src/components/arc/json-viewer/json-viewer.tsx
 
 ## `reorderable-list` · Reorderable list (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: data, interaction, react reorderable list, drag and drop list, sortable list, drag to reorder, keyboard reorder, framer motion reorder
 
-Files: registry/components/reorderable-list/reorderable-list.tsx, registry/components/reorderable-list/reorderable-list.module.css
+Files: src/components/arc/reorderable-list/reorderable-list.module.css, src/components/arc/reorderable-list/reorderable-list.tsx
 
 ## `sortable-data-table` · Sortable data table (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: data, table, react data table, sortable table, table with row selection, animated table sort, responsive table, checkbox table
 
-Files: registry/components/sortable-data-table/sortable-data-table.tsx, registry/components/sortable-data-table/sortable-data-table.module.css
+Files: src/components/arc/sortable-data-table/sortable-data-table.module.css, src/components/arc/sortable-data-table/sortable-data-table.tsx
 
 ## `tree-table` · Tree table (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: data, new, react tree table, treegrid, nested table rows, expandable table, hierarchical data table, tri-state checkbox tree, lazy load tree rows, file tree table
 
-Files: registry/components/tree-table/tree-table.tsx, registry/components/tree-table/tree-table.module.css
+Files: src/components/arc/tree-table/tree-table.module.css, src/components/arc/tree-table/tree-table.tsx
 
 ## `tree-view` · Tree view (Free, component)
 
@@ -110,4 +110,4 @@ When not to use:
 
 Keywords: data, navigation, react tree view, file tree, file explorer component, nested tree, folder tree, treeview keyboard navigation
 
-Files: registry/components/tree-view/tree-view.tsx, registry/components/tree-view/tree-view.module.css
+Files: src/components/arc/tree-view/tree-view.module.css, src/components/arc/tree-view/tree-view.tsx

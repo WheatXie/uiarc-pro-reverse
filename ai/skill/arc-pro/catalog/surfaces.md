@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, layout, gesture, new, app store card, card expand, shared element transition, card to detail, magic motion, expanding card, blog grid, article modal
 
-Files: card-to-article.module.css, card-to-article.tsx, demo.tsx
+Files: src/components/arc/card-to-article/card-to-article.module.css, src/components/arc/card-to-article/card-to-article.tsx, src/components/arc/card-to-article/demo.tsx
 
 ## `control-center` · Control center (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, settings, control center, react control center, quick settings panel, ios control center, settings toggles, focus mode ui, volume slider panel
 
-Files: control-center.module.css, control-center.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/control-center/control-center.module.css, src/components/arc/control-center/control-center.tsx, src/components/arc/control-center/demo.module.css, src/components/arc/control-center/demo.tsx
 
 ## `holo-card` · Holo card (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, motion, new, holographic card, holo card, foil card, pokemon card effect, tilt card, 3d card flip, membership card, gyroscope tilt, shiny card
 
-Files: demo.module.css, demo.tsx, holo-card.module.css, holo-card.tsx
+Files: src/components/arc/holo-card/demo.module.css, src/components/arc/holo-card/demo.tsx, src/components/arc/holo-card/holo-card.module.css, src/components/arc/holo-card/holo-card.tsx
 
 ## `link-unfurl` · Link unfurl (Pro, special)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: special, composer, link-preview, morph, motion, new, link preview, unfurl, open graph, og image, rich link, embed, url preview, chat input, slack, paste link
 
-Files: demo.tsx, link-unfurl.module.css, link-unfurl.tsx
+Files: src/components/arc/link-unfurl/demo.tsx, src/components/arc/link-unfurl/link-unfurl.module.css, src/components/arc/link-unfurl/link-unfurl.tsx
 
 ## `sheet-stack` · Sheet stack (Pro, special)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: special, new, react sheet stack, nested bottom sheets, stacked modals, drill down sheet, ios sheet stack, nested dialogs, draggable sheet, sheet navigation
 
-Files: demo.tsx, sheet-stack.module.css, sheet-stack.tsx
+Files: src/components/arc/sheet-stack/demo.tsx, src/components/arc/sheet-stack/sheet-stack.module.css, src/components/arc/sheet-stack/sheet-stack.tsx
 
 ## `wallet-stack` · Wallet stack (Pro, special)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: special, wallet, cards, react wallet, credit card stack, apple wallet ui, payment cards component, card stack animation, fintech card ui
 
-Files: demo.module.css, demo.tsx, wallet-stack.module.css, wallet-stack.tsx
+Files: src/components/arc/wallet-stack/demo.module.css, src/components/arc/wallet-stack/demo.tsx, src/components/arc/wallet-stack/wallet-stack.module.css, src/components/arc/wallet-stack/wallet-stack.tsx

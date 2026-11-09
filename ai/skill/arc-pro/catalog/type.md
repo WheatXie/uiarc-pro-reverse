@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, keyboard, motion, new, mechanical keyboard, keycap animation, 3d keyboard react, keyboard component, typing animation, key press effect, virtual keyboard
 
-Files: demo.module.css, demo.tsx, keycap-keyboard.module.css, keycap-keyboard.tsx
+Files: src/components/arc/keycap-keyboard/demo.module.css, src/components/arc/keycap-keyboard/demo.tsx, src/components/arc/keycap-keyboard/keycap-keyboard.module.css, src/components/arc/keycap-keyboard/keycap-keyboard.tsx
 
 ## `sand-text` · Sand text (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: text, canvas, physics, new, sand, falling sand, cellular automaton, particles, text effect, headline, crumble, hourglass
 
-Files: demo.tsx, sand-text.module.css, sand-text.tsx
+Files: src/components/arc/sand-text/demo.tsx, src/components/arc/sand-text/sand-text.module.css, src/components/arc/sand-text/sand-text.tsx
 
 ## `typewriter-terminal` · Typewriter terminal (Pro, special)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: special, motion, terminal, new, typewriter, cli, install, command line, shell, typing animation, npm, developer tools, replay, scrubber
 
-Files: demo.tsx, typewriter-terminal.module.css, typewriter-terminal.tsx
+Files: src/components/arc/typewriter-terminal/demo.tsx, src/components/arc/typewriter-terminal/typewriter-terminal.module.css, src/components/arc/typewriter-terminal/typewriter-terminal.tsx

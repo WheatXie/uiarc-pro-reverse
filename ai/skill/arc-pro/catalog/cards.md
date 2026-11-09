@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: surface, layout, react card, card component, card with image, expand card to modal, quick look card, shared layout card, project card
 
-Files: registry/components/card/card.tsx, registry/components/card/card.module.css
+Files: src/components/arc/card/card.module.css, src/components/arc/card/card.tsx
 
 ## `empty-state` · Empty state (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: data, guidance, react empty state, no results, empty list placeholder, zero state, blank slate, first run empty view
 
-Files: registry/components/empty-state/empty-state.tsx, registry/components/empty-state/empty-state.module.css
+Files: src/components/arc/empty-state/empty-state.module.css, src/components/arc/empty-state/empty-state.tsx
 
 ## `metric-card` · Metric card (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: data, summary, react metric card, kpi card, odometer number, rolling number card, dashboard metric, stat tile
 
-Files: registry/components/metric-card/metric-card.tsx, registry/components/metric-card/metric-card.module.css
+Files: src/components/arc/metric-card/metric-card.module.css, src/components/arc/metric-card/metric-card.tsx
 
 ## `metric-ticker` · Metric ticker (Pro, component)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: data, metric, realtime, new, ticker, kpi, metrics, live, stock ticker, marquee, strip, odometer, rolling digits, delta, sparkline, dashboard header, status, trend
 
-Files: demo.module.css, demo.tsx, metric-ticker.module.css, metric-ticker.tsx
+Files: src/components/arc/metric-ticker/demo.module.css, src/components/arc/metric-ticker/demo.tsx, src/components/arc/metric-ticker/metric-ticker.module.css, src/components/arc/metric-ticker/metric-ticker.tsx

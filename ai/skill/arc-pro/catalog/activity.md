@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: data, new, react chat, chat thread, messaging ui, support chat widget, chat bubbles, read receipts, typing indicator, message reactions, chat composer with attachments
 
-Files: registry/components/chat-thread/chat-thread.tsx, registry/components/chat-thread/chat-thread.module.css
+Files: src/components/arc/chat-thread/chat-thread.module.css, src/components/arc/chat-thread/chat-thread.tsx
 
 ## `comment-thread` · Comment thread (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: data, new, react comment thread, threaded comments, comment replies, resolve thread, mentions in comments, comment reactions, review comments component
 
-Files: registry/components/comment-thread/comment-thread.tsx, registry/components/comment-thread/comment-thread.module.css
+Files: src/components/arc/comment-thread/comment-thread.module.css, src/components/arc/comment-thread/comment-thread.tsx
 
 ## `timeline` · Timeline (Free, component)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: data, feed, activity, react timeline, activity feed, audit log, vertical timeline, event feed, changelog timeline
 
-Files: registry/components/timeline/timeline.tsx, registry/components/timeline/timeline.module.css
+Files: src/components/arc/timeline/timeline.module.css, src/components/arc/timeline/timeline.tsx

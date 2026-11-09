@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: input, upload, image, new, avatar upload, profile photo, profile picture, photo upload, image upload, crop, circular crop, zoom, pinch, drag and drop, progress ring, upload progress, initials, account settings, change photo
 
-Files: avatar-upload.module.css, avatar-upload.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/avatar-upload/avatar-upload.module.css, src/components/arc/avatar-upload/avatar-upload.tsx, src/components/arc/avatar-upload/demo.module.css, src/components/arc/avatar-upload/demo.tsx
 
 ## `file-dropzone` · File dropzone (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: field, files, react file upload, file dropzone, drag and drop upload, upload with progress, file uploader, dropzone component, multi file upload
 
-Files: registry/components/file-dropzone/file-dropzone.tsx, registry/components/file-dropzone/file-dropzone.module.css
+Files: src/components/arc/file-dropzone/file-dropzone.module.css, src/components/arc/file-dropzone/file-dropzone.tsx
 
 ## `rich-text-editor` · Rich text editor (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: inputs, new, react rich text editor, markdown editor, wysiwyg editor, slash command menu, floating formatting toolbar, contenteditable editor, notion style editor, lightweight text editor
 
-Files: registry/components/rich-text-editor/rich-text-editor.tsx, registry/components/rich-text-editor/rich-text-editor.module.css
+Files: src/components/arc/rich-text-editor/rich-text-editor.module.css, src/components/arc/rich-text-editor/rich-text-editor.tsx
 
 ## `signature-pad` · Signature pad (Free, component)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: inputs, new, react signature pad, signature capture, draw signature, e-signature field, pressure sensitive ink, signature to png, sign here component
 
-Files: registry/components/signature-pad/signature-pad.tsx, registry/components/signature-pad/signature-pad.module.css
+Files: src/components/arc/signature-pad/signature-pad.module.css, src/components/arc/signature-pad/signature-pad.tsx

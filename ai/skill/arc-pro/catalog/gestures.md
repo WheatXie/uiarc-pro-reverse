@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: hold, long press, confirm, react hold to confirm, press and hold button, long press delete, hold to delete, destructive action button, confirm without dialog
 
-Files: registry/components/hold-to-confirm/hold-to-confirm.tsx, registry/components/hold-to-confirm/hold-to-confirm.module.css
+Files: src/components/arc/hold-to-confirm/hold-to-confirm.module.css, src/components/arc/hold-to-confirm/hold-to-confirm.tsx
 
 ## `reactions` · Reactions (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: reactions, social, comments, react reactions, emoji reactions, reaction picker, like button with count, slack reactions, comment reactions
 
-Files: registry/components/reactions/reactions.tsx, registry/components/reactions/reactions.module.css
+Files: src/components/arc/reactions/reactions.module.css, src/components/arc/reactions/reactions.tsx
 
 ## `swipe-actions` · Swipe actions (Free, component)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: swipe, gesture, list, react swipe actions, swipe to delete, swipe to archive, ios swipe row, swipeable list item, mobile list actions, swipe gesture list
 
-Files: registry/components/swipe-actions/swipe-actions.tsx, registry/components/swipe-actions/swipe-actions.module.css
+Files: src/components/arc/swipe-actions/swipe-actions.module.css, src/components/arc/swipe-actions/swipe-actions.tsx

@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, new, react floating action button, fab menu, quick actions, morphing fab, inline composer, speed dial, quick create button
 
-Files: action-morph.module.css, action-morph.tsx, demo.tsx
+Files: src/components/arc/action-morph/action-morph.module.css, src/components/arc/action-morph/action-morph.tsx, src/components/arc/action-morph/demo.tsx
 
 ## `dock` · Dock (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, dock, toolbar, react dock, floating toolbar, tool switcher, canvas toolbar, macos dock, toolbar with tray, reorderable toolbar
 
-Files: demo.tsx, dock.module.css, dock.tsx
+Files: src/components/arc/dock/demo.tsx, src/components/arc/dock/dock.module.css, src/components/arc/dock/dock.tsx
 
 ## `liquid-tab-bar` · Liquid tab bar (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, tabs, navigation, react tab bar, liquid glass tabs, animated tab bar, ios tab bar, bottom navigation, tab bar with badges, gooey tabs
 
-Files: demo.tsx, liquid-tab-bar.module.css, liquid-tab-bar.tsx
+Files: src/components/arc/liquid-tab-bar/demo.tsx, src/components/arc/liquid-tab-bar/liquid-tab-bar.module.css, src/components/arc/liquid-tab-bar/liquid-tab-bar.tsx
 
 ## `morph-nav` · Morph nav (Pro, special)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: special, navigation, morph, tabs, react navigation bar, react morph nav, mega menu, animated navbar, site header with dropdown, navbar with search, stripe style navigation
 
-Files: demo.tsx, morph-nav.module.css, morph-nav.tsx
+Files: src/components/arc/morph-nav/demo.tsx, src/components/arc/morph-nav/morph-nav.module.css, src/components/arc/morph-nav/morph-nav.tsx
 
 ## `orbit-menu` · Orbit menu (Pro, special)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: special, motion, react radial menu, orbit menu, fan menu, arc menu, floating action menu, press and drag menu, circular menu
 
-Files: demo.tsx, orbit-menu.module.css, orbit-menu.tsx
+Files: src/components/arc/orbit-menu/demo.tsx, src/components/arc/orbit-menu/orbit-menu.module.css, src/components/arc/orbit-menu/orbit-menu.tsx
 
 ## `share-sheet` · Share sheet (Pro, special)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: special, new, react share sheet, share button, share dialog, copy link, share with people, link access level, morphing share panel, share to slack
 
-Files: demo.module.css, demo.tsx, share-sheet.module.css, share-sheet.tsx
+Files: src/components/arc/share-sheet/demo.module.css, src/components/arc/share-sheet/demo.tsx, src/components/arc/share-sheet/share-sheet.module.css, src/components/arc/share-sheet/share-sheet.tsx

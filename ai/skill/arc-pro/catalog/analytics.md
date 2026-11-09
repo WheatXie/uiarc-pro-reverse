@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: account health, customer health score, customer success, churn risk, renewal, qbr, nps, seat utilization, health gauge, ai summary, csm, sparkline
 
-Files: account-health-data.tsx, account-health.module.css, account-health.tsx, demo.tsx
+Files: src/components/arc/account-health/account-health-data.tsx, src/components/arc/account-health/account-health.module.css, src/components/arc/account-health/account-health.tsx, src/components/arc/account-health/demo.tsx
 
 ## `choropleth-explorer` · Choropleth explorer (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: choropleth, map, filled map, heat map, geography, states, counties, regions, drilldown, zoom, sales territories, penetration, legend, analytics
 
-Files: choropleth-explorer-data.ts, choropleth-explorer.module.css, choropleth-explorer.tsx, demo.tsx
+Files: src/components/arc/choropleth-explorer/choropleth-explorer-data.ts, src/components/arc/choropleth-explorer/choropleth-explorer.module.css, src/components/arc/choropleth-explorer/choropleth-explorer.tsx, src/components/arc/choropleth-explorer/demo.tsx
 
 ## `cohort-retention` · Cohort retention (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react cohort retention chart, retention triangle, cohort analysis table, retention curves, churn cohort heatmap, saas retention chart
 
-Files: cohort-retention.module.css, cohort-retention.tsx, demo.tsx
+Files: src/components/arc/cohort-retention/cohort-retention.module.css, src/components/arc/cohort-retention/cohort-retention.tsx, src/components/arc/cohort-retention/demo.tsx
 
 ## `connected-scatter` · Connected scatter (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: connected scatter, connected scatterplot, scatter plot, cac, ltv, ltv to cac, unit economics, time series, trajectory, path chart, scrubber, morph, growth, acquisition channels, price volume
 
-Files: connected-scatter.module.css, connected-scatter.tsx, demo.tsx
+Files: src/components/arc/connected-scatter/connected-scatter.module.css, src/components/arc/connected-scatter/connected-scatter.tsx, src/components/arc/connected-scatter/demo.tsx
 
 ## `horizon-chart` · Horizon chart (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: horizon chart, horizon graph, time series, many series, deviation, baseline, anomaly, monitoring, compact chart, bands, crosshair, analytics
 
-Files: demo.tsx, horizon-chart.module.css, horizon-chart.tsx
+Files: src/components/arc/horizon-chart/demo.tsx, src/components/arc/horizon-chart/horizon-chart.module.css, src/components/arc/horizon-chart/horizon-chart.tsx
 
 ## `journey-flow` · Journey flow (Pro, block)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: react sankey diagram, user journey flow, funnel flow chart, sankey chart, conversion paths, user flow visualization
 
-Files: demo.tsx, journey-flow.module.css, journey-flow.tsx
+Files: src/components/arc/journey-flow/demo.tsx, src/components/arc/journey-flow/journey-flow.module.css, src/components/arc/journey-flow/journey-flow.tsx
 
 ## `kpi-drilldown` · KPI drilldown (Pro, block)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: kpi, dashboard, drilldown, metric card, shared layout, expand card, period comparison, breakdown table, sparkline, analytics
 
-Files: demo.tsx, kpi-drilldown.module.css, kpi-drilldown.tsx
+Files: src/components/arc/kpi-drilldown/demo.tsx, src/components/arc/kpi-drilldown/kpi-drilldown.module.css, src/components/arc/kpi-drilldown/kpi-drilldown.tsx
 
 ## `metric-explorer` · Metric explorer (Pro, block)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: react kpi cards, metric explorer, analytics dashboard chart, expandable stat card, kpi to chart, saas metrics
 
-Files: demo.tsx, metric-data.ts, metric-explorer.module.css, metric-explorer.tsx
+Files: src/components/arc/metric-explorer/demo.tsx, src/components/arc/metric-explorer/metric-data.ts, src/components/arc/metric-explorer/metric-explorer.module.css, src/components/arc/metric-explorer/metric-explorer.tsx
 
 ## `metrics-dashboard` · Metrics dashboard (Pro, block)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: react metrics dashboard, analytics dashboard, kpi dashboard, dashboard with chart, saas analytics ui, traffic dashboard
 
-Files: demo.tsx, metrics-dashboard.module.css, metrics-dashboard.tsx
+Files: src/components/arc/metrics-dashboard/demo.tsx, src/components/arc/metrics-dashboard/metrics-dashboard.module.css, src/components/arc/metrics-dashboard/metrics-dashboard.tsx
 
 ## `mrr-waterfall` · MRR waterfall (Pro, block)
 
@@ -158,7 +158,7 @@ When not to use:
 
 Keywords: react waterfall chart, mrr bridge, revenue waterfall, mrr movements chart, saas revenue bridge, floating bar chart
 
-Files: demo.tsx, mrr-data.ts, mrr-waterfall.module.css, mrr-waterfall.tsx
+Files: src/components/arc/mrr-waterfall/demo.tsx, src/components/arc/mrr-waterfall/mrr-data.ts, src/components/arc/mrr-waterfall/mrr-waterfall.module.css, src/components/arc/mrr-waterfall/mrr-waterfall.tsx
 
 ## `revenue-explorer` · Revenue explorer (Pro, block)
 
@@ -174,7 +174,7 @@ When not to use:
 
 Keywords: react revenue chart, mrr chart, chart with brush zoom, range selector chart, saas analytics chart, comparison line chart, interactive area chart
 
-Files: demo.tsx, revenue-explorer.module.css, revenue-explorer.tsx
+Files: src/components/arc/revenue-explorer/demo.tsx, src/components/arc/revenue-explorer/revenue-explorer.module.css, src/components/arc/revenue-explorer/revenue-explorer.tsx
 
 ## `uptime-status` · Uptime status (Pro, block)
 
@@ -190,7 +190,7 @@ When not to use:
 
 Keywords: react status page, uptime monitor, service status page, uptime bars, incident timeline, 90 day uptime
 
-Files: demo.tsx, uptime-status.module.css, uptime-status.tsx
+Files: src/components/arc/uptime-status/demo.tsx, src/components/arc/uptime-status/uptime-status.module.css, src/components/arc/uptime-status/uptime-status.tsx
 
 ## `usage-forecast` · Usage forecast (Pro, block)
 
@@ -206,4 +206,4 @@ When not to use:
 
 Keywords: react usage chart, usage forecast, budget alert chart, billing usage graph, metered billing dashboard, spend forecast
 
-Files: demo.tsx, usage-forecast.module.css, usage-forecast.tsx
+Files: src/components/arc/usage-forecast/demo.tsx, src/components/arc/usage-forecast/usage-forecast.module.css, src/components/arc/usage-forecast/usage-forecast.tsx

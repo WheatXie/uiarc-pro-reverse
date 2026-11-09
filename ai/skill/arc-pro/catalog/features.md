@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react changelog, release notes page, changelog component, product updates feed, what's new page, changelog with filters
 
-Files: registry/blocks/changelog-feed/changelog-feed.tsx, registry/blocks/changelog-feed/changelog-feed.module.css, lib/media.ts
+Files: src/components/arc/blocks/changelog-feed/changelog-feed.module.css, src/components/arc/blocks/changelog-feed/changelog-feed.tsx
 
 ## `faq-section` · FAQ section (Free, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react faq section, faq accordion, searchable faq, faq with categories, frequently asked questions component
 
-Files: registry/blocks/faq-section/faq-section.tsx, registry/blocks/faq-section/faq-section.module.css
+Files: src/components/arc/blocks/faq-section/faq-section.module.css, src/components/arc/blocks/faq-section/faq-section.tsx
 
 ## `stats-band` · Stats band (Free, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: stats, statistics, numbers, count up, counter, metrics band, social proof, kpi
 
-Files: registry/blocks/stats-band/stats-band.tsx, registry/blocks/stats-band/stats-band-data.ts, registry/blocks/stats-band/stats-band.module.css, registry/blocks/stats-band/stats-band-world.ts
+Files: src/components/arc/blocks/stats-band/stats-band-data.ts, src/components/arc/blocks/stats-band/stats-band-world.ts, src/components/arc/blocks/stats-band/stats-band.module.css, src/components/arc/blocks/stats-band/stats-band.tsx
 
 ## `testimonial-stage` · Studio perspectives (Pro, block)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: react testimonial section, testimonial slider, customer quotes, testimonials with photos, review showcase, quote carousel
 
-Files: demo.tsx, testimonial-stage.module.css, testimonial-stage.tsx
+Files: src/components/arc/testimonial-stage/demo.tsx, src/components/arc/testimonial-stage/testimonial-stage.module.css, src/components/arc/testimonial-stage/testimonial-stage.tsx

@@ -6,4 +6,4 @@ An Agent Skill that teaches Claude Code and other agents how to choose, install,
 
 Keywords: ai, arc, skill
 
-Files: skills/arc/SKILL.md, skills/arc/INSTRUCTIONS.md, skills/arc/accessibility.md, skills/arc/checklist.md, skills/arc/components.md, skills/arc/composition.md, skills/arc/copy.md, skills/arc/design.md, skills/arc/example-dashboard.md, skills/arc/example-pricing.md, skills/arc/example-settings.md, skills/arc/motion.md, skills/arc/responsive.md
+Files: src/components/arc/skills/arc/SKILL.md, src/components/arc/skills/arc/INSTRUCTIONS.md, src/components/arc/skills/arc/accessibility.md, src/components/arc/skills/arc/checklist.md, src/components/arc/skills/arc/components.md, src/components/arc/skills/arc/composition.md, src/components/arc/skills/arc/copy.md, src/components/arc/skills/arc/design.md, src/components/arc/skills/arc/example-dashboard.md, src/components/arc/skills/arc/example-pricing.md, src/components/arc/skills/arc/example-settings.md, src/components/arc/skills/arc/motion.md, src/components/arc/skills/arc/responsive.md

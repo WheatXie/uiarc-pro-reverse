@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: activity feed, team activity, timeline, recent activity, mark all read, new updates, live feed, diff, filters, grouped by day
 
-Files: activity-feed.module.css, activity-feed.tsx, demo.tsx
+Files: src/components/arc/activity-feed/activity-feed.module.css, src/components/arc/activity-feed/activity-feed.tsx, src/components/arc/activity-feed/demo.tsx
 
 ## `help-center` · Help center (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: help center, knowledge base, support, faq, search, instant search, articles, table of contents, was this helpful, docs
 
-Files: demo.tsx, help-center-data.ts, help-center.module.css, help-center.tsx
+Files: src/components/arc/help-center/demo.tsx, src/components/arc/help-center/help-center-data.ts, src/components/arc/help-center/help-center.module.css, src/components/arc/help-center/help-center.tsx
 
 ## `inbox-triage` · Inbox triage (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react inbox, email triage ui, inbox component, archive snooze inbox, message list, mail app ui
 
-Files: demo.tsx, inbox-triage.module.css, inbox-triage.tsx
+Files: src/components/arc/inbox-triage/demo.tsx, src/components/arc/inbox-triage/inbox-triage.module.css, src/components/arc/inbox-triage/inbox-triage.tsx
 
 ## `seat-map` · Seat mapNew (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: seat map, seat picker, seat selection, venue map, event tickets, ticketing, theatre seating, concert tickets, price tiers, zoom and pan, pinch zoom, wheelchair seats, accessible seating, hold timer, checkout
 
-Files: demo.tsx, seat-map.module.css, seat-map.tsx
+Files: src/components/arc/seat-map/demo.tsx, src/components/arc/seat-map/seat-map.module.css, src/components/arc/seat-map/seat-map.tsx
 
 ## `support-conversation` · Support conversation (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: react support chat, chat thread ui, customer support conversation, help desk chat, chat with typing indicator, ticket conversation
 
-Files: demo.tsx, support-conversation.module.css, support-conversation.tsx
+Files: src/components/arc/support-conversation/demo.tsx, src/components/arc/support-conversation/support-conversation.module.css, src/components/arc/support-conversation/support-conversation.tsx
 
 ## `support-widget` · Support widget (Pro, block)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: react support widget, help center widget, intercom style chat, in-app help launcher, customer support chat, help article search
 
-Files: demo.tsx, support-widget-data.tsx, support-widget.module.css, support-widget.tsx
+Files: src/components/arc/support-widget/demo.tsx, src/components/arc/support-widget/support-widget-data.tsx, src/components/arc/support-widget/support-widget.module.css, src/components/arc/support-widget/support-widget.tsx

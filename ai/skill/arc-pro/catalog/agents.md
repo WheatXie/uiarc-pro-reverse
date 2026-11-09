@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: agent approvals, human in the loop, tool call approval, permission prompt, approve deny, always allow, agent permissions, rules, audit log, keyboard shortcuts, ai agent, mcp, guardrails, risk level, editable arguments
 
-Files: agent-approvals.module.css, agent-approvals.tsx, demo.tsx
+Files: src/components/arc/agent-approvals/agent-approvals.module.css, src/components/arc/agent-approvals/agent-approvals.tsx, src/components/arc/agent-approvals/demo.tsx
 
 ## `agent-builder` · Agent builder (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: agent builder, configure ai agent, gpt builder, assistant settings, ai agent config, tools toggle, knowledge base upload, system prompt editor, test agent chat, publish agent, intercom fin, zapier agents
 
-Files: agent-builder.module.css, agent-builder.tsx, demo.tsx
+Files: src/components/arc/agent-builder/agent-builder.module.css, src/components/arc/agent-builder/agent-builder.tsx, src/components/arc/agent-builder/demo.tsx
 
 ## `agent-gallery` · Agent gallery (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: agent marketplace, agent templates, ai agents, agent gallery, integrations, install flow, oauth scopes, grant access, app directory, filter chips, search, claude, gpt, gemini, slack, hubspot, github
 
-Files: agent-gallery.module.css, agent-gallery.tsx, demo.tsx
+Files: src/components/arc/agent-gallery/agent-gallery.module.css, src/components/arc/agent-gallery/agent-gallery.tsx, src/components/arc/agent-gallery/demo.tsx
 
 ## `agent-orchestrator` · Agent orchestrator (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: multi agent, orchestrator, subagents, parallel agents, fan out, fan in, lead agent, agent workflow, concurrency, tool calls, token usage, cost, retry, agent observability, claude, ai agents
 
-Files: agent-orchestrator.module.css, agent-orchestrator.tsx, demo.tsx
+Files: src/components/arc/agent-orchestrator/agent-orchestrator.module.css, src/components/arc/agent-orchestrator/agent-orchestrator.tsx, src/components/arc/agent-orchestrator/demo.tsx
 
 ## `agent-routines` · Agent routines (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: scheduled agents, agent routines, cron, automations, recurring tasks, ai agent schedule, run history, slack digest, triage bot, agent runs, natural language schedule, workflow automation
 
-Files: agent-routines.module.css, agent-routines.tsx, demo.tsx
+Files: src/components/arc/agent-routines/agent-routines.module.css, src/components/arc/agent-routines/agent-routines.tsx, src/components/arc/agent-routines/demo.tsx
 
 ## `agent-run` · Agent run (Pro, block)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: ai agent, coding agent, agent run, tool calls, approval, human in the loop, diff, unified diff, pull request, steps, timeline, claude, streaming, autonomous agent, agent trace
 
-Files: agent-run.module.css, agent-run.tsx, demo.tsx
+Files: src/components/arc/agent-run/agent-run.module.css, src/components/arc/agent-run/agent-run.tsx, src/components/arc/agent-run/demo.tsx
 
 ## `agent-tasks` · Agent tasks (Pro, block)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: background agents, coding agent, agent tasks, task queue, cloud agent, pull request, diff stat, ci checks, step log, changed files, retry, cancel, archive, repository picker, branch picker, model picker, ai agent dashboard
 
-Files: agent-tasks.module.css, agent-tasks.tsx, demo.tsx
+Files: src/components/arc/agent-tasks/agent-tasks.module.css, src/components/arc/agent-tasks/agent-tasks.tsx, src/components/arc/agent-tasks/demo.tsx
 
 ## `eval-suite` · Eval suite (Pro, block)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: eval, evals, evaluation suite, llm evaluation, regression testing, llm judge, rubric, test cases, pass rate, baseline, prompt regression, model comparison, diff, ai quality, ci for prompts
 
-Files: demo.tsx, eval-suite-data.ts, eval-suite.module.css, eval-suite.tsx
+Files: src/components/arc/eval-suite/demo.tsx, src/components/arc/eval-suite/eval-suite-data.ts, src/components/arc/eval-suite/eval-suite.module.css, src/components/arc/eval-suite/eval-suite.tsx
 
 ## `knowledge-base` · Knowledge base (Pro, block)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: knowledge base, rag, retrieval, vector store, embeddings, chunking, ingestion, reranking, reranker, hybrid search, semantic search, document indexing, top k, similarity score, retrieval test, ai search
 
-Files: demo.tsx, knowledge-base-data.ts, knowledge-base.module.css, knowledge-base.tsx
+Files: src/components/arc/knowledge-base/demo.tsx, src/components/arc/knowledge-base/knowledge-base-data.ts, src/components/arc/knowledge-base/knowledge-base.module.css, src/components/arc/knowledge-base/knowledge-base.tsx
 
 ## `mcp-servers` · MCP servers (Pro, block)
 
@@ -158,4 +158,4 @@ When not to use:
 
 Keywords: mcp, model context protocol, mcp servers, tools, integrations, connectors, agent tools, tool definitions, context budget, token cost, oauth, tool discovery, permissions, always allow reads, ai agent settings
 
-Files: demo.tsx, mcp-servers.module.css, mcp-servers.tsx
+Files: src/components/arc/mcp-servers/demo.tsx, src/components/arc/mcp-servers/mcp-servers.module.css, src/components/arc/mcp-servers/mcp-servers.tsx

@@ -6,4 +6,4 @@ Text and numbers that spin into their new value on staggered slot machine reels.
 
 Keywords: special, slot, text
 
-Files: registry/components/slot-text/slot-text.tsx, registry/components/slot-text/slot-text.module.css
+Files: src/components/arc/slot-text/slot-text.tsx, src/components/arc/slot-text/slot-text.module.css

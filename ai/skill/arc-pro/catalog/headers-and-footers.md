@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react data galaxy, customer visualization, canvas particle clusters, zoomable scatter, account explorer, mrr visualization
 
-Files: customer-galaxy.module.css, customer-galaxy.tsx, demo.tsx
+Files: src/components/arc/customer-galaxy/customer-galaxy.module.css, src/components/arc/customer-galaxy/customer-galaxy.tsx, src/components/arc/customer-galaxy/demo.tsx
 
 ## `layout-morph` · Layout morph (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react layout animation, gallery layout switcher, masonry to grid animation, 3d helix gallery, view mode toggle, morphing gallery
 
-Files: demo.tsx, layout-morph.module.css, layout-morph.tsx, morph-data.ts
+Files: src/components/arc/layout-morph/demo.tsx, src/components/arc/layout-morph/layout-morph.module.css, src/components/arc/layout-morph/layout-morph.tsx, src/components/arc/layout-morph/morph-data.ts
 
 ## `revenue-globe` · Revenue globe (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react globe, revenue globe, payments map animation, 3d globe canvas, live transactions map, dotted globe
 
-Files: demo.tsx, revenue-globe.module.css, revenue-globe.tsx
+Files: src/components/arc/revenue-globe/demo.tsx, src/components/arc/revenue-globe/revenue-globe.module.css, src/components/arc/revenue-globe/revenue-globe.tsx
 
 ## `semantic-zoom` · Semantic zoom (Pro, block)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: react semantic zoom, infinite zoom canvas, zoomable org chart, zoom ui, portfolio map, canvas zoom and pan
 
-Files: demo.tsx, semantic-zoom.module.css, semantic-zoom.tsx, zoom-data.ts
+Files: src/components/arc/semantic-zoom/demo.tsx, src/components/arc/semantic-zoom/semantic-zoom.module.css, src/components/arc/semantic-zoom/semantic-zoom.tsx, src/components/arc/semantic-zoom/zoom-data.ts

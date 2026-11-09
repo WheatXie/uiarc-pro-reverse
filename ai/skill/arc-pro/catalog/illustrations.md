@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, agent loop, ai agent, tool use, tool calling, gather context, take action, verify, agentic loop, react loop, observe act, context window, claude, explainer, ai diagram
 
-Files: agent-loop.module.css, agent-loop.tsx, demo.tsx
+Files: src/components/arc/agent-loop/agent-loop.module.css, src/components/arc/agent-loop/agent-loop.tsx, src/components/arc/agent-loop/demo.tsx
 
 ## `branch-graph` · Branch graph (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, git, graph, developer, motion, new, commit graph, branch, merge, rebase, squash, pull request, history, version control, developer tools, diff stats
 
-Files: branch-graph.module.css, branch-graph.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/branch-graph/branch-graph.module.css, src/components/arc/branch-graph/branch-graph.tsx, src/components/arc/branch-graph/demo.module.css, src/components/arc/branch-graph/demo.tsx
 
 ## `data-flow` · Data flow (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, data flow, pipeline illustration, etl, data pipeline, event routing, animated diagram, fan out, ingestion, transform
 
-Files: data-flow.module.css, data-flow.tsx, demo.tsx
+Files: src/components/arc/data-flow/data-flow.module.css, src/components/arc/data-flow/data-flow.tsx, src/components/arc/data-flow/demo.tsx
 
 ## `dns-resolution` · DNS resolution (Pro, special)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, dns, dns resolution, dns lookup, resolver, root server, tld, nameserver, authoritative, ttl, cache, domain, ip address, isometric, animated diagram, landing page, docs
 
-Files: demo.module.css, demo.tsx, dns-resolution.module.css, dns-resolution.tsx
+Files: src/components/arc/dns-resolution/demo.module.css, src/components/arc/dns-resolution/demo.tsx, src/components/arc/dns-resolution/dns-resolution.module.css, src/components/arc/dns-resolution/dns-resolution.tsx
 
 ## `mixture-of-experts` · Mixture of experts (Pro, special)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, mixture of experts, moe, sparse moe, expert routing, gating network, router, top k, top 2 routing, active parameters, load balancing, expert capacity, token dropping, llm architecture, transformer
 
-Files: demo.tsx, mixture-of-experts.module.css, mixture-of-experts.tsx
+Files: src/components/arc/mixture-of-experts/demo.tsx, src/components/arc/mixture-of-experts/mixture-of-experts.module.css, src/components/arc/mixture-of-experts/mixture-of-experts.tsx
 
 ## `model-training` · Model training (Pro, special)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, model training, machine learning, neural network, deep learning, backpropagation, loss curve, epochs, evaluation, fine-tuning, ai, animated diagram
 
-Files: demo.module.css, demo.tsx, model-training.module.css, model-training.tsx
+Files: src/components/arc/model-training/demo.module.css, src/components/arc/model-training/demo.tsx, src/components/arc/model-training/model-training.module.css, src/components/arc/model-training/model-training.tsx
 
 ## `multi-region-failover` · Multi-region failover (Pro, special)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, failover, multi-region, region, high availability, disaster recovery, load balancer, global load balancing, dns failover, health check, traffic shift, weights, rebalance, outage, isometric, animated diagram, landing page, docs
 
-Files: demo.module.css, demo.tsx, multi-region-failover.module.css, multi-region-failover.tsx
+Files: src/components/arc/multi-region-failover/demo.module.css, src/components/arc/multi-region-failover/demo.tsx, src/components/arc/multi-region-failover/multi-region-failover.module.css, src/components/arc/multi-region-failover/multi-region-failover.tsx
 
 ## `payment-flow` · Payment flow (Pro, special)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, payment, card payment, authorization, settlement, payout, processor, card network, issuer, fees, animated diagram
 
-Files: demo.tsx, payment-flow.module.css, payment-flow.tsx
+Files: src/components/arc/payment-flow/demo.tsx, src/components/arc/payment-flow/payment-flow.module.css, src/components/arc/payment-flow/payment-flow.tsx
 
 ## `prompt-cache` · Prompt cache (Pro, special)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, prompt caching, prompt cache, cache hit, cache write, cache read, prefix matching, time to live, ttl, time to first token, token cost, llm cost, claude, api pricing, animated diagram
 
-Files: demo.module.css, demo.tsx, prompt-cache.module.css, prompt-cache.tsx
+Files: src/components/arc/prompt-cache/demo.module.css, src/components/arc/prompt-cache/demo.tsx, src/components/arc/prompt-cache/prompt-cache.module.css, src/components/arc/prompt-cache/prompt-cache.tsx
 
 ## `reasoning-tree` · Reasoning tree (Pro, special)
 
@@ -158,7 +158,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, tree of thoughts, beam search, reasoning, search tree, pruning, chain of thought, test time compute, thought tree, best path, llm reasoning, explainer, ai diagram
 
-Files: demo.tsx, reasoning-tree.module.css, reasoning-tree.tsx
+Files: src/components/arc/reasoning-tree/demo.tsx, src/components/arc/reasoning-tree/reasoning-tree.module.css, src/components/arc/reasoning-tree/reasoning-tree.tsx
 
 ## `speculative-decoding` · Speculative decoding (Pro, special)
 
@@ -174,7 +174,7 @@ When not to use:
 
 Keywords: special, motion, illustration, new, speculative decoding, draft model, target model, assisted generation, inference speed, llm latency, token acceptance, tokens per pass, verify, ai illustration, explainer, decoding
 
-Files: demo.tsx, speculative-decoding.module.css, speculative-decoding.tsx
+Files: src/components/arc/speculative-decoding/demo.tsx, src/components/arc/speculative-decoding/speculative-decoding.module.css, src/components/arc/speculative-decoding/speculative-decoding.tsx
 
 ## `vector-search` · Vector search (Pro, special)
 
@@ -190,4 +190,4 @@ When not to use:
 
 Keywords: special, motion, illustration, new, vector search, embeddings, semantic search, nearest neighbours, similarity, rag, retrieval, vector database, hnsw, animated diagram
 
-Files: demo.tsx, vector-search.module.css, vector-search.tsx
+Files: src/components/arc/vector-search/demo.tsx, src/components/arc/vector-search/vector-search.module.css, src/components/arc/vector-search/vector-search.tsx

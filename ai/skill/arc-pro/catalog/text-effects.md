@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: text, motion, heading, react scroll animation title, animate on scroll heading, in view text animation, section title reveal, scroll reveal text, framer motion heading
 
-Files: registry/components/in-view-title/in-view-title.tsx, registry/components/in-view-title/in-view-title.module.css
+Files: src/components/arc/in-view-title/in-view-title.module.css, src/components/arc/in-view-title/in-view-title.tsx
 
 ## `text-morph` · Text morph (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: text, motion, status, react text morph, morphing text, animated label, text transition, letter morph animation, shared letter animation
 
-Files: registry/components/text-morph/text-morph.tsx, registry/components/text-morph/text-morph.module.css
+Files: src/components/arc/text-morph/text-morph.module.css, src/components/arc/text-morph/text-morph.tsx
 
 ## `text-reveal` · Text reveal (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: text, motion, content, react text reveal, headline animation, hero text animation, word by word reveal, blur text reveal, css text animation
 
-Files: registry/components/text-reveal/text-reveal.tsx, registry/components/text-reveal/text-reveal.module.css
+Files: src/components/arc/text-reveal/text-reveal.module.css, src/components/arc/text-reveal/text-reveal.tsx
 
 ## `text-shimmer` · Text shimmer (Free, component)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: text, motion, loading, react text shimmer, shimmer text, ai thinking text, loading text animation, shiny text, gradient text sweep
 
-Files: registry/components/text-shimmer/text-shimmer.tsx, registry/components/text-shimmer/text-shimmer.module.css
+Files: src/components/arc/text-shimmer/text-shimmer.module.css, src/components/arc/text-shimmer/text-shimmer.tsx

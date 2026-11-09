@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react 3d heatmap, activity terrain, 3d bar chart canvas, hourly activity chart, week by hour heatmap, canvas data visualization
 
-Files: activity-terrain.module.css, activity-terrain.tsx, demo.tsx
+Files: src/components/arc/activity-terrain/activity-terrain.module.css, src/components/arc/activity-terrain/activity-terrain.tsx, src/components/arc/activity-terrain/demo.tsx
 
 ## `cta-section` · CTA section (Free, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: cta, call to action, cta section, banner, closing section, signup prompt, conversion, landing page
 
-Files: registry/blocks/cta-section/cta-section.tsx, registry/blocks/cta-section/cta-section-data.ts, lib/media.ts, registry/blocks/cta-section/cta-section.module.css
+Files: src/components/arc/blocks/cta-section/cta-section-data.ts, src/components/arc/blocks/cta-section/cta-section.module.css, src/components/arc/blocks/cta-section/cta-section.tsx
 
 ## `newsletter-signup` · Newsletter signup (Free, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: newsletter, email signup, subscribe, waitlist, email capture, mailing list, form, digest, issue
 
-Files: registry/blocks/newsletter-signup/newsletter-signup.tsx, registry/blocks/newsletter-signup/newsletter-signup-data.ts, lib/media.ts, registry/blocks/newsletter-signup/newsletter-signup.module.css
+Files: src/components/arc/blocks/newsletter-signup/newsletter-signup-data.ts, src/components/arc/blocks/newsletter-signup/newsletter-signup.module.css, src/components/arc/blocks/newsletter-signup/newsletter-signup.tsx
 
 ## `site-footer` · Site footer (Free, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react footer, site footer, footer with newsletter, footer link columns, minimal footer, marketing footer
 
-Files: registry/blocks/site-footer/site-footer.tsx, registry/blocks/site-footer/site-footer.module.css
+Files: src/components/arc/blocks/site-footer/site-footer.module.css, src/components/arc/blocks/site-footer/site-footer.tsx
 
 ## `site-header` · Site header (Free, block)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: react site header, marketing navbar, mega menu, responsive navbar, sticky header, mobile menu sheet, landing page header
 
-Files: registry/blocks/site-header/site-header.tsx, registry/blocks/site-header/site-header.module.css, lib/media.ts
+Files: src/components/arc/blocks/site-header/site-header.module.css, src/components/arc/blocks/site-header/site-header.tsx

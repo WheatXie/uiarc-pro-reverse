@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: navigation, wayfinding, react breadcrumb, breadcrumb navigation, animated breadcrumb, page path, nextjs breadcrumb, hierarchy navigation
 
-Files: registry/components/breadcrumb/breadcrumb.tsx, registry/components/breadcrumb/breadcrumb.module.css, lib/arc-provider.tsx
+Files: src/components/arc/breadcrumb/breadcrumb.module.css, src/components/arc/breadcrumb/breadcrumb.tsx
 
 ## `mega-menu-morph` · Mega menu morph (Pro, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: navigation, menu, motion, new, mega menu, site header, navigation bar, navbar, dropdown, morphing dropdown, shared layout, stripe menu, hover intent, safe triangle, menu aim, caret, accordion menu, mobile menu, marketing header
 
-Files: demo.tsx, mega-menu-morph.module.css, mega-menu-morph.tsx
+Files: src/components/arc/mega-menu-morph/demo.tsx, src/components/arc/mega-menu-morph/mega-menu-morph.module.css, src/components/arc/mega-menu-morph/mega-menu-morph.tsx
 
 ## `pagination` · Pagination (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: data, navigation, react pagination, pagination component, page numbers, table pagination, animated pagination, next previous pages
 
-Files: registry/components/pagination/pagination.tsx, registry/components/pagination/pagination.module.css
+Files: src/components/arc/pagination/pagination.module.css, src/components/arc/pagination/pagination.tsx
 
 ## `tabs` · Tabs (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: navigation, layout, react tabs, animated tabs, radix tabs, tab component, sliding tab indicator, scrollable tabs, tabs with animation
 
-Files: registry/components/tabs/tabs.tsx, registry/components/tabs/tabs.module.css
+Files: src/components/arc/tabs/tabs.module.css, src/components/arc/tabs/tabs.tsx
 
 ## `toc-progress` · Table of contents progress (Pro, component)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: navigation, scroll, motion, new, table of contents, toc, on this page, scroll spy, reading progress, scrollspy, article navigation, docs navigation, anchor links, section indicator, progress line, time left, reading time
 
-Files: demo.module.css, demo.tsx, toc-progress.module.css, toc-progress.tsx
+Files: src/components/arc/toc-progress/demo.module.css, src/components/arc/toc-progress/demo.tsx, src/components/arc/toc-progress/toc-progress.module.css, src/components/arc/toc-progress/toc-progress.tsx

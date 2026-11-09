@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: replay, time replay, playback chart, animated line chart, playhead, scrubber, timeline, annotations, key moments, launch day, incident timeline, story chart, speed control
 
-Files: demo.tsx, line-replay.module.css, line-replay.tsx
+Files: src/components/arc/line-replay/demo.tsx, src/components/arc/line-replay/line-replay.module.css, src/components/arc/line-replay/line-replay.tsx
 
 ## `small-multiples` · Small multiples (Pro, block)
 
@@ -30,4 +30,4 @@ When not to use:
 
 Keywords: small multiples, trellis, facet, sparklines, line chart grid, synced crosshair, shared scale, independent scale, compare regions, compare products, trend, analytics, dashboard
 
-Files: demo.tsx, small-multiples.module.css, small-multiples.tsx
+Files: src/components/arc/small-multiples/demo.tsx, src/components/arc/small-multiples/small-multiples.module.css, src/components/arc/small-multiples/small-multiples.tsx

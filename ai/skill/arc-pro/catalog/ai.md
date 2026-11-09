@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, ai, new, ai cursor, agent cursor, multiplayer cursor, collaborative editing, ai writing assistant, live document edit, accept changes, suggested edits, claude, notion ai, presence
 
-Files: agent-cursor.module.css, agent-cursor.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/agent-cursor/agent-cursor.module.css, src/components/arc/agent-cursor/agent-cursor.tsx, src/components/arc/agent-cursor/demo.module.css, src/components/arc/agent-cursor/demo.tsx
 
 ## `agent-handoff` · Agent handoff (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, ai, new, agent handoff, human handoff, ai escalation, transfer to human, support chat, live chat, intercom, zendesk, ai support agent, customer support widget, escalation summary
 
-Files: agent-handoff.module.css, agent-handoff.tsx, demo.tsx
+Files: src/components/arc/agent-handoff/agent-handoff.module.css, src/components/arc/agent-handoff/agent-handoff.tsx, src/components/arc/agent-handoff/demo.tsx
 
 ## `agent-memory` · Agent memory (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: memory, assistant memory, agent memory, saved memories, chat history, personalization, memory updated, remember, forget, undo, filter, settings, preferences, llm, ai, privacy, user profile
 
-Files: agent-memory.module.css, agent-memory.tsx, demo.tsx
+Files: src/components/arc/agent-memory/agent-memory.module.css, src/components/arc/agent-memory/agent-memory.tsx, src/components/arc/agent-memory/demo.tsx
 
 ## `agent-plan` · Agent plan (Pro, special)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: special, motion, ai, new, agent plan, plan mode, todo list, task plan, checklist, approve plan, coding agent, ai agent, step list, reorder, drag and drop, progress, retry, human in the loop, claude
 
-Files: agent-plan.module.css, agent-plan.tsx, demo.tsx
+Files: src/components/arc/agent-plan/agent-plan.module.css, src/components/arc/agent-plan/agent-plan.tsx, src/components/arc/agent-plan/demo.tsx
 
 ## `agent-status` · Agent status (Pro, special)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: special, motion, ai, new, agent status, ai agent, status pill, run status, live indicator, approval, human in the loop, coding agent, research agent, elapsed timer, progress, dynamic island, agent run, claude, tool calls
 
-Files: agent-status.module.css, agent-status.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/agent-status/agent-status.module.css, src/components/arc/agent-status/agent-status.tsx, src/components/arc/agent-status/demo.module.css, src/components/arc/agent-status/demo.tsx
 
 ## `agent-timeline` · Agent timeline (Pro, special)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: special, motion, ai, new, agent timeline, multi-agent, orchestrator, subagents, agent trace, gantt, handoff, tool calls, run replay, playhead, scrubber, tokens, cost, parallel agents, llm
 
-Files: agent-timeline.module.css, agent-timeline.tsx, demo.tsx
+Files: src/components/arc/agent-timeline/agent-timeline.module.css, src/components/arc/agent-timeline/agent-timeline.tsx, src/components/arc/agent-timeline/demo.tsx
 
 ## `ai-answer` · AI answer (Pro, block)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: ai answer, answer engine, cited answer, citations, sources, streaming, reasoning, thinking, regenerate, feedback, follow-up questions, perplexity style, llm, markdown, answer page
 
-Files: ai-answer.module.css, ai-answer.tsx, demo.tsx
+Files: src/components/arc/ai-answer/ai-answer.module.css, src/components/arc/ai-answer/ai-answer.tsx, src/components/arc/ai-answer/demo.tsx
 
 ## `ai-chat` · AI chat (Pro, block)
 
@@ -126,7 +126,7 @@ When not to use:
 
 Keywords: ai chat, chatbot, llm chat, assistant, streaming, markdown, reasoning, thinking, tool calls, citations, model switcher, regenerate, message versions, chat history, stop generating, claude, gpt, gemini
 
-Files: ai-chat.module.css, ai-chat.tsx, demo.tsx
+Files: src/components/arc/ai-chat/ai-chat.module.css, src/components/arc/ai-chat/ai-chat.tsx, src/components/arc/ai-chat/demo.tsx
 
 ## `ai-command` · AI command (Pro, special)
 
@@ -142,7 +142,7 @@ When not to use:
 
 Keywords: special, ai, new, command palette, cmd k, command menu, ask ai, ai search, spotlight, raycast, quick actions, streaming answer, citations, sources, keyboard
 
-Files: ai-command.module.css, ai-command.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/ai-command/ai-command.module.css, src/components/arc/ai-command/ai-command.tsx, src/components/arc/ai-command/demo.module.css, src/components/arc/ai-command/demo.tsx
 
 ## `ai-composer` · AI composer (Pro, block)
 
@@ -158,7 +158,7 @@ When not to use:
 
 Keywords: ai composer, chat input, prompt box, chat composer, message input, send button, stop generating, attachments, file upload, slash commands, mentions, model picker, effort, dictation, streaming, claude, assistant
 
-Files: ai-composer.module.css, ai-composer.tsx, demo.tsx
+Files: src/components/arc/ai-composer/ai-composer.module.css, src/components/arc/ai-composer/ai-composer.tsx, src/components/arc/ai-composer/demo.tsx
 
 ## `ai-feature-launch` · AI feature launch (Pro, block)
 
@@ -174,7 +174,7 @@ When not to use:
 
 Keywords: ai feature launch, introducing ai, feature announcement, launch modal, whats new, product tour, onboarding tour, enable ai, workspace setting, admin toggle, rollout, announcement card, notion ai, linear launch, pagination dots
 
-Files: ai-feature-launch.module.css, ai-feature-launch.tsx, demo.tsx
+Files: src/components/arc/ai-feature-launch/ai-feature-launch.module.css, src/components/arc/ai-feature-launch/ai-feature-launch.tsx, src/components/arc/ai-feature-launch/demo.tsx
 
 ## `ai-inline-edit` · AI inline edit (Pro, block)
 
@@ -190,7 +190,7 @@ When not to use:
 
 Keywords: ai editor, inline edit, rewrite, diff, suggestions, autocomplete, ghost text, copilot, cmd k, notion ai, tab to accept, accept reject
 
-Files: ai-inline-edit.module.css, ai-inline-edit.tsx, demo.tsx
+Files: src/components/arc/ai-inline-edit/ai-inline-edit.module.css, src/components/arc/ai-inline-edit/ai-inline-edit.tsx, src/components/arc/ai-inline-edit/demo.tsx
 
 ## `ai-insight-card` · AI insight card (Pro, block)
 
@@ -206,7 +206,7 @@ When not to use:
 
 Keywords: ai insight, kpi card, explain metric, revenue explanation, drivers, sparkline, analytics ai, metric annotation, why did revenue drop, dashboard card
 
-Files: ai-insight-card.module.css, ai-insight-card.tsx, demo.tsx
+Files: src/components/arc/ai-insight-card/ai-insight-card.module.css, src/components/arc/ai-insight-card/ai-insight-card.tsx, src/components/arc/ai-insight-card/demo.tsx
 
 ## `ai-mascot` · AI mascot (Pro, special)
 
@@ -222,7 +222,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, ai mascot, assistant character, ai avatar, thinking animation, generating, loading character, agent face, blob, listening, writing, done sparkle, error shake, empty state, eyes follow cursor, svg animation
 
-Files: ai-mascot.module.css, ai-mascot.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/ai-mascot/ai-mascot.module.css, src/components/arc/ai-mascot/ai-mascot.tsx, src/components/arc/ai-mascot/demo.module.css, src/components/arc/ai-mascot/demo.tsx
 
 ## `ai-search-bar` · AI search bar (Pro, block)
 
@@ -238,7 +238,7 @@ When not to use:
 
 Keywords: ai search, search bar, ask ai, command palette, docs search, instant search, grouped results, keyboard navigation, citations, streaming answer, algolia ask ai, mintlify search, linear search, combobox, rag
 
-Files: ai-search-bar.module.css, ai-search-bar.tsx, demo.module.css, demo.tsx, kbd.module.css
+Files: src/components/arc/ai-search-bar/ai-search-bar.module.css, src/components/arc/ai-search-bar/ai-search-bar.tsx, src/components/arc/ai-search-bar/demo.module.css, src/components/arc/ai-search-bar/demo.tsx, src/components/arc/ai-search-bar/kbd.module.css
 
 ## `ai-setup-wizard` · AI setup wizard (Pro, block)
 
@@ -254,7 +254,7 @@ When not to use:
 
 Keywords: ai setup wizard, onboarding wizard, stepper, connect data sources, knowledge base sync, model picker, guardrails, test ai answer, citations, go live, ai feature onboarding, rag setup
 
-Files: ai-setup-wizard.module.css, ai-setup-wizard.tsx, demo.tsx
+Files: src/components/arc/ai-setup-wizard/ai-setup-wizard.module.css, src/components/arc/ai-setup-wizard/ai-setup-wizard.tsx, src/components/arc/ai-setup-wizard/demo.tsx
 
 ## `ai-side-panel` · AI side panel (Pro, block)
 
@@ -270,7 +270,7 @@ When not to use:
 
 Keywords: ai assistant, copilot, side panel, document assistant, suggested edits, word diff, apply and undo, context chips, ask about selection, streaming, bottom sheet, claude
 
-Files: ai-side-panel.module.css, ai-side-panel.tsx, demo.tsx
+Files: src/components/arc/ai-side-panel/ai-side-panel.module.css, src/components/arc/ai-side-panel/ai-side-panel.tsx, src/components/arc/ai-side-panel/demo.tsx
 
 ## `ai-spark` · AI spark (Pro, special)
 
@@ -286,7 +286,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, ai spark, ai sparkle, asterisk, thinking indicator, generating indicator, ai loader, ai logo animation, working indicator, ai status mark, spinner alternative, ai avatar, sparkle animation
 
-Files: ai-spark.module.css, ai-spark.tsx, demo.tsx
+Files: src/components/arc/ai-spark/ai-spark.module.css, src/components/arc/ai-spark/ai-spark.tsx, src/components/arc/ai-spark/demo.tsx
 
 ## `ai-translate` · AI translate (Pro, special)
 
@@ -302,7 +302,7 @@ When not to use:
 
 Keywords: special, ai, new, ai translate, translation, inline translation, show original, language picker, detected language, streaming text, multilingual, localization, message translation, claude, llm, i18n
 
-Files: ai-translate.module.css, ai-translate.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/ai-translate/ai-translate.module.css, src/components/arc/ai-translate/ai-translate.tsx, src/components/arc/ai-translate/demo.module.css, src/components/arc/ai-translate/demo.tsx
 
 ## `ai-workflow` · AI workflow (Pro, special)
 
@@ -318,7 +318,7 @@ When not to use:
 
 Keywords: special, ai, new, workflow builder, automation, zapier, n8n, make, ai workflow, flow builder, trigger action, test run, integration, branch, claude, gmail, slack, linear
 
-Files: ai-workflow.module.css, ai-workflow.tsx, demo.tsx
+Files: src/components/arc/ai-workflow/ai-workflow.module.css, src/components/arc/ai-workflow/ai-workflow.tsx, src/components/arc/ai-workflow/demo.tsx
 
 ## `ask-your-data` · Ask your data (Pro, special)
 
@@ -334,7 +334,7 @@ When not to use:
 
 Keywords: special, ai, new, ask your data, text to sql, natural language query, nl2sql, ai analytics, chart, postgresql, sql generation, stacked bar chart, line chart, data table, insight, bi, self serve analytics
 
-Files: ask-your-data.module.css, ask-your-data.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/ask-your-data/ask-your-data.module.css, src/components/arc/ask-your-data/ask-your-data.tsx, src/components/arc/ask-your-data/demo.module.css, src/components/arc/ask-your-data/demo.tsx
 
 ## `call-insights` · Call insights (Pro, block)
 
@@ -350,7 +350,7 @@ When not to use:
 
 Keywords: call insights, sales call, conversation intelligence, gong, talk time, talk ratio, call recording, deal risk, next steps, call summary, objection, competitor mention
 
-Files: call-insights.module.css, call-insights.tsx, demo.tsx
+Files: src/components/arc/call-insights/call-insights.module.css, src/components/arc/call-insights/call-insights.tsx, src/components/arc/call-insights/demo.tsx
 
 ## `catch-up` · Catch up (Pro, block)
 
@@ -366,7 +366,7 @@ When not to use:
 
 Keywords: catch up, catch me up, digest, ai summary, chief of staff, while you were away, inbox summary, slack summary, notifications digest, linear, github, gmail, prioritized summary, mark as read
 
-Files: catch-up.module.css, catch-up.tsx, demo.tsx
+Files: src/components/arc/catch-up/catch-up.module.css, src/components/arc/catch-up/catch-up.tsx, src/components/arc/catch-up/demo.tsx
 
 ## `code-suggestion` · Code suggestion (Pro, special)
 
@@ -382,7 +382,7 @@ When not to use:
 
 Keywords: special, ai, new, code suggestion, ai code edit, inline diff, accept reject, cursor, copilot, code review, diff hunk, inline edit, ai coding, apply changes, claude, code diff, suggested changes, accept all
 
-Files: code-suggestion.module.css, code-suggestion.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/code-suggestion/code-suggestion.module.css, src/components/arc/code-suggestion/code-suggestion.tsx, src/components/arc/code-suggestion/demo.module.css, src/components/arc/code-suggestion/demo.tsx
 
 ## `connector-setup` · Connector setup (Pro, special)
 
@@ -398,7 +398,7 @@ When not to use:
 
 Keywords: special, ai, new, connectors, integrations, connect apps, oauth, connect your tools, ai assistant settings, mcp connectors, slack integration, github integration, scopes, permissions, disconnect
 
-Files: connector-setup.module.css, connector-setup.tsx, demo.tsx
+Files: src/components/arc/connector-setup/connector-setup.module.css, src/components/arc/connector-setup/connector-setup.tsx, src/components/arc/connector-setup/demo.tsx
 
 ## `context-window` · Context window (Pro, special)
 
@@ -414,7 +414,7 @@ When not to use:
 
 Keywords: special, ai, tokens, chart, motion, new, context window, token usage, llm context, compaction, summarize conversation, prompt tokens, mcp tools tokens, output reserve, ai session, token budget
 
-Files: context-window.module.css, context-window.tsx, demo.tsx
+Files: src/components/arc/context-window/context-window.module.css, src/components/arc/context-window/context-window.tsx, src/components/arc/context-window/demo.tsx
 
 ## `cube-mascot` · Cube mascot (Pro, special)
 
@@ -430,7 +430,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, cube mascot, isometric cube, ai mascot, assistant character, 3d cube, thinking animation, generating, loading character, agent face, writing, done sparkle, error shake, empty state, svg animation
 
-Files: cube-mascot.module.css, cube-mascot.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/cube-mascot/cube-mascot.module.css, src/components/arc/cube-mascot/cube-mascot.tsx, src/components/arc/cube-mascot/demo.module.css, src/components/arc/cube-mascot/demo.tsx
 
 ## `dictation-button` · Dictation button (Pro, special)
 
@@ -446,7 +446,7 @@ When not to use:
 
 Keywords: special, ai, new, dictation, voice input, speech to text, mic button, microphone, voice typing, transcription, web speech api, speechrecognition, waveform, recording pill, composer, chat input, interim results, ai composer
 
-Files: demo.tsx, dictation-button.module.css, dictation-button.tsx
+Files: src/components/arc/dictation-button/demo.tsx, src/components/arc/dictation-button/dictation-button.module.css, src/components/arc/dictation-button/dictation-button.tsx
 
 ## `document-extract` · Document extraction (Pro, block)
 
@@ -462,7 +462,7 @@ When not to use:
 
 Keywords: document extraction, structured output, invoice parsing, pdf viewer, data extraction, ocr, llm extraction, json schema, typed output, confidence, human review, source highlighting, citations, form filling, claude haiku
 
-Files: demo.module.css, demo.tsx, document-extract.module.css, document-extract.tsx
+Files: src/components/arc/document-extract/demo.module.css, src/components/arc/document-extract/demo.tsx, src/components/arc/document-extract/document-extract.module.css, src/components/arc/document-extract/document-extract.tsx
 
 ## `enrich-column` · Enrich column (Pro, special)
 
@@ -478,7 +478,7 @@ When not to use:
 
 Keywords: special, ai, new, enrich column, ai column, clay, data enrichment, lead enrichment, ai table, spreadsheet ai, company data, headcount, funding round, retry, shimmer, agent
 
-Files: demo.module.css, demo.tsx, enrich-column.module.css, enrich-column.tsx
+Files: src/components/arc/enrich-column/demo.module.css, src/components/arc/enrich-column/demo.tsx, src/components/arc/enrich-column/enrich-column.module.css, src/components/arc/enrich-column/enrich-column.tsx
 
 ## `generation-stats` · Generation stats (Pro, special)
 
@@ -494,7 +494,7 @@ When not to use:
 
 Keywords: special, ai, new, generation stats, llm stats, tokens per second, time to first token, ttft, latency, token usage, cost, streaming, sparkline, prompt cache, cached tokens, reasoning tokens, claude, gpt, gemini, dev panel, usage meter
 
-Files: demo.tsx, generation-stats.module.css, generation-stats.tsx
+Files: src/components/arc/generation-stats/demo.tsx, src/components/arc/generation-stats/generation-stats.module.css, src/components/arc/generation-stats/generation-stats.tsx
 
 ## `ghost-mascot` · Ghost mascot (Pro, special)
 
@@ -510,7 +510,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, ghost mascot, ai mascot, assistant character, ai avatar, generating animation, thinking animation, loading character, ghost, listening, writing, done sparkle, error wobble, empty state, svg path morph, wavy hem
 
-Files: demo.module.css, demo.tsx, ghost-mascot.module.css, ghost-mascot.tsx
+Files: src/components/arc/ghost-mascot/demo.module.css, src/components/arc/ghost-mascot/demo.tsx, src/components/arc/ghost-mascot/ghost-mascot.module.css, src/components/arc/ghost-mascot/ghost-mascot.tsx
 
 ## `ghost-text` · Ghost text (Pro, special)
 
@@ -526,7 +526,7 @@ When not to use:
 
 Keywords: special, ai, new, ghost text, ai autocomplete, inline suggestion, copilot, tab to accept, text completion, autocomplete textarea, predictive text, smart compose, llm, claude, streaming, pull request, email, writing assistant
 
-Files: demo.tsx, ghost-text.module.css, ghost-text.tsx, kbd.module.css
+Files: src/components/arc/ghost-text/demo.tsx, src/components/arc/ghost-text/ghost-text.module.css, src/components/arc/ghost-text/ghost-text.tsx, src/components/arc/ghost-text/kbd.module.css
 
 ## `image-generation` · Image generation (Pro, special)
 
@@ -542,7 +542,7 @@ When not to use:
 
 Keywords: special, ai, new, image generation, text to image, ai image, diffusion, prompt, upscale, variations, filmstrip, generate images, aspect ratio, dot matrix, halftone, loading state, dot spinner, blur to sharp
 
-Files: demo.module.css, demo.tsx, image-generation.module.css, image-generation.tsx
+Files: src/components/arc/image-generation/demo.module.css, src/components/arc/image-generation/demo.tsx, src/components/arc/image-generation/image-generation.module.css, src/components/arc/image-generation/image-generation.tsx
 
 ## `image-reveal` · Image reveal (Pro, special)
 
@@ -558,7 +558,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, image generation, ai image, generating, progressive reveal, diffusion, denoising, latent noise, sampler steps, vae decode, progress, canvas, image placeholder, midjourney style, chatgpt image
 
-Files: demo.tsx, image-reveal.module.css, image-reveal.tsx
+Files: src/components/arc/image-reveal/demo.tsx, src/components/arc/image-reveal/image-reveal.module.css, src/components/arc/image-reveal/image-reveal.tsx
 
 ## `install-snippet` · Install snippet (Pro, special)
 
@@ -574,7 +574,7 @@ When not to use:
 
 Keywords: special, saas, new, install snippet, quickstart, getting started, sdk install, npm install, api key, code tabs, framework tabs, developer onboarding, copy code
 
-Files: demo.tsx, install-snippet.module.css, install-snippet.tsx
+Files: src/components/arc/install-snippet/demo.tsx, src/components/arc/install-snippet/install-snippet.module.css, src/components/arc/install-snippet/install-snippet.tsx
 
 ## `lead-scoring` · Lead scoring (Pro, block)
 
@@ -590,7 +590,7 @@ When not to use:
 
 Keywords: lead scoring, ai lead scoring, inbound leads, sales qualification, fit score, crm, hubspot, salesforce, sdr queue, b2b sales
 
-Files: demo.tsx, lead-scoring.module.css, lead-scoring.tsx
+Files: src/components/arc/lead-scoring/demo.tsx, src/components/arc/lead-scoring/lead-scoring.module.css, src/components/arc/lead-scoring/lead-scoring.tsx
 
 ## `live-visitors` · Live visitors (Pro, special)
 
@@ -606,7 +606,7 @@ When not to use:
 
 Keywords: special, saas, new, live visitors, realtime analytics, active users, visitors now, world map, dotted map, top pages, signups, upgrades, conversion ticker, rolling number, odometer, country flags, live dashboard
 
-Files: demo.tsx, live-visitors.module.css, live-visitors.tsx
+Files: src/components/arc/live-visitors/demo.tsx, src/components/arc/live-visitors/live-visitors.module.css, src/components/arc/live-visitors/live-visitors.tsx
 
 ## `llm-cost-calculator` · LLM cost calculator (Pro, special)
 
@@ -622,7 +622,7 @@ When not to use:
 
 Keywords: special, ai, new, llm cost calculator, token pricing, ai pricing, model cost, api cost estimate, prompt caching, cached input, price comparison, claude, gpt, gemini, deepseek, monthly cost, budget, slider
 
-Files: demo.module.css, demo.tsx, llm-cost-calculator.module.css, llm-cost-calculator.tsx
+Files: src/components/arc/llm-cost-calculator/demo.module.css, src/components/arc/llm-cost-calculator/demo.tsx, src/components/arc/llm-cost-calculator/llm-cost-calculator.module.css, src/components/arc/llm-cost-calculator/llm-cost-calculator.tsx
 
 ## `meeting-summary` · Meeting summary (Pro, special)
 
@@ -638,7 +638,7 @@ When not to use:
 
 Keywords: special, ai, new, meeting summary, meeting notes, ai notes, action items, call recap, transcript summary, google meet, zoom, linear, notion, decisions, ai meeting assistant
 
-Files: demo.tsx, meeting-summary.module.css, meeting-summary.tsx
+Files: src/components/arc/meeting-summary/demo.tsx, src/components/arc/meeting-summary/meeting-summary.module.css, src/components/arc/meeting-summary/meeting-summary.tsx
 
 ## `model-arena` · Model arena (Pro, block)
 
@@ -654,7 +654,7 @@ When not to use:
 
 Keywords: model arena, llm comparison, blind test, side by side, model battle, ab test, human preference, vote, leaderboard, win rate, time to first token, tokens per second, latency, cost, streaming, claude, gpt, gemini
 
-Files: demo.tsx, model-arena.module.css, model-arena.tsx
+Files: src/components/arc/model-arena/demo.tsx, src/components/arc/model-arena/model-arena.module.css, src/components/arc/model-arena/model-arena.tsx
 
 ## `model-card` · Model card (Pro, special)
 
@@ -670,7 +670,7 @@ When not to use:
 
 Keywords: special, ai, new, model card, model details, model picker, llm, ai model, compare models, benchmark, context window, pricing per token, cost estimator, token cost calculator, tokens, claude, gpt, gemini, grok, copy model id, marketplace
 
-Files: demo.tsx, model-card.module.css, model-card.tsx
+Files: src/components/arc/model-card/demo.tsx, src/components/arc/model-card/model-card.module.css, src/components/arc/model-card/model-card.tsx
 
 ## `model-picker` · Model picker (Pro, block)
 
@@ -686,7 +686,7 @@ When not to use:
 
 Keywords: model picker, model selector, llm model switcher, ai model dropdown, reasoning effort, claude, gpt, gemini, choose model, ai settings
 
-Files: demo.tsx, model-picker.module.css, model-picker.tsx
+Files: src/components/arc/model-picker/demo.tsx, src/components/arc/model-picker/model-picker.module.css, src/components/arc/model-picker/model-picker.tsx
 
 ## `pii-redaction` · PII redaction (Pro, special)
 
@@ -702,7 +702,7 @@ When not to use:
 
 Keywords: special, ai, new, pii, redaction, guardrail, privacy, data loss prevention, dlp, anonymize, mask, placeholder, llm safety, prompt, claude, personal data, gdpr, support assistant
 
-Files: demo.module.css, demo.tsx, pii-redaction.module.css, pii-redaction.tsx
+Files: src/components/arc/pii-redaction/demo.module.css, src/components/arc/pii-redaction/demo.tsx, src/components/arc/pii-redaction/pii-redaction.module.css, src/components/arc/pii-redaction/pii-redaction.tsx
 
 ## `pixel-mascot` · Pixel mascot (Pro, special)
 
@@ -718,7 +718,7 @@ When not to use:
 
 Keywords: special, ai, motion, new, pixel art, 8-bit, 16-bit, sprite, mascot, robot, ai loading, thinking indicator, typing indicator, generating, assistant avatar, retro, loader, empty state
 
-Files: demo.module.css, demo.tsx, pixel-mascot.module.css, pixel-mascot.tsx
+Files: src/components/arc/pixel-mascot/demo.module.css, src/components/arc/pixel-mascot/demo.tsx, src/components/arc/pixel-mascot/pixel-mascot.module.css, src/components/arc/pixel-mascot/pixel-mascot.tsx
 
 ## `prompt-studio` · Prompt studio (Pro, block)
 
@@ -734,7 +734,7 @@ When not to use:
 
 Keywords: prompt studio, prompt editor, prompt template, prompt management, prompt versioning, llm playground, template variables, test cases, production prompt, promote to production, prompt diff, system prompt, model effort, streaming reply
 
-Files: demo.tsx, prompt-studio.module.css, prompt-studio.tsx
+Files: src/components/arc/prompt-studio/demo.tsx, src/components/arc/prompt-studio/prompt-studio.module.css, src/components/arc/prompt-studio/prompt-studio.tsx
 
 ## `provider-keys` · Provider keys (Pro, special)
 
@@ -750,7 +750,7 @@ When not to use:
 
 Keywords: special, ai, new, api keys, provider keys, byok, bring your own key, anthropic api key, openai api key, secret, settings, rotate key, masked key, connection test
 
-Files: demo.tsx, provider-keys.module.css, provider-keys.tsx
+Files: src/components/arc/provider-keys/demo.tsx, src/components/arc/provider-keys/provider-keys.module.css, src/components/arc/provider-keys/provider-keys.tsx
 
 ## `provider-status` · Provider status (Pro, special)
 
@@ -766,7 +766,7 @@ When not to use:
 
 Keywords: special, ai, new, provider status, ai status, llm uptime, status page, incident, uptime bar, latency, health check, openai status, anthropic status, model provider, monitoring
 
-Files: demo.tsx, provider-status.module.css, provider-status.tsx
+Files: src/components/arc/provider-status/demo.tsx, src/components/arc/provider-status/provider-status.module.css, src/components/arc/provider-status/provider-status.tsx
 
 ## `reasoning-block` · Reasoning block (Pro, special)
 
@@ -782,7 +782,7 @@ When not to use:
 
 Keywords: special, ai, new, reasoning, thinking, thought for, extended thinking, chain of thought, reasoning summary, collapsible, ai reply, claude, streaming, llm
 
-Files: demo.tsx, reasoning-block.module.css, reasoning-block.tsx
+Files: src/components/arc/reasoning-block/demo.tsx, src/components/arc/reasoning-block/reasoning-block.module.css, src/components/arc/reasoning-block/reasoning-block.tsx
 
 ## `referral-card` · Referral card (Pro, special)
 
@@ -798,7 +798,7 @@ When not to use:
 
 Keywords: special, saas, new, referral, refer a friend, invite, give get, affiliate, credits, share link, growth, milestone, reward
 
-Files: demo.tsx, referral-card.module.css, referral-card.tsx
+Files: src/components/arc/referral-card/demo.tsx, src/components/arc/referral-card/referral-card.module.css, src/components/arc/referral-card/referral-card.tsx
 
 ## `reply-draft` · Reply draft (Pro, special)
 
@@ -814,7 +814,7 @@ When not to use:
 
 Keywords: special, ai, new, ai reply, email reply, smart reply, draft reply, help me write, gmail ai, tone, rewrite, quick replies, streaming text, claude, inbox ai, support reply
 
-Files: demo.tsx, reply-draft.module.css, reply-draft.tsx
+Files: src/components/arc/reply-draft/demo.tsx, src/components/arc/reply-draft/reply-draft.module.css, src/components/arc/reply-draft/reply-draft.tsx
 
 ## `research-run` · Research run (Pro, block)
 
@@ -830,7 +830,7 @@ When not to use:
 
 Keywords: deep research, answer engine, citations, sources, streaming, perplexity, search, llm, ai answer, follow up, research agent
 
-Files: demo.tsx, research-run.module.css, research-run.tsx
+Files: src/components/arc/research-run/demo.tsx, src/components/arc/research-run/research-run.module.css, src/components/arc/research-run/research-run.tsx
 
 ## `response-feedback` · Response feedback (Pro, special)
 
@@ -846,7 +846,7 @@ When not to use:
 
 Keywords: special, ai, new, thumbs up, thumbs down, feedback, ai feedback, response rating, message actions, rlhf, helpful, chat feedback, reasons, llm evaluation
 
-Files: demo.tsx, response-feedback.module.css, response-feedback.tsx
+Files: src/components/arc/response-feedback/demo.tsx, src/components/arc/response-feedback/response-feedback.module.css, src/components/arc/response-feedback/response-feedback.tsx
 
 ## `smart-form-fill` · Smart form fill (Pro, special)
 
@@ -862,7 +862,7 @@ When not to use:
 
 Keywords: special, ai, new, ai form fill, autofill, smart paste, extract contact, email signature parser, ai form, confidence, crm contact, structured extraction, paste to fill
 
-Files: demo.module.css, demo.tsx, smart-form-fill.module.css, smart-form-fill.tsx
+Files: src/components/arc/smart-form-fill/demo.module.css, src/components/arc/smart-form-fill/demo.tsx, src/components/arc/smart-form-fill/smart-form-fill.module.css, src/components/arc/smart-form-fill/smart-form-fill.tsx
 
 ## `social-proof-toast` · Social proof toast (Pro, special)
 
@@ -878,7 +878,7 @@ When not to use:
 
 Keywords: special, saas, new, social proof, fomo notification, recent purchase popup, sales notification, live activity toast, trial signup toast, conversion, landing page, verified badge, toast stack
 
-Files: demo.module.css, demo.tsx, social-proof-toast-marks.tsx, social-proof-toast.module.css, social-proof-toast.tsx
+Files: src/components/arc/social-proof-toast/demo.module.css, src/components/arc/social-proof-toast/demo.tsx, src/components/arc/social-proof-toast/social-proof-toast-marks.tsx, src/components/arc/social-proof-toast/social-proof-toast.module.css, src/components/arc/social-proof-toast/social-proof-toast.tsx
 
 ## `source-cards` · Source cards (Pro, special)
 
@@ -894,7 +894,7 @@ When not to use:
 
 Keywords: special, ai, new, sources, citations, ai search, perplexity, references, web search, favicon, cited answer, rag, search progress
 
-Files: demo.tsx, source-cards.module.css, source-cards.tsx
+Files: src/components/arc/source-cards/demo.tsx, src/components/arc/source-cards/source-cards.module.css, src/components/arc/source-cards/source-cards.tsx
 
 ## `speech-player` · Speech player (Pro, special)
 
@@ -910,7 +910,7 @@ When not to use:
 
 Keywords: special, ai, new, text to speech, tts, read aloud, speech player, karaoke, word highlight, audio player, voice picker, playback speed, ai reply, accessibility, elevenlabs, openai tts, claude, message actions
 
-Files: demo.tsx, speech-player.module.css, speech-player.tsx
+Files: src/components/arc/speech-player/demo.tsx, src/components/arc/speech-player/speech-player.module.css, src/components/arc/speech-player/speech-player.tsx
 
 ## `starter-prompts` · Starter prompts (Pro, special)
 
@@ -926,7 +926,7 @@ When not to use:
 
 Keywords: special, ai, new, starter prompts, prompt suggestions, empty state, ai chat, new chat, conversation starters, prompt cards, composer, shuffle, integrations
 
-Files: demo.tsx, starter-prompts.module.css, starter-prompts.tsx
+Files: src/components/arc/starter-prompts/demo.tsx, src/components/arc/starter-prompts/starter-prompts.module.css, src/components/arc/starter-prompts/starter-prompts.tsx
 
 ## `team-switcher` · Team switcher (Pro, special)
 
@@ -942,7 +942,7 @@ When not to use:
 
 Keywords: special, saas, new, team switcher, workspace switcher, organization switcher, org picker, account switcher, tenant switcher, project switcher, multi-tenant, linear, vercel, slack, dropdown
 
-Files: demo.tsx, team-switcher.module.css, team-switcher.tsx
+Files: src/components/arc/team-switcher/demo.tsx, src/components/arc/team-switcher/team-switcher.module.css, src/components/arc/team-switcher/team-switcher.tsx
 
 ## `ticket-router` · Ticket router (Pro, special)
 
@@ -958,7 +958,7 @@ When not to use:
 
 Keywords: special, ai, new, ticket routing, support triage, ai classifier, helpdesk, intent detection, sentiment, confidence, queue, assignment, intercom, zendesk, gmail, slack, customer support
 
-Files: demo.tsx, ticket-router.module.css, ticket-router.tsx
+Files: src/components/arc/ticket-router/demo.tsx, src/components/arc/ticket-router/ticket-router.module.css, src/components/arc/ticket-router/ticket-router.tsx
 
 ## `tldr-toggle` · TL;DR toggle (Pro, special)
 
@@ -974,7 +974,7 @@ When not to use:
 
 Keywords: special, ai, new, tldr, summarize, summary toggle, ai summary, key points, article summary, read mode, length slider, streaming summary, source links, citations
 
-Files: demo.tsx, tldr-toggle.module.css, tldr-toggle.tsx
+Files: src/components/arc/tldr-toggle/demo.tsx, src/components/arc/tldr-toggle/tldr-toggle.module.css, src/components/arc/tldr-toggle/tldr-toggle.tsx
 
 ## `tone-tuner` · Tone tuner (Pro, special)
 
@@ -990,7 +990,7 @@ When not to use:
 
 Keywords: special, saas, new, tone, brand voice, rewrite, ai writing, formality, tone slider, copy editing, email reply, diff highlight, support reply
 
-Files: demo.module.css, demo.tsx, tone-tuner.module.css, tone-tuner.tsx
+Files: src/components/arc/tone-tuner/demo.module.css, src/components/arc/tone-tuner/demo.tsx, src/components/arc/tone-tuner/tone-tuner.module.css, src/components/arc/tone-tuner/tone-tuner.tsx
 
 ## `tool-call` · Tool call (Pro, special)
 
@@ -1006,7 +1006,7 @@ When not to use:
 
 Keywords: special, motion, ai, new, tool call, tool use, function call, agent transcript, ai chat, used tools, approval, human in the loop, retry, tool result, mcp, agent, llm tools, inline approval
 
-Files: demo.tsx, tool-call.module.css, tool-call.tsx
+Files: src/components/arc/tool-call/demo.tsx, src/components/arc/tool-call/tool-call.module.css, src/components/arc/tool-call/tool-call.tsx
 
 ## `training-run` · Training run (Pro, special)
 
@@ -1022,7 +1022,7 @@ When not to use:
 
 Keywords: special, ai, new, fine-tuning, training run, loss curve, lora, epochs, checkpoint, eval, learning rate, eta, deploy model, ml job, qwen, hugging face
 
-Files: demo.module.css, demo.tsx, training-run.module.css, training-run.tsx
+Files: src/components/arc/training-run/demo.module.css, src/components/arc/training-run/demo.tsx, src/components/arc/training-run/training-run.module.css, src/components/arc/training-run/training-run.tsx
 
 ## `trial-banner` · Trial banner (Pro, special)
 
@@ -1038,7 +1038,7 @@ When not to use:
 
 Keywords: special, saas, new, trial banner, free trial, trial countdown, upgrade banner, billing nudge, trial expired, saas trial, paywall, add payment method, snooze banner
 
-Files: demo.tsx, trial-banner.module.css, trial-banner.tsx
+Files: src/components/arc/trial-banner/demo.tsx, src/components/arc/trial-banner/trial-banner.module.css, src/components/arc/trial-banner/trial-banner.tsx
 
 ## `upgrade-prompt` · Upgrade prompt (Pro, special)
 
@@ -1054,4 +1054,4 @@ When not to use:
 
 Keywords: special, saas, new, upgrade, paywall, upsell, limit reached, usage limit, credits, plan upgrade, pricing toggle, monthly yearly, conversion, nudge, out of credits, pro plan, billing
 
-Files: demo.tsx, upgrade-prompt.module.css, upgrade-prompt.tsx
+Files: src/components/arc/upgrade-prompt/demo.tsx, src/components/arc/upgrade-prompt/upgrade-prompt.module.css, src/components/arc/upgrade-prompt/upgrade-prompt.tsx

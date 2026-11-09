@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: menu, action, react context menu, right click menu, custom context menu, file actions menu, shift f10 menu, animated context menu
 
-Files: registry/components/context-menu/context-menu.tsx, registry/components/context-menu/context-menu.module.css
+Files: src/components/arc/context-menu/context-menu.module.css, src/components/arc/context-menu/context-menu.tsx
 
 ## `dropdown-menu` · Dropdown menu (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: menu, action, react dropdown menu, actions menu, menu button, radix dropdown menu, animated dropdown, more actions menu, kebab menu
 
-Files: registry/components/dropdown-menu/dropdown-menu.tsx, registry/components/dropdown-menu/dropdown-menu.module.css
+Files: src/components/arc/dropdown-menu/dropdown-menu.module.css, src/components/arc/dropdown-menu/dropdown-menu.tsx
 
 ## `user-menu` · User menu (Free, component)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: motion, product, react user menu, account menu, avatar dropdown, profile menu, user menu with status, sign out menu, presence indicator
 
-Files: registry/components/user-menu/user-menu.tsx, registry/components/user-menu/user-menu.module.css
+Files: src/components/arc/user-menu/user-menu.module.css, src/components/arc/user-menu/user-menu.tsx

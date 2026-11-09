@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react billing page, subscription management, billing settings, invoice list, usage meters, change plan ui, saas billing
 
-Files: billing-overview.module.css, billing-overview.tsx, demo.tsx
+Files: src/components/arc/billing-overview/billing-overview.module.css, src/components/arc/billing-overview/billing-overview.tsx, src/components/arc/billing-overview/demo.tsx
 
 ## `security-settings` · Security settings (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react security settings, two factor setup, 2fa setup flow, totp qr code setup, active sessions list, change password form, backup codes
 
-Files: demo.tsx, security-settings.module.css, security-settings.tsx
+Files: src/components/arc/security-settings/demo.tsx, src/components/arc/security-settings/security-settings.module.css, src/components/arc/security-settings/security-settings.tsx
 
 ## `settings-command` · Settings command (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: settings, preferences, search settings, command palette, jump to setting, unsaved changes, save bar, sticky nav, scroll spy, admin settings
 
-Files: demo.tsx, settings-command-data.ts, settings-command.module.css, settings-command.tsx
+Files: src/components/arc/settings-command/demo.tsx, src/components/arc/settings-command/settings-command-data.ts, src/components/arc/settings-command/settings-command.module.css, src/components/arc/settings-command/settings-command.tsx
 
 ## `settings-page` · Settings page (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react settings page, account settings, settings form, unsaved changes bar, profile settings ui, save bar
 
-Files: demo.tsx, settings-page.module.css, settings-page.tsx
+Files: src/components/arc/settings-page/demo.tsx, src/components/arc/settings-page/settings-page.module.css, src/components/arc/settings-page/settings-page.tsx
 
 ## `usage-billing` · Usage billing (Pro, block)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: usage billing, metered billing, spend dashboard, projected spend, usage limits, spend alerts, budget alerts, invoice history, upgrade plan, proration
 
-Files: demo.tsx, usage-billing.module.css, usage-billing.tsx
+Files: src/components/arc/usage-billing/demo.tsx, src/components/arc/usage-billing/usage-billing.module.css, src/components/arc/usage-billing/usage-billing.tsx

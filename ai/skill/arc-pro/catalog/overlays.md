@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: overlay, gesture, motion, react bottom sheet, mobile bottom sheet, draggable sheet, ios sheet, snap points sheet, detents, swipe up panel
 
-Files: registry/components/bottom-sheet/bottom-sheet.tsx, registry/components/bottom-sheet/bottom-sheet.module.css
+Files: src/components/arc/bottom-sheet/bottom-sheet.module.css, src/components/arc/bottom-sheet/bottom-sheet.tsx
 
 ## `confirm-popover` · Confirm popover (Pro, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: overlay, confirm, motion, new, confirmation, popover, delete, destructive, danger zone, are you sure, type to confirm, progress, inline confirm, morph, revoke, remove, alertdialog
 
-Files: confirm-popover.module.css, confirm-popover.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/confirm-popover/confirm-popover.module.css, src/components/arc/confirm-popover/confirm-popover.tsx, src/components/arc/confirm-popover/demo.module.css, src/components/arc/confirm-popover/demo.tsx
 
 ## `dialog` · Dialog (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: modal, overlay, react dialog, animated modal, radix dialog, confirm dialog, modal window, popup dialog
 
-Files: registry/components/dialog/dialog.tsx, registry/components/dialog/dialog.module.css
+Files: src/components/arc/dialog/dialog.module.css, src/components/arc/dialog/dialog.tsx
 
 ## `drawer` · Drawer (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: overlay, surface, react drawer, side panel, slide over panel, sheet component, draggable drawer, radix dialog drawer, filters drawer
 
-Files: registry/components/drawer/drawer.tsx, registry/components/drawer/drawer.module.css
+Files: src/components/arc/drawer/drawer.module.css, src/components/arc/drawer/drawer.tsx
 
 ## `hover-card` · Hover card (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: preview, people, popover, react hover card, profile preview, user hover card, mention preview, link preview popup, radix hover card
 
-Files: registry/components/hover-card/hover-card.tsx, registry/components/hover-card/hover-card.module.css
+Files: src/components/arc/hover-card/hover-card.module.css, src/components/arc/hover-card/hover-card.tsx
 
 ## `popover` · Popover (Free, component)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: overlay, menu, react popover, radix popover, floating panel, click popover, animated popover, anchored popup
 
-Files: registry/components/popover/popover.tsx, registry/components/popover/popover.module.css
+Files: src/components/arc/popover/popover.module.css, src/components/arc/popover/popover.tsx
 
 ## `share-access` · Share access (Pro, component)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: overlay, sharing, permissions, new, share, access, invite, email chips, roles, can edit, can view, link sharing, copy link, collaborators, google docs share, popover
 
-Files: demo.module.css, demo.tsx, share-access.module.css, share-access.tsx
+Files: src/components/arc/share-access/demo.module.css, src/components/arc/share-access/demo.tsx, src/components/arc/share-access/share-access.module.css, src/components/arc/share-access/share-access.tsx
 
 ## `tooltip` · Tooltip (Free, component)
 
@@ -126,4 +126,4 @@ When not to use:
 
 Keywords: hint, overlay, react tooltip, radix tooltip, icon button tooltip, hover label, animated tooltip, tooltip component
 
-Files: registry/components/tooltip/tooltip.tsx, registry/components/tooltip/tooltip.module.css
+Files: src/components/arc/tooltip/tooltip.module.css, src/components/arc/tooltip/tooltip.tsx

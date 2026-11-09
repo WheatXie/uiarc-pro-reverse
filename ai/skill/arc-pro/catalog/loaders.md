@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, motion, webgl, new, delete animation, archive transition, black hole, singularity, gravitational lensing, spiral, undo, remove items, list delete
 
-Files: black-hole.module.css, black-hole.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/black-hole/black-hole.module.css, src/components/arc/black-hole/black-hole.tsx, src/components/arc/black-hole/demo.module.css, src/components/arc/black-hole/demo.tsx
 
 ## `charge-session` · Charge session (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, motion, progress, energy, new, ev charging, charging, battery, charge session, electric vehicle, charge limit, charge curve, time to full, kwh, cost, fleet, charger, power
 
-Files: charge-session.module.css, charge-session.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/charge-session/charge-session.module.css, src/components/arc/charge-session/charge-session.tsx, src/components/arc/charge-session/demo.module.css, src/components/arc/charge-session/demo.tsx
 
 ## `morph-loader` · Morph loader (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, loading, new, loader, spinner, loading indicator, morphing loader, success check, error cross, loading to check, svg spinner
 
-Files: demo.module.css, demo.tsx, morph-loader.module.css, morph-loader.tsx
+Files: src/components/arc/morph-loader/demo.module.css, src/components/arc/morph-loader/demo.tsx, src/components/arc/morph-loader/morph-loader.module.css, src/components/arc/morph-loader/morph-loader.tsx
 
 ## `skeleton-morph` · Skeleton morph (Pro, special)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: special, loading, motion, new, skeleton loader, loading skeleton, skeleton morph, shared layout loading, content placeholder, shimmer loading, react skeleton animation
 
-Files: demo.tsx, skeleton-morph.module.css, skeleton-morph.tsx
+Files: src/components/arc/skeleton-morph/demo.tsx, src/components/arc/skeleton-morph/skeleton-morph.module.css, src/components/arc/skeleton-morph/skeleton-morph.tsx
 
 ## `stretch-refresh` · Stretch refresh (Pro, special)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: special, motion, react pull to refresh, pull to refresh, refresh feed, rubber band refresh, mobile pull down refresh, feed refresh animation
 
-Files: demo.tsx, stretch-refresh.module.css, stretch-refresh.tsx
+Files: src/components/arc/stretch-refresh/demo.tsx, src/components/arc/stretch-refresh/stretch-refresh.module.css, src/components/arc/stretch-refresh/stretch-refresh.tsx

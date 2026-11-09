@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: react cart drawer, shopping cart drawer, add to cart animation, slide out cart, ecommerce cart, free shipping progress bar, swipe to remove cart item, promo code field
 
-Files: cart-drawer.module.css, cart-drawer.tsx, demo.module.css, demo.tsx
+Files: src/components/arc/cart-drawer/cart-drawer.module.css, src/components/arc/cart-drawer/cart-drawer.tsx, src/components/arc/cart-drawer/demo.module.css, src/components/arc/cart-drawer/demo.tsx
 
 ## `checkout-summary` · Checkout summary (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: react checkout summary, order summary, promo code field, coupon input, pay button states, checkout total, stripe checkout summary
 
-Files: checkout-summary.module.css, checkout-summary.tsx, demo.tsx
+Files: src/components/arc/checkout-summary/checkout-summary.module.css, src/components/arc/checkout-summary/checkout-summary.tsx, src/components/arc/checkout-summary/demo.tsx
 
 ## `plan-comparison` · Plan comparison (Free, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react pricing comparison, plan comparison table, pricing table, monthly yearly toggle, feature matrix, saas pricing page
 
-Files: registry/blocks/plan-comparison/plan-comparison.tsx, registry/blocks/plan-comparison/plan-comparison.module.css
+Files: src/components/arc/blocks/plan-comparison/plan-comparison.module.css, src/components/arc/blocks/plan-comparison/plan-comparison.tsx
 
 ## `pricing-calculator` · Pricing calculator (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react pricing calculator, seat pricing slider, per seat pricing, pricing page, monthly yearly toggle, saas pricing plans, team size pricing, volume discount pricing
 
-Files: demo.tsx, pricing-calculator.module.css, pricing-calculator.tsx
+Files: src/components/arc/pricing-calculator/demo.tsx, src/components/arc/pricing-calculator/pricing-calculator.module.css, src/components/arc/pricing-calculator/pricing-calculator.tsx
 
 ## `usage-pricing` · Usage pricing (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: react pricing calculator, usage based pricing, seat pricing slider, pricing page component, plan recommender, monthly yearly toggle, saas pricing
 
-Files: demo.tsx, usage-pricing.module.css, usage-pricing.tsx
+Files: src/components/arc/usage-pricing/demo.tsx, src/components/arc/usage-pricing/usage-pricing.module.css, src/components/arc/usage-pricing/usage-pricing.tsx
 
 ## `webhook-tester` · Webhook tester (Pro, block)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: webhook tester, test webhook, send test event, webhook endpoint, signing secret, hmac signature, stripe webhook, json editor, request timeline, delivery log, retry webhook, developer settings, api, event payload
 
-Files: demo.tsx, webhook-tester.module.css, webhook-tester.tsx
+Files: src/components/arc/webhook-tester/demo.tsx, src/components/arc/webhook-tester/webhook-tester.module.css, src/components/arc/webhook-tester/webhook-tester.tsx

@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: inputs, new, elastic slider, rubber band slider, react slider, volume slider, slider with detents, stretchy slider, ios slider, animated range input
 
-Files: registry/components/elastic-slider/elastic-slider.tsx, registry/components/elastic-slider/elastic-slider.module.css
+Files: src/components/arc/elastic-slider/elastic-slider.module.css, src/components/arc/elastic-slider/elastic-slider.tsx
 
 ## `range-histogram-slider` · Range histogram slider (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: inputs, new, range slider with histogram, price range filter, airbnb price slider, dual thumb slider, histogram slider, react range slider, min max slider, distribution filter
 
-Files: registry/components/range-histogram-slider/range-histogram-slider.tsx, registry/components/range-histogram-slider/range-histogram-slider.module.css
+Files: src/components/arc/range-histogram-slider/range-histogram-slider.module.css, src/components/arc/range-histogram-slider/range-histogram-slider.tsx
 
 ## `ruler-slider` · Ruler slider (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: inputs, new, ruler slider, tape measure input, height picker, weight picker, scrollable ruler, momentum slider, measurement input, react ruler picker
 
-Files: registry/components/ruler-slider/ruler-slider.tsx, registry/components/ruler-slider/ruler-slider.module.css
+Files: src/components/arc/ruler-slider/ruler-slider.module.css, src/components/arc/ruler-slider/ruler-slider.tsx
 
 ## `slider` · Slider (Free, component)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: slider, range, input, react slider, range slider, dual thumb slider, price range slider, slider with marks, animated slider
 
-Files: registry/components/slider/slider.tsx, registry/components/slider/slider.module.css
+Files: src/components/arc/slider/slider.module.css, src/components/arc/slider/slider.tsx

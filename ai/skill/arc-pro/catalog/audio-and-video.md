@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, media, music, react music player, now playing bar, mini player, audio player component, spotify style player, waveform scrubber
 
-Files: demo.module.css, demo.tsx, now-playing.module.css, now-playing.tsx
+Files: src/components/arc/now-playing/demo.module.css, src/components/arc/now-playing/demo.tsx, src/components/arc/now-playing/now-playing.module.css, src/components/arc/now-playing/now-playing.tsx
 
 ## `voice-orb` · Voice orb (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, new, react voice orb, voice assistant ui, ai voice mode, audio visualizer orb, microphone level, speaking animation, voice chat controls, live transcript
 
-Files: demo.tsx, voice-orb.module.css, voice-orb.tsx
+Files: src/components/arc/voice-orb/demo.tsx, src/components/arc/voice-orb/voice-orb.module.css, src/components/arc/voice-orb/voice-orb.tsx
 
 ## `voice-recorder` · Voice recorder (Pro, special)
 
@@ -46,4 +46,4 @@ When not to use:
 
 Keywords: special, motion, react voice recorder, voice message, audio recorder ui, whatsapp voice note, record audio button, voice memo
 
-Files: demo.tsx, voice-recorder.module.css, voice-recorder.tsx
+Files: src/components/arc/voice-recorder/demo.tsx, src/components/arc/voice-recorder/voice-recorder.module.css, src/components/arc/voice-recorder/voice-recorder.tsx

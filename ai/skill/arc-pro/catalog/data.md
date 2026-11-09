@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: special, activity, rings, react activity rings, apple watch rings, fitness rings, goal progress rings, concentric progress, habit tracker rings
 
-Files: activity-rings.module.css, activity-rings.tsx, demo.tsx
+Files: src/components/arc/activity-rings/activity-rings.module.css, src/components/arc/activity-rings/activity-rings.tsx, src/components/arc/activity-rings/demo.tsx
 
 ## `booking-pill` · Booking pill (Pro, special)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: special, motion, react booking widget, table reservation, restaurant booking ui, date and time picker flow, reservation pill, booking flow
 
-Files: booking-pill.module.css, booking-pill.tsx, demo.tsx
+Files: src/components/arc/booking-pill/booking-pill.module.css, src/components/arc/booking-pill/booking-pill.tsx, src/components/arc/booking-pill/demo.tsx
 
 ## `date-reel` · Date reel (Pro, special)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: special, input, date, gesture, new, date picker, time picker, wheel picker, reel, drum picker, ios picker, scroll picker, momentum, snap, schedule send, reminder, birthday, 3d
 
-Files: date-reel.module.css, date-reel.tsx, demo.tsx
+Files: src/components/arc/date-reel/date-reel.module.css, src/components/arc/date-reel/date-reel.tsx, src/components/arc/date-reel/demo.tsx
 
 ## `time-dial` · Time dial (Pro, special)
 
@@ -62,4 +62,4 @@ When not to use:
 
 Keywords: special, motion, react time zone picker, world clock dial, meeting time planner, timezone converter ui, rotary time picker, time zone dial
 
-Files: demo.tsx, time-dial.module.css, time-dial.tsx
+Files: src/components/arc/time-dial/demo.tsx, src/components/arc/time-dial/time-dial.module.css, src/components/arc/time-dial/time-dial.tsx

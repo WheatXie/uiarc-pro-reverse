@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: status, message, react alert, alert banner, inline notification, warning message, animated alert, dismissible alert, callout
 
-Files: registry/components/alert/alert.tsx, registry/components/alert/alert.module.css
+Files: src/components/arc/alert/alert.module.css, src/components/arc/alert/alert.tsx
 
 ## `announcement-bar` · Announcement bar (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: feedback, new, react announcement bar, top banner, promo banner, site notice bar, dismissible banner, rotating announcements, sale countdown banner
 
-Files: registry/components/announcement-bar/announcement-bar.tsx, registry/components/announcement-bar/announcement-bar.module.css
+Files: src/components/arc/announcement-bar/announcement-bar.module.css, src/components/arc/announcement-bar/announcement-bar.tsx
 
 ## `cookie-consent` · Cookie consent (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: feedback, new, react cookie consent, cookie banner, gdpr consent, cookie preferences, consent manager, privacy banner, tracking consent
 
-Files: registry/components/cookie-consent/cookie-consent.tsx, registry/components/cookie-consent/cookie-consent.module.css
+Files: src/components/arc/cookie-consent/cookie-consent.module.css, src/components/arc/cookie-consent/cookie-consent.tsx
 
 ## `toast` · Toast (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: status, message, react toast, toast notification, success toast, swipe to dismiss toast, animated toast, snackbar
 
-Files: registry/components/toast/toast.tsx, registry/components/toast/toast.module.css
+Files: src/components/arc/toast/toast.module.css, src/components/arc/toast/toast.tsx
 
 ## `toast-stack` · Toast stack (Free, component)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: toast, notification, sonner, react toast stack, toast notifications, sonner alternative, stacked toasts, notification queue, promise toast, undo toast
 
-Files: registry/components/toast-stack/toast-stack.tsx, registry/components/toast-stack/toast-stack.module.css
+Files: src/components/arc/toast-stack/toast-stack.module.css, src/components/arc/toast-stack/toast-stack.tsx
 
 ## `undo-toast` · Undo toast (Pro, component)
 
@@ -94,4 +94,4 @@ When not to use:
 
 Keywords: feedback, toast, undo, new, snackbar, archive, delete, trash, inbox, list, remove, restore, countdown, cmd z, ctrl z, optimistic, batch, gmail undo
 
-Files: demo.tsx, undo-toast.module.css, undo-toast.tsx
+Files: src/components/arc/undo-toast/demo.tsx, src/components/arc/undo-toast/undo-toast.module.css, src/components/arc/undo-toast/undo-toast.tsx

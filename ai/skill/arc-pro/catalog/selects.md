@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: chips, filter, toggle, react chip group, filter chips, toggle chips, tag filter, selectable chips, chip select
 
-Files: registry/components/chip-group/chip-group.tsx, registry/components/chip-group/chip-group.module.css
+Files: src/components/arc/chip-group/chip-group.module.css, src/components/arc/chip-group/chip-group.tsx
 
 ## `combobox` · Combobox (Free, component)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: field, search, react combobox, autocomplete, searchable select, typeahead dropdown, filterable select, autocomplete input
 
-Files: registry/components/combobox/combobox.tsx, registry/components/combobox/combobox.module.css
+Files: src/components/arc/combobox/combobox.module.css, src/components/arc/combobox/combobox.tsx
 
 ## `morph-select` · Morph select (Free, component)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: inputs, new, react select, animated select, morphing dropdown, listbox, select with search, grouped select, custom select component, type-ahead select
 
-Files: registry/components/morph-select/morph-select.tsx, registry/components/morph-select/morph-select.module.css
+Files: src/components/arc/morph-select/morph-select.module.css, src/components/arc/morph-select/morph-select.tsx
 
 ## `multi-select` · Multi-select (Free, component)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: field, choice, react multi select, multiselect dropdown, select multiple options, multi select chips, tag select, checkbox dropdown
 
-Files: registry/components/multi-select/multi-select.tsx, registry/components/multi-select/multi-select.module.css
+Files: src/components/arc/multi-select/multi-select.module.css, src/components/arc/multi-select/multi-select.tsx
 
 ## `select` · Select (Free, component)
 
@@ -78,4 +78,4 @@ When not to use:
 
 Keywords: field, form, react select, dropdown select, radix select, animated select, select menu, form select field
 
-Files: registry/components/select/select.tsx, registry/components/select/select.module.css
+Files: src/components/arc/select/select.module.css, src/components/arc/select/select.tsx

@@ -14,7 +14,7 @@ When not to use:
 
 Keywords: checkout, subscription, billing, payment form, order summary, coupon, receipt, seats, saas upgrade
 
-Files: checkout-live.module.css, checkout-live.tsx, demo.tsx
+Files: src/components/arc/checkout-live/checkout-live.module.css, src/components/arc/checkout-live/checkout-live.tsx, src/components/arc/checkout-live/demo.tsx
 
 ## `credit-topup` · Credit top-up (Pro, block)
 
@@ -30,7 +30,7 @@ When not to use:
 
 Keywords: credits, top up, buy credits, ai credits, prepaid, token balance, auto recharge, auto top-up, usage based billing, wallet, balance, odometer, rolling numbers, billing
 
-Files: credit-topup.module.css, credit-topup.tsx, demo.tsx
+Files: src/components/arc/credit-topup/credit-topup.module.css, src/components/arc/credit-topup/credit-topup.tsx, src/components/arc/credit-topup/demo.tsx
 
 ## `delivery-tracker` · Delivery tracker (Pro, block)
 
@@ -46,7 +46,7 @@ When not to use:
 
 Keywords: react delivery tracker, order tracking page, shipment status, courier tracking ui, package tracker, eta tracker
 
-Files: delivery-tracker.module.css, delivery-tracker.tsx, demo.tsx
+Files: src/components/arc/delivery-tracker/delivery-tracker.module.css, src/components/arc/delivery-tracker/delivery-tracker.tsx, src/components/arc/delivery-tracker/demo.tsx
 
 ## `invoice-studio` · Invoice studio (Pro, block)
 
@@ -62,7 +62,7 @@ When not to use:
 
 Keywords: react invoice editor, invoice generator ui, line items form, quote builder, invoice form with totals, billing invoice component
 
-Files: demo.tsx, invoice-studio.module.css, invoice-studio.tsx
+Files: src/components/arc/invoice-studio/demo.tsx, src/components/arc/invoice-studio/invoice-studio.module.css, src/components/arc/invoice-studio/invoice-studio.tsx
 
 ## `product-detail` · Product detail (Pro, block)
 
@@ -78,7 +78,7 @@ When not to use:
 
 Keywords: product detail, product page, pdp, ecommerce, gallery, variants, add to cart, reviews summary, shop
 
-Files: demo.tsx, product-detail.module.css, product-detail.tsx
+Files: src/components/arc/product-detail/demo.tsx, src/components/arc/product-detail/product-detail.module.css, src/components/arc/product-detail/product-detail.tsx
 
 ## `product-listing` · Product listing (Pro, block)
 
@@ -94,7 +94,7 @@ When not to use:
 
 Keywords: product listing, product grid, collection page, category page, ecommerce filters, price range, quick add, shop
 
-Files: demo.tsx, product-listing.module.css, product-listing.tsx
+Files: src/components/arc/product-listing/demo.tsx, src/components/arc/product-listing/product-listing.module.css, src/components/arc/product-listing/product-listing.tsx
 
 ## `seat-manager` · Seat manager (Pro, block)
 
@@ -110,7 +110,7 @@ When not to use:
 
 Keywords: seat management, team seats, per seat billing, seat stepper, proration, prorated charge, pending invites, resend invite, revoke invite, seat limit, team billing, subscription quantity, stripe seats
 
-Files: demo.tsx, seat-manager.module.css, seat-manager.tsx
+Files: src/components/arc/seat-manager/demo.tsx, src/components/arc/seat-manager/seat-manager.module.css, src/components/arc/seat-manager/seat-manager.tsx
 
 ## `wallet-card` · Wallet card (Pro, block)
 
@@ -126,4 +126,4 @@ When not to use:
 
 Keywords: react wallet card, crypto wallet ui, balance card, fintech dashboard card, send money ui, account balance chart, banking app component
 
-Files: demo.module.css, demo.tsx, wallet-card.module.css, wallet-card.tsx
+Files: src/components/arc/wallet-card/demo.module.css, src/components/arc/wallet-card/demo.tsx, src/components/arc/wallet-card/wallet-card.module.css, src/components/arc/wallet-card/wallet-card.tsx
