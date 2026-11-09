@@ -1,0 +1,55 @@
+# Arc rules for coding agents
+
+Keep this file where your agent reads project rules: paste it into `AGENTS.md` or `CLAUDE.md`, or save
+it as `.cursor/rules/arc.mdc` with this header:
+
+```
+---
+description: Arc UI rules for React components, pages, and CSS modules
+globs: ["**/*.tsx", "**/*.module.css"]
+alwaysApply: false
+---
+```
+
+The full skill is this folder: `SKILL.md`, `components.md` (all 380 ids) and the reference files.
+The local MCP server at `ai/mcp/server.mjs` answers `search_components`, `get_component`,
+`get_install_command` and `get_skill` for every item, Pro included.
+
+## Always
+
+1. Use an existing Arc component or block before writing UI. Find it with `search_components` or
+   `components.md`, then read `get_component` (or `public/docs/<id>.md`) before using it, and follow
+   its "When not to use".
+2. Use only documented props. Compose and wrap Arc items; never fork or restyle their internals.
+3. Pro items are already source in `src/components/arc/<id>/`. Copy them; do not rebuild them from
+   screenshots, and do not imitate a look-alike component.
+4. One page container per app. Blocks fill their column with no second gutter or max width.
+5. One `h1`, one primary button per surface, one memorable detail per view.
+6. Semantic tokens only: `--background`, `--surface`, `--surface-muted`, `--foreground`,
+   `--text-secondary`, `--text-muted`, `--border`, `--accent`, `--success`, `--warning`, `--danger`,
+   `--radius-*`, `--text-*`, `--space-*`.
+7. The accent marks active, selected, progress and emphasized data. Status colours only for real
+   status, with a label. Third-party logos in their real colours.
+8. Type: Geist for headings 30px and up, Inter for the rest, weights 400 and 500 only, sizes from the
+   scale, `tabular-nums` for changing numbers.
+9. Nested corners are concentric: inner radius = outer radius - padding.
+10. Motion from `@/components/arc/lib/motion-tokens`: `spring.smooth` for panels and anything that
+    reports state, `spring.snappy` for presses, `spring.morph` for shared highlights. Animate
+    transform and opacity, one continuous movement, reduced motion branch for every animation.
+11. First render is server-safe (no `window`, `localStorage`, `Date.now()` or `Math.random()` output),
+    and animated elements keep stable keys.
+12. Every data region has loading (`skeleton`), empty (`empty-state`), error (inline `alert`) and
+    in-place success states.
+13. Check 390, 768, 1024 and 1440px: no sideways scroll, wide tables scroll inside their card, touch
+    targets at least 44px.
+
+## Never
+
+- Eyebrow labels or overlines above headings; all caps or uppercase transforms.
+- Em dashes in copy. Use a period, comma, colon or parentheses.
+- Hand-made focus rings, outlines or halos, or any ring on pointer focus.
+- Raw hex, Tailwind colour classes, weights above 500, or arbitrary font sizes.
+- Decorative gradients, glows or coloured shadows in components; icons in rounded tiles; nested
+  decorative cards.
+- A toast as the only confirmation of a foreground action.
+- Motion that loops without meaning or replays on every scroll.

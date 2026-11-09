@@ -10,3 +10,6 @@ scripts/_probe*
 
 # generated capture corpus (re-run scripts/capture.mjs)
 captures/
+
+# mcp server deps (pnpm install in ai/mcp)
+ai/mcp/node_modules/

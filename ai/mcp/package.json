@@ -1,0 +1,14 @@
+{
+  "name": "@uiarc-pro/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP server for the Arc Pro reconstruction: search, read and copy all 380 Arc items (233 Pro + 147 free) with source.",
+  "bin": {
+    "arc-pro-mcp": "./server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
+  }
+}

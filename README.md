@@ -47,6 +47,34 @@ Each item lives at `/components/<slug>` (components and special components) or
 Nothing here fetches a registry at runtime: the code tab reads local files through
 `import.meta.glob`, so the whole catalogue works offline.
 
+## Use it from an AI agent
+
+The site offers two AI paths: a remote MCP server that needs an Arc account and only returns Pro
+source on a paid plan, and a skill whose catalogue lists free items. Both are replaced here with local
+equivalents that know **all 380 ids** — 233 Pro plus 147 free — and can hand back the source.
+
+```bash
+cd ai/mcp && pnpm install && cd ../..    # once: @modelcontextprotocol/sdk + zod
+node ai/mcp/server.mjs                   # stdio MCP server, no account
+cp -R ai/skill/arc-pro ~/.claude/skills/arc-pro   # optional: the skill folder
+```
+
+| MCP tool | Answers |
+| --- | --- |
+| `search_components` | intent → ranked ids with the reason to use each and the reason not to |
+| `list_components` | browse 55 groups by kind, tier or group |
+| `get_component` | docs (when to use, usage, API reference, keyboard, a11y, motion, responsive) + source files |
+| `get_install_command` | shadcn command for free items, copy recipe for Pro items |
+| `get_skill` | any skill file, including per-group catalogues |
+
+```bash
+claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"
+```
+
+`node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from `src/data/catalog.json`,
+`public/docs/*.md`, the ported source and the vendored free registry. Details and other client configs:
+[ai/README.md](ai/README.md).
+
 ## How it was reconstructed
 
 The gate protects `/api/component-source`; it does not protect the component itself, because the
