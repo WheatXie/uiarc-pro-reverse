@@ -9,12 +9,13 @@
  *   node ai/install.mjs --vscode           # .vscode/mcp.json
  *   node ai/install.mjs --codex            # ~/.codex/config.toml snippet appended once
  *   node ai/install.mjs --agents           # ~/.agents/skills/arc-pro
+ *   node ai/install.mjs --dsh              # .dsh/skills/arc-pro + ~/.dsh cordis patch (DeepSeek Harness)
  *   node ai/install.mjs --all              # every client above
  *   node ai/install.mjs --print            # print the JSON blocks and exit
  *
  * Existing config files are merged, never replaced; every write is printed with the path it touched.
  */
-import { readFile, writeFile, mkdir, cp, symlink, access, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdir, cp, symlink, access, rm, appendFile } from "node:fs/promises";
 import { constants, existsSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join, relative, resolve } from "node:path";
@@ -90,7 +91,8 @@ if (has("--print")) {
 
 const wantsAll = has("--all");
 const anything =
-  wantsAll || has("--claude", "--claude-user", "--cursor", "--vscode", "--codex", "--agents");
+  wantsAll ||
+  has("--claude", "--claude-user", "--cursor", "--vscode", "--codex", "--agents", "--dsh");
 
 say(`Arc Pro · skill ${SKILL}`);
 say(`          MCP   ${SERVER}\n`);
@@ -103,6 +105,7 @@ if (!anything) {
   say("  --vscode         .vscode/mcp.json");
   say("  --codex          appends [mcp_servers.arc-pro] to ~/.codex/config.toml");
   say("  --agents         ~/.agents/skills/arc-pro copy");
+  say("  --dsh            .dsh/skills/arc-pro + an mcp-arc-pro entry in the DeepSeek Harness profile patch");
   say("  --all            all of the above");
   say("\nRun with --print to see the JSON, or read ai/README.md for the manual snippets.");
   process.exit(0);
@@ -152,6 +155,32 @@ if (wantsAll || has("--codex")) {
       `${existing}${existing && !existing.endsWith("\n") ? "\n" : ""}\n[mcp_servers.arc-pro]\ncommand = "node"\nargs = ["${SERVER}"]\n`,
     );
     say(`  appended [mcp_servers.arc-pro] → ${config}`);
+  }
+}
+
+if (wantsAll || has("--dsh")) {
+  say("DeepSeek Harness");
+  await linkSkill(join(ROOT, ".dsh/skills/arc-pro"));
+  const profileDir = process.env.DSH_PROFILE_DIR ?? join(homedir(), ".dsh/profiles/desktop");
+  const patch = join(profileDir, "cordis.patch.yml");
+  const entry = [
+    "- id: mcp-arc-pro",
+    "  name: '@deepseek-ai/dsh-mcp-client'",
+    "  config:",
+    "    serverName: arc-pro",
+    "    transport: stdio",
+    `    command: ${process.execPath}`,
+    "    args:",
+    `      - ${SERVER}`,
+    "",
+  ].join("\n");
+  const existing = existsSync(patch) ? await readFile(patch, "utf8") : "";
+  if (existing.includes("mcp-arc-pro")) {
+    say(`  ${patch} already has mcp-arc-pro — left as is`);
+  } else {
+    await mkdir(dirname(patch), { recursive: true });
+    await appendFile(patch, `${existing && !existing.endsWith("\n") ? "\n" : ""}${entry}`);
+    say(`  appended mcp-arc-pro → ${patch}`);
   }
 }
 
