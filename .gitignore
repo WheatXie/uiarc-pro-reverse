@@ -2,3 +2,11 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# port scratch
+.port-*
+.probe-*
+scripts/_probe*
+
+# generated capture corpus (re-run scripts/capture.mjs)
+captures/

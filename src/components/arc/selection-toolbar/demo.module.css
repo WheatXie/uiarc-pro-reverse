@@ -1,0 +1,21 @@
+/* The frame's preview host: the reference renders every item of this group inside a centred stack with a
+   status line, so the demo ships that chrome. Widths are the measured frame result — the group sheet's
+   `preview{width:min(100%,620px)}` is overridden on the live page by `.frame-page_content > *{width:100%;
+   max-width:100%}` (1152px at 1280), and its `.surface > *{max-width:100%}` does the same to the demo's
+   420px cap, so both resolve to the full column here. */
+.preview { display: grid; gap: 16px; width: 100%; }
+.surface { display: grid; gap: 8px; justify-items: center; padding: 0; background: transparent; }
+.surface > * { max-width: 100%; }
+.status { min-height: 18px; color: var(--text-muted, #64748b); font-size: 12px; text-align: center; }
+.demo { display: grid; justify-items: center; gap: var(--space-4); width: 100%; max-width: 100%; margin-inline: auto; }
+.list { display: grid; width: 100%; margin: 0; padding: 0; list-style: none; border: 1px solid var(--border); border-radius: var(--radius-panel); background: var(--surface); }
+.row { display: flex; align-items: center; gap: var(--space-3); min-width: 0; padding: var(--space-3) var(--space-4); }
+.row + .row { border-top: 1px solid var(--border-subtle); }
+.copy { display: grid; min-width: 0; }
+.meta, .name { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.name { color: var(--foreground); font-size: var(--text-sm); font-weight: 500; }
+.meta { color: var(--text-muted); font-size: var(--text-xs); }
+/* Holds the bar's height so the list does not jump when the selection empties. */
+.slot { display: flex; justify-content: center; width: 100%; min-height: 46px; }
+@media (max-width: 520px) { .slot { min-height: 93px; } }
+@media (prefers-reduced-motion: reduce) { .preview *, .preview ::after, .preview ::before { scroll-behavior: auto !important; } }

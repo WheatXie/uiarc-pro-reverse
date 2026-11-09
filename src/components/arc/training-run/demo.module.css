@@ -1,0 +1,8 @@
+.demo {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-6);
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+}

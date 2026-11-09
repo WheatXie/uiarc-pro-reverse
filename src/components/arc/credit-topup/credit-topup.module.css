@@ -1,0 +1,469 @@
+.card {
+  container-type: inline-size;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 30rem;
+  margin-inline: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.foot,
+.head,
+.section {
+  padding: 16px 24px;
+}
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 24px;
+}
+.foot,
+.section {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+}
+.foot {
+  padding-bottom: 12px;
+}
+.meta,
+.muted {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+.meta {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.body {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.balance {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.health {
+  display: inline-grid;
+  min-width: 6.5rem;
+}
+.healthInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+.healthInner svg {
+  width: 14px;
+  height: 14px;
+  flex: none;
+}
+.amount {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+.big {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.unit {
+  color: var(--text-muted);
+}
+.metaSlot {
+  display: grid;
+  min-width: 0;
+}
+.metaSlot > * {
+  grid-area: 1/1;
+}
+.warn {
+  color: var(--warning);
+}
+.good {
+  color: var(--success);
+}
+.bad {
+  color: var(--danger);
+}
+.chart {
+  display: grid;
+  flex: none;
+  justify-items: end;
+  gap: 8px;
+}
+.bars {
+  display: flex;
+  align-items: flex-end;
+  height: 44px;
+}
+.barHit {
+  display: flex;
+  align-items: flex-end;
+  width: 10px;
+  height: 100%;
+  justify-content: center;
+  cursor: default;
+}
+.bar {
+  width: 6px;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--text-muted) 38%, transparent);
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    opacity var(--duration-fast) var(--ease-standard);
+}
+.barHit[data-today] .bar {
+  background: var(--accent);
+}
+.barHit[data-active] .bar {
+  background: var(--foreground);
+}
+.barHit[data-dim] .bar {
+  opacity: 0.55;
+}
+.caption {
+  display: grid;
+  justify-items: end;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+.caption > * {
+  grid-area: 1/1;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.packs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.pack {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-control) - 4px);
+  background: var(--surface);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-instant) var(--ease-standard);
+}
+@media (hover: hover) and (pointer: fine) {
+  .pack:not([data-selected]):hover {
+    border-color: color-mix(in oklab, var(--text-muted) 45%, var(--border));
+    background: var(--surface-muted);
+  }
+}
+.pack:active {
+  transform: scale(0.98);
+}
+.pack[data-selected] {
+  border-color: transparent;
+}
+.ring {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: color-mix(in oklab, var(--accent) 6%, transparent);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+  pointer-events: none;
+}
+.packAmount {
+  position: relative;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.packFoot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  min-height: 20px;
+}
+.packFoot .muted {
+  font-variant-numeric: tabular-nums;
+}
+.bonus {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in oklab, var(--success) 13%, transparent);
+  color: color-mix(in oklab, var(--success) 72%, var(--foreground));
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.slider {
+  width: 100%;
+}
+.buySection {
+  padding-bottom: 8px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  min-height: 36px;
+}
+.row[data-off] > .muted {
+  opacity: 0.6;
+}
+.rowText {
+  display: grid;
+  min-width: 0;
+}
+.thresholds {
+  display: flex;
+  flex: none;
+  padding: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-muted);
+}
+.chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    opacity var(--duration-fast) var(--ease-standard);
+}
+.chip[data-selected] {
+  color: var(--foreground);
+}
+.chip:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+@media (hover: hover) and (pointer: fine) {
+  .chip:not(:disabled):not([data-selected]):hover {
+    color: var(--foreground);
+  }
+}
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--surface-raised);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.chipLabel {
+  position: relative;
+}
+.methodSlot {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+.methodSlot > * {
+  grid-area: 1/1;
+}
+.method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.chipMark {
+  flex: none;
+  display: block;
+}
+.change {
+  flex: none;
+  margin-inline-end: calc(var(--space-3) * -1);
+}
+.total {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.price {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.buy {
+  width: 100%;
+}
+.status {
+  display: grid;
+  justify-items: center;
+  min-height: 20px;
+}
+.status > * {
+  grid-area: 1/1;
+}
+.statusInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+.statusInner[data-tone="error"] {
+  color: var(--text-secondary);
+}
+.statusIcon {
+  display: inline-flex;
+  flex: none;
+}
+.statusIcon svg {
+  width: 14px;
+  height: 14px;
+}
+.statusText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rolling {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.slot {
+  display: inline-block;
+  white-space: pre;
+  clip-path: inset(0 -1px);
+  vertical-align: baseline;
+}
+.digit {
+  position: relative;
+  display: inline-block;
+  clip-path: inset(0);
+  vertical-align: baseline;
+}
+.digitGhost {
+  visibility: hidden;
+}
+.digitStrip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+.digitCell {
+  display: block;
+  height: 1.2em;
+  line-height: 1.2;
+  text-align: center;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+@container (max-width: 26rem) {
+  .foot,
+  .head,
+  .section {
+    padding-inline: 16px;
+  }
+  .head {
+    padding-top: 16px;
+  }
+  .pack {
+    padding: 12px 8px;
+  }
+  .packFoot {
+    gap: 2px;
+  }
+  .bonus {
+    padding: 0 4px;
+  }
+}
+@container (max-width: 28rem) {
+  .head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .chart {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    justify-items: stretch;
+    gap: 16px;
+  }
+  .bars {
+    justify-content: space-between;
+    height: 32px;
+  }
+  .caption {
+    justify-items: end;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bar,
+  .chip,
+  .pack {
+    transition: none;
+  }
+}

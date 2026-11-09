@@ -1,0 +1,678 @@
+/* Ported from uiarc.dev — block agent-orchestrator. Class names are de-hashed, declarations are
+   byte-identical to the shipped sheet. Only the module prefix and hashes are gone. */
+.root {
+  --ao-pad: 20px;
+  --ao-lead: 20px;
+  --ao-gap: 12px;
+  --ao-indent: calc(var(--ao-lead) + var(--ao-gap));
+  --ao-lane-radius: 16px;
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 20px;
+  letter-spacing: var(--tracking-body);
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.claude {
+  color: #d97757;
+}
+.header {
+  display: grid;
+  gap: 14px;
+  padding: 18px var(--ao-pad) 16px;
+  border-bottom: 1px solid var(--border);
+}
+.goal {
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: var(--tracking-body);
+  text-wrap: pretty;
+}
+.toolbar {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.limit {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+}
+.limitLabel {
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.run {
+  flex: none;
+}
+.flow {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  padding: 20px var(--ao-pad) 22px;
+}
+.wires {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
+}
+.branch,
+.trunk {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+.branch {
+  stroke-dasharray: 2 3;
+  transition: stroke var(--duration-standard) var(--ease-standard);
+}
+.branch[data-on] {
+  stroke: color-mix(in oklab, var(--wire) 72%, var(--border-strong));
+  stroke-dasharray: none;
+}
+.port {
+  fill: var(--surface);
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+  transition:
+    fill var(--duration-fast) var(--ease-standard),
+    stroke var(--duration-fast) var(--ease-standard);
+}
+.port[data-on] {
+  fill: var(--wire);
+  stroke: var(--wire);
+}
+.pulse {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.node {
+  display: grid;
+  min-width: 0;
+  gap: 6px;
+}
+.nodeRow {
+  display: grid;
+  grid-template-columns: var(--ao-lead) minmax(0, 1fr) auto;
+  column-gap: var(--ao-gap);
+  align-items: center;
+  min-height: 20px;
+}
+.nodeMark {
+  display: grid;
+  width: var(--ao-lead);
+  height: 20px;
+  place-items: center;
+}
+.nodeMark svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.nodeName {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nodeRole {
+  margin-left: 8px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.nodeStatus {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  line-height: 18px;
+  white-space: nowrap;
+}
+.statusInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.nodeTime {
+  min-width: 4ch;
+  color: var(--text-muted);
+  text-align: right;
+}
+.nodeBody {
+  min-width: 0;
+  padding-left: var(--ao-indent);
+}
+.hint {
+  margin: 0;
+  overflow: hidden;
+  color: var(--text-muted);
+}
+.hintInner {
+  display: block;
+}
+.swapBox {
+  position: relative;
+  display: grid;
+  min-width: 0;
+}
+.plan {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.planItem {
+  overflow: hidden;
+}
+.planInner {
+  display: grid;
+  grid-template-columns: 6px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: start;
+  padding: 2px 0;
+  color: var(--text-secondary);
+}
+.planDot {
+  width: 6px;
+  height: 6px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--lane);
+}
+.planText {
+  min-width: 0;
+  text-wrap: pretty;
+}
+.lanes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  padding-left: var(--ao-indent);
+}
+.lane {
+  position: relative;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--ao-lane-radius);
+  background: var(--surface);
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+.lane[data-phase="error"] {
+  border-color: color-mix(in oklab, var(--danger) 45%, var(--border));
+}
+.laneButton {
+  --focus-outline-offset: -2px;
+  display: grid;
+  width: 100%;
+  gap: 3px;
+  padding: 11px 14px 10px;
+  border: 0;
+  border-radius: calc(var(--ao-lane-radius) - 1px);
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+.laneButton[aria-expanded="true"] {
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+@media (hover: hover) and (pointer: fine) {
+  .laneButton:hover {
+    background: color-mix(in oklab, var(--surface-muted) 60%, transparent);
+  }
+}
+.laneHead {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.laneMark {
+  display: grid;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+}
+.laneMark svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.laneModel {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.laneTime {
+  flex: none;
+  color: var(--text-muted);
+  transition: opacity var(--duration-fast) var(--ease-standard);
+}
+.laneTime[data-hidden] {
+  opacity: 0;
+}
+.laneTitle {
+  display: block;
+  min-width: 0;
+  margin-top: 1px;
+  color: var(--foreground);
+  font-weight: 500;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+.laneTitle[data-muted] {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.laneTitleText {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lane[data-phase="planned"] .laneTitle,
+.lane[data-phase="queued"] .laneTitle {
+  color: var(--text-secondary);
+}
+.activity {
+  display: flex;
+  min-width: 0;
+  height: 18px;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.activityIcon {
+  display: grid;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+  color: var(--text-secondary);
+}
+.activityIcon svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  overflow: visible;
+}
+.activityLabel {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.shimmer {
+  display: block;
+  min-width: 0;
+}
+.shimmer > span,
+.shimmer > span > span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.output {
+  display: block;
+  min-width: 0;
+  height: 18px;
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.output[data-tone="muted"] {
+  color: var(--text-muted);
+}
+.output[data-tone="danger"] {
+  color: color-mix(in oklab, var(--danger) 82%, var(--foreground));
+}
+.clip {
+  text-overflow: ellipsis;
+}
+.clip,
+.ticker {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker[data-shifted] {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20px);
+  mask-image: linear-gradient(90deg, transparent, #000 20px);
+}
+.tickerText {
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 0.14s var(--ease-enter);
+}
+.tickerText[data-still] {
+  transition: none;
+}
+.ticker[data-settled] .tickerText {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.laneFoot {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 1px;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.laneMetrics {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: opacity var(--duration-fast) var(--ease-standard);
+}
+.laneMetrics[data-hidden] {
+  opacity: 0;
+}
+.dot {
+  width: 2px;
+  height: 2px;
+  flex: none;
+  border-radius: 50%;
+  background: currentColor;
+}
+.chevron {
+  flex: none;
+  color: var(--text-muted);
+  transition: transform var(--duration-standard) var(--ease-standard);
+}
+.chevron[data-open] {
+  transform: rotate(180deg);
+}
+.collapse {
+  overflow: hidden;
+}
+.transcript {
+  margin: 0 14px;
+  padding: 10px 0 12px;
+  border-top: 1px solid var(--border);
+}
+.log {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logRow {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  column-gap: 8px;
+  align-items: start;
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.logIcon {
+  display: grid;
+  height: 18px;
+  place-items: center;
+  color: var(--text-secondary);
+}
+.logIcon svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.logMain {
+  display: grid;
+  min-width: 0;
+}
+.logTitle {
+  overflow: hidden;
+  color: var(--foreground);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.logTarget {
+  color: var(--text-muted);
+}
+.logDetail {
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+.logRow[data-tone="danger"] .logDetail {
+  color: color-mix(in oklab, var(--danger) 82%, var(--foreground));
+}
+.logTime {
+  color: var(--text-muted);
+}
+.logEmpty {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  line-height: 18px;
+}
+.summaryText {
+  display: grid;
+  gap: 6px;
+  text-wrap: pretty;
+}
+.summaryText p {
+  margin: 0;
+}
+.summaryText ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc outside;
+}
+.summaryText li::marker {
+  color: var(--text-muted);
+}
+.totalsWrap {
+  overflow: hidden;
+}
+.totals {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.stats > div {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+.stats dt {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  line-height: 16px;
+}
+.stats dd {
+  margin: 0;
+  font-weight: 500;
+}
+.speedRow {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 12px;
+}
+.speed {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 6px;
+  color: color-mix(in oklab, var(--success) 80%, var(--foreground));
+}
+.speed svg {
+  flex: none;
+  color: var(--success);
+}
+.copy {
+  flex: none;
+}
+.gIdle {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+}
+.gQueued {
+  fill: none;
+  stroke: var(--text-muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 2.45 2.45;
+}
+.gHands {
+  fill: none;
+  stroke: var(--text-muted);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.gTrack {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+.gArc {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+.gDone {
+  fill: var(--success);
+}
+.gError {
+  fill: var(--danger);
+}
+.gInk {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.gInkDot {
+  fill: var(--surface);
+}
+.gStop {
+  fill: var(--text-muted);
+}
+.spin {
+  transform-origin: 50% 50%;
+  animation: ao-spin 0.8s linear infinite;
+}
+@keyframes ao-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.chunk {
+  animation: ao-chunk 0.15s var(--ease-enter) both;
+}
+@keyframes ao-chunk {
+  0% {
+    opacity: 0;
+  }
+}
+@container (min-width: 720px) {
+  .root:is([data-lanes="2"], [data-lanes="3"], [data-lanes="4"]) .flow {
+    gap: 40px;
+  }
+  .root:is([data-lanes="2"], [data-lanes="3"], [data-lanes="4"]) .lanes {
+    grid-template-columns: repeat(var(--count), minmax(0, 1fr));
+    align-items: start;
+    padding-left: 0;
+  }
+}
+@container (max-width: 520px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 10px;
+  }
+}
+@container (max-width: 440px) {
+  .flow,
+  .header {
+    padding-inline: 16px;
+  }
+  .limitLabel,
+  .nodeRole,
+  .nodeTime {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chunk,
+  .spin {
+    animation: none;
+  }
+  .branch,
+  .chevron,
+  .laneButton,
+  .laneMetrics,
+  .laneTime,
+  .laneTitle,
+  .lane,
+  .port,
+  .tickerText {
+    transition: none;
+  }
+}

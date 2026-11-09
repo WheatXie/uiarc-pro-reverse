@@ -1,0 +1,12 @@
+.demo {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.states {
+  justify-self: center;
+}

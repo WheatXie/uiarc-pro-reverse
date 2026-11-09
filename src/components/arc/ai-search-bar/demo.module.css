@@ -1,0 +1,7 @@
+/* The frame centres the card itself; this wrapper only gives the demo a node to drive. */
+.stage {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+}

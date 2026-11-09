@@ -1,0 +1,341 @@
+/* Dehashed from `captures/checkout-summary/styles.css` (module prefix `checkout-summary_`). */
+
+.root {
+  box-sizing: border-box;
+  display: grid;
+  width: min(100%, 440px);
+  min-width: 0;
+  gap: 20px;
+  padding: clamp(20px, 5vw, 28px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-body);
+}
+.root *,
+.root :after,
+.root :before {
+  box-sizing: border-box;
+}
+.root p {
+  margin: 0;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.inline {
+  display: inline-flex;
+  vertical-align: bottom;
+}
+.inline > span {
+  font: inherit !important;
+  letter-spacing: inherit !important;
+}
+.title {
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+.item {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+.media {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-muted);
+}
+.itemText {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 2px;
+}
+.itemName {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.itemDescription {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+.itemPrice {
+  display: grid;
+  justify-items: end;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.itemPeriod {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+.coupon {
+  position: relative;
+  display: grid;
+  min-width: 0;
+}
+.chip,
+.couponForm {
+  display: flex;
+  min-width: 0;
+  height: 44px;
+  align-items: center;
+  border-radius: var(--radius-control);
+}
+.couponForm {
+  gap: 4px;
+  padding: 4px 4px 4px 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+.couponForm[data-error] {
+  border-color: color-mix(in oklab, var(--danger) 60%, var(--border));
+}
+.couponInput {
+  min-width: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+  font: inherit;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+.couponInput::placeholder {
+  color: var(--text-muted);
+  letter-spacing: var(--tracking-body);
+}
+.couponApply {
+  display: inline-grid;
+  min-width: 64px;
+  height: 34px;
+  place-items: center;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--surface-muted);
+  color: var(--foreground);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+.couponApply:active {
+  transform: scale(0.97);
+}
+.couponApply:disabled {
+  cursor: progress;
+}
+.chip {
+  gap: 8px;
+  padding: 0 6px 0 14px;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--foreground);
+}
+.chipCode {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.chipNote {
+  flex: 1;
+  color: var(--text-secondary);
+}
+.chipRemove {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .chipRemove:hover {
+    background: var(--surface-muted);
+    color: var(--foreground);
+  }
+  .couponApply:hover {
+    background: color-mix(in oklab, var(--surface-muted) 70%, var(--border));
+  }
+}
+.couponError {
+  overflow: hidden;
+  color: var(--danger);
+  font-size: var(--text-xs);
+}
+.lines {
+  display: grid;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+.line {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 5px;
+}
+.lineAnimated {
+  overflow: hidden;
+}
+.line dt {
+  display: grid;
+  min-width: 0;
+  color: var(--text-secondary);
+}
+.line dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.line[data-discount] dd {
+  color: var(--success);
+}
+.lineNote,
+.muted {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+.total {
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+}
+.total dt {
+  color: var(--foreground);
+  font-weight: 500;
+}
+.totalValue {
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+}
+.pay {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 52px;
+  place-items: center;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: var(--pay-background, var(--accent));
+  color: var(--pay-foreground, var(--accent-foreground));
+  font: inherit;
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    filter var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
+}
+.pay:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.pay:disabled {
+  cursor: default;
+}
+.pay[data-state="processing"] {
+  cursor: progress;
+}
+.pay[data-state="done"] {
+  background: var(--success);
+  color: var(--background);
+}
+.pay:disabled[data-state="idle"] {
+  filter: saturate(0.2);
+  opacity: 0.6;
+}
+@media (hover: hover) and (pointer: fine) {
+  .pay:not(:disabled):hover {
+    filter: brightness(0.97);
+  }
+}
+.payInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.spin {
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.secure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: -8px !important;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  text-align: center;
+}
+.payError {
+  color: var(--danger);
+  font-size: var(--text-xs);
+  text-align: center;
+}
+.footnote {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  text-align: center;
+  text-wrap: pretty;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation-duration: 1.6s;
+  }
+}
+.couponForm:focus-within {
+  border-color: var(--border-strong, var(--text-muted));
+}
+
+/* The preview frame renders the block flat: `captures/checkout-summary/frame.html` carries
+   `data-frame-flat` with an inline `border: 0 / border-radius: 0 / box-shadow: none /
+   background: transparent` on the section and on the `<dl class="lines">`, so the grid's top
+   hairline is gone: measured at 1280 the first line starts at y=280.8 = 264.8 + 16px padding,
+   i.e. no 1px rule above it. The root's own zeroing rides on the inline style the component
+   writes when `flat` is set, the same way the frame page does it. */
+.lines[data-frame-flat] {
+  border-top-width: 0;
+}

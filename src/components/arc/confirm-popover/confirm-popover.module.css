@@ -1,0 +1,343 @@
+.root {
+  --cp-tone: var(--danger);
+  --cp-tone-ink: oklch(99% 0 0);
+  position: relative;
+  display: inline-flex;
+  min-width: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-body);
+  -webkit-tap-highlight-color: transparent;
+}
+/* The reference app shell inherits body tracking into form controls; this shell's UA reset clears it on buttons and fields. */
+.trigger,
+.cancel,
+.confirm,
+.input {
+  letter-spacing: inherit;
+}
+.root[data-tone="neutral"] {
+  --cp-tone: var(--foreground);
+  --cp-tone-ink: var(--background);
+}
+:root[data-theme="dark"] .root[data-tone="danger"] {
+  --cp-tone-ink: oklch(18% 0 0);
+}
+.faceTrigger,
+.trigger {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  white-space: nowrap;
+  font: inherit;
+  font-weight: 500;
+}
+.trigger {
+  border: 1px solid color-mix(in oklab, var(--cp-tone) 22%, var(--border));
+  border-radius: 14px;
+  background: color-mix(in oklab, var(--cp-tone) 6%, var(--surface-raised));
+  color: var(--cp-tone);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+.root[data-tone="neutral"] .trigger {
+  border-color: var(--border);
+  background: var(--surface-raised);
+}
+.trigger:focus-visible,
+.trigger:hover {
+  background: color-mix(in oklab, var(--cp-tone) 11%, var(--surface-raised));
+  border-color: color-mix(in oklab, var(--cp-tone) 34%, var(--border));
+}
+.trigger:active {
+  background: color-mix(in oklab, var(--cp-tone) 15%, var(--surface-raised));
+}
+.trigger:disabled {
+  border-color: var(--border-subtle);
+  background: var(--surface-raised);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+.trigger[data-hidden] {
+  visibility: hidden;
+}
+.icon {
+  display: inline-grid;
+  place-items: center;
+}
+.surface {
+  position: absolute;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  overflow: clip;
+  border: 1px solid color-mix(in oklab, var(--cp-tone) 22%, var(--border));
+  background: color-mix(in oklab, var(--cp-tone) 6%, var(--surface-raised));
+  color: var(--cp-tone);
+  transform-origin: 0 0;
+  transition:
+    background-color var(--duration-standard) var(--ease-standard),
+    border-color var(--duration-standard) var(--ease-standard),
+    color var(--duration-standard) var(--ease-standard),
+    box-shadow var(--duration-considered) var(--ease-standard);
+  will-change: transform, width, height;
+}
+.root[data-tone="neutral"] .surface,
+.surface[data-shape="panel"] {
+  border-color: var(--border);
+  background: var(--surface-raised);
+}
+.surface[data-shape="panel"] {
+  z-index: 50;
+  box-shadow: var(--shadow-floating);
+  color: var(--foreground);
+}
+.surface[data-shape="success"] {
+  border-color: color-mix(in oklab, var(--success) 26%, var(--border));
+  background: color-mix(in oklab, var(--success) 7%, var(--surface-raised));
+  color: var(--success);
+}
+.surface[data-right] {
+  right: 0;
+  left: auto;
+  transform-origin: 100% 0;
+}
+.surface[data-up] {
+  top: auto;
+  bottom: 0;
+}
+.faceSuccess,
+.faceTrigger,
+.panel {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.surface[data-right] :is(.faceTrigger, .faceSuccess, .panel) {
+  right: -1px;
+  left: auto;
+}
+.surface[data-up] :is(.faceTrigger, .faceSuccess, .panel) {
+  top: auto;
+  bottom: -1px;
+}
+.faceSuccess {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.check {
+  display: inline-grid;
+  place-items: center;
+}
+.form {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 16px;
+}
+.copy {
+  display: grid;
+  gap: 4px;
+}
+.title {
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: var(--leading-body);
+}
+.description {
+  margin: 0;
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.fieldLabel {
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+}
+.phrase {
+  color: var(--foreground);
+  font-family:
+    ui-monospace,
+    SF Mono,
+    Menlo,
+    monospace;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-family:
+    ui-monospace,
+    SF Mono,
+    Menlo,
+    monospace;
+  font-size: var(--text-sm);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+.input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+.input:focus {
+  border-color: var(--border-strong);
+}
+.input[aria-invalid] {
+  border-color: color-mix(in oklab, var(--danger) 45%, var(--border));
+}
+.errorWrap {
+  overflow: clip;
+}
+.error {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--danger) 8%, transparent);
+  color: var(--danger);
+}
+.error svg {
+  flex: none;
+  margin-top: 1px;
+}
+.errorTitle {
+  display: block;
+  font-weight: 500;
+}
+.errorText {
+  display: block;
+  color: var(--text-secondary);
+}
+.actions {
+  display: flex;
+  min-width: 0;
+}
+.cancelSlot {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+  overflow: clip;
+}
+.cancel,
+.confirm {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 40px;
+  place-items: center;
+  overflow: clip;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.cancel {
+  background: var(--surface-muted);
+  color: var(--foreground);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+.cancel:focus-visible,
+.cancel:hover {
+  background: color-mix(in oklab, var(--foreground) 9%, var(--surface-muted));
+}
+.confirm {
+  flex: 1 1 0;
+  min-width: 0;
+  background: color-mix(in oklab, var(--cp-tone) 12%, var(--surface-raised));
+  color: var(--cp-tone);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+.confirm[data-locked] {
+  cursor: not-allowed;
+}
+.confirm[data-working] {
+  cursor: progress;
+}
+.confirmLabel {
+  display: inline-flex;
+  grid-area: 1/1;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+.percent {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
+.fill {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--cp-tone);
+  color: var(--cp-tone-ink);
+  pointer-events: none;
+}
+.confirm:not([data-locked], [data-working]):focus-visible .fill,
+.confirm:not([data-locked], [data-working]):hover .fill {
+  background: color-mix(in oklab, var(--cp-tone) 88%, var(--foreground));
+}
+.sweep {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--cp-tone) 22%, transparent),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: sweepShift 1.2s var(--ease-in-out) infinite;
+  pointer-events: none;
+}
+@keyframes sweepShift {
+  to {
+    transform: translateX(100%);
+  }
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  .surface {
+    transition-duration: var(--duration-fast);
+  }
+  .sweep {
+    animation: none;
+    background: color-mix(in oklab, var(--cp-tone) 10%, transparent);
+    transform: none;
+  }
+}

@@ -1,0 +1,86 @@
+/* Demo shell for the funnel-chart preview: the card the shipped demo draws, nothing more. */
+
+/* The shipped card is `width: min(100%, 720px)`; the preview frame stretches every child to full
+   width, so the cap is declared as a max-width and the card still lands on 720. */
+.card {
+  display: grid;
+  width: 100%;
+  max-width: 720px;
+  min-width: 0;
+  gap: var(--space-6);
+  margin-inline: auto;
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+.top {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.heading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+/* The site's global heading rule (`h1,h2,h3{font-family:var(--font-display);letter-spacing:
+   var(--tracking-display)}` plus `line-height:1.1!important`) wins over the card's own title rule
+   there. index.css keeps the headings on 1.4 leading at -0.02em, so the demo states the shipped
+   rendering itself. */
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+}
+
+.meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+}
+
+.switches {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Below 900px the reference frame page strips the demo card's edge so the preview reads
+   full-bleed; that rule lives in the frame page's own stylesheet, which src/frame/frame.module.css
+   does not port. Mirroring it here keeps the narrow rendering identical (the card is 2px wider
+   inside, and the funnel's cross axis inherits it). */
+@media (max-width: 900px) {
+  .card {
+    border-width: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+}

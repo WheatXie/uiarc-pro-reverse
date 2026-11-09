@@ -1,0 +1,17 @@
+.root{--dot-grid-color:var(--border-strong);--dot-grid-active:var(--accent);position:relative;min-height:240px;overflow:hidden;overflow:clip;color:var(--foreground);isolation:isolate;-webkit-tap-highlight-color:transparent}
+.canvas{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;pointer-events:none}
+.root[data-fade] .canvas{-webkit-mask-image:radial-gradient(ellipse 72% 70% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 72% 70% at 50% 50%,#000 40%,transparent 100%)}
+.content{position:relative;z-index:1;height:100%}
+.demo{display:grid;width:min(100%,720px);margin-inline:auto;font-family:var(--font-body);letter-spacing:var(--tracking-body)}
+.field{height:420px;border:1px solid var(--border);border-radius:var(--radius-surface);background:var(--surface)}
+@media (max-width:560px){.field{height:380px}}
+.segment{position:absolute;bottom:var(--space-5);left:50%;display:grid;grid-template-columns:repeat(3,76px);height:var(--control-height-sm);padding:2px;border:1px solid var(--border);border-radius:var(--radius-control);background:color-mix(in oklab,var(--surface) 80%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transform:translateX(-50%)}
+.thumb{position:absolute;top:2px;bottom:2px;left:2px;width:76px;border-radius:calc(var(--radius-control) - 3px);background:var(--surface-raised);box-shadow:var(--shadow-resting),0 0 0 1px var(--border)}
+.option{position:relative;padding:0;border:0;border-radius:calc(var(--radius-control) - 3px);background:none;color:var(--text-muted);font:inherit;font-size:var(--text-sm);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:color var(--duration-fast) var(--ease-standard),transform var(--duration-instant) var(--ease-standard)}
+.option:active{transform:scale(.95)}
+.option[aria-pressed=true]{color:var(--foreground)}
+@media (hover:hover) and (pointer:fine){.option:hover{color:var(--foreground)}}
+
+/* The frame wrapper sizes its direct child at (0,2,0) (`.canvas > *{width:100%}`), which beats
+   one class: measured 744px wide against the reference's 720px. Double the class, as `dock` does. */
+.demo.demo{width:min(100%,720px)}

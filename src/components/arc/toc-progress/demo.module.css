@@ -1,0 +1,149 @@
+.demo {
+  width: 100%;
+  /* The reference shell applies its body tracking to every descendant; the preview shell here
+     leaves it unset, so re-establish it on the demo root. */
+  letter-spacing: -0.16px;
+  max-width: 880px;
+  margin-inline: auto;
+  container-type: inline-size;
+}
+.layout {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 224px;
+  align-items: start;
+}
+.article {
+  height: 480px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  scrollbar-width: thin;
+  scroll-behavior: auto;
+}
+.content {
+  display: grid;
+  max-width: 36rem;
+  gap: 0;
+  padding: 32px 36px 48px;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+}
+.header {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 8px;
+}
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-family: "Geist", var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+  text-wrap: balance;
+}
+.byline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+.section {
+  display: grid;
+  gap: 12px;
+  padding-top: 24px;
+}
+.section[data-level="2"],
+.section[data-level="3"] {
+  padding-top: 16px;
+}
+.section p {
+  margin: 0;
+  text-wrap: pretty;
+}
+.heading {
+  margin: 0;
+  color: var(--foreground);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  /* The reference shell's display-heading rule (leading-display) beats the module's 1.3 there;
+     the preview shell here has no such rule, so state the rendered value directly. */
+  line-height: var(--leading-display);
+  scroll-margin-top: 28px;
+}
+.section[data-level="1"] .heading {
+  letter-spacing: var(--tracking-display);
+}
+.section[data-level="2"] .heading {
+  font-family: "Inter", var(--font-body);
+  font-size: var(--text-base);
+  letter-spacing: inherit;
+}
+.section[data-level="3"] .heading {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+}
+.code {
+  margin: 4px 0 0;
+  padding: 12px 14px;
+  overflow-x: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  background: var(--surface-muted);
+  color: var(--foreground);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+}
+.aside {
+  position: sticky;
+  top: 16px;
+  display: grid;
+  gap: 16px;
+  padding: 8px 0 0;
+}
+.reading {
+  display: flex;
+  min-width: 0;
+  gap: 4px;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+.reading span {
+  overflow: hidden;
+  color: var(--text-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@container (max-width: 600px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .aside {
+    position: static;
+    order: -1;
+    padding: 16px 16px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-panel);
+    background: var(--surface);
+  }
+  .article {
+    height: 420px;
+    border-radius: var(--radius-panel);
+  }
+  .content {
+    padding: 24px 20px 40px;
+  }
+  .reading {
+    display: none;
+  }
+}

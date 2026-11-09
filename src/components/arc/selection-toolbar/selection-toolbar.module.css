@@ -1,0 +1,23 @@
+/* The bar is positioned by the page that owns the selection: the block only draws the surface. */
+.bar { display: inline-flex; max-width: 100%; min-height: 46px; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: var(--radius-panel); padding: 5px 6px 5px 14px; background: var(--surface-raised); box-shadow: var(--shadow-raised); color: var(--foreground); transform-origin: 50% 100%; }
+.count { position: relative; flex: 0 0 auto; color: var(--text-secondary); font-size: var(--text-xs); white-space: nowrap; }
+/* The slot springs to the measured row so the actions never jump when the count grows. */
+.countSlot { display: inline-flex; min-width: 0; }
+.countRow { display: inline-flex; flex: none; align-items: baseline; white-space: pre; }
+/* Tabular figures keep a rolling digit the same width as the one it replaces. */
+.countNumber { position: relative; display: inline-flex; min-width: 1ch; color: var(--accent); font-weight: 500; font-variant-numeric: tabular-nums; }
+.digits, .words, .plural, .selected { display: inline-block; }
+.words { position: relative; }
+.divider { width: 1px; height: 20px; flex: 0 0 auto; background: var(--border); }
+.actions { display: flex; min-width: 0; align-items: center; gap: 2px; }
+.actions button, .clear { display: inline-flex; min-height: 34px; align-items: center; justify-content: center; gap: 7px; border: 0; border-radius: calc(var(--radius-panel) - 6px); padding: 0 10px; background: transparent; color: var(--foreground); font: inherit; font-size: var(--text-xs); white-space: nowrap; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background-color var(--duration-fast) var(--ease-standard), color var(--duration-fast) var(--ease-standard), transform var(--duration-spring) var(--ease-spring); }
+.actions button:active, .clear:active { background: var(--surface-muted); transform: scale(.97); transition-duration: var(--duration-fast), var(--duration-fast), var(--duration-instant); transition-timing-function: var(--ease-standard); }
+.clear:active { transform: scale(.96); }
+.actionIcon { display: inline-flex; align-items: center; color: currentColor; }
+@media (hover: hover) and (pointer: fine) { .actions button:hover, .clear:hover { background: var(--surface-muted); } .actions .destructive:hover { background: color-mix(in oklab, var(--danger) 9%, var(--surface)); } }
+.actions .destructive { color: var(--danger); }
+.actions .destructive:active { background: color-mix(in oklab, var(--danger) 12%, var(--surface)); }
+.clear { width: 34px; flex: 0 0 auto; padding: 0; color: var(--text-muted); }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 520px) { .bar { flex-wrap: wrap; width: 100%; } .count { flex: 1 1 auto; min-width: 0; } .divider { display: none; } .actions { flex: 1 0 100%; flex-wrap: wrap; border-top: 1px solid var(--border-subtle); padding-top: 4px; order: 2; } .actions button { flex: 1 1 auto; padding-inline: 6px; } .clear { order: 1; } }
+@media (prefers-reduced-motion: reduce) { .actions button, .clear { transition: none; } .actions button:active, .clear:active { transform: none; } }

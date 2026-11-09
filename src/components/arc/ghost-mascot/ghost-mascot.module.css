@@ -1,0 +1,92 @@
+/* Component sheet, de-hashed from `_next/static/css/f8f30935e8ddb4cf.css`. */
+.root {
+  --ghost-body: var(--accent);
+  --ghost-eye: var(--accent-foreground, var(--background));
+  --ghost-mark: var(--ghost-body);
+  --ghost-shade: color-mix(in oklab, var(--ghost-body) 84%, black);
+  --ghost-ground: color-mix(in oklab, var(--foreground) 10%, transparent);
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
+.root[data-tone="ink"] {
+  --ghost-body: var(--foreground);
+  --ghost-eye: var(--background);
+  --ghost-shade: color-mix(in oklab, var(--foreground) 82%, var(--background));
+}
+
+.root[data-tone="sheet"] {
+  --ghost-body: var(--surface-raised, var(--surface));
+  --ghost-eye: var(--foreground);
+  --ghost-mark: var(--accent);
+  --ghost-shade: color-mix(in oklab, var(--ghost-body) 93%, black);
+}
+
+.root[data-tone="custom"] {
+  --ghost-eye: color-mix(in oklab, var(--ghost-body) 18%, black);
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+.body {
+  fill: var(--ghost-body);
+}
+
+.shade {
+  fill: var(--ghost-shade);
+}
+
+.outline {
+  fill: none;
+  stroke: color-mix(in oklab, var(--foreground) 20%, transparent);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+
+.eye {
+  fill: var(--ghost-eye);
+}
+
+.mark {
+  fill: var(--ghost-mark);
+}
+
+.swirl {
+  fill: none;
+  stroke: var(--ghost-mark);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.line,
+.pen {
+  stroke: var(--ghost-mark);
+  stroke-linecap: round;
+  fill: none;
+}
+
+.line {
+  stroke-opacity: 0.55;
+  stroke-linejoin: round;
+}
+
+.ground {
+  fill: var(--ghost-ground);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,82 @@
+/* The demo owns its own frame classes: the document bar, the stage the panel sits in, and the
+   popover that anchors it. Everything inside the panel lives in share-access.module.css. */
+
+.demo {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  max-width: 560px;
+  margin-inline: auto;
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 8px 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+}
+
+.doc {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--foreground);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.doc svg {
+  flex: none;
+  color: var(--text-secondary);
+}
+
+.share {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: var(--control-height-sm);
+  padding: 0 16px 0 14px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--foreground);
+  color: var(--background);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.share:hover {
+  background: color-mix(in oklab, var(--foreground) 86%, var(--background));
+}
+
+.share[aria-expanded="true"] {
+  background: color-mix(in oklab, var(--foreground) 80%, var(--background));
+}
+
+.stage {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 680px;
+}
+
+.popover {
+  width: 100%;
+  max-width: 440px;
+  transform-origin: calc(100% - 48px) 0;
+}
+
+@media (max-width: 480px) {
+  .stage {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+/* Measured on the live frame at 1280×900, not a taste call. A `section`-layout block is previewed flat and
+   full width: the shell's own `.content > * { width: 100% }` reaches the card (it renders 1152 px wide, not
+   the card's 660 px cap) and the card root and footer both arrive carrying `data-frame-flat` plus
+   `border: 0; border-radius: 0; box-shadow: none; background: transparent` inline. Our shell has no flat mode
+   and src/frame/* is off limits, so the demo mirrors both effects on the card it mounts. The component keeps
+   its real surface: drop this class and the card returns to border + radius + surface.
+   `.flat.flat` is doubled so it beats the card's own `.wallet` rule whatever order the bundler emits. */
+.flat.flat {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* The footer's 1px divider is flattened with the card, so the reference preview shows no rule above it. */
+.flat.flat > div:last-child {
+  border: 0;
+}

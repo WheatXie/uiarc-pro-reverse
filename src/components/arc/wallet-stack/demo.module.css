@@ -1,0 +1,6 @@
+/* Ported from the shipped wallet-stack demo module. */
+.demo {
+  display: grid;
+  width: 100%;
+  place-items: center;
+}

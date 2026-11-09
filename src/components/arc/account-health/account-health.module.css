@@ -1,0 +1,493 @@
+.root {
+  --ah-pad: 24px;
+  --ah-claude: #d97757;
+  --ah-track: color-mix(in oklab, var(--foreground) 9%, transparent);
+  --shimmer-base: color-mix(in oklab, var(--foreground) 50%, var(--surface));
+  container-type: inline-size;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: var(--tracking-body);
+}
+.root :where(p, h3, ul) {
+  margin: 0;
+  padding: 0;
+}
+.truncate {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.root [data-status="good"] {
+  --ah-tone: var(--success);
+}
+.root [data-status="watch"] {
+  --ah-tone: var(--warning);
+}
+.root [data-status="risk"] {
+  --ah-tone: var(--danger);
+}
+.statusIcon {
+  flex: none;
+  color: var(--ah-tone);
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: var(--ah-pad) var(--ah-pad) var(--ah-pad);
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.logo {
+  display: grid;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: var(--foreground);
+}
+.logo > svg {
+  width: 24px;
+  height: 24px;
+}
+.identity {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+}
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.meta,
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meta {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.periods {
+  flex: none;
+}
+.overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.scoreCell {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  min-width: 0;
+  padding-right: 24px;
+}
+.renewalCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  height: 60px;
+  padding-left: 24px;
+  border-left: 1px solid var(--border-subtle);
+}
+.gauge {
+  position: relative;
+  flex: none;
+  width: 112px;
+  height: 60px;
+}
+.gauge > svg {
+  display: block;
+  overflow: visible;
+}
+.gaugeTrack,
+.gaugeValue {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+.gaugeTrack {
+  stroke: var(--ah-track);
+}
+.gaugeValue {
+  stroke: var(--ah-tone);
+}
+.bigNumber,
+.scoreNumber {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.scoreNumber {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.scoreText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding-block: 2px 4px;
+}
+.band {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  height: 20px;
+}
+.trend {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.trend svg {
+  flex: none;
+}
+.renewalLabel {
+  display: flex;
+  min-width: 0;
+  height: 18px;
+  padding-top: 2px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.term {
+  position: relative;
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--ah-track);
+}
+.termFill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--text-secondary);
+  transform-origin: left center;
+}
+.renewalDays {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  height: 28px;
+  white-space: nowrap;
+}
+.unit {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.placeholder {
+  display: block;
+  width: 3ch;
+  height: 28px;
+}
+.swap {
+  display: grid;
+  min-width: 0;
+}
+.swapItem {
+  display: flex;
+  grid-area: 1/1;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.signals {
+  list-style: none;
+  padding: 0 var(--ah-pad);
+  border-top: 1px solid var(--border-subtle);
+}
+.signal {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) 64px 56px 72px;
+  column-gap: 12px;
+  align-items: center;
+  height: 56px;
+}
+.signal + .signal {
+  border-top: 1px solid var(--border-subtle);
+}
+.source {
+  display: grid;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+  color: var(--text-muted);
+}
+.source > svg {
+  width: 14px;
+  height: 14px;
+}
+.signalText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.signalDetail,
+.signalLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.signalDetail {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.spark {
+  display: block;
+  width: 64px;
+  height: 20px;
+  color: var(--text-muted);
+}
+.spark[data-status="risk"],
+.spark[data-status="watch"] {
+  color: var(--ah-tone);
+}
+.spark svg {
+  display: block;
+  overflow: visible;
+}
+.spark path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.spark circle {
+  fill: currentColor;
+}
+.value {
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.empty,
+.noSignals {
+  padding: 24px var(--ah-pad);
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+.empty {
+  border-top: 0;
+}
+.ai {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px var(--ah-pad) var(--ah-pad);
+  border-top: 1px solid var(--border-subtle);
+}
+.aiHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  margin-right: -6px;
+}
+.modelMark {
+  display: grid;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+  color: var(--ah-claude);
+}
+.modelMark > svg {
+  width: 14px;
+  height: 14px;
+}
+.aiLabel {
+  flex: 1 1 auto;
+  font-size: 13px;
+  line-height: 18px;
+}
+.modelName {
+  flex: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.regenerate {
+  flex: none;
+  color: var(--text-secondary);
+}
+.summary {
+  display: grid;
+  min-width: 0;
+}
+.ghost,
+.summaryError,
+.summaryText {
+  grid-area: 1/1;
+}
+.ghost {
+  visibility: hidden;
+}
+.summaryText {
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+.summaryError {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+.summaryError svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--danger);
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+.actionText {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+}
+.actionTitle {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actionMeta {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+.actionMeta svg {
+  flex: none;
+}
+.actionMeta[data-tone="error"] svg {
+  color: var(--danger);
+}
+.actionMeta[data-tone="done"] svg {
+  color: var(--success);
+}
+.actionButton {
+  flex: none;
+  min-width: 128px;
+}
+@container (max-width: 520px) {
+  .ai,
+  .noSignals,
+  .signals,
+  .top {
+    --ah-pad: 16px;
+  }
+  .signal {
+    grid-template-columns: 14px minmax(0, 1fr) 64px 72px;
+  }
+  .spark {
+    display: none;
+  }
+}
+@container (max-width: 440px) {
+  .overview {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 16px;
+  }
+  .scoreCell {
+    padding-right: 0;
+  }
+  .renewalCell {
+    padding: 16px 0 0;
+    border-top: 1px solid var(--border-subtle);
+    border-left: 0;
+    height: auto;
+    gap: 8px;
+  }
+  .modelName {
+    display: none;
+  }
+  .action {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+  .actionText {
+    flex-basis: 100%;
+  }
+  .actionButton {
+    width: 100%;
+  }
+}
+
+/* The reference preview shell drops the card chrome once the frame is narrow enough to go full-bleed
+   (inline `border:0;border-radius:0;box-shadow:none;background:transparent`). Measured on the live frame:
+   737px viewport renders flat, 738px renders the card (twice each); below 700px it is flat in every sample.
+   `src/frame` never flattens, so the block carries the same breakpoint itself. */
+@media (max-width: 737px) {
+  :global(main[data-layout="center"]) .root,
+  :global(main[data-layout="center"]) .signals,
+  :global(main[data-layout="center"]) .ai {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+}

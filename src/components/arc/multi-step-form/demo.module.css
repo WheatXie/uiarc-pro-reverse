@@ -1,0 +1,9 @@
+/* The frame's preview host: this group's items render inside a centred stack with a status line, so the
+   demo ships that chrome. Widths are the measured frame result — the group sheet's
+   `preview{width:min(100%,620px)}` is overridden on the live page by `.frame-page_content > *{width:100%;
+   max-width:100%}` (1152px at 1280), while the roomy variant still caps the single child at 540px. */
+.preview { display: grid; gap: 16px; width: 100%; }
+.surface { display: grid; gap: 8px; justify-items: center; padding: 0; background: transparent; }
+.surface > * { width: min(100%, 540px); max-width: 100%; }
+.status { min-height: 18px; color: var(--text-muted, #64748b); font-size: 12px; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .preview *, .preview ::after, .preview ::before { scroll-behavior: auto !important; } }

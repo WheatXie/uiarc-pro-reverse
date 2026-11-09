@@ -1,0 +1,100 @@
+/* Demo sheet, de-hashed from `_next/static/css/f5d56d3720eb00d7.css`. */
+.demo {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+  display: grid;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel, 26px);
+  background: var(--surface);
+  padding: 8px;
+  container-type: inline-size;
+}
+
+.stage {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  padding-top: 8px;
+}
+
+.caption {
+  display: grid;
+  justify-items: center;
+  min-height: 20px;
+  padding: 0 12px 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.captionText {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sizes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 16px 12px 12px;
+  list-style: none;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.size {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+}
+
+.slot {
+  display: grid;
+  place-items: end center;
+  height: 64px;
+}
+
+.sizeLabel {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 4px 0;
+  min-width: 0;
+}
+
+.controls > :first-child {
+  min-width: 0;
+  flex: 0 1 auto;
+}
+
+@container (max-width: 460px) {
+  .playText,
+  .wideOnly {
+    display: none;
+  }
+
+  .sizes {
+    gap: 16px;
+  }
+}

@@ -1,0 +1,69 @@
+/* Tone tuner: a message card whose voice chips and two sliders rewrite the reply.
+   Selectors are the shipped module with its hash stripped; declarations byte-identical. */
+
+.root{--tt-pad:var(--space-6);--tt-ins:color-mix(in oklab,var(--accent) 18%,transparent);container-type:inline-size;position:relative;display:flex;flex-direction:column;width:100%;max-width:640px;min-width:0;overflow:hidden;border:1px solid var(--border);border-radius:var(--radius-panel);background:var(--surface);color:var(--foreground);font-size:var(--text-sm);line-height:var(--leading-body);letter-spacing:var(--tracking-body)}
+.head{display:flex;align-items:center;gap:var(--space-3);padding:var(--space-4) var(--tt-pad);border-bottom:1px solid var(--border-subtle)}
+.avatar{flex:none}
+.who{display:flex;flex:1;flex-direction:column;min-width:0}
+.name,.subject{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.name{font-weight:500}
+.subject{color:var(--text-muted)}
+.counts{display:flex;flex:none;align-items:center;gap:var(--space-3);color:var(--text-muted);white-space:nowrap}
+.num{display:inline-block;min-width:2ch;text-align:right;font-variant-numeric:tabular-nums}
+.changed{display:inline-flex;align-items:center;gap:6px;opacity:0;transition:opacity var(--duration-fast) var(--ease-standard)}
+.changed[data-on]{opacity:1}
+.swatch{width:10px;height:10px;border-radius:3px;background:var(--tt-ins);box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--accent) 35%,transparent)}
+.bodyClip{min-width:0}
+.body{padding:var(--space-5) var(--tt-pad) var(--space-6)}
+.stack{display:grid}
+.sizer,.text{grid-area:1/1;min-width:0}
+.sizer{visibility:hidden;pointer-events:none}
+.sizer,.text{font-size:var(--text-base);line-height:1.6;overflow-wrap:break-word}
+.paragraph{margin:0}
+.paragraph+.paragraph{margin-top:var(--space-3)}
+.segment{will-change:opacity}
+.line{display:block}
+.empty{margin:0;color:var(--text-muted);font-size:var(--text-base)}
+.ins{border-radius:4px;background:transparent;box-shadow:0 0 0 2px transparent;color:inherit;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-color var(--duration-fast) var(--ease-standard),box-shadow var(--duration-fast) var(--ease-standard)}
+.root[data-changes] .ins{background:var(--tt-ins);box-shadow:0 0 0 2px var(--tt-ins)}
+.controls{display:grid;gap:var(--space-4);padding:var(--space-4) var(--tt-pad) var(--space-3);border-top:1px solid var(--border-subtle)}
+.presets{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.presets>.chip{flex:0 0 auto}
+.chip{display:inline-flex;min-width:0;height:var(--control-height-sm);align-items:center;justify-content:center;gap:6px;padding:0 var(--space-3);border:1px solid var(--border);border-radius:var(--radius-pill);background:transparent;color:var(--text-secondary);font:inherit;font-weight:500;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard),transform var(--duration-fast) var(--ease-standard)}
+.chipIcon{flex:none;color:var(--text-muted);transition:color var(--duration-fast) var(--ease-standard)}
+.chipLabel{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (hover:hover) and (pointer:fine){.chip:hover:not(:disabled){background:var(--surface-muted);color:var(--foreground)}}
+.chip:active:not(:disabled){transform:scale(.97);transition-duration:var(--duration-instant)}
+.chip[aria-pressed=true]{border-color:color-mix(in oklab,var(--accent) 45%,var(--border));background:color-mix(in oklab,var(--accent) 12%,transparent);color:var(--foreground)}
+.chip[aria-pressed=true] .chipIcon{color:var(--accent)}
+.chip:disabled{cursor:not-allowed;opacity:.5}
+.sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-2) var(--space-6)}
+.foot{display:flex;min-height:56px;align-items:center;gap:var(--space-3);padding:var(--space-3) var(--tt-pad);border-top:1px solid var(--border-subtle)}
+.status{display:flex;flex:1;min-width:0;align-items:center;gap:var(--space-2);color:var(--text-secondary)}
+.fadeStack{display:grid;min-width:0}
+.fadeItem{display:flex;grid-area:1/1;min-width:0;align-items:center}
+.statusIcon{flex:none;width:14px;height:14px}
+.status[data-icon=done] .statusIcon{color:var(--success)}
+.status[data-icon=error] .statusIcon{color:var(--danger)}
+.claude{color:#d97757}
+.statusText{flex:0 1 auto}
+.statusLabel{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.statusMeta{margin-left:6px;color:var(--text-muted)}
+.retry{display:inline-flex;flex:none;align-items:center;gap:var(--space-1);height:28px;padding:0 var(--space-2);border:0;border-radius:var(--radius-pill);background:transparent;color:var(--foreground);font:inherit;font-weight:500;cursor:pointer;transition:background-color var(--duration-fast) var(--ease-standard)}
+@media (hover:hover) and (pointer:fine){.retry:hover{background:var(--surface-muted)}}
+.actions{display:flex;flex:none;align-items:center;gap:var(--space-3)}
+.switch{color:var(--text-secondary)}
+.srOnly{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@container (max-width: 520px){.root{--tt-pad:var(--space-4)}
+.sliders{grid-template-columns:minmax(0,1fr)}
+.presets>.chip{flex:1 0 auto}
+.statusMeta{display:none}}
+@container (max-width: 440px){.chipIcon{display:none}
+.presets{flex-wrap:nowrap}
+.presets>.chip{flex:1 1 auto;padding:0 var(--space-2)}
+.changed{display:none}
+.foot{flex-wrap:wrap;row-gap:var(--space-2)}
+.status{flex-basis:100%;min-height:28px}
+.actions{flex:1;justify-content:space-between}}
+@media (prefers-reduced-motion:reduce){.changed,.chip,.ins{transition:none}}
+.demo{display:flex;width:100%;justify-content:center}

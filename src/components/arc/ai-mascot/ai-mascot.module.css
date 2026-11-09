@@ -1,0 +1,87 @@
+/* The mascot's own module. De-hashed from `_next/static/css/cf7c21f431746210.css`
+   (`.ai-mascot_root__as3e4` → `.root`); declarations are byte-identical to the shipped sheet. */
+.root {
+  --mascot-body: var(--accent);
+  --mascot-eye: var(--accent-foreground, var(--background));
+  --mascot-dot: var(--mascot-body);
+  --mascot-shade: color-mix(in oklab, var(--mascot-body) 85%, black);
+  --mascot-ground: color-mix(in oklab, var(--foreground) 9%, transparent);
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.root[data-tone="ink"] {
+  --mascot-body: var(--foreground);
+  --mascot-eye: var(--background);
+}
+
+.root[data-tone="soft"] {
+  --mascot-body: var(--surface-muted);
+  --mascot-eye: var(--foreground);
+  --mascot-dot: var(--text-muted);
+  --mascot-shade: color-mix(in oklab, var(--surface-muted) 90%, var(--foreground));
+}
+
+.root[data-tone="custom"] {
+  --mascot-eye: color-mix(in oklab, var(--mascot-body) 20%, black);
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+.body {
+  fill: var(--mascot-body);
+}
+
+.shade {
+  fill: var(--mascot-shade);
+}
+
+.outline {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+
+.eyes {
+  stroke: var(--mascot-eye);
+  stroke-linecap: round;
+  fill: none;
+}
+
+.dot {
+  fill: var(--mascot-dot);
+}
+
+.glint {
+  fill: var(--mascot-eye);
+}
+
+.line {
+  stroke: var(--mascot-dot);
+  stroke-opacity: 0.45;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.ground {
+  fill: var(--mascot-ground);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

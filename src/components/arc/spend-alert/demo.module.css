@@ -1,0 +1,25 @@
+/* Demo shell for the spend-alert preview. The block draws its own card, so the only rule here is
+   the frame-page compensation below. */
+
+/* The reference frame page marks a block `data-frame-flat` when the viewport opens at 714px or
+   narrower, then writes `border: 0; border-radius: 0; box-shadow: none; background: transparent`
+   inline onto the block root and onto every direct child that draws an edge (the four sections,
+   the budget row, the stop row and the footer). Measured on fresh loads: 714px is flat, 715px still
+   shows border 1px / radius 26px / surface. `src/frame/*` is off limits and this frame shell never
+   flattens a card, so the same declarations live here. `.card.card` outranks the block's own
+   `.root` background and section borders regardless of stylesheet order. */
+@media (max-width: 714px) {
+  .card.card {
+    border-width: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .card.card > * {
+    border-top-width: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}

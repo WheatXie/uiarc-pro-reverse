@@ -1,0 +1,59 @@
+/* De-hashed from captures/image-trail/styles.css (.image-trail_demo__Xy7Na → .demo).
+   Demo chrome only — the live page ships these in a second module next to the component. */
+.demo {
+  width: min(100%, 760px);
+  margin-inline: auto;
+}
+
+.area {
+  height: 420px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+}
+
+.area:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--surface);
+  pointer-events: none;
+}
+
+.copy {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  gap: 10px;
+  padding: 24px;
+  color: oklch(100% 0 0);
+  mix-blend-mode: difference;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+  text-wrap: balance;
+}
+
+.meta {
+  margin: 0;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+  opacity: 0.6;
+}
+
+@media (max-width: 560px) {
+  .area {
+    height: 360px;
+  }
+  .title {
+    font-size: var(--text-4xl);
+  }
+}

@@ -1,0 +1,57 @@
+/* Dehashed from the shipped preview demo module (sunburst_card_* / _top_ / _heading_ / _title_ / _meta_). */
+.card {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+/* The shipped sheet scopes the width to the element, so a wider parent cannot stretch the card. */
+section.card {
+  width: min(100%, 760px);
+}
+
+.top {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.heading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: var(--text-base);
+  font-weight: 500;
+  /* Shell compensation: the reference page loads a base sheet with `h1..h6 { line-height: 1.1
+     !important }` and `h1..h3 { letter-spacing: -0.03em }`. This shell has neither, so the
+     measured heading was 22.4px tall at -0.32px tracking instead of 17.6px at -0.48px. */
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+}
+
+.meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+}

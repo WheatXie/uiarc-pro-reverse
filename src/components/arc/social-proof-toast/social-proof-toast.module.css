@@ -1,0 +1,47 @@
+.root { position: relative; width: min(360px, 100%); flex: 0 0 auto; font-family: var(--font-sans,Inter,system-ui,sans-serif); -webkit-tap-highlight-color: transparent; }
+.root[data-position="bottom-left"], .root[data-position="bottom-right"], .root[data-position="top-left"], .root[data-position="top-right"] { position: fixed; z-index: 60; width: min(360px, -32px + 100vw); }
+.root[data-position="bottom-left"] { left: 24px; bottom: 24px; }
+.root[data-position="bottom-right"] { right: 24px; bottom: 24px; }
+.root[data-position="top-left"] { left: 24px; top: 24px; }
+.root[data-position="top-right"] { right: 24px; top: 24px; }
+@media (max-width: 480px) { .root[data-position="bottom-left"], .root[data-position="bottom-right"] { left: 16px; right: 16px; bottom: 16px; width: auto; } .root[data-position="top-left"], .root[data-position="top-right"] { left: 16px; right: 16px; top: 16px; width: auto; }
+}
+.list { position: absolute; inset: 0px; margin: 0px; padding: 0px; list-style: none; }
+.item { position: absolute; left: 0px; right: 0px; bottom: 0px; height: var(--toast-h); will-change: transform, opacity; }
+.root[data-anchor="top"] .item { top: 0px; bottom: auto; }
+.item::after { content: ""; position: absolute; left: 0px; right: 0px; top: 100%; height: var(--toast-gap); }
+.root[data-anchor="top"] .item::after { top: auto; bottom: 100%; }
+.root:not([data-expanded]) .item::after { display: none; }
+.card { position: relative; display: flex; align-items: center; height: 100%; padding: 0px 44px 0px 13px; border: 1px solid var(--border); border-radius: var(--radius-control); background: var(--surface-raised); color: var(--foreground); box-shadow: var(--shadow-raised); transition: box-shadow 0.16s ease-out, background-color 0.12s ease-out; }
+.item[data-front] .card, .root[data-expanded] .card { box-shadow: var(--shadow-floating); }
+.card[data-selectable]:hover { background: color-mix(in oklab,var(--surface-raised),var(--foreground) 3%); }
+.content { display: flex; align-items: center; gap: 12px; min-width: 0px; flex: 1 1 0%; transition: opacity 0.16s ease-out; }
+.item[data-dim] .content { opacity: 0; }
+.visual { position: relative; display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; overflow: hidden; border-radius: 999px; background: var(--surface-muted); color: var(--foreground); }
+.visual::after { content: ""; position: absolute; inset: 0px; border-radius: inherit; box-shadow: inset 0 0 0 1px color-mix(in oklab,var(--foreground) 9%,transparent); pointer-events: none; }
+.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.visual svg { width: 18px; height: 18px; }
+.initials { font-size: 12px; line-height: 16px; font-weight: 500; color: var(--text-secondary); }
+.text { display: flex; flex-direction: column; gap: 2px; min-width: 0px; }
+.title { overflow: hidden; font-size: 14px; line-height: 20px; color: var(--text-secondary); white-space: nowrap; text-overflow: ellipsis; }
+.name { font-weight: 500; color: var(--foreground); }
+.meta { display: flex; align-items: center; gap: 4px; min-width: 0px; font-size: 12px; line-height: 16px; color: var(--text-muted); white-space: nowrap; }
+.metaText { overflow: hidden; min-width: 0px; text-overflow: ellipsis; }
+.dot, .time { flex: 0 0 auto; }
+.verified { display: inline-flex; align-items: center; gap: 4px; flex: 0 0 auto; color: var(--text-secondary); }
+.verified svg { flex: 0 0 auto; color: var(--accent); }
+.hit { position: absolute; inset: 0px; z-index: 1; padding: 0px; border: 0px; border-radius: inherit; background: transparent; cursor: pointer; }
+.dismiss { position: absolute; top: 50%; right: 12px; z-index: 2; display: grid; place-items: center; width: 24px; height: 24px; margin-top: -12px; padding: 0px; border: 0px; border-radius: 999px; background: transparent; color: var(--text-muted); cursor: pointer; opacity: 0; transition: opacity 0.12s ease-out, background-color 0.12s ease-out, color 0.12s ease-out, scale 0.12s ease-out; }
+.dismiss:focus-visible, .item:hover .dismiss { opacity: 1; }
+.dismiss:hover { background: var(--surface-muted); color: var(--foreground); }
+.dismiss:active { scale: 0.9; }
+@media (hover: none) { .dismiss { opacity: 1; }
+}
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { .card, .content, .dismiss { transition-duration: 0s; }
+}
+/* Live resolves var(--font-sans) through next/font: `inter, "inter Fallback", sans-serif`. This shell ships
+   --font-body (@fontsource Inter Variable) and no --font-sans, so the shipped fallback list renders one glyph
+   metric short — measured on the demo, "Linear upgraded to Business" 185.7px live vs 185.2px untouched.
+   Remapping the token keeps the reference face (and any host-provided --font-sans) intact. */
+.root { font-family: var(--font-sans, var(--font-body)); }

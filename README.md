@@ -1,81 +1,98 @@
-# uiarc clone — local component workbench
+# uiarc-pro-reverse
 
-A self-hosted, source-available component library with the same information architecture as a
-docs-style component catalog: sidebar with search + Free/Pro filter + Docs tree, and per-item
-pages with a **Preview / Code** switch.
+**Every gated Pro component of [uiarc.dev](https://uiarc.dev) — 233 of them — rebuilt as plain, runnable React source.**
 
-Every component in here is implemented from scratch in this repo and shipped as plain files you
-can copy out — no external registry, no runtime fetch.
+The site ships its components to the browser to render the free preview frame, but keeps the *source*
+behind a Pro account. This repo reconstructs that source from the shipped artifacts and re-hosts it as
+a local docs site with live previews, copyable code and pixel-parity verification against the original.
 
-## Stack
+![Item page — preview stage, Code tab and docs](docs/screenshot-component.png)
 
-- Vite 8 + React 19 + TypeScript
-- Tailwind CSS v4 (`@theme` tokens in `src/index.css`)
-- react-router-dom for the docs routes
+```
+233 / 233 items reconstructed · mean pixel score 99.91 · 196 items ≥ 99.95 · 139 byte-identical DOM trees
+```
 
-## Run
+| | |
+| --- | --- |
+| Components | 17 Pro components + 103 special components |
+| Blocks | 113 Pro blocks |
+| Stack | Vite 8 · React 19 · TypeScript (strict) · CSS Modules · `motion` · Radix UI · lucide |
+| Verified against | live preview frames at 1280×900 @2x, plus a structural DOM diff |
+| Result table | [REPORT.md](REPORT.md) — one row per item, both sampling modes |
+| Method | [METHOD.md](METHOD.md) — how the artifacts were read, every known residue |
+
+## Quick start
 
 ```bash
 pnpm install
-pnpm dev      # http://localhost:5183
-pnpm build
+pnpm dev        # http://localhost:5183
+pnpm build      # tsc --noEmit && vite build
 ```
 
-## Layout
+Each item lives at `/components/<slug>` (components and special components) or
+`/components/blocks/<slug>` (blocks); `/frame/<slug>` renders the bare preview used for comparison.
 
-```
-src/
-  App.tsx                     routes + shell
-  registry.ts                 THE catalog: one entry per component
-  site/Sidebar.tsx            search, All/Free/Pro filter, Docs tree, section counts
-  pages/HomePage.tsx          landing + /docs/:slug
-  pages/ComponentPage.tsx     preview / code tabs, file switcher, copy button
-  components/
-    emoji-picker/
-      EmojiPicker.tsx         panel: search, sticky sections, skin tones, keyboard nav
-      emoji-data.ts           dataset adapter, tone application, search scoring
-      hooks.ts                recent-emoji memory (localStorage), click-outside
-      demo.tsx                input + anchored popover demo
-  data/emoji-groups.json      unicode-emoji-json (MIT) — 9 groups, ~1900 emoji
-```
+## What is in here
 
-## Comment thread
+- **`src/components/arc/<slug>/`** — 233 self-contained ports: `<slug>.tsx`, `<slug>.module.css`
+  (de-hashed from the CSS Module the site ships, declarations kept byte-faithful) and a `demo.tsx`
+  that auto-registers for the docs page.
+- **`src/site/`** — the docs shell: sidebar with search and scope filters, item pages with a Preview /
+  Code pair, per-item markdown docs, in-page nav.
+- **`src/components/arc/foundation.css`** — the design tokens (colour, radii, elevation, easing) taken
+  from the site's public registry item.
+- **`public/media`, `public/block-logos`, `public/docs`** — the image fixtures and 267 markdown docs the
+  demos and pages need, pulled from the same public routes.
 
-`src/components/comment-thread/` — message list + composer at the reference scale (956px card, 20/20.5px type):
+Nothing here fetches a registry at runtime: the code tab reads local files through
+`import.meta.glob`, so the whole catalogue works offline.
 
-- gradient avatars (no initials), name + body rhythm
-- composer that auto-grows and seeds the emoji panel (`?picker=1` to preview it open)
-- send button morphs grey → ink when the draft is non-empty, arrow lifts on hover, presses to 0.94
-- entrance: card 620ms spring-in, rows staggered 55ms, popover 220ms with overshoot, focus ring 200ms
-- `Enter` sends, `Shift+Enter` breaks the line, `Esc` closes the panel
-- `prefers-reduced-motion` kills every transform
+## How it was reconstructed
 
-## Adding a component
+The gate protects `/api/component-source`; it does not protect the component itself, because the
+public preview frame has to render it. So the ports come from what the browser is served:
 
-1. Drop the implementation in `src/components/<slug>/`.
-2. Export a `Demo` from `src/components/<slug>/demo.tsx`.
-3. Register it in `src/registry.ts` with `?raw` imports so the Code tab shows real source:
+1. **Capture** — `scripts/capture.mjs <slug>` opens `/components/<slug>/frame` in Playwright and keeps
+   the SSR DOM, the item's own CSS Module (chosen by selector prefix, not by size) and the webpack
+   chunk that contains its implementation.
+2. **De-hash** — `.block_someClass__a1b2c` → `.someClass`; keyframes and nested at-rules are preserved.
+3. **Port** — rebuild the component: props, state machine, spring parameters, ARIA, keyboard model,
+   canvas/WebGL renderers, seeded data generators, responsive breakpoints.
+4. **Gate** — `scripts/compare.mjs` (pixel diff of the two frames) and `scripts/dom-diff.mjs`
+   (path / tag / box ±1px / text / role / aria), plus interaction A/B probes on every state.
+5. **Report** — `scripts/report.mjs` runs both gates over the corpus in parallel shards and writes
+   [REPORT.md](REPORT.md).
 
-```ts
-{
-  slug: 'chip-group',
-  title: 'Chip Group',
-  section: 'components',   // components | blocks | special
-  tier: 'free',            // free | pro
-  summary: '…',
-  Demo,
-  files: [{ name: 'ChipGroup.tsx', code: src }],
-  deps: ['React only'],
-}
-```
+Long-running demos are compared in their resting window (the report carries a per-item `KNOWN_WAIT`),
+so a loop's phase is never reported as a fidelity gap.
 
-Section counts in the sidebar are derived from the registry — no manual bookkeeping.
+## Tooling
 
-## Emoji picker notes
+| script | what it does |
+| --- | --- |
+| `capture.mjs <slug> [--kind=block]` | capture DOM + CSS + implementation chunk into `captures/<slug>/` |
+| `capture-parallel.sh <n> <slugs…>` | capture a list with limited concurrency |
+| `compare.mjs <slug>` | screenshot both frames, print `diff N% of pixels · score N`; `STABLE=1`, `WAIT=ms`, `--local=` |
+| `dom-diff.mjs <slug>` | structural walk of both frames; `--struct`, `--tags`, `WAIT=ms` |
+| `report.mjs`, `report-all.sh`, `report-merge.mjs` | corpus-wide parity report (sharded) |
+| `smoke.mjs` | every catalogue page returns 200, preview mounts, Code tab has files, no console errors |
+| `queue.mjs`, `audit-captures.mjs` | progress and capture-quality audits |
+| `prune-free.mjs` | keep only the import closure the Pro items need |
 
-- Search scores prefix matches first, then substring, then slug matches.
-- Sections are sticky-scrolled; the active category icon is computed from section offsets.
-- Skin tone appends the Fitzpatrick modifier (U+1F3FB–U+1F3FF) for the ~single-codepoint people/
-  hand emoji that support it.
-- Recents persist under `uiarc:emoji-recent`.
-- `?open=1` in the URL opens the demo popover (handy for screenshots).
+`captures/` is generated and not committed — re-run the capture step if you want to re-verify an item.
+
+## Known residues
+
+Eight items score below 99.5 and none of them is a missing feature: an undamped orbit
+(`customer-galaxy`, which also scores ~96 against *itself*), a randomised text-reveal loop
+(`source-cards`), live clock digits (`revenue-globe`), a 17-second race (`race-bar-chart`), a spinning
+wheel (`prize-wheel`), WebGL fluid noise (`ink-fluid`), per-cell RNG (`sand-text`) and a clock lead
+(`orbit-logos`). All are documented with measurements in
+[METHOD.md § 7](METHOD.md#7-known-irreducible-residues).
+
+## Credit & disclaimer
+
+All design, layout and component ideas belong to **Arc / [uiarc.dev](https://uiarc.dev)** — this is a
+reverse-engineering study, not a redistribution of the original source. The code here was recovered
+from publicly served artifacts for research and porting practice; if you want the supported, licensed
+version (plus updates and support), buy the original. Trademarks belong to their owners.

@@ -1,0 +1,4 @@
+/* Demo chrome only: `lightbox-gallery_demo__X2kte` from the item's second module. The preview frame's
+   `.canvas > *{width:100%}` is (0,1,0) and lands after the module sheet, so the shipped 640px cap is
+   declared on a doubled class (0,2,0) and still measures 640 like the live frame. */
+.demo.demo{box-sizing:border-box;width:min(100%,640px);margin-inline:auto}

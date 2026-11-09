@@ -1,0 +1,97 @@
+.root {
+  --mesh-accent: var(--accent);
+  --mesh-glass: color-mix(in oklab, var(--surface) 70%, transparent);
+  --mesh-glass-edge: color-mix(in oklab, var(--foreground) 10%, transparent);
+  --mesh-glass-shine: oklch(100% 0 0 / 0.55);
+  --mesh-glass-shadow:
+    0 1px 2px oklch(0% 0 0 / 0.06), 0 12px 30px -10px oklch(0% 0 0 / 0.22),
+    0 30px 60px -24px oklch(0% 0 0 / 0.24);
+  --mesh-handle-edge: oklch(100% 0 0);
+  --mesh-swatch-edge: oklch(0% 0 0 / 0.12);
+  container-type: inline-size;
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+  min-width: 0px;
+  padding: var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+:global(:root[data-theme="dark"]) .root {
+  --mesh-glass: color-mix(in oklab, var(--surface) 62%, transparent);
+  --mesh-glass-edge: oklch(100% 0 0 / 0.1);
+  --mesh-glass-shine: oklch(100% 0 0 / 0.1);
+  --mesh-glass-shadow:
+    0 1px 2px oklch(0% 0 0 / 0.3), 0 12px 32px -8px oklch(0% 0 0 / 0.5),
+    0 28px 64px -20px oklch(0% 0 0 / 0.5);
+  --mesh-swatch-edge: oklch(100% 0 0 / 0.16);
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-width: 0px;
+  overflow: hidden;
+  border-radius: calc(var(--radius-surface) - var(--space-2));
+  isolation: isolate;
+  touch-action: pan-y;
+  user-select: none;
+  cursor: crosshair;
+}
+
+.stage::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: 3;
+  border-radius: inherit;
+  box-shadow: oklch(0 0 0 / 0.08) 0px 0px 0px 1px inset;
+  pointer-events: none;
+}
+
+.canvas,
+.fallback {
+  position: absolute;
+  inset: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas[data-hidden] {
+  visibility: hidden;
+}
+
+.root.background {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  background: none;
+  pointer-events: none;
+  container-type: normal;
+}
+
+.background .stage {
+  position: absolute;
+  inset: 0px;
+  aspect-ratio: auto;
+  border-radius: 0px;
+  cursor: auto;
+  touch-action: auto;
+}
+
+.background .stage::after {
+  content: none;
+}

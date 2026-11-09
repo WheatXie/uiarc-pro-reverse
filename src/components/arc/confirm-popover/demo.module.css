@@ -1,0 +1,125 @@
+.demo {
+  display: grid;
+  width: 100%;
+  max-width: 560px;
+  gap: 14px;
+  margin-inline: auto;
+  padding-block: 120px;
+  /* The reference app shell sets body tracking; this shell does not, so the card carries it. */
+  letter-spacing: var(--tracking-body);
+}
+.card {
+  display: grid;
+  min-width: 0;
+  padding: 8px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  box-shadow: var(--shadow-resting);
+}
+.heading {
+  margin: 0;
+  padding: 16px 0 8px;
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+  /* Same reason: the reference shell sets display leading on headings, this one inherits body leading. */
+  line-height: var(--leading-display);
+}
+.row {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+}
+.row + .row {
+  border-top: 1px solid var(--border-subtle);
+}
+.avatar {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.text {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+}
+.name {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+.meta {
+  overflow: hidden;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding-inline: 8px;
+}
+.switchLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--text-sm);
+}
+.switch {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  flex: none;
+  margin: 0;
+  border-radius: 999px;
+  appearance: none;
+  background: var(--control-track);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+.switch:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--control-thumb);
+  box-shadow: var(--control-thumb-shadow);
+  content: "";
+  transition:
+    transform var(--duration-spring) var(--ease-spring),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+.switch:checked {
+  background: var(--control-on);
+}
+.switch:checked:after {
+  background: var(--control-thumb-on);
+  transform: translateX(12px);
+}
+.log {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+@media (max-width: 480px) {
+  .demo {
+    padding-block: 96px;
+  }
+  .card {
+    padding-inline: 16px;
+    border-radius: var(--radius-panel);
+  }
+}

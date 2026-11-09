@@ -1,0 +1,10 @@
+/* Demo chrome for the keycap keyboard preview — de-hashed from the same shipped module
+   (`.keycap-keyboard_demo/segment/option`). */
+
+.demo{display:grid;width:100%;justify-items:center;gap:16px}
+.segment{position:relative;display:inline-grid;grid-auto-columns:1fr;grid-auto-flow:column;gap:2px;padding:2px;border:1px solid var(--border);border-radius:var(--radius-pill);background:var(--surface-muted)}
+.segment:before{position:absolute;top:2px;bottom:2px;left:2px;width:calc(50% - 3px);border-radius:var(--radius-pill);background:var(--surface-raised);box-shadow:var(--shadow-resting),0 0 0 1px var(--border);content:"";transform:translate3d(calc(var(--index, 0) * (100% + 2px)),0,0);transition:transform var(--duration-spring) var(--ease-spring)}
+.option{position:relative;height:30px;padding:0 14px;border:0;border-radius:var(--radius-pill);background:none;color:var(--text-muted);font:inherit;font-size:var(--text-sm);letter-spacing:var(--tracking-body);cursor:pointer;transition:color var(--duration-fast) var(--ease-standard)}
+.option[aria-pressed=true]{color:var(--foreground)}
+@media (hover:hover) and (pointer:fine){.option:hover{color:var(--foreground)}}
+@media (prefers-reduced-motion:reduce){.segment:before{transition:none}}

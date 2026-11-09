@@ -1,0 +1,773 @@
+/* AI inline edit — dehashed from `_next/static/css/e19086ab763bb0fe.css`
+   (`.ai-inline-edit_*__hash` selectors), with the keyframe names restored to their module-local
+   names. Every declaration below is the shipped one; only the formatting is new. */
+
+.root {
+  /* The diff palette is derived once here so insertion/deletion marks share one definition. */
+  --hover: color-mix(in oklab, var(--foreground) 6%, transparent);
+  --ins: color-mix(in oklab, var(--success) 16%, transparent);
+  --ins-line: color-mix(in oklab, var(--success) 55%, transparent);
+  --del: var(--danger);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1120px;
+  height: 680px;
+  min-width: 0;
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+  container: editor / inline-size;
+}
+
+.root *,
+.root :after,
+.root :before {
+  box-sizing: border-box;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+      90deg,
+      var(--text-secondary) 0,
+      var(--text-secondary) 38%,
+      var(--foreground) 50%,
+      var(--text-secondary) 62%,
+      var(--text-secondary) 100%
+    )
+    0 0 / 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2.2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* Saving / Saved crossfade: both labels stack in one grid cell, only one is opaque. */
+.swap {
+  display: inline-grid;
+}
+
+.swap > span {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transition: opacity var(--duration-standard) var(--ease-standard);
+}
+
+.swap > span[data-on] {
+  opacity: 1;
+}
+
+.kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: var(--text-xs);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.header {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 60px;
+  padding: 0 14px 0 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.docMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.avatar {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.docText {
+  display: grid;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.docTitle {
+  overflow: hidden;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.docSub {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  margin: 0 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+.headerActions {
+  display: flex;
+  flex: none;
+  gap: 2px;
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-instant) var(--ease-standard),
+    opacity var(--duration-fast) var(--ease-standard);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.iconButton svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.75;
+}
+
+.iconButton:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.iconButton:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .iconButton:hover:not(:disabled) {
+    background: var(--hover);
+    color: var(--foreground);
+  }
+}
+
+.scroller {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 44px 32px 160px;
+}
+
+.title {
+  margin: 0 0 22px;
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
+}
+
+.para {
+  position: relative;
+  margin: 0 0 1em;
+  padding: 0;
+  color: var(--foreground);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.72;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  caret-color: var(--foreground);
+  cursor: text;
+}
+
+.para ::selection,
+.para::selection {
+  background: var(--accent-subtle);
+}
+
+.para:empty:before {
+  content: attr(data-placeholder);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.page ::highlight(ai-accepted) {
+  background-color: var(--ins);
+}
+
+.sessionPara {
+  cursor: default;
+}
+
+.region {
+  position: relative;
+}
+
+.selected {
+  font-weight: inherit;
+  border-radius: 3px;
+  background: var(--accent-subtle);
+  color: inherit;
+  box-shadow: 0 0 0 2px var(--accent-subtle);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.region[data-phase="error"] .selected {
+  background: color-mix(in oklab, var(--danger) 12%, transparent);
+  box-shadow: none;
+}
+
+.ins {
+  border-radius: 3px;
+  background: var(--ins);
+  color: inherit;
+  text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.insEnter {
+  animation: develop 0.42s var(--ease-standard) backwards;
+}
+
+@keyframes develop {
+  0% {
+    opacity: 0;
+    filter: blur(1.5px);
+  }
+  40% {
+    filter: blur(0.4px);
+  }
+}
+
+.del {
+  color: var(--text-muted);
+  text-decoration: none;
+  background: linear-gradient(var(--del), var(--del)) no-repeat 0 58% / 100% 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.delEnter {
+  animation: strike 0.36s var(--ease-standard) backwards;
+}
+
+@keyframes strike {
+  0% {
+    color: var(--foreground);
+    background-size: 0 1px;
+  }
+}
+
+.pending {
+  color: var(--text-muted);
+  transition: color var(--duration-standard) var(--ease-standard);
+}
+
+.hunk {
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hunk:hover {
+    background: var(--hover);
+  }
+}
+
+.hunkBar {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: -2px;
+  z-index: 3;
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-raised);
+  opacity: 0;
+  transform: translateY(3px);
+  pointer-events: none;
+  transition:
+    opacity var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
+  user-select: none;
+}
+
+.hunk:focus .hunkBar,
+.hunk:focus-within .hunkBar,
+.hunk:hover .hunkBar {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.hunkButton {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-instant) var(--ease-standard);
+}
+
+.hunkButton svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+}
+
+.hunkButton:active {
+  transform: scale(0.9);
+}
+
+.hunkButton:first-child:hover {
+  background: var(--ins);
+  color: var(--success);
+}
+
+.hunkButton:last-child:hover {
+  background: var(--hover);
+  color: var(--foreground);
+}
+
+.resolved {
+  border-radius: 3px;
+  animation: settle 0.9s var(--ease-standard);
+}
+
+.resolved[data-choice="accepted"] {
+  animation-name: settleIn;
+}
+
+@keyframes settle {
+  0% {
+    background: var(--hover);
+  }
+}
+
+@keyframes settleIn {
+  0% {
+    background: var(--ins);
+  }
+}
+
+.ghost {
+  color: var(--text-muted);
+  pointer-events: none;
+  user-select: none;
+}
+
+.ghostWord {
+  animation: develop 0.36s var(--ease-standard) backwards;
+}
+
+.bubble {
+  position: absolute;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 6px 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-raised);
+  color: var(--foreground);
+  font: inherit;
+  font-size: var(--text-xs);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bubble > svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.75;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bubble:hover {
+    background: var(--surface-muted);
+  }
+}
+
+.layer {
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-floating);
+}
+
+.layerSize {
+  width: max-content;
+  max-width: min(340px, var(--layer-room, 100%));
+}
+
+.layerSize[data-mode="prompt"] {
+  width: min(320px, var(--layer-room, 100%));
+}
+
+.layerBody {
+  min-width: 0;
+}
+
+.prompt {
+  display: grid;
+}
+
+.promptRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 0 10px 0 13px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.promptIcon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.75;
+  color: var(--accent);
+}
+
+.promptInput {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+  font: inherit;
+  font-size: var(--text-sm);
+}
+
+.promptInput::placeholder {
+  color: var(--text-muted);
+}
+
+.menu {
+  display: grid;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+}
+
+.menuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 34px;
+  padding: 0 9px;
+  border-radius: 10px;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.menuItem[data-active] {
+  color: var(--foreground);
+}
+
+.menuHighlight {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 10px;
+  background: var(--hover);
+}
+
+.menuEnter,
+.menuIcon {
+  position: relative;
+  flex: none;
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.75;
+}
+
+.menuEnter {
+  margin-left: auto;
+  color: var(--text-muted);
+}
+
+.menuLabel {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menuEmpty {
+  padding: 8px 10px;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.promptHint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+  margin: 0;
+  padding: 8px 12px 10px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 42px;
+  padding: 5px 5px 5px 12px;
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+.barIcon {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  stroke-width: 1.75;
+  color: var(--text-muted);
+}
+
+.ok {
+  color: var(--success);
+}
+
+.barLabel {
+  margin-right: 6px;
+  color: var(--text-secondary);
+}
+
+.barButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-instant) var(--ease-standard);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.barButton svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.75;
+}
+
+.barButton:active {
+  transform: scale(0.96);
+}
+
+.barButton .kbd {
+  margin-left: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .barButton:hover {
+    background: var(--hover);
+    color: var(--foreground);
+  }
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.primary .kbd {
+  border-color: color-mix(in oklab, var(--accent-foreground) 25%, transparent);
+  background: transparent;
+  color: color-mix(in oklab, var(--accent-foreground) 70%, transparent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background: color-mix(in oklab, var(--accent) 88%, var(--accent-foreground));
+    color: var(--accent-foreground);
+  }
+}
+
+.stopGlyph {
+  width: 12px !important;
+  height: 12px !important;
+  fill: currentColor;
+  stroke-width: 0 !important;
+  transform: scale(0.75);
+}
+
+.footer {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 40px;
+  padding: 0 18px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.hint {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.count {
+  flex: none;
+}
+
+@container editor (max-width: 560px) {
+  .page {
+    padding: 28px 18px 160px;
+  }
+  .title {
+    font-size: var(--text-2xl);
+  }
+  .header {
+    padding: 0 8px 0 14px;
+  }
+  .footer {
+    padding: 0 14px;
+  }
+  .bar {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .delEnter,
+  .ghostWord,
+  .insEnter,
+  .resolved,
+  .shimmer,
+  .spin {
+    animation: none;
+  }
+  .shimmer {
+    background: none;
+    color: var(--text-secondary);
+  }
+  .hunkBar {
+    transition: none;
+  }
+}

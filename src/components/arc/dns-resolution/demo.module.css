@@ -1,0 +1,7 @@
+/* The demo only adds the 1080px column the reference ships in its own demo class. */
+.demo {
+  display: grid;
+  width: 100%;
+  max-width: 1080px;
+  margin-inline: auto;
+}

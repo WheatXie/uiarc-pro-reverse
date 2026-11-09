@@ -1,0 +1,6 @@
+/* Doubled class: `.canvas > *` in src/frame/frame.module.css is (0,1,0) and lands after this sheet. */
+.demo.demo {
+  display: grid;
+  width: 100%;
+  place-items: center;
+}

@@ -1,0 +1,118 @@
+/* Mirrors the reference preview frame (frame-page_* / previews-demos_*) so a component can be
+   measured and screenshotted under exactly the same constraints as the live site. */
+
+.root {
+  box-sizing: border-box;
+  min-height: 100dvh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.root *,
+.root *::after,
+.root *::before {
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid;
+  min-width: 0;
+}
+
+/* Zero-specificity so an item's own max-width (e.g. a 600px block) still wins. */
+:where(.content) > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.content > :is(button, a, [role="button"], [role="switch"]) {
+  place-self: center;
+}
+
+.root[data-layout="section"] .content {
+  justify-items: center;
+  padding: clamp(24px, 6vw, 96px) clamp(16px, 5vw, 64px);
+}
+
+.root[data-layout="section"] .content > * {
+  width: 100%;
+}
+
+.root[data-layout="center"] .content {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.root[data-layout="center"] .content > * {
+  width: min(100%, var(--frame-width, 100%));
+  margin: auto;
+}
+
+.root[data-width="narrow"] {
+  --frame-width: 560px;
+}
+
+.root[data-width="medium"] {
+  --frame-width: 880px;
+}
+
+.root[data-width="wide"] {
+  --frame-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .root[data-layout="center"] .content {
+    padding: 32px;
+  }
+}
+
+.root[data-layout="app"] .content,
+.root[data-layout="scene"] .content {
+  min-height: 100dvh;
+}
+
+.root[data-layout="app"] .content > * {
+  min-height: 100dvh;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.canvas {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  max-width: 760px;
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center;
+  padding: 8px;
+  color: var(--foreground);
+}
+
+.canvas > * {
+  width: 100%;
+  min-width: 0;
+}
+
+.canvas:has(> [data-canvas="wide"]) {
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.canvas:has(> [data-canvas="bleed"]),
+.canvas[data-canvas="bleed"] {
+  max-width: none;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  .root[data-layout="section"] .content {
+    padding: 16px;
+  }
+}

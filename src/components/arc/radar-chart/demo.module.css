@@ -1,0 +1,60 @@
+/* Demo shell for the radar-chart preview: a 600px card, the switch in the top row and the web
+   under it. De-hashed from the shipped preview module. */
+section.card {
+  width: min(100%, 600px);
+}
+.card {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+.top {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.heading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+/* The reference base layer forces `h1–h6 { line-height: 1.1 !important }` and gives h1–h3 the
+   display tracking, so the shipped rule's `var(--leading-body)` never applies there. This shell
+   has no such heading rule, so the measured values are set here instead: 16px type on 17.6px
+   leading, −0.48px tracking. */
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: var(--tracking-display);
+}
+.meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+  font-variant-numeric: tabular-nums;
+}
+.controls {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+}
+@media (max-width: 420px) {
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+}

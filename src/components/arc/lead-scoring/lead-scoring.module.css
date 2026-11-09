@@ -1,0 +1,478 @@
+.root {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  overflow: clip;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  font-size: 13px;
+  line-height: 20px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.swap {
+  grid-area: 1/1;
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 16px 16px 20px;
+}
+.headText {
+  display: grid;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.title {
+  /* Compensates for the live site's global heading typography, which this repo does not
+     reproduce. The captured CSS module ships `line-height: 20px` here, but uiarc.dev's owning
+     rule wins in the browser (unlayered global heading style) and the title computes to
+     14px/15.4px (1.1) with letter-spacing -0.42px (-0.03em); locally it is 14px/20px with
+     -0.28px (-0.02em). Measured on …/blocks/lead-scoring/frame vs /frame/lead-scoring (dsf 2):
+     the 20px line box pushed the title 1px and the meta line 2.3px down inside the 76px head,
+     which was the whole of the residual pixel diff (0.169% of pixels · score 99.8) and is
+     0.000% with the measured values. */
+
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  margin: 0;
+  color: var(--text-muted);
+}
+.metaMark {
+  flex: none;
+}
+.metaText {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.headActions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+}
+.iconButton {
+  width: var(--control-height-sm);
+  padding: 0;
+  color: var(--text-secondary);
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--border-subtle);
+  background: inherit;
+}
+.item {
+  position: relative;
+  background: inherit;
+}
+.item + .item {
+  border-top: 1px solid var(--border-subtle);
+}
+.row {
+  --focus-outline-offset: -2px;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) 36px 16px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  min-height: 64px;
+  margin: 0;
+  padding: 12px 16px 12px 20px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.12s var(--ease-standard, ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .row:hover {
+    background: color-mix(in oklab, var(--foreground) 3%, transparent);
+  }
+}
+.row:active {
+  background: color-mix(in oklab, var(--foreground) 5%, transparent);
+}
+.mark {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: var(--foreground);
+}
+.mark > svg {
+  display: block;
+}
+.monogram {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1;
+}
+.text {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  line-height: 20px;
+}
+.name {
+  flex: 0 1 auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.name,
+.role {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.role {
+  flex: 1 1 0;
+  color: var(--text-muted);
+}
+.when {
+  display: grid;
+  flex: none;
+  width: 64px;
+  justify-items: end;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.when > .swap {
+  max-width: 100%;
+}
+.synced.swap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  color: var(--text-secondary);
+}
+.synced svg {
+  flex: none;
+  align-self: center;
+}
+.reason {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  height: 20px;
+  color: var(--text-secondary);
+}
+.ring {
+  --ring: var(--success);
+  position: relative;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+}
+.ring[data-band="good"] {
+  --ring: var(--warning);
+}
+.ring[data-band="low"] {
+  --ring: var(--text-muted);
+}
+.ringSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+}
+.ringTrack {
+  fill: none;
+  stroke: color-mix(in oklab, var(--foreground) 9%, transparent);
+  stroke-width: 3;
+}
+.ringArc {
+  fill: none;
+  stroke: var(--ring);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke 0.16s var(--ease-standard, ease-out);
+}
+.ringSpin {
+  opacity: 0;
+  transform-box: view-box;
+  transform-origin: 18px 18px;
+  transition: opacity 0.16s var(--ease-standard, ease-out);
+  animation: leadRingSpin 0.9s linear infinite;
+  animation-play-state: paused;
+}
+.ringSpinner {
+  fill: none;
+  stroke: var(--text-muted);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 18 100;
+}
+.ring[data-scoring] .ringSpin {
+  opacity: 1;
+  animation-play-state: running;
+}
+.root[data-offscreen] .ringSpin {
+  animation-play-state: paused;
+}
+.ringValue {
+  position: relative;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  transition: opacity 0.16s var(--ease-standard, ease-out);
+}
+.ring[data-scoring] .ringValue {
+  opacity: 0;
+}
+@keyframes leadRingSpin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.chevron {
+  color: var(--text-muted);
+  transition: transform 0.2s var(--ease-standard, ease-out);
+}
+.item[data-expanded] .chevron {
+  transform: rotate(180deg);
+}
+.panel {
+  overflow: hidden;
+}
+.panelInner {
+  display: grid;
+  gap: 16px;
+  padding: 4px 16px 16px 52px;
+}
+.signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  padding: 0 10px 0 8px;
+  border-radius: var(--radius-pill, 999px);
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.chip svg {
+  flex: none;
+  color: var(--text-muted);
+}
+.factors {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.factor {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 12px;
+}
+.factorLabel {
+  overflow: hidden;
+  color: var(--text-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bar {
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--foreground) 8%, transparent);
+}
+.barFill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transform-origin: left center;
+}
+.factorValue {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+.status {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  margin: 0;
+  color: var(--text-muted);
+}
+.statusDone.swap,
+.statusError.swap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+}
+.statusDone svg {
+  flex: none;
+  color: var(--success);
+}
+.statusError svg {
+  flex: none;
+  color: var(--danger);
+}
+.actions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+}
+.picker {
+  display: inline-flex;
+  flex: none;
+  gap: 2px;
+  height: var(--control-height-sm);
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+}
+.pickerOption {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--radius-control) - 3px);
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.12s var(--ease-standard, ease-out);
+}
+.pickerOption svg {
+  filter: grayscale(1);
+  opacity: 0.55;
+  transition:
+    filter 0.12s var(--ease-standard, ease-out),
+    opacity 0.12s var(--ease-standard, ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .pickerOption:hover svg {
+    opacity: 0.8;
+  }
+}
+.pickerOption[aria-checked="true"] {
+  background: color-mix(in oklab, var(--foreground) 8%, transparent);
+}
+.pickerOption[aria-checked="true"] svg {
+  filter: none;
+  opacity: 1;
+}
+.empty {
+  display: grid;
+  gap: 4px;
+  padding: 48px 20px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+.emptyTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.emptyText {
+  margin: 0;
+  color: var(--text-muted);
+}
+@container (max-width: 460px) {
+  .jobTitle {
+    display: none;
+  }
+  .panelInner {
+    padding-left: 20px;
+  }
+  .factor {
+    grid-template-columns: 100px minmax(0, 1fr) 28px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .actions > :last-child {
+    flex: 1 1 auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ringSpin {
+    animation: none;
+  }
+  .chevron,
+  .pickerOption,
+  .pickerOption svg,
+  .ringArc,
+  .ringValue,
+  .row {
+    transition: none;
+  }
+}

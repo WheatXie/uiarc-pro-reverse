@@ -1,0 +1,269 @@
+.card {
+  position:relative;
+  width:min(100%,440px);
+  margin-inline:auto;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:var(--surface-raised);
+  box-shadow:var(--shadow-raised);
+  color:var(--foreground);
+  font-family:var(--font-body);
+  letter-spacing:var(--tracking-body)
+}
+section.card {
+  max-width:440px
+}
+.stage {
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  padding:40px 20px 16px;
+  border-bottom:1px solid var(--border);
+  background:var(--surface-muted)
+}
+.art {
+  display:block;
+  width:min(100%,352px);
+  height:auto;
+  aspect-ratio:8/5;
+  overflow:visible
+}
+.shape {
+  stroke-width:1.36;
+  stroke-linejoin:round;
+  transition:fill var(--duration-considered) var(--ease-standard),stroke var(--duration-considered) var(--ease-standard)
+}
+.paper {
+  fill:var(--surface-raised);
+  stroke:var(--foreground)
+}
+.shade {
+  fill:var(--border);
+  stroke:var(--text-muted)
+}
+.note {
+  fill:var(--surface-raised);
+  stroke:var(--accent)
+}
+.stroke {
+  fill:none;
+  stroke:var(--text-muted);
+  stroke-width:1.36;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  transition:stroke var(--duration-considered) var(--ease-standard)
+}
+.accent {
+  stroke:var(--accent)
+}
+.trail {
+  stroke-dasharray:.5 4.5
+}
+.check {
+  stroke-width:1.6
+}
+.skip {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:1;
+  height:28px;
+  padding:0 10px;
+  border:0;
+  border-radius:var(--radius-pill);
+  background:transparent;
+  color:var(--text-secondary);
+  font:inherit;
+  font-size:var(--text-sm);
+  cursor:pointer;
+  transition:color var(--duration-fast) var(--ease-standard),background var(--duration-fast) var(--ease-standard)
+}
+@media (hover:hover) and (pointer:fine) {
+  .skip:hover {
+    background:var(--surface-raised);
+    color:var(--foreground)
+  }
+}
+.body {
+  display:grid;
+  gap:20px;
+  padding:20px 24px
+}
+.copy {
+  display:grid;
+  min-height:4.5rem
+}
+.copyItem {
+  display:grid;
+  align-content:start;
+  gap:6px;
+  grid-area:1/1
+}
+.copyItem h2 {
+  margin:0;
+  font-size:var(--text-lg);
+  font-weight:500;
+  line-height:var(--leading-body);
+  letter-spacing:var(--tracking-body);
+  text-wrap:balance
+}
+.copyItem p {
+  margin:0;
+  color:var(--text-secondary);
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
+  text-wrap:pretty
+}
+.srOnly {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+  white-space:nowrap
+}
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px
+}
+.dots {
+  display:flex;
+  align-items:center;
+  margin-left:-6px
+}
+.dot {
+  display:grid;
+  place-items:center;
+  height:32px;
+  padding:0 5px;
+  border:0;
+  border-radius:var(--radius-pill);
+  background:transparent;
+  cursor:pointer
+}
+.dotMark {
+  display:block;
+  width:6px;
+  height:6px;
+  border-radius:var(--radius-pill);
+  background:var(--border-strong);
+  transition:background-color var(--duration-standard) var(--ease-standard)
+}
+.dotMark[data-state=complete] {
+  background:var(--text-muted)
+}
+.dotMark[data-state=current] {
+  background:var(--accent)
+}
+@media (hover:hover) and (pointer:fine) {
+  .dot:hover .dotMark[data-state=upcoming] {
+    background:var(--text-muted)
+  }
+}
+.actions {
+  display:flex;
+  align-items:center;
+  gap:8px
+}
+.back,.primary {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  height:var(--control-height-sm);
+  padding:0 14px;
+  border-radius:12px;
+  font:inherit;
+  font-size:var(--text-sm);
+  font-weight:500;
+  cursor:pointer;
+  transition:background var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard)
+}
+.back {
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--foreground)
+}
+@media (hover:hover) and (pointer:fine) {
+  .back:not([aria-disabled=true]):hover {
+    background:var(--surface-muted)
+  }
+}
+.back:not([aria-disabled=true]):active,.primary:active {
+  transform:scale(.97)
+}
+.back,.primary {
+  transition-property:background,border-color,color,transform,opacity
+}
+.back[aria-disabled=true] {
+  border-color:var(--border-subtle);
+  background:transparent;
+  color:var(--text-muted);
+  cursor:default
+}
+.primary {
+  display:grid;
+  width:8.5rem;
+  padding:0 12px;
+  border:1px solid var(--foreground);
+  background:var(--foreground);
+  color:var(--background)
+}
+@media (hover:hover) and (pointer:fine) {
+  .primary:hover {
+    opacity:.88
+  }
+}
+.primaryLabel {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  grid-area:1/1;
+  white-space:nowrap
+}
+@media (max-width:440px) {
+  .card {
+    border-radius:18px
+  }
+  .stage {
+    padding:42px 12px 12px
+  }
+  .body {
+    gap:16px;
+    padding:16px
+  }
+  .copy {
+    min-height:5.5rem
+  }
+  .copyItem h2 {
+    font-size:var(--text-base)
+  }
+  .back {
+    width:var(--control-height-sm);
+    padding:0
+  }
+  .backLabel {
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    clip-path:inset(50%);
+    white-space:nowrap
+  }
+  .primary {
+    width:8rem
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  .back,.dotMark,.primary,.shape,.skip,.stroke {
+    transition:none
+  }
+  .back:active,.primary:active {
+    transform:none
+  }
+}

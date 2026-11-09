@@ -1,0 +1,55 @@
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+  padding: 24px 16px;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.caption {
+  display: grid;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--text-sm, 14px);
+  line-height: 20px;
+  text-align: center;
+}
+
+.captionText {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+}
+
+.sizes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  width: min(100%, 360px);
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.size figcaption {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+}

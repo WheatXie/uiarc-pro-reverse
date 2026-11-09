@@ -1,0 +1,13 @@
+/* Demo shell for the split-bar preview: a period switch above the bar, both centered at the
+   preview frame's max width. */
+.demo {
+  display: grid;
+  width: 100%;
+  max-width: 720px;
+  gap: var(--space-6);
+  justify-items: start;
+  margin-inline: auto;
+}
+.demo > :last-child {
+  justify-self: stretch;
+}

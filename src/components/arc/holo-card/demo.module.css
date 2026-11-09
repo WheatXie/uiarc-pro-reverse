@@ -1,0 +1,139 @@
+/* Demo shell for the holo card: member card front and back faces. */
+.demo {
+  --card-accent: color-mix(in oklab, var(--accent) 78%, oklch(100% 0 0));
+  display: grid;
+  min-height: 500px;
+  place-items: center;
+  padding: 32px 16px;
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+/* The frame host carries no accent attribute, so treat "unset" as neutral. */
+:root:not([data-accent]) .demo,
+:root[data-accent="neutral"] .demo {
+  --card-accent: oklch(94% 0 0);
+}
+.card {
+  width: min(100%, 290px);
+}
+.back,
+.front {
+  position: absolute;
+  inset: 0;
+  background: oklch(16% 0 0);
+  color: oklch(97% 0 0);
+}
+.photo {
+  position: absolute;
+  inset: 0 0 34% 0;
+  overflow: hidden;
+}
+.image {
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.photo:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, oklch(16% 0 0/0) 55%, oklch(16% 0 0));
+}
+.top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mark {
+  width: 24px;
+  height: 24px;
+  color: oklch(98% 0 0);
+  filter: drop-shadow(0 1px 2px oklch(0 0 0/0.3));
+}
+.tier {
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--card-accent);
+  color: oklch(16% 0 0);
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+.info {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: grid;
+  gap: 2px;
+}
+.name {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-display);
+}
+.role {
+  margin: 0 0 12px;
+  line-height: var(--leading-body);
+  color: oklch(78% 0 0);
+  font-size: var(--text-sm);
+}
+.meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid oklch(100% 0 0/0.14);
+}
+.meta dt {
+  color: oklch(70% 0 0);
+  font-size: var(--text-xs);
+}
+.meta dd {
+  margin: 2px 0 0;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.back {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--space-2);
+  padding: 24px;
+  text-align: center;
+}
+.backMark {
+  width: 72px;
+  height: 72px;
+  margin-bottom: var(--space-4);
+  color: var(--card-accent);
+}
+.backTitle {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-display);
+}
+.backNote {
+  margin: 0;
+  color: oklch(76% 0 0);
+  font-size: var(--text-sm);
+}
+.handle {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: oklch(66% 0 0);
+  font-size: var(--text-xs);
+}

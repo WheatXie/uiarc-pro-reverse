@@ -1,0 +1,7 @@
+/* Demo chrome for the gravity well preview — de-hashed from the same shipped module. */
+
+.demo{width:100%;max-width:600px;margin-inline:auto;padding:20px;border:1px solid var(--border);border-radius:var(--radius-surface);background:var(--surface);overflow:hidden;overflow:clip}
+.demo .well{grid-template-columns:repeat(7,minmax(0,1fr));cursor:crosshair}
+@media (max-width:520px){.demo{padding:14px}
+.demo .well{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px!important}}
+.image{display:block;width:100%;height:100%;border-radius:12px;background:var(--surface-muted);object-fit:cover;pointer-events:none}

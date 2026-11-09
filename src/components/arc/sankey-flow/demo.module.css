@@ -1,0 +1,57 @@
+/* The demo card the preview frame centres: the same shell every chart demo wears. */
+section.card {
+  width: min(100%, 760px);
+}
+
+.card {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+.top {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.heading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.title {
+  /* The site's global h3 rule is what actually dresses this heading: display face,
+     display tracking, and a 1.1 leading that wins with !important over the card's body leading. */
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-display);
+  line-height: 1.1;
+}
+
+.meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+}

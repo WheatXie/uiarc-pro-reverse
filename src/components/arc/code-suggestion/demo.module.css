@@ -1,0 +1,2 @@
+.demo{display:flex;box-sizing:border-box;width:100%;min-height:776px;flex-direction:column;align-items:center;justify-content:flex-start;gap:16px}
+.control{flex:0 0 auto;max-width:100%}

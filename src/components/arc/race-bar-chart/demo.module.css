@@ -1,0 +1,48 @@
+.card {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-surface);
+  background: var(--surface);
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+/* The frame stacks children at `min(100%, var(--frame-width))`; the card keeps its own 720px cap. */
+section.card {
+  width: min(100%, 720px);
+}
+
+.heading {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+/* The gallery shell carries a global `h1..h6 { line-height: 1.1 !important }` plus
+   `h1,h2,h3 { letter-spacing: var(--tracking-display) }`. index.css here has neither, so the
+   heading would render at 22.4px / -.32px instead of the live 17.6px / -.48px and shift every
+   row below it by 2.4px. Replicate the measured values rather than touching the shared sheet. */
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: var(--tracking-display);
+}
+
+.meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+}

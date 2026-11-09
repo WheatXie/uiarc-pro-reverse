@@ -1,0 +1,1167 @@
+{
+  "account-health": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "action-morph": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "activity-feed": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "activity-rings": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "activity-terrain": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "agent-approvals": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-builder": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-cursor": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "agent-gallery": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-handoff": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "agent-loop": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "agent-memory": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-orchestrator": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-plan": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "agent-routines": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-run": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-status": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "agent-tasks": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "agent-timeline": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ai-answer": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "ai-chat": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "ai-command": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ai-composer": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "ai-feature-launch": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "ai-inline-edit": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "ai-insight-card": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "ai-mascot": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ai-search-bar": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "ai-setup-wizard": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "ai-side-panel": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "ai-spark": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ai-translate": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ai-workflow": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "api-keys": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "ask-your-data": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "availability-picker": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "avatar-upload": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "narrow"
+  },
+  "billing-overview": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "black-hole": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "booking-pill": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "branch-graph": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "budget-variance": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "call-insights": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "cancel-flow": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "card-to-article": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "cart-drawer": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "catch-up": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "charge-session": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "checkout-live": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "checkout-summary": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "choropleth-explorer": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "code-suggestion": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "cohort-retention": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "confirm-popover": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "narrow"
+  },
+  "connected-scatter": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "connector-setup": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "context-window": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "control-center": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "cover-flow": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "credit-topup": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "cube-mascot": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "customer-galaxy": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "data-flow": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "data-grid": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "date-reel": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "delivery-tracker": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "dictation-button": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "dns-resolution": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "dock": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "document-extract": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "narrow"
+  },
+  "domain-verify": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "dot-grid": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "emoji-picker": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "narrow"
+  },
+  "enrich-column": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "env-variables": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "eval-suite": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "exploded-view": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "feature-bento": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "feature-voting": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "feedback-board": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "funnel-chart": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "gantt-timeline": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "generation-stats": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ghost-mascot": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "ghost-text": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "glass-card": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "glass-menu": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "glass-segmented": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "glass-tabbar": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "goal-tracker": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "gravity-well": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "help-center": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "hero-signup": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "holo-card": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "horizon-chart": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "image-generation": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "image-reveal": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "image-trail": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "inbox-triage": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "ink-fluid": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "install-snippet": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "integrations": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "invite-people": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "invoice-studio": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "journey-flow": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "kanban-board": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "keycap-keyboard": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "knowledge-base": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "kpi-drilldown": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "narrow"
+  },
+  "layout-morph": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "lead-scoring": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "lightbox-gallery": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "line-replay": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "link-unfurl": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "liquid-tab-bar": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "live-visitors": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "llm-cost-calculator": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "magic-link": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "market-terminal": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "mcp-servers": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "media-player": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "meeting-summary": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "mega-menu-morph": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "medium"
+  },
+  "metric-explorer": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "metric-ticker": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "metrics-dashboard": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "mixture-of-experts": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "model-arena": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "model-card": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "model-picker": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "model-training": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "morph-loader": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "morph-nav": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "mrr-waterfall": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "multi-region-failover": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "multi-step-form": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "now-playing": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "onboarding-illustration": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "onboarding-survey": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "orbit-logos": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "orbit-menu": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "page-curl": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "payment-flow": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "photo-grid": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "pii-redaction": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "pixel-mascot": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "presence-stack": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "pricing-calculator": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "prize-wheel": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "product-detail": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "product-gallery": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "product-listing": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "profile-page": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "project-board": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "prompt-cache": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "prompt-studio": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "provider-keys": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "provider-status": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "race-bar-chart": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "radar-chart": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "realtime-stream": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "reasoning-block": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "reasoning-tree": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "referral-card": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "release-readiness": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "reply-draft": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "research-run": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "narrow"
+  },
+  "response-feedback": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "revenue-explorer": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "revenue-globe": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "roles-permissions": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "sand-text": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "sankey-flow": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "scroll-story": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "search-results": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "seat-manager": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "seat-map": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "security-settings": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "selection-toolbar": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "semantic-zoom": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "settings-command": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "settings-page": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "share-access": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "narrow"
+  },
+  "share-sheet": {
+    "canvas": "none",
+    "layout": "scene",
+    "width": "medium"
+  },
+  "sheet-stack": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "sidebar": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "skeleton-morph": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "small-multiples": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "smart-form-fill": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "smart-scheduler": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "social-proof-toast": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "source-cards": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "speculative-decoding": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "speech-player": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "spend-alert": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "split-bar": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "spotlight-grid": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "starter-prompts": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "sticker-peel": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "stretch-refresh": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "sunburst": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "wide"
+  },
+  "support-conversation": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "support-widget": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "task-breakdown": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "team-directory": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "team-members": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "team-showcase": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "team-switcher": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "testimonial-stage": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "ticket-router": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "time-dial": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "tldr-toggle": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "toc-progress": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "medium"
+  },
+  "tone-tuner": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "tool-call": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "training-run": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "trial-banner": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "two-factor-setup": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "typewriter-terminal": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "undo-toast": {
+    "canvas": "contain",
+    "layout": "center",
+    "width": "medium"
+  },
+  "upgrade-prompt": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "uptime-status": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "usage-billing": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "usage-forecast": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "usage-pricing": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "vector-search": {
+    "canvas": "wide",
+    "layout": "center",
+    "width": "wide"
+  },
+  "voice-orb": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "voice-recorder": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "wallet-card": {
+    "canvas": "none",
+    "layout": "section",
+    "width": "medium"
+  },
+  "wallet-stack": {
+    "canvas": "default",
+    "layout": "center",
+    "width": "wide"
+  },
+  "webhook-tester": {
+    "canvas": "none",
+    "layout": "center",
+    "width": "medium"
+  },
+  "webhooks": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  },
+  "week-calendar": {
+    "canvas": "none",
+    "layout": "app",
+    "width": "medium"
+  }
+}

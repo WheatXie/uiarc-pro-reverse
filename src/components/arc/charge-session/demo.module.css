@@ -1,0 +1,7 @@
+/* Demo sheet, de-hashed from the same chunk (`charge-session_demo__F8YZX`). */
+.demo {
+  display: grid;
+  width: 100%;
+  max-width: 880px;
+  margin-inline: auto;
+}

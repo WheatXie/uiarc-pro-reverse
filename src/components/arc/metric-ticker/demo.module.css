@@ -1,0 +1,23 @@
+.demo {
+  display: grid;
+  width: 100%;
+  max-width: 880px;
+  gap: var(--space-3);
+  margin-inline: auto;
+  padding-bottom: 176px;
+}
+.bar {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.heading {
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
+}
