@@ -9,7 +9,7 @@
  *   node ai/install.mjs --vscode           # .vscode/mcp.json
  *   node ai/install.mjs --codex            # ~/.codex/config.toml snippet appended once
  *   node ai/install.mjs --agents           # ~/.agents/skills/arc-pro
- *   node ai/install.mjs --dsh              # .dsh/skills/arc-pro + ~/.dsh cordis patch (DeepSeek Harness)
+ *   node ai/install.mjs --dsh              # .dsh/skills/arc-pro copy + cordis `insert` entry (DeepSeek Harness)
  *   node ai/install.mjs --all              # every client above
  *   node ai/install.mjs --print            # print the JSON blocks and exit
  *
@@ -160,26 +160,33 @@ if (wantsAll || has("--codex")) {
 
 if (wantsAll || has("--dsh")) {
   say("DeepSeek Harness");
-  await linkSkill(join(ROOT, ".dsh/skills/arc-pro"));
+  // A real copy, not a symlink: dsh lists skill roots through its own fs service,
+  // which reports a symlinked directory as an unsupported entry type.
+  await copySkill(join(ROOT, ".dsh/skills/arc-pro"));
   const profileDir = process.env.DSH_PROFILE_DIR ?? join(homedir(), ".dsh/profiles/desktop");
   const patch = join(profileDir, "cordis.patch.yml");
   const entry = [
-    "- id: mcp-arc-pro",
-    "  name: '@deepseek-ai/dsh-mcp-client'",
-    "  config:",
-    "    serverName: arc-pro",
-    "    transport: stdio",
-    `    command: ${process.execPath}`,
-    "    args:",
-    `      - ${SERVER}`,
+    "- insert:",
+    "    - id: mcp-arc-pro",
+    "      name: '@deepseek-ai/dsh-mcp-client'",
+    "      config:",
+    "        serverName: arc-pro",
+    "        transport: stdio",
+    `        command: ${process.execPath}`,
+    "        args:",
+    `          - ${SERVER}`,
+    "        failOnStartupError: true",
     "",
   ].join("\n");
   const existing = existsSync(patch) ? await readFile(patch, "utf8") : "";
   if (existing.includes("mcp-arc-pro")) {
     say(`  ${patch} already has mcp-arc-pro — left as is`);
-  } else {
+  } else if (existing.trim() === "" || existing.trim() === "[]") {
     await mkdir(dirname(patch), { recursive: true });
-    await appendFile(patch, `${existing && !existing.endsWith("\n") ? "\n" : ""}${entry}`);
+    await writeFile(patch, `${entry}`);
+    say(`  wrote mcp-arc-pro → ${patch}`);
+  } else {
+    await appendFile(patch, `${existing.endsWith("\n") ? "" : "\n"}${entry}`);
     say(`  appended mcp-arc-pro → ${patch}`);
   }
 }
