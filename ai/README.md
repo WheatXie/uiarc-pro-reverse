@@ -34,7 +34,9 @@ moved, and the project symlink is relative so a clone works at any path.
 node ai/mcp/server.mjs          # stdio, newline-delimited JSON-RPC
 ```
 
-Dependencies live in `ai/mcp/package.json` (`@modelcontextprotocol/sdk`, `zod`):
+Dependencies live in `ai/mcp/package.json` (`@modelcontextprotocol/sdk`, `zod`). `ai/mcp/pnpm-workspace.yaml`
+marks the folder as its own package root, so this install is self-contained and never touches the app's
+lockfile:
 
 ```bash
 cd ai/mcp && pnpm install

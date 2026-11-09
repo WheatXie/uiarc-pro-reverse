@@ -28,6 +28,7 @@ node scripts/smoke.mjs  # every item page: 200, preview mounts, code files prese
 Find the item first, read its docs, then compose.
 
 ```bash
+cd ai/mcp && pnpm install && cd ../..       # once, self-contained (ai/mcp is its own package root)
 node ai/mcp/server.mjs                      # stdio MCP server (search_components, get_component, …)
 node ai/install.mjs --claude                # write .mcp.json + link .claude/skills/arc-pro
 node ai/install.mjs --all                   # every supported client, see ai/README.md
