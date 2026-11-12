@@ -39,6 +39,35 @@ const touch = async (path) => {
   }
 };
 
+/**
+ * A skill folder only registers if SKILL.md's YAML frontmatter parses. An
+ * unquoted `description` containing ": " is a nested mapping, so the client
+ * drops the whole skill with a log line nobody reads. Fail the install here
+ * instead of copying a folder that will never show up.
+ */
+async function assertSkillFrontmatter(dir) {
+  const raw = await readFile(join(dir, "SKILL.md"), "utf8");
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (match === null) throw new Error(`${dir}/SKILL.md has no YAML frontmatter block`);
+  const field = (key) =>
+    match[1]
+      .split(/\r?\n/)
+      .find((line) => line.startsWith(`${key}:`))
+      ?.slice(key.length + 1)
+      .trim() ?? "";
+  const name = field("name");
+  const description = field("description");
+  if (name === "") throw new Error(`${dir}/SKILL.md frontmatter needs a name`);
+  if (description === "") throw new Error(`${dir}/SKILL.md frontmatter needs a description`);
+  const quoted = (description.startsWith('"') && description.endsWith('"')) || (description.startsWith("'") && description.endsWith("'"));
+  if (!quoted && description.includes(": ")) {
+    throw new Error(
+      `${dir}/SKILL.md description contains ": " — quote the whole value or the frontmatter is invalid YAML and the skill is ignored`,
+    );
+  }
+  return { name, description };
+}
+
 /** Deep-merge b into a without dropping keys already in a. */
 function merge(base, extra) {
   if (Array.isArray(base) || Array.isArray(extra)) return extra ?? base;
@@ -110,6 +139,9 @@ if (!anything) {
   say("\nRun with --print to see the JSON, or read ai/README.md for the manual snippets.");
   process.exit(0);
 }
+
+const skillMeta = await assertSkillFrontmatter(SKILL);
+say(`frontmatter ok — name: ${skillMeta.name}, description ${skillMeta.description.length} chars\n`);
 
 if (wantsAll || has("--claude")) {
   say("Claude Code (project)");

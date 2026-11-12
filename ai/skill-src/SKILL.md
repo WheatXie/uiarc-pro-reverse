@@ -1,6 +1,6 @@
 ---
 name: arc-pro
-description: Builds and reviews React interfaces with the full Arc library: all 233 Pro components and blocks plus the 147 free items, reconstructed in this repository with source, docs and live previews. Use when the user mentions Arc or uiarc, when the project contains src/components/arc or components/arc/foundation.css, or when asked to build or polish UI such as a settings page, pricing section, dashboard, landing page, sign-in, form, table, chart, dialog, command palette, AI chat, agent run or data grid.
+description: "Builds and reviews React interfaces with the full Arc library — 233 Pro components, blocks and special components plus the 147 free registry items, reconstructed locally with source, docs and live previews. Use when the user mentions Arc or uiarc, when the project contains src/components/arc or components/arc/foundation.css, or when asked to build or polish UI such as a settings page, pricing section, dashboard, landing page, sign-in, form, table, chart, dialog, command palette, AI chat, agent run or data grid."
 ---
 
 # Arc Pro (complete library)

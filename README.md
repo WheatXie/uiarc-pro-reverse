@@ -1,25 +1,37 @@
+<p align="center">
+  <img src="docs/screenshot-component.png" alt="An item page: live preview, Code tab and docs" width="900">
+</p>
+
+<p align="center">
+  <img alt="Items" src="https://img.shields.io/badge/items-380-111?style=flat-square">
+  <img alt="Pixel parity" src="https://img.shields.io/badge/mean%20pixel%20parity-99.91-1f6feb?style=flat-square">
+  <img alt="DOM parity" src="https://img.shields.io/badge/byte--identical%20DOM-139%20items-1f6feb?style=flat-square">
+  <img alt="Stack" src="https://img.shields.io/badge/Vite%208%20%C2%B7%20React%2019%20%C2%B7%20TS%20strict-111?style=flat-square">
+  <img alt="Stars" src="https://img.shields.io/github/stars/WheatXie/uiarc-pro-reverse?style=flat-square">
+</p>
+
+<p align="center">
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#layout">Layout</a> ·
+  <a href="#use-it-from-an-ai-agent">MCP &amp; skill</a> ·
+  <a href="#how-it-was-reconstructed">Method</a> ·
+  <a href="REPORT.md">Report</a> ·
+  English ·
+  <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
 # uiarc-pro-reverse
 
-**Every gated Pro component of [uiarc.dev](https://uiarc.dev) — 233 of them — rebuilt as plain, runnable React source.**
-
-The site ships its components to the browser to render the free preview frame, but keeps the *source*
-behind a Pro account. This repo reconstructs that source from the shipped artifacts and re-hosts it as
-a local docs site with live previews, copyable code and pixel-parity verification against the original.
-
-![Item page — preview stage, Code tab and docs](docs/screenshot-component.png)
+[uiarc.dev](https://uiarc.dev) sells a component library and keeps the source behind a Pro account. The
+preview frame, however, has to ship the component to the browser. This repo reconstructs that source:
+**233 gated items** rebuilt as plain React you can read, run and diff, plus the **147 free registry
+items** copied verbatim. Every id has docs, and 233 of them have a live preview page.
 
 ```
-233 / 233 items reconstructed · mean pixel score 99.91 · 196 items ≥ 99.95 · 139 byte-identical DOM trees
+233 Pro items   17 components · 113 blocks · 103 special components
+147 free items  vendored from the public registry
+380 ids total   mean pixel parity 99.91 · 196 items ≥ 99.95 · 139 tree-identical
 ```
-
-| | |
-| --- | --- |
-| Components | 17 Pro components + 103 special components |
-| Blocks | 113 Pro blocks |
-| Stack | Vite 8 · React 19 · TypeScript (strict) · CSS Modules · `motion` · Radix UI · lucide |
-| Verified against | live preview frames at 1280×900 @2x, plus a structural DOM diff |
-| Result table | [REPORT.md](REPORT.md) — one row per item, both sampling modes |
-| Method | [METHOD.md](METHOD.md) — how the artifacts were read, every known residue |
 
 ## Quick start
 
@@ -29,142 +41,76 @@ pnpm dev        # http://localhost:5183
 pnpm build      # tsc --noEmit && vite build
 ```
 
-Each item lives at `/components/<slug>` (components and special components) or
-`/components/blocks/<slug>` (blocks); `/frame/<slug>` renders the bare preview used for comparison.
+| Route | Renders |
+| --- | --- |
+| `/components/<id>` | components and special components |
+| `/components/blocks/<id>` | blocks |
+| `/frame/<id>` | the bare preview used by the parity gates |
 
-## What is in here
+## Layout
 
-- **`src/components/arc/<slug>/`** — 233 self-contained ports: `<slug>.tsx`, `<slug>.module.css`
-  (de-hashed from the CSS Module the site ships, declarations kept byte-faithful) and a `demo.tsx`
-  that auto-registers for the docs page.
-- **`src/site/`** — the docs shell: sidebar with search and scope filters, item pages with a Preview /
-  Code pair, per-item markdown docs, in-page nav.
-- **`src/components/arc/foundation.css`** — the design tokens (colour, radii, elevation, easing) taken
-  from the site's public registry item.
-- **`public/media`, `public/block-logos`, `public/docs`** — the image fixtures and 267 markdown docs the
-  demos and pages need, pulled from the same public routes.
+| Path | Contents |
+| --- | --- |
+| `src/components/arc/<id>/` | one item: `<id>.tsx`, `<id>.module.css` (de-hashed, declarations kept), `demo.tsx` |
+| `src/site/` | the docs shell: sidebar, item pages, Code tab, markdown, in-page nav |
+| `src/components/arc/foundation.css` | design tokens from the public registry |
+| `ai/` | MCP server, skill, catalogue index, installer |
+| `public/` | image fixtures (18 MB) and 267 markdown docs |
+| `scripts/` | capture, parity gates, corpus report, smoke test |
 
-Nothing here fetches a registry at runtime: the code tab reads local files through
-`import.meta.glob`, so the whole catalogue works offline.
+Nothing fetches a registry at runtime: the Code tab reads local files through `import.meta.glob`.
 
 ## Use it from an AI agent
 
-The site offers two AI paths: a remote MCP server that needs an Arc account and only returns Pro
-source on a paid plan, and a skill whose catalogue lists free items. Both are replaced here with local
-equivalents that know **all 380 ids** — 233 Pro plus 147 free — and can hand back the source.
+The site's own MCP needs an account and returns Pro source only on a paid plan. This repo ships a local
+equivalent that knows all 380 ids.
 
 ```bash
-cd ai/mcp && pnpm install && cd ../..   # once: @modelcontextprotocol/sdk + zod
-node ai/install.mjs --claude            # project .mcp.json + .claude/skills/arc-pro link
-node ai/install.mjs --all               # every supported client (see below)
-node ai/mcp/smoke.mjs                   # 17 assertions over the tool surface
+cd ai/mcp && pnpm install && cd ../..   # once: MCP SDK + zod
+node ai/build.mjs                       # rebuild index.json and the skill
+node ai/install.mjs --dsh               # or --claude, --cursor, --vscode, --codex, --all
 ```
 
-| MCP tool | Answers |
+| Tool | Returns |
 | --- | --- |
-| `search_components` | intent → ranked ids with the reason to use each and the reason not to |
-| `list_components` | browse 55 groups by kind, tier or group |
-| `get_component` | docs (when to use, usage, API reference, keyboard, a11y, motion, responsive) + source files |
-| `get_install_command` | shadcn command for free items, copy recipe for Pro items |
-| `get_skill` | any skill file, including per-group catalogues and the playbooks |
+| `search_components` | intent → ids, with what each is for and what to use instead |
+| `list_components` | 55 groups |
+| `get_component` | docs, source, or both; `section` to narrow |
+| `get_install_command` | how to bring an item into another project |
+| `get_skill` | any skill file, including `catalog/<group>.md` |
 
-### Installing into a client
-
-`ai/install.mjs` writes the config each client expects and copies or links the skill. Existing files
-are merged, never replaced; run it with no flag to see what it would do, or `--print` for the raw JSON.
-
-| Flag | Writes | Client picks it up from |
-| --- | --- | --- |
-| `--claude` | `.mcp.json` (project scope, committed) + `.claude/skills/arc-pro` symlink | Claude Code in this repo |
-| `--claude-user` | `~/.claude/skills/arc-pro` | Claude Code, every project |
-| `--cursor` | `.cursor/mcp.json` + `.cursor/rules/arc.mdc` | Cursor, this repo |
-| `--vscode` | `.vscode/mcp.json` | VS Code Copilot Chat agent mode |
-| `--codex` | `[mcp_servers.arc-pro]` in `~/.codex/config.toml` | Codex |
-| `--agents` | `~/.agents/skills/arc-pro` | agents that read `~/.agents/skills` |
-
-By hand, the same pair works anywhere:
-
-```json
-{ "mcpServers": { "arc-pro": { "command": "node", "args": ["/abs/path/uiarc/ai/mcp/server.mjs"] } } }
-```
-
-```bash
-claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"   # instead of editing .mcp.json
-```
-
-### Skill and playbooks
-
-`ai/skill/arc-pro/` is a normal skill folder (`SKILL.md` front matter `name: arc-pro`): the 10 Arc rule
-files verbatim, `INSTRUCTIONS.md` (always-on rules for `AGENTS.md` / `CLAUDE.md`), a generated
-`components.md` over all 380 ids, `catalog/<group>.md` for per-item detail, and `pro/` — six playbooks
-for whole surfaces:
-
-| Playbook | Use when |
-| --- | --- |
-| `pro/full-page-generation.md` | build a page region by region, with every state, or just the plan |
-| `pro/design-system-generation.md` | brand theme on Arc tokens, contrast checked in both themes |
-| `pro/refactor-to-arc.md` | migrate from shadcn/ui, MUI, Chakra or hand-rolled CSS with parity checks |
-| `pro/motion-recommendations.md` | inventory animations, assign tokens, delete decoration |
-| `pro/responsive-optimization.md` | measure five widths, fix overflow and touch, re-measure |
-| `pro/accessibility-audit.md` | ranked findings with patches, not a checklist |
-
-Every item, free or Pro, is a directory under `src/components/arc/`, so the MCP server and the skill read
-local files only. `node ai/build.mjs` regenerates `ai/data/index.json` and the skill catalogue from
-`src/data/catalog.json`, `public/docs/*.md` and that source; `node scripts/sync-free.mjs` re-checks the
-free half against the public registry whenever you want to compare.
-
-### Taking over this repo
-
-[AGENTS.md](AGENTS.md) is the handoff: commands, the two verification gates, the shared files that must
-not be edited for one item, and the UI rules the library is held to. [ai/README.md](ai/README.md) has
-the official-vs-local comparison, every client config and the tool contract.
+The skill (`ai/skill/arc-pro/`) carries the design rules, the full catalogue, and six playbooks for
+whole-surface work: page generation, design system, refactor, motion, responsive, accessibility.
+It is a stdio process spawned by the client — no daemon, no port, no network.
 
 ## How it was reconstructed
 
-The gate protects `/api/component-source`; it does not protect the component itself, because the
-public preview frame has to render it. So the ports come from what the browser is served:
+1. **Capture** — Playwright opens `/components/<id>/frame` and keeps the SSR DOM, the item's CSS Module
+   and the webpack chunk holding its implementation.
+2. **De-hash** — `.block_someClass__a1b2c` becomes `.someClass`; keyframes and at-rules survive.
+3. **Port** — props, state machine, spring parameters, ARIA, keyboard model, canvas/WebGL renderers,
+   seeded data, breakpoints.
+4. **Gate** — pixel diff of both frames plus a structural walk (path, tag, box ±1px, text, role, aria),
+   then interaction A/B probes on every state.
+5. **Report** — both gates over the corpus in sharded parallel runs → [REPORT.md](REPORT.md).
 
-1. **Capture** — `scripts/capture.mjs <slug>` opens `/components/<slug>/frame` in Playwright and keeps
-   the SSR DOM, the item's own CSS Module (chosen by selector prefix, not by size) and the webpack
-   chunk that contains its implementation.
-2. **De-hash** — `.block_someClass__a1b2c` → `.someClass`; keyframes and nested at-rules are preserved.
-3. **Port** — rebuild the component: props, state machine, spring parameters, ARIA, keyboard model,
-   canvas/WebGL renderers, seeded data generators, responsive breakpoints.
-4. **Gate** — `scripts/compare.mjs` (pixel diff of the two frames) and `scripts/dom-diff.mjs`
-   (path / tag / box ±1px / text / role / aria), plus interaction A/B probes on every state.
-5. **Report** — `scripts/report.mjs` runs both gates over the corpus in parallel shards and writes
-   [REPORT.md](REPORT.md).
+Details, per-item compensations and every known residue: [METHOD.md](METHOD.md).
 
-Long-running demos are compared in their resting window (the report carries a per-item `KNOWN_WAIT`),
-so a loop's phase is never reported as a fidelity gap.
+## Verification
 
-## Tooling
+```bash
+node scripts/dom-diff.mjs <id>            # structural parity
+STABLE=1 node scripts/compare.mjs <id>    # pixel parity, target ≥ 99
+node scripts/report.mjs                   # the whole table
+node scripts/smoke.mjs                    # every page: 200, preview, code, 0 console errors
+```
 
-| script | what it does |
-| --- | --- |
-| `capture.mjs <slug> [--kind=block]` | capture DOM + CSS + implementation chunk into `captures/<slug>/` |
-| `capture-parallel.sh <n> <slugs…>` | capture a list with limited concurrency |
-| `compare.mjs <slug>` | screenshot both frames, print `diff N% of pixels · score N`; `STABLE=1`, `WAIT=ms`, `--local=` |
-| `dom-diff.mjs <slug>` | structural walk of both frames; `--struct`, `--tags`, `WAIT=ms` |
-| `report.mjs`, `report-all.sh`, `report-merge.mjs` | corpus-wide parity report (sharded) |
-| `smoke.mjs` | every catalogue page returns 200, preview mounts, Code tab has files, no console errors |
-| `queue.mjs`, `audit-captures.mjs` | progress and capture-quality audits |
-| `prune-free.mjs` | keep only the import closure the Pro items need |
+Eight items land below 99.5 and none of them misses a feature: an undamped orbit that also scores ~96
+against *itself*, a randomised text reveal, live clock digits, a 17-second race, a spinning wheel, WebGL
+fluid noise, per-cell RNG and a clock lead. All measured, all documented.
 
-`captures/` is generated and not committed — re-run the capture step if you want to re-verify an item.
+## Credit
 
-## Known residues
-
-Eight items score below 99.5 and none of them is a missing feature: an undamped orbit
-(`customer-galaxy`, which also scores ~96 against *itself*), a randomised text-reveal loop
-(`source-cards`), live clock digits (`revenue-globe`), a 17-second race (`race-bar-chart`), a spinning
-wheel (`prize-wheel`), WebGL fluid noise (`ink-fluid`), per-cell RNG (`sand-text`) and a clock lead
-(`orbit-logos`). All are documented with measurements in
-[METHOD.md § 7](METHOD.md#7-known-irreducible-residues).
-
-## Credit & disclaimer
-
-All design, layout and component ideas belong to **Arc / [uiarc.dev](https://uiarc.dev)** — this is a
-reverse-engineering study, not a redistribution of the original source. The code here was recovered
-from publicly served artifacts for research and porting practice; if you want the supported, licensed
-version (plus updates and support), buy the original. Trademarks belong to their owners.
+Design, layout and component ideas belong to **[Arc / uiarc.dev](https://uiarc.dev)**. This is a
+reverse-engineering study for reading and porting practice, not a redistribution of the original source.
+For the supported and licensed version, buy the original.
