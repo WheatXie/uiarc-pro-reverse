@@ -166,6 +166,11 @@ wheel (`prize-wheel`), WebGL fluid noise (`ink-fluid`), per-cell RNG (`sand-text
 (`orbit-logos`). All are documented with measurements in
 [METHOD.md § 7](METHOD.md#7-known-irreducible-residues).
 
+## Skill manual
+
+`docs/SKILLS.md` lists every file of `arc`, `arc-pro` and `impeccable`: what each one is for, when
+to read it and when reading it is wasted context, plus five worked recipes.
+
 ## Credit & disclaimer
 
 All design, layout and component ideas belong to **Arc / [uiarc.dev](https://uiarc.dev)** — this is a
