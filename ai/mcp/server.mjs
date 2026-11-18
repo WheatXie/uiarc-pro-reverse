@@ -31,7 +31,9 @@ const BY_ID = new Map(ITEMS.map((item) => [item.id, item]));
 const DOCS = join(REPO, "public/docs");
 const ARC = join(REPO, "src/components/arc");
 const BLOCKS = join(ARC, "blocks");
+/** Two skills on disk: the official bundle and our additions. `get_skill` reads either. */
 const SKILL = join(REPO, "ai/skill/arc-pro");
+const SKILL_DIRS = { arc: join(REPO, "ai/skill/arc"), "arc-pro": SKILL };
 
 /** Document frequency over the catalogue, so rare words ("toggles") outrank common ones ("account"). */
 const DF = new Map();
@@ -412,35 +414,58 @@ server.registerTool(
 server.registerTool(
   "get_skill",
   {
-    title: "Read one file of the Arc Pro skill",
+    title: "Read one file of the Arc skills",
     description:
-      "The bundled skill: SKILL.md (entry point), components.md (whole catalogue by group), design, copy, " +
-      "motion, accessibility, responsive, composition, checklist and three worked examples.",
+      "Two skills are bundled. `arc` is the official public skill: design, composition, copy, motion, " +
+      "accessibility, responsive, checklist, components and three worked examples. `arc-pro` is our " +
+      "addition: SKILL.md, components.md over all 380 ids, catalog/<group>.md and pro/ playbooks. " +
+      "Pass \"arc/design.md\" or \"arc-pro/pro/PRO.md\"; a bare name resolves in arc-pro first, then arc.",
     inputSchema: {
       file: z
         .string()
         .default("SKILL.md")
-        .describe("File name, e.g. \"SKILL.md\", \"components.md\", \"motion.md\""),
+        .describe('File path, e.g. "SKILL.md", "components.md", "arc/design.md", "arc-pro/pro/PRO.md"'),
     },
   },
   async ({ file }) => {
-    const names = (await readdir(SKILL)).filter((n) => n.endsWith(".md")).sort();
-    const groups = (await readdir(join(SKILL, "catalog"))).filter((n) => n.endsWith(".md")).sort();
-    const wanted = file.endsWith(".md") ? file : `${file}.md`;
-    const nested = wanted.startsWith("catalog/") ? wanted.slice("catalog/".length) : null;
-    if (nested ? !groups.includes(nested) : !names.includes(wanted)) {
+    const listSkill = async (dir) => {
+      const out = [];
+      const walk = async (rel) => {
+        for (const entry of await readdir(join(dir, rel), { withFileTypes: true })) {
+          const next = rel === "" ? entry.name : `${rel}/${entry.name}`;
+          if (entry.isDirectory()) await walk(next);
+          else if (entry.name.endsWith(".md")) out.push(next);
+        }
+      };
+      await walk("");
+      return out.sort();
+    };
+
+    const trimmed = file.replace(/^\.?\//, "");
+    const prefixed = /^(arc|arc-pro)\//.exec(trimmed);
+    const skillName = prefixed ? prefixed[1] : null;
+    const relative = prefixed ? trimmed.slice(prefixed[0].length) : trimmed;
+    const wanted = relative.endsWith(".md") ? relative : `${relative}.md`;
+
+    const candidates = skillName ? [skillName] : ["arc-pro", "arc"];
+    for (const name of candidates) {
+      const dir = SKILL_DIRS[name] ?? SKILL_DIRS["arc-pro"];
+      const files = await listSkill(dir);
+      if (!files.includes(wanted)) continue;
       return {
-        content: [
-          {
-            type: "text",
-            text: `No skill file "${file}". Files: ${names.join(", ")}. Group files: ${groups.map((g) => `catalog/${g}`).join(", ")}`,
-          },
-        ],
-        isError: true,
+        content: [{ type: "text", text: await readFile(join(dir, wanted), "utf8") }],
       };
     }
-    const path = nested ? join(SKILL, "catalog", nested) : join(SKILL, wanted);
-    return { content: [{ type: "text", text: await readFile(path, "utf8") }] };
+
+    const listings = [];
+    for (const [name, dir] of Object.entries(SKILL_DIRS)) {
+      const files = await listSkill(dir);
+      listings.push(`${name}: ${files.map((f) => `${name}/${f}`).join(", ")}`);
+    }
+    return {
+      content: [{ type: "text", text: `No skill file "${file}".\n${listings.join("\n")}` }],
+      isError: true,
+    };
   },
 );
 

@@ -112,18 +112,18 @@ rules) and follow its steps and checkpoints.
 
 ## Reference files
 
-Read only the file the task needs. Each is one level from here.
+Two skills, no overlap: this one adds what Arc's public skill cannot know — the 233 Pro items, the
+local source tree and the six playbooks. The shared rule files stay in the **`arc`** skill (install
+both; `node ai/install.mjs --all` does).
 
-| File | Read it when |
-| --- | --- |
-| [components.md](components.md) | Choosing an item: all 380 ids by group, with use and not-for |
-| [composition.md](composition.md) | Laying out a page: containers, dashboards, marketing sections, states, React correctness |
-| [design.md](design.md) | Tokens for colour, type, surfaces, radii, spacing, icons, metallic and brand treatments |
-| [copy.md](copy.md) | Writing any visible text: headings, buttons, errors, empty states, claims |
-| [motion.md](motion.md) | Adding or reviewing animation |
-| [accessibility.md](accessibility.md) | Semantics, keyboard, names, announcements |
-| [responsive.md](responsive.md) | Widths, touch targets, overflow, tables on phones |
-| [checklist.md](checklist.md) | Before you finish. Always |
-| [example-settings.md](example-settings.md) | Worked example: account settings page |
-| [example-pricing.md](example-pricing.md) | Worked example: pricing section with plans, comparison and FAQ |
-| [example-dashboard.md](example-dashboard.md) | Worked example: analytics overview with KPIs, chart and table |
+| File | Lives in | Read it when |
+| --- | --- | --- |
+| `components.md` | here | Choosing an item: all 380 ids by group, with use and not-for |
+| `pro/PRO.md` | here | A task bigger than one component: routes to the six playbooks |
+| `pro/full-page-generation.md` · `design-system-generation.md` · `refactor-to-arc.md` · `motion-recommendations.md` · `responsive-optimization.md` · `accessibility-audit.md` | here | Whole-page, whole-system or audit work |
+| `design.md` | `arc` | Tokens for colour, type, surfaces, radii, spacing, icons |
+| `composition.md` | `arc` | Page containers, dashboards, marketing sections, states |
+| `copy.md` | `arc` | Any visible text: headings, buttons, errors, empty states |
+| `motion.md` · `accessibility.md` · `responsive.md` | `arc` | Animation, semantics and keyboard, widths and touch |
+| `checklist.md` | `arc` | Before you finish. Always |
+| `example-settings.md` · `example-pricing.md` · `example-dashboard.md` | `arc` | A worked example of the surface you are building |

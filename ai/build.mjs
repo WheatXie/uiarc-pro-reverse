@@ -16,7 +16,7 @@
  *
  * Run: node ai/build.mjs
  */
-import { readFile, writeFile, readdir, mkdir, stat } from "node:fs/promises";
+import { readFile, writeFile, readdir, mkdir, rm, stat } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join, basename, relative } from "node:path";
 
@@ -184,12 +184,26 @@ await writeFile(join(AI, "data/index.json"), JSON.stringify(index, null, 2) + "\
 /* ---------------------------------------------------------------- skill --- */
 
 const SKILL_DIR = join(AI, "skill/arc-pro");
+// Wipe first: a stale copy of a file that moved to the `arc` skill would keep
+// shipping a duplicate.
+await rm(SKILL_DIR, { recursive: true, force: true });
 await mkdir(SKILL_DIR, { recursive: true });
 
-// 1. The prose files ship verbatim next to the generated catalog.
+// 1. Ours only: SKILL.md and INSTRUCTIONS.md. The shared rule files live in the
+//    `arc` skill next door, so a client that installs both never sees the same
+//    prose twice.
 for (const name of await readdir(join(AI, "skill-src"))) {
   if (!name.endsWith(".md")) continue;
   await writeFile(join(SKILL_DIR, name), await readFile(join(AI, "skill-src", name)));
+}
+
+// 1a. `arc` — the official bundle, byte for byte: 13 files, 11k words, no edits.
+const ARC_DIR = join(AI, "skill/arc");
+await rm(ARC_DIR, { recursive: true, force: true });
+await mkdir(ARC_DIR, { recursive: true });
+for (const name of await readdir(join(AI, "skill-src/official"))) {
+  if (!name.endsWith(".md")) continue;
+  await writeFile(join(ARC_DIR, name), await readFile(join(AI, "skill-src/official", name)));
 }
 
 // 1b. Pro playbooks: authored here, because the site gates the originals behind an account.

@@ -87,7 +87,8 @@ claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"   # 不必手改 .mcp.js
 
 ### Skill 与 playbook
 
-`ai/skill/arc-pro/` 就是一个普通 skill 目录（`SKILL.md` 头部 `name: arc-pro`）：官网 10 份规则文件原样保留、`INSTRUCTIONS.md`（给 `AGENTS.md` / `CLAUDE.md` 的常驻规则）、覆盖全部 380 个 id 的 `components.md`、逐条细节的 `catalog/<group>.md`，以及 `pro/` 下六份面向整页任务的 playbook：
+两个 skill 一起安装、互不重复。`ai/skill/arc/` 是官方包逐字节副本（13 个文件：`SKILL.md`、`INSTRUCTIONS.md`、`design.md`、`composition.md`、`copy.md`、`motion.md`、`accessibility.md`、`responsive.md`、`checklist.md`、`components.md` 和三份示例）。
+`ai/skill/arc-pro/` 只放官方包不可能知道的：覆盖全部 380 个 id 的 `components.md`、逐条细节的 `catalog/<group>.md`，以及 `pro/` 下六份面向整页任务的 playbook：
 
 | Playbook | 什么时候用 |
 | --- | --- |

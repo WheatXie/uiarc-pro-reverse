@@ -24,6 +24,11 @@ import { fileURLToPath } from "node:url";
 const AI = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(AI, "..");
 const SKILL = join(AI, "skill/arc-pro");
+/** Two skills, installed together: the official rule files (`arc`) and our additions (`arc-pro`). */
+const SKILLS = [
+  { dir: join(AI, "skill/arc"), name: "arc" },
+  { dir: join(AI, "skill/arc-pro"), name: "arc-pro" },
+];
 const SERVER = join(AI, "mcp/server.mjs");
 
 const args = new Set(process.argv.slice(2));
@@ -99,12 +104,25 @@ async function copySkill(dest) {
   say(`  copied skill → ${dest}`);
 }
 
-async function linkSkill(dest) {
-  await rm(dest, { recursive: true, force: true });
-  await mkdir(dirname(dest), { recursive: true });
-  // Relative so the link survives a clone to another path.
-  await symlink(relative(dirname(dest), SKILL), dest, "dir");
-  say(`  linked skill → ${dest} → ${relative(dirname(dest), SKILL)}`);
+async function copySkills(skillsDir) {
+  for (const skill of SKILLS) {
+    const dest = join(skillsDir, skill.name);
+    await rm(dest, { recursive: true, force: true });
+    await mkdir(skillsDir, { recursive: true });
+    await cp(skill.dir, dest, { recursive: true });
+    say(`  copied skill → ${dest}`);
+  }
+}
+
+async function linkSkills(skillsDir) {
+  for (const skill of SKILLS) {
+    const dest = join(skillsDir, skill.name);
+    await rm(dest, { recursive: true, force: true });
+    await mkdir(skillsDir, { recursive: true });
+    // Relative so the link survives a clone to another path.
+    await symlink(relative(skillsDir, skill.dir), dest, "dir");
+    say(`  linked skill → ${dest} → ${relative(skillsDir, skill.dir)}`);
+  }
 }
 
 const mcpJson = (argsList) => ({ mcpServers: { "arc-pro": { command: "node", args: argsList } } });
@@ -123,35 +141,38 @@ const anything =
   wantsAll ||
   has("--claude", "--claude-user", "--cursor", "--vscode", "--codex", "--agents", "--dsh");
 
-say(`Arc Pro · skill ${SKILL}`);
+say(`Arc · skills {arc, arc-pro} under ${join(AI, "skill")}`);
 say(`          MCP   ${SERVER}\n`);
 
 if (!anything) {
   say("Nothing selected — showing what each flag writes:\n");
-  say("  --claude         .mcp.json (project scope, shared in git) + .claude/skills/arc-pro symlink");
-  say("  --claude-user    ~/.claude/skills/arc-pro copy (available in every project)");
+  say("  --claude         .mcp.json (project scope, shared in git) + .claude/skills/{arc,arc-pro} symlinks");
+  say("  --claude-user    ~/.claude/skills/{arc,arc-pro} copies (available in every project)");
   say("  --cursor         .cursor/mcp.json + .cursor/rules/arc.mdc");
   say("  --vscode         .vscode/mcp.json");
   say("  --codex          appends [mcp_servers.arc-pro] to ~/.codex/config.toml");
-  say("  --agents         ~/.agents/skills/arc-pro copy");
-  say("  --dsh            .dsh/skills/arc-pro + an mcp-arc-pro entry in the DeepSeek Harness profile patch");
+  say("  --agents         ~/.agents/skills/{arc,arc-pro} copies");
+  say("  --dsh            .dsh/skills/{arc,arc-pro} + an mcp-arc-pro entry in the DeepSeek Harness profile patch");
   say("  --all            all of the above");
   say("\nRun with --print to see the JSON, or read ai/README.md for the manual snippets.");
   process.exit(0);
 }
 
-const skillMeta = await assertSkillFrontmatter(SKILL);
-say(`frontmatter ok — name: ${skillMeta.name}, description ${skillMeta.description.length} chars\n`);
+for (const skill of SKILLS) {
+  const meta = await assertSkillFrontmatter(skill.dir);
+  say(`frontmatter ok — ${meta.name}, description ${meta.description.length} chars`);
+}
+say("");
 
 if (wantsAll || has("--claude")) {
   say("Claude Code (project)");
   await writeJson(join(ROOT, ".mcp.json"), JSON_LOCAL);
-  await linkSkill(join(ROOT, ".claude/skills/arc-pro"));
+  await linkSkills(join(ROOT, ".claude/skills"));
 }
 
 if (wantsAll || has("--claude-user")) {
   say("Claude Code (user)");
-  await copySkill(join(homedir(), ".claude/skills/arc-pro"));
+  await copySkills(join(homedir(), ".claude/skills"));
 }
 
 if (wantsAll || has("--cursor")) {
@@ -194,7 +215,7 @@ if (wantsAll || has("--dsh")) {
   say("DeepSeek Harness");
   // A real copy, not a symlink: dsh lists skill roots through its own fs service,
   // which reports a symlinked directory as an unsupported entry type.
-  await copySkill(join(ROOT, ".dsh/skills/arc-pro"));
+  await copySkills(join(ROOT, ".dsh/skills"));
   const profileDir = process.env.DSH_PROFILE_DIR ?? join(homedir(), ".dsh/profiles/desktop");
   const patch = join(profileDir, "cordis.patch.yml");
   const entry = [
@@ -225,7 +246,7 @@ if (wantsAll || has("--dsh")) {
 
 if (wantsAll || has("--agents")) {
   say("Generic agents directory");
-  await copySkill(join(homedir(), ".agents/skills/arc-pro"));
+  await copySkills(join(homedir(), ".agents/skills"));
 }
 
 say("\nDone. Restart the client so it re-reads its MCP config, then ask it to list the arc-pro tools.");

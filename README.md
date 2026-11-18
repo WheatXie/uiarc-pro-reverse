@@ -97,10 +97,11 @@ claude mcp add arc-pro -- node "$PWD/ai/mcp/server.mjs"   # instead of editing .
 
 ### Skill and playbooks
 
-`ai/skill/arc-pro/` is a normal skill folder (`SKILL.md` front matter `name: arc-pro`): the 10 Arc rule
-files verbatim, `INSTRUCTIONS.md` (always-on rules for `AGENTS.md` / `CLAUDE.md`), a generated
-`components.md` over all 380 ids, `catalog/<group>.md` for per-item detail, and `pro/` — six playbooks
-for whole surfaces:
+Two skills install together and do not repeat each other. `ai/skill/arc/` is the official bundle, byte
+for byte (13 files: `SKILL.md`, `INSTRUCTIONS.md`, `design.md`, `composition.md`, `copy.md`, `motion.md`,
+`accessibility.md`, `responsive.md`, `checklist.md`, `components.md`, three worked examples).
+`ai/skill/arc-pro/` adds only what that bundle cannot know: a generated `components.md` over all 380
+ids, `catalog/<group>.md` for per-item detail, and `pro/` — six playbooks for whole surfaces:
 
 | Playbook | Use when |
 | --- | --- |

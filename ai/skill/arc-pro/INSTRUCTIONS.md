@@ -11,7 +11,7 @@ alwaysApply: false
 ---
 ```
 
-The full skill is this folder: `SKILL.md`, `components.md` (all 380 ids) and the reference files.
+Two skills install together: `arc` holds the shared rule files (`design.md`, `composition.md`, `copy.md`, `motion.md`, `accessibility.md`, `responsive.md`, `checklist.md`, the three examples), `arc-pro` holds `SKILL.md`, `components.md` (all 380 ids) and the six playbooks in `pro/`.
 The local MCP server at `ai/mcp/server.mjs` answers `search_components`, `get_component`,
 `get_install_command` and `get_skill` for every item, Pro included.
 

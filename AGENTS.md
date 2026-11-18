@@ -19,7 +19,7 @@ pnpm install            # once
 pnpm dev                # http://localhost:5183 (the docs shell; keep it running while verifying)
 pnpm build              # tsc --noEmit && vite build
 npx tsc --noEmit        # type gate
-node ai/build.mjs       # rebuild ai/data/index.json + ai/skill/arc-pro from the catalogue
+node ai/build.mjs       # rebuild ai/data/index.json + both skills from the catalogue
 node scripts/sync-free.mjs   # re-check the free half against the public registry (dry run)
 node ai/mcp/smoke.mjs   # assert the MCP tool surface + 10 intent rankings
 node scripts/smoke.mjs  # every item page: 200, preview mounts, code files present, 0 console errors
@@ -41,9 +41,13 @@ Tools: `search_components` (intent → ids with use / not-for), `list_components
 `get_component` (docs, source, or both; `section` to narrow), `get_install_command`,
 `get_skill` (including `catalog/<group>.md`).
 
-Skill: `ai/skill/arc-pro/` — `SKILL.md`, `INSTRUCTIONS.md`, `components.md` (all 380 ids), `catalog/`
-per group, 10 rule files, 3 worked examples, and `pro/` playbooks for whole-surface work
-(full-page generation, design system, refactor, motion, responsive, accessibility).
+Skills, installed together and non-overlapping: `ai/skill/arc/` is the official bundle, byte for byte
+(13 files — `SKILL.md`, `INSTRUCTIONS.md`, `design.md`, `composition.md`, `copy.md`, `motion.md`,
+`accessibility.md`, `responsive.md`, `checklist.md`, `components.md`, three worked examples);
+`ai/skill/arc-pro/` adds `SKILL.md`, `INSTRUCTIONS.md`, `components.md` over all 380 ids,
+`catalog/<group>.md` per group and `pro/` playbooks for whole-surface work (full-page generation,
+design system, refactor, motion, responsive, accessibility). `get_skill` reads either, e.g.
+`arc/design.md`, `arc-pro/pro/PRO.md`.
 
 ## Rules for UI work here
 

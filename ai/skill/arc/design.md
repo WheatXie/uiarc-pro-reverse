@@ -58,10 +58,10 @@ Components and pages use semantic roles only. Never the `--neutral-*` ramp, raw 
 
 | Face | Token | Use | Settings |
 | --- | --- | --- | --- |
-| Geist | `--font-display` | Headings 30px and up | 400 or 500, `letter-spacing: var(--tracking-display)` (-0.03em), `line-height: var(--leading-display)` (1.1) |
+| Geist | `--font-display` | Headings 28px and up | 400 or 500, `letter-spacing: var(--tracking-display)` (-0.03em), `line-height: var(--leading-display)` (1.1) |
 | Inter | `--font-body` | Body, labels, controls, small headings | 400 or 500, `letter-spacing: var(--tracking-body)` (-0.01em), `line-height: var(--leading-body)` (1.4) |
 
-- Sizes come from the scale only: `--text-xs` 12, `--text-sm` 14, `--text-base` 16, `--text-lg` 18, `--text-xl` 22, `--text-2xl` 28, `--text-3xl` 36, `--text-4xl` 52, `--text-5xl` 72.
+- Sizes come from the scale only: `--text-xs` 12, `--text-sm` 13, `--text-base` 15, `--text-lg` 17, `--text-xl` 20, `--text-2xl` 22, `--text-3xl` 28, `--text-4xl` 34, `--text-5xl` 40. Typed text uses `--text-field` (14px, 16px on phones).
 - Weights are 400 and 500. Never 600 or bold. Hierarchy comes from size, color (`--foreground` over `--text-secondary`), and spacing.
 - Keep Geist out of controls and small labels; keep Inter out of hero headlines.
 - Numbers that change or align in columns use `font-variant-numeric: tabular-nums`.
@@ -76,23 +76,23 @@ Components and pages use semantic roles only. Never the `--neutral-*` ramp, raw 
 
 ## Radii (concentric corners)
 
-`--radius-control` 18px (inputs, buttons), `--radius-panel` 26px (menus, nested panels), `--radius-surface` 34px (cards, large surfaces), `--radius-pill` (tags, status marks).
+`--radius-control` 14px (inputs, buttons), `--radius-panel` 20px (menus, nested panels), `--radius-surface` 24px (cards, large surfaces), `--radius-pill` (tags, status marks).
 
 A nested corner is the outer radius minus the padding between them, so the curves stay parallel:
 
 ```css
 /* Correct: inner = outer - padding */
 .card  { border-radius: var(--radius-surface); padding: 8px; }
-.inner { border-radius: calc(var(--radius-surface) - 8px); } /* 26px, same as --radius-panel */
+.inner { border-radius: calc(var(--radius-surface) - 8px); } /* 16px */
 
-.panel { border-radius: var(--radius-surface); padding: 24px; }
-.panel > .media { border-radius: calc(var(--radius-surface) - 24px); } /* 10px */
+.panel { border-radius: var(--radius-surface); padding: 16px; }
+.panel > .media { border-radius: calc(var(--radius-surface) - 16px); } /* 8px */
 ```
 
 ```css
 /* Incorrect: the same radius inside and out makes a thick, uneven corner */
-.card  { border-radius: 34px; padding: 16px; }
-.inner { border-radius: 34px; }
+.card  { border-radius: 24px; padding: 16px; }
+.inner { border-radius: 24px; }
 ```
 
 Clamp the result at a small positive value (`max(6px, calc(...))`) when padding is large.

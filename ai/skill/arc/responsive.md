@@ -27,7 +27,7 @@ Render at **390, 768, 1024, and 1440px** (and 320px for anything with long label
 
 ## Touch
 
-- Hit targets are at least 44px tall on touch (`--control-height-md`). Keep at least 8px between adjacent targets.
+- Controls use `--control-height-md` (40px), with small icon buttons keeping a 40px touch area. Keep at least 8px between adjacent targets.
 - Hover is an enhancement. Anything shown on hover (`hover-card`, `tooltip`, row actions) is also reachable by tap or focus.
 - Gestures (`swipe-actions`, `bottom-sheet`) always have a button path.
 - On phones, prefer `bottom-sheet` for tasks and long menus; keep `popover` for small choices. `user-menu` already opens as a sheet on phones.
@@ -36,6 +36,7 @@ Render at **390, 768, 1024, and 1440px** (and 320px for anything with long label
 
 - Hero and section headings scale with `clamp()` between two steps of the scale, for example `font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl))`.
 - Body text stays at `--text-base` or `--text-sm`. Nothing below `--text-xs`.
+- The type scale is compact at every width (body 15, secondary 13, caption 12, headings 20 to 40). Use tokens for every font size, and `--text-field` for text people type (16px on phones, so iOS never zooms on focus).
 
 ## Before placing a component
 
