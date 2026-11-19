@@ -2,7 +2,10 @@
 
 本文件说明这一轮装进 DeepSeek Harness 的三个 skill：每个文件负责什么、什么时候该读它、什么时候读了也是浪费上下文，以及三者怎么接力。
 
-- 安装位置：`~/.dsh/skills/`（全局，所有项目可用）；仓库内也有 `<repo>/.dsh/skills/`（项目级，随仓库走）。
+- 安装位置有两层，DSH 会同时扫描，按 rank 去重（项目 100 < 用户 400 < 内置）：
+  - `~/.dsh/skills/` —— 用户级，**每个会话都能看到**（`node ai/install.mjs --dsh-user`）。
+  - `<repo>/.dsh/skills/` —— 项目级，只在这个工作目录下的会话里出现（`node ai/install.mjs --dsh`），随仓库走、方便别人 clone 即用。
+  - 只装项目级时，换一个工作目录开新会话就看不到 arc / arc-pro —— 这是这轮踩到的坑。
 - 入口约定：每个 skill 是 `<name>/SKILL.md`，头部 frontmatter 必须有 `name` 与 `description`，DSH 按 `description` 里的触发条件决定是否加载。
 - 加载即消耗上下文：`arc` 13 个文件 ~92 KB，`arc-pro` 70 个文件 ~524 KB，`impeccable` 63 个文件 ~2.3 MB。**不要三个一起读**，按下表选。
 
@@ -276,11 +279,12 @@ MCP 是**检索层**（按需取一条），skill 是**方法论层**（常驻�
 | 目的 | 命令 |
 |---|---|
 | 重新生成两个 skill + 索引 | `node ai/build.mjs` |
-| 装到 DSH（项目级 + cordis 条目） | `node ai/install.mjs --dsh` |
+| 装到 DSH，所有会话可见（用户级 + cordis 条目） | `node ai/install.mjs --dsh-user` |
+| 装到 DSH，仅本仓库 | `node ai/install.mjs --dsh` |
 | 装到全部客户端（Claude / Cursor / VS Code / Codex / agents） | `node ai/install.mjs --all` |
 | 只打印配置不写文件 | `node ai/install.mjs --print` |
 | MCP 自检（工具面 + 10 个意图排序） | `node ai/mcp/smoke.mjs` |
 | 免费件与官网对齐（只补缺失，不覆盖改过的） | `node scripts/sync-free.mjs`（`--apply` 才写） |
 | 类型检查 / 构建 / 全站冒烟 | `npx tsc --noEmit` · `pnpm build` · `node scripts/smoke.mjs` |
 
-改动 skill 内容的正确姿势：改 `ai/skill-src/**`（官方 13 份在 `ai/skill-src/official/`，我们的增量在 `SKILL.md`、`INSTRUCTIONS.md`、`pro/`），再 `node ai/build.mjs`，再 `node ai/install.mjs --dsh`。**不要直接改 `ai/skill/**` 或 `~/.dsh/skills/**`**，下次生成会被覆盖。
+改动 skill 内容的正确姿势：改 `ai/skill-src/**`（官方 13 份在 `ai/skill-src/official/`，我们的增量在 `SKILL.md`、`INSTRUCTIONS.md`、`pro/`），再 `node ai/build.mjs`，再 `node ai/install.mjs --dsh-user`（全局）或 `--dsh`（仅本仓库）。**不要直接改 `ai/skill/**` 或 `~/.dsh/skills/**`**，下次生成会被覆盖。

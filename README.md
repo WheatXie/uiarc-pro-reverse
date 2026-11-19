@@ -83,7 +83,8 @@ are merged, never replaced; run it with no flag to see what it would do, or `--p
 | `--vscode` | `.vscode/mcp.json` | VS Code Copilot Chat agent mode |
 | `--codex` | `[mcp_servers.arc-pro]` in `~/.codex/config.toml` | Codex |
 | `--agents` | `~/.agents/skills/arc-pro` | agents that read `~/.agents/skills` |
-| `--dsh` | `.dsh/skills/arc-pro` copy + `mcp-arc-pro` insert in the DeepSeek Harness profile | DeepSeek Harness |
+| `--dsh` | `.dsh/skills/{arc,arc-pro}` copy + `mcp-arc-pro` insert in the DeepSeek Harness profile | DeepSeek Harness, this project only |
+| `--dsh-user` | the same two skills into `~/.dsh/skills/` + the same profile entry | DeepSeek Harness, every session |
 
 By hand, the same pair works anywhere:
 

@@ -9,7 +9,8 @@
  *   node ai/install.mjs --vscode           # .vscode/mcp.json
  *   node ai/install.mjs --codex            # ~/.codex/config.toml snippet appended once
  *   node ai/install.mjs --agents           # ~/.agents/skills/arc-pro
- *   node ai/install.mjs --dsh              # .dsh/skills/arc-pro copy + cordis `insert` entry (DeepSeek Harness)
+ *   node ai/install.mjs --dsh              # .dsh/skills/{arc,arc-pro} in this repo + cordis entry (this project only)
+ *   node ai/install.mjs --dsh-user         # ~/.dsh/skills/{arc,arc-pro} + cordis entry (every DSH session)
  *   node ai/install.mjs --all              # every client above
  *   node ai/install.mjs --print            # print the JSON blocks and exit
  *
@@ -139,7 +140,7 @@ if (has("--print")) {
 const wantsAll = has("--all");
 const anything =
   wantsAll ||
-  has("--claude", "--claude-user", "--cursor", "--vscode", "--codex", "--agents", "--dsh");
+  has("--claude", "--claude-user", "--cursor", "--vscode", "--codex", "--agents", "--dsh", "--dsh-user");
 
 say(`Arc · skills {arc, arc-pro} under ${join(AI, "skill")}`);
 say(`          MCP   ${SERVER}\n`);
@@ -153,6 +154,7 @@ if (!anything) {
   say("  --codex          appends [mcp_servers.arc-pro] to ~/.codex/config.toml");
   say("  --agents         ~/.agents/skills/{arc,arc-pro} copies");
   say("  --dsh            .dsh/skills/{arc,arc-pro} + an mcp-arc-pro entry in the DeepSeek Harness profile patch");
+  say("  --dsh-user       ~/.dsh/skills/{arc,arc-pro} + the same entry — visible in every DSH session");
   say("  --all            all of the above");
   say("\nRun with --print to see the JSON, or read ai/README.md for the manual snippets.");
   process.exit(0);
@@ -211,11 +213,7 @@ if (wantsAll || has("--codex")) {
   }
 }
 
-if (wantsAll || has("--dsh")) {
-  say("DeepSeek Harness");
-  // A real copy, not a symlink: dsh lists skill roots through its own fs service,
-  // which reports a symlinked directory as an unsupported entry type.
-  await copySkills(join(ROOT, ".dsh/skills"));
+async function writeDshMcpPatch() {
   const profileDir = process.env.DSH_PROFILE_DIR ?? join(homedir(), ".dsh/profiles/desktop");
   const patch = join(profileDir, "cordis.patch.yml");
   const entry = [
@@ -234,14 +232,30 @@ if (wantsAll || has("--dsh")) {
   const existing = existsSync(patch) ? await readFile(patch, "utf8") : "";
   if (existing.includes("mcp-arc-pro")) {
     say(`  ${patch} already has mcp-arc-pro — left as is`);
-  } else if (existing.trim() === "" || existing.trim() === "[]") {
+    return;
+  }
+  if (existing.trim() === "" || existing.trim() === "[]") {
     await mkdir(dirname(patch), { recursive: true });
     await writeFile(patch, `${entry}`);
     say(`  wrote mcp-arc-pro → ${patch}`);
-  } else {
-    await appendFile(patch, `${existing.endsWith("\n") ? "" : "\n"}${entry}`);
-    say(`  appended mcp-arc-pro → ${patch}`);
+    return;
   }
+  await appendFile(patch, `${existing.endsWith("\n") ? "" : "\n"}${entry}`);
+  say(`  appended mcp-arc-pro → ${patch}`);
+}
+
+if (wantsAll || has("--dsh")) {
+  say("DeepSeek Harness (project scope)");
+  // A real copy, not a symlink: dsh lists skill roots through its own fs service,
+  // which reports a symlinked directory as an unsupported entry type.
+  await copySkills(join(ROOT, ".dsh/skills"));
+  await writeDshMcpPatch();
+}
+
+if (wantsAll || has("--dsh-user")) {
+  say("DeepSeek Harness (user scope, every session)");
+  await copySkills(join(homedir(), ".dsh/skills"));
+  await writeDshMcpPatch();
 }
 
 if (wantsAll || has("--agents")) {

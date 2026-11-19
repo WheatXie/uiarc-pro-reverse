@@ -34,7 +34,8 @@ cd ai/mcp && pnpm install && cd ../..       # once, self-contained (ai/mcp is it
 node ai/mcp/server.mjs                      # stdio MCP server (search_components, get_component, …)
 node ai/install.mjs --claude                # write .mcp.json + link .claude/skills/arc-pro
 node ai/install.mjs --all                   # every supported client, see ai/README.md
-node ai/install.mjs --dsh                   # DeepSeek: .dsh/skills/arc-pro copy + cordis `insert` entry
+node ai/install.mjs --dsh                   # DeepSeek, this project only: .dsh/skills/{arc,arc-pro} + cordis entry
+node ai/install.mjs --dsh-user              # DeepSeek, every session: ~/.dsh/skills/{arc,arc-pro}
 ```
 
 Tools: `search_components` (intent → ids with use / not-for), `list_components` (55 groups),

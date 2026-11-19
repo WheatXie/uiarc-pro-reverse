@@ -73,7 +73,8 @@ node ai/mcp/smoke.mjs                   # 对工具契约的 17 项断言
 | `--vscode` | `.vscode/mcp.json` | VS Code Copilot Chat 的 agent 模式 |
 | `--codex` | `~/.codex/config.toml` 中的 `[mcp_servers.arc-pro]` | Codex |
 | `--agents` | `~/.agents/skills/arc-pro` | 读取 `~/.agents/skills` 的 agent |
-| `--dsh` | `.dsh/skills/arc-pro` 副本 + DeepSeek Harness profile 里的 `mcp-arc-pro` 插入项 | DeepSeek Harness |
+| `--dsh` | `.dsh/skills/{arc,arc-pro}` 副本 + DeepSeek Harness profile 里的 `mcp-arc-pro` 插入项 | DeepSeek Harness，仅当前项目 |
+| `--dsh-user` | 同样两个 skill 装到 `~/.dsh/skills/` + 同一条 profile 条目 | DeepSeek Harness，所有会话 |
 
 手写配置同样可用：
 
